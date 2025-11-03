@@ -45,7 +45,7 @@ export default async function HomePage({ params }: PageParams) {
         <WhyChooseUsSection dict={dict} />
         <LocationsSection dict={dict} consultationHref={`/${lang}/consultation`} />
         {/* <TestimonialsSection dict={dict} /> */}
-        <CTASection dict={dict} />
+        <CTASection dict={dict} lang={lang} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

@@ -46,7 +46,7 @@ export default async function BusinessSolutionsPage({ params }: PageParams) {
         <IndustrySpecializations dict={dict} />
         <BusinessSuccessStories dict={dict} />
         <BusinessResources dict={dict} />
-        <CTASection dict={dict} />
+        <CTASection dict={dict} lang={lang} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

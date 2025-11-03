@@ -6,8 +6,10 @@ import { Button } from '../atoms/Button';
 import { fadeInUp } from '@/lib/animations';
 import { COMPANY } from '@/data/constants';
 
-export const CTASection = ({ dict }: { dict: Dict }) => {
+export const CTASection = ({ dict, lang }: { dict: Dict; lang: string }) => {
   const t = getT(dict, 'cta');
+  const withLang = (path: string) => `/${lang}${path.startsWith('/') ? path : '/' + path}`.replace(/\/+$/, '/');
+  const tel = `tel:${(String(''+COMPANY.contact.phone).replace(/[^\d]/g, ''))}`;
 
   const features = [
     {
@@ -65,6 +67,7 @@ export const CTASection = ({ dict }: { dict: Dict }) => {
             <Button
               variant="secondary"
               className="px-8 py-4 text-lg font-semibold"
+              href={withLang('/consultation')}
               icon={<CalendarPlus className="w-5 h-5" />}
             >
               {t('buttons.bookConsultation')}
@@ -72,6 +75,7 @@ export const CTASection = ({ dict }: { dict: Dict }) => {
             <Button
               variant="outline"
               className="px-8 py-4 text-lg font-semibold"
+              href={tel}
               icon={<Phone className="w-5 h-5" />}
             >
               {`Call ${COMPANY.contact.phone}`}

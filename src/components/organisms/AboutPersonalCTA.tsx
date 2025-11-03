@@ -20,8 +20,8 @@ export const AboutPersonalCTA = ({ dict }: { dict: Dict }) => {
             ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="bg-white text-brand-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">{t('buttons.primary')}</button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-brand-green transition-colors">{`Call ${COMPANY.contact.phone}`}</button>
+            <a href="/en/consultation" className="bg-white text-brand-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">{t('buttons.primary')}</a>
+            <a href={`tel:${String(COMPANY.contact.phone).replace(/[^\d]/g, '')}`} className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-brand-green transition-colors">{`Call ${COMPANY.contact.phone}`}</a>
           </div>
           <div className="mt-8 text-center">
             <p className="text-green-100">{t('badges.0')} | {t('badges.1')} | {t('badges.2')}</p>

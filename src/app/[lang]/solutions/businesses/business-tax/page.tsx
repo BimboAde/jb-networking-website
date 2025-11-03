@@ -51,7 +51,7 @@ export default async function BusinessTaxPage({ params }: PageParams) {
         <IndustryExpertise dict={dict} />
         {/* <BusinessProcessTimeline dict={dict} /> */}
         <BusinessTaxFAQ dict={dict} />
-        <CTASection dict={dict} />
+        <CTASection dict={dict} lang={lang} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

@@ -49,7 +49,7 @@ export default async function CorporateServicesPage({ params }: PageParams) {
         <StateRequirements dict={dict} />
         <CorporateSuccessStories dict={dict} />
         <CorporateFAQ dict={dict} />
-        <CTASection dict={dict} />
+        <CTASection dict={dict} lang={lang} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

@@ -49,7 +49,7 @@ export default async function BusinessCreditBuildingPage({ params }: PageParams)
         {/* <BusinessCreditSuccessStories dict={dict} /> */}
         <BusinessCreditFAQ dict={dict} />
         <BusinessCreditPricing dict={dict} />
-        <CTASection dict={dict} />
+        <CTASection dict={dict} lang={lang} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

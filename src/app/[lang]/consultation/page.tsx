@@ -76,7 +76,7 @@ export default async function ConsultationPage({ params }: PageParams) {
         <ConsultationOfficeLocations dict={dict} />
         <ConsultationServicesPreview dict={dict} />
         {/* <TestimonialsSection dict={dict} /> */}
-        <CTASection dict={dict} />
+        <CTASection dict={dict} lang={lang} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

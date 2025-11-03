@@ -70,7 +70,7 @@ export default async function FinancialPlanningPage({ params }: PageParams) {
         {/* <PerformanceDashboard dict={dict} /> */}
         {/* <RetirementCalculator strings={calculatorStrings} /> */}
         {/* <InvestmentOptions dict={dict} /> */}
-        <CTASection dict={dict} />
+        <CTASection dict={dict} lang={lang} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

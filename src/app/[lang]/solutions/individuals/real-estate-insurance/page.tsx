@@ -49,7 +49,7 @@ export default async function RealEstateInsurancePage({ params }: PageParams) {
         {/* <InsuranceComparison dict={dict} /> */}
         {/* <RealEstateSuccessStories dict={dict} /> */}
         <RealEstateFAQ dict={dict} />
-        <CTASection dict={dict} />
+        <CTASection dict={dict} lang={lang} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

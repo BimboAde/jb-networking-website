@@ -5,6 +5,7 @@ import { Button } from '../atoms/Button';
 import { NavigationDropdown } from '../molecules/NavigationDropdown';
 import { LanguageSwitcher } from '../molecules/LanguageSwitcher';
 import { images } from '@/data/images';
+import { HeaderMobileMenu } from './HeaderMobileMenu';
 
 export const Header = ({ dict, lang }: { dict: Dict; lang: string }) => {
   const t = getT(dict, 'header');
@@ -62,7 +63,16 @@ export const Header = ({ dict, lang }: { dict: Dict; lang: string }) => {
             <div className="hidden lg:block">
               <LanguageSwitcher />
             </div>
-            <Button variant="primary" href={withLang('/consultation')}>{tCommon('bookConsultation')}</Button>
+            <Button variant="primary" href={withLang('/consultation')} className="hidden lg:inline-flex">{tCommon('bookConsultation')}</Button>
+            <HeaderMobileMenu
+              companyName={t('companyName')}
+              tagline={t('companyTagline')}
+              about={{ label: t('aboutUs'), href: withLang('/about') }}
+              locations={{ label: t('locations'), href: withLang('/locations') }}
+              consultation={{ label: tCommon('bookConsultation'), href: withLang('/consultation') }}
+              individualServices={individualServices}
+              businessServices={businessServices}
+            />
           </div>
         </div>
       </div>

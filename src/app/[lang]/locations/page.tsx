@@ -35,7 +35,7 @@ export default async function LocationsPage({ params }: PageParams) {
         <OfficesGrid dict={dict} />
         <AdditionalLocations dict={dict} />
         <ServiceAreas dict={dict} />
-        <CTASection dict={dict} />
+        <CTASection dict={dict} lang={lang} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

@@ -43,7 +43,7 @@ export default async function CreditDebtPage({ params }: PageParams) {
         {/* <CreditPricing dict={dict} /> */}
         {/* <CreditSuccessStories dict={dict} /> */}
         <CreditFAQ dict={dict} />
-        <CTASection dict={dict} />
+        <CTASection dict={dict} lang={lang} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

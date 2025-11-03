@@ -4,7 +4,7 @@ import { Heading } from '../atoms/Heading';
 export const LocationsHero = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'locations_page.hero');
   return (
-    <section className="bg-gradient-to-br from-brand-green to-brand-light-green text-white h-[400px] flex items-center">
+    <section className="bg-gradient-to-br from-brand-green to-brand-light-green text-white pt-24 lg:pt-0 min-h-[420px] lg:h-[400px] flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center">
           <Heading level={1} className="mb-6 text-white">{t('title')} <span className="text-brand-gold">{t('highlight')}</span></Heading>
