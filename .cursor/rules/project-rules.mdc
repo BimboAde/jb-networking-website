@@ -1,0 +1,177 @@
+---
+alwaysApply: true
+---
+JB Networking Systems Website: Project Rules & Standards
+
+This document is the single source of truth for all development. Adhering to these rules is non-negotiable to achieve our goals of a world-class, high-performance, and maintainable website. This project will be built by experts, for experts.
+
+1. Core Philosophy & Stack
+
+Stack Versions:
+
+next: 16.0.0
+
+react: 19.2.0
+
+react-dom: 19.2.0
+
+All other packages (e.g. framer-motion) MUST be the latest available version at the time of installation.
+
+React 19 Compiler: The React Compiler is enabled.
+
+
+
+2. Project Structure
+
+App Router: This project MUST use the App Router (src/app). The Pages Router is not permitted.
+
+src/ Directory: All application code MUST reside within the src/ directory.
+
+Atomic Design: All components MUST be structured using Atomic Design principles to ensure modularity and reusability.
+
+src/components/atoms: The smallest building blocks (e.g., Button.tsx, Logo.tsx, Input.tsx, Heading.tsx).
+
+src/components/molecules: Simple groups of atoms (e.g., SearchForm.tsx = Input + Button).
+
+src/components/organisms: Complex component sections (e.g., Header.tsx, HeroSection.tsx, Footer.tsx).
+
+src/components/templates: Page-level layouts (e.g., FullWidthLayout.tsx, SidebarLayout.tsx).
+
+3. Performance (Non-Negotiable)
+
+Server Components First: All components MUST be React Server Components (RSCs) by default.
+
+"use client" is an Exception: A component MUST ONLY be a Client Component ("use client") if it requires interactivity (e.g., onClick, useState, useEffect). Keep Client Components as small as possible (ideally, as "leaf" components) to avoid poisoning the server-side render tree.
+
+next/image: All static image assets (.jpg, .png, .webp) MUST be imported and rendered using the next/image component. The native <img> tag is forbidden.
+
+The priority prop MUST be used on any image that is "Largest Contentful Paint" (LCP), typically the main hero image.
+
+next/font: All fonts MUST be loaded and managed via next/font to eliminate layout shift and optimize font loading. Do not use <link> in the <head> for fonts.
+
+Dynamic Imports: Heavy client-side components (e.g., a complex chart library) MUST be loaded dynamically using next/dynamic with ssr: false.
+
+4. SEO & Metadata
+
+Perfect Score Mandate: The site MUST achieve a 95+ Lighthouse score in SEO.
+
+Semantic HTML: HTML from wireframes MUST be converted using semantically correct tags (<header>, <footer>, <main>, <nav>, <section>, <article>).
+
+Accessibility (A11y): Accessibility is part of SEO. All interactive elements MUST be keyboard-navigable and all images MUST have meaningful alt text (or alt="" for decorative images). We will enforce eslint-plugin-jsx-a11y rules.
+
+Centralized SEO Management: To meet the "single file edit" requirement, all page-level metadata MUST be managed from a central file.
+
+File: src/lib/seo.config.ts
+
+Logic: This file will export a function that generates Metadata objects and JSON-LD scripts for each page.
+
+Example src/lib/seo.config.ts:
+
+import { Metadata } from 'next';
+
+// Define all your SEO templates here
+const siteName = "JB Networking Systems";
+
+type PageSEO = {
+  metadata: Metadata;
+  jsonLd: string; // Or a structured object
+};
+
+// Helper to generate JSON-LD script
+const generateJsonLd = (data: object): string => {
+  return `<script type="application/ld+json">${JSON.stringify(data)}</script>`;
+};
+
+export const getPageSEO = (pageKey: 'home' | 'about' | 'services'): PageSEO => {
+  switch (pageKey) {
+    case 'home':
+      const homeJsonLd = generateJsonLd({
+        '@context': '[https://schema.org](https://schema.org)',
+        '@type': 'FinancialService',
+        'name': siteName,
+        'url': '[https://jbnetworkingsystems.com](https://jbnetworkingsystems.com)',
+        'description': 'Professional Financial & Tax Services, With a Personal Touch!'
+      });
+
+      return {
+        metadata: {
+          title: `Home | ${siteName}`,
+          description: 'Professional Financial & Tax Services, With a Personal Touch!',
+          // Add openGraph, twitter, etc.
+        },
+        jsonLd: homeJsonLd
+      };
+
+    // ... other cases for 'about', 'services', etc.
+  }
+};
+
+
+Example src/app/[lang]/page.tsx (Homepage):
+
+import { getPageSEO } from '@/lib/seo.config';
+
+// 1. Generate Metadata
+export async function generateMetadata() {
+  const { metadata } = getPageSEO('home');
+  return metadata;
+}
+
+export default function HomePage() {
+  // 2. Get JSON-LD
+  const { jsonLd } = getPageSEO('home');
+
+  return (
+    <>
+      {/* 3. Inject JSON-LD into the head */}
+      <head dangerouslySetInnerHTML={{ __html: jsonLd }} />
+
+      <main>
+        {/* ...Your Page Content... */}
+      </main>
+    </>
+  );
+}
+
+
+5. Internationalization (i18n)
+
+Routing: The site MUST use sub-path routing for languages (e.g., /en/, /es/). This will be handled by a [lang] dynamic segment in src/app/.
+
+
+No Hardcoded Text: No user-facing text MUST be hardcoded in any component. All strings MUST be pulled from translation JSON files.
+
+we will have 2 languages, English and Spanish.
+6. Animation
+
+Provider: We will use framer-motion for all UI animations.
+
+Uniformity: An AnimationProvider.tsx MUST be created in src/providers/ to wrap the application.
+
+Centralized Variants: Common animations (e.g., fadeIn, slideInUp) MUST be defined as variants in a central file (e.g., src/lib/animations.ts) and imported into components. This ensures all animations are uniform and easily editable.
+
+7. Data Fetching & Mutations
+
+Fetching: Data fetching MUST be done in Server Components using await fetch(). This takes advantage of Next.js 16's automatic caching and deduplication.
+
+Mutations: Form submissions and data mutations MUST use Server Actions. Do not create separate API routes for simple form handling. This is the modern, simpler, and more performant standard.
+
+8. Tooling & Quality
+
+Code Style: The project MUST use Prettier for code formatting and ESLint for code linting.
+
+Pre-Commit Hook: A pre-commit hook (using husky) MUST be set up to run eslint --fix and prettier --write before any code is committed. This ensures 100% code consistency.
+
+TypeScript: any is forbidden. All types MUST be explicitly defined. All component props MUST be typed.
+
+Named Exports: All components and functions MUST use named exports. Do not use export default. This improves refactoring and findability in the IDE.
+
+9. UI & Responsiveness
+
+Mobile-First & Fully Responsive: All components and pages MUST be built with a mobile-first approach. The design MUST be fully responsive and pixel-perfect across all common breakpoints, from small mobile devices (320px) up to large desktop screens (1440px+).
+
+Tailwind Breakpoints: Use standard Tailwind CSS breakpoints (sm, md, lg, xl, 2xl) for responsive design. Do not use custom media queries unless absolutely necessary and documented.
+
+No Horizontal Scroll: At no screen width may horizontal scrolling occur.
+
+Fluid Typography & Spacing: Use responsive typography (e.g., text-lg, md:text-xl) and spacing (e.g., p-4, md:p-8) to ensure the UI scales gracefully.

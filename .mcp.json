@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "Resend": {
+      "name": "Resend",
+      "url": "https://resend.com/docs/mcp",
+      "headers": {}
+    },
+    "next-devtools": {
+      "command": "npx",
+      "args": ["-y", "next-devtools-mcp@latest"]
+    }
+  }
+}

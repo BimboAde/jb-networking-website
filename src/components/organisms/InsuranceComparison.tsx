@@ -1,0 +1,35 @@
+import { type Dict, getT } from '@/lib/i18n-server';
+import { Heading } from '../atoms/Heading';
+import { InsuranceComparisonTable } from '../molecules/InsuranceComparisonTable';
+
+export const InsuranceComparison = ({ dict }: { dict: Dict }) => {
+  const t = getT(dict, 'solutions_real_estate.comparison');
+
+  const headers: [string, string, string, string] = [
+    t('headers.coverage'),
+    t('headers.basic'),
+    t('headers.standard'),
+    t('headers.premium'),
+  ];
+
+  const rows = [0,1,2,3,4,5,6,7].map((i) => ({
+    label: t(`rows.${i}.label`),
+    values: [0,1,2].map((j) => t(`rows.${i}.values.${j}`)),
+    emphasis: i === 6,
+    isCta: i === 7,
+  }));
+
+  return (
+    <section className="py-20 bg-brand-gray">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <Heading level={2} className="mb-4 text-brand-green">{t('title')}</Heading>
+          <p className="text-xl text-gray-600">{t('description')}</p>
+        </div>
+        <InsuranceComparisonTable headers={headers} rows={rows} />
+      </div>
+    </section>
+  );
+};
+
+

@@ -1,0 +1,4055 @@
+{
+  "common": {
+    "bookConsultation": "Book Consultation",
+    "requestMeeting": "Request Meeting",
+    "learnMore": "Learn More",
+    "getDirections": "Get Directions",
+    "callNow": "Call Now",
+    "scheduleFreeConsultation": "Schedule Expert Consultation",
+    "watchOurStory": "Watch Our Story",
+    "readMore": "Read More",
+    
+    "addService": "Add Service"
+  },
+  "header": {
+    "companyName": "JB Networking Systems LLC",
+    "companyTagline": "Full-Service Financial Network",
+    "solutionsForIndividuals": "Individuals",
+    "solutionsForBusinesses": "Businesses",
+    "aboutUs": "About Us",
+    "locations": "Locations",
+    "english": "English",
+    "spanish": "Español",
+    "individualServices": {
+      "personalTaxAccounting": "Personal Tax & Accounting",
+      "financialInvestmentPlanning": "Financial & Investment Planning",
+      "creditDebtResolution": "Credit & Debt Resolution",
+      "personalRealEstateInsurance": "Personal Real Estate & Insurance"
+    },
+    "businessServices": {
+      "businessTaxAccounting": "Business Tax & Accounting",
+      "businessCreditBuilding": "Business Credit Building",
+      "corporateServices": "Corporate Services",
+      "franchiseOpportunities": "Franchise Opportunities"
+    }
+  },
+  "hero": {
+    "title": "Professional Financial & Tax Services, With a",
+    "titleHighlight": "Personal Touch!",
+    "description": "Since 2007, JB Networking Systems LLC has been your trusted partner for financial services, tax preparation, accounting, immigration, and credit services with a money-back guarantee.",
+    "stats": {
+      "yearsServing": "Years Serving",
+      "stateLocations": "State Locations",
+      "moneyBackGuarantee": "on Credit Services"
+    },
+    "trustExpertise": {
+      "title": "Trust & Expertise",
+      "description": "Our certified professionals provide personalized financial solutions with bilingual support and VIP services for military members.",
+      "certified": "Certified Professionals",
+      "bilingual": "Hablamos Español"
+    }
+  },
+  "video": {
+    "title": "Meet Your Financial Partners",
+    "description": "Discover how JB Networking Systems LLC has been helping families and businesses achieve financial success since 2007.",
+    "watchOurStory": "Watch Our Story",
+    "publicId": "jbns/intro",
+    "stats": {
+      "yearsOfExcellence": "Years of Excellence",
+      "satisfiedClients": "Satisfied Clients",
+      "stateLocations": "State Locations",
+      "moneyBackGuarantee": "Money Back Guarantee"
+    }
+  },
+  "youtube_teaser": {
+    "title": "Subscribe to Our YouTube Channel",
+    "description": "Get financial tips, tax insights, and business guidance from our experts on our official YouTube channel.",
+    "buttonLabel": "Visit Channel"
+  },
+  "services": {
+    "title": "Comprehensive Financial Solutions",
+    "description": "From federal tax preparation to investment planning, credit repair to business formation - we're your complete financial partner.",
+    "taxAccounting": {
+      "title": "Tax & Accounting",
+      "description": "Professional tax preparation and accounting services for individuals and businesses, including federal/state filing and corporate compliance.",
+      "features": {
+        "personalTaxReturns": "Tax Agent/Prep (Fed & All States)",
+        "businessTaxPreparation": "Accountant/CPA (Individual/Business)",
+        "payrollServices": "Payroll Services",
+        "bookkeeping": "Quarterly Taxes Prep & File"
+      }
+    },
+    "financialPlanning": {
+      "title": "Financial & Investment Services",
+      "description": "We document your goals and use proven strategies to manage your portfolio, reduce risk, and plan for a brighter future.",
+      "features": {
+        "investmentStrategy": "Investments",
+        "retirementPlanning": "Financial Services",
+        "portfolioManagement": "Business Loans",
+        "riskAssessment": "Personal Loans"
+      }
+    },
+    "creditDebtResolution": {
+      "title": "Credit & Debt Resolution",
+      "description": "Expert credit repair, business credit building, and debt resolution (IRS, State, Student Loans) with a money-back guarantee.",
+      "features": {
+        "creditRepair": "Credit Repair (Guaranteed)",
+        "debtConsolidation": "Debt Resolution (IRS, State)",
+        "creditMonitoring": "Business Credit Building",
+        "financialCounseling": "Credit Trade Lines"
+      }
+    },
+    "businessServices": {
+      "title": "Business & Corporate Services",
+      "description": "End-to-end services for your company, from start-up filing and document preparation to business management and branding.",
+      "features": {
+        "businessFormation": "Start Up Business",
+        "corporateFiling": "Corporate Filing",
+        "businessCreditBuilding": "Business Management",
+        "franchiseSupport": "Franchise Opportunities"
+      }
+    },
+    "realEstateInsurance": {
+      "title": "Real Estate & Insurance",
+      "description": "Full-service licensed agents for your insurance and real estate needs, from policies to property management.",
+      "features": {
+        "realEstateConsulting": "Real Property Management",
+        "propertyInvestment": "Commercial & Residential Leasing",
+        "insurancePlanning": "Life, Accident & Sickness",
+        "riskManagement": "Property & Casualty Insurance"
+      }
+    },
+    "moneyBackGuaranteeBadge": "Money Back Guarantee"
+  },
+  "whyChooseUs": {
+    "title": "Why Choose JB Networking Systems LLC?",
+    "description": "We're passionate about helping companies and individuals diversify portfolios, manage assets, and reduce financial risk. Our goal is to safeguard the dreams you strive to achieve and the assets you've worked so hard to accumulate.",
+    "features": {
+      "trustedSince2007": {
+        "title": "Trusted Since 2007",
+        "description": "Founded in 2007 with years of experience in immigration, accounting, financial services, and tax preparation."
+      },
+      "bilingualServices": {
+        "title": "Bilingual Services",
+        "description": "Hablamos Español! We offer full support in both English and Spanish to serve you better."
+      },
+      "militaryDiscounts": {
+        "title": "Military & VIP Discounts",
+        "description": "Active Duty, Retired, & Reservists receive VIP service. We also offer referral bonuses and discounts on accounting contracts."
+      },
+      "moneyBackGuarantee": {
+        "title": "Money Back Guarantee",
+        "description": "We stand by our expertise. Our credit repair services come with a full money-back guarantee."
+      }
+    },
+    "commitment": {
+      "title": "Our Commitment",
+      "stats": {
+        "supportAvailable": "Support Available",
+        "confidentialService": "Confidential Service",
+        "stateCoverage": "State Coverage",
+        "solutionsAvailable": "Solutions Available"
+      }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "description": "Schedule your Expert Consultation today and discover how we can help safeguard your financial future.",
+      "button": "Book Expert Consultation"
+    }
+  },
+  "locations": {
+    "title": "Our Locations",
+    "description": "With a corporate office in Georgia and regional offices in Alabama and Texas, we are positioned to serve you.",
+    "georgia": {
+      "title": "Georgia (Corporate Office)",
+      "area": "Snellville, GA",
+      "address": "2245 Wisteria Dr. Suite 214\nSnellville, GA 30078",
+      "phone": "470.288.3365",
+      "email": "tbrandy@jbnetworkingsystems.com"
+    },
+    "alabama": {
+      "title": "Alabama (Regional Office)",
+      "area": "Mobile, AL",
+      "address": "11 Water Street Suite 10290\nMobile, AL 36602",
+      "phone": "251.220.7795",
+      "email": "info@jbnetworkingsystems.com"
+    },
+    "texas": {
+      "title": "Texas (District Office)",
+      "area": "Fort Worth, TX",
+      "address": "600 W 6th Street Suite 400\nFort Worth, TX 76102",
+      "phone": "469.450.0511",
+      "email": "info@jbnetworkingsystems.com"
+    },
+    "map": {
+      "title": "Interactive Office Map",
+      "description": "Find the office nearest to you and plan your visit",
+      "placeholder": "Interactive Map",
+      "placeholderDescription": "Click on any location marker to view office details and directions"
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "description": "Don't just take our word for it. Here's what our satisfied clients have to say about our services.",
+    "maria": {
+      "name": "Maria Rodriguez",
+      "role": "Small Business Owner",
+      "text": "JB Networking Systems helped me establish my business and manage all the tax requirements. Their bilingual support made everything so much easier. I couldn't have done it without them!"
+    },
+    "james": {
+      "name": "James Thompson",
+      "role": "Military Veteran",
+      "text": "The military discount was a nice bonus, but the real value was their expertise in credit repair. They delivered exactly what they promised, and my credit score improved significantly."
+    },
+    "sarah": {
+      "name": "Sarah Williams",
+      "role": "Real Estate Investor",
+      "text": "Their comprehensive approach to financial planning and real estate consulting helped me build a successful investment portfolio. Professional, trustworthy, and results-driven."
+    },
+    "michael": {
+      "name": "Michael Chen",
+      "role": "Corporate Executive",
+      "text": "I've been using their tax and investment services for over 5 years. They consistently deliver excellent results and their personal touch makes all the difference."
+    },
+    "lisa": {
+      "name": "Lisa Garcia",
+      "role": "Franchise Owner",
+      "text": "From franchise setup to ongoing business support, JB Networking Systems has been instrumental in my success. Their expertise in business formation is unmatched."
+    },
+    "robert": {
+      "name": "Robert Johnson",
+      "role": "Retiree",
+      "text": "Their retirement planning services gave me peace of mind. They helped me optimize my investments and ensure a secure financial future for my family."
+    }
+  },
+  "cta": {
+    "title": "Contact Me",
+    "description": "Send me a message, and tell me more about your financial goals and needs. I will get back to you soon to schedule a consultation.",
+    "features": {
+      "freeConsultation": {
+        "title": "Schedule a Consultation",
+        "description": "Tell us about your goals and we'll get back to you soon."
+      },
+      "personalTouch": {
+        "title": "Direct Contact",
+        "description": "Reach out via phone, email, or schedule an appointment."
+      },
+      "guaranteedResults": {
+        "title": "Visit Us",
+        "description": "Appointments available. We're open Monday to Saturday."
+      }
+    },
+    "buttons": {
+      "bookConsultation": "Book Your Expert Consultation",
+      "callNumber": "Call: 470.288.3365"
+    },
+    "badges": {
+      "hablamosEspanol": "Hablamos Español",
+      "militaryDiscounts": "Military Discounts Available"
+    }
+  },
+  "solutions_individual": {
+    "common": {
+      "ctaConsultation": "Get Expert Consultation",
+      "ctaCall": "Call Today"
+    },
+    "hero": {
+      "title": "Personal Financial Solutions",
+      "highlight": "Tailored for You",
+      "description": "Comprehensive financial services designed to safeguard and grow your personal wealth. From tax preparation to investment planning, we provide the personal touch you deserve.",
+      "cardTitle": "Your Financial Well-Being Matters",
+      "cardDescription": "Personalized strategies to secure your financial future with guaranteed results and bilingual support.",
+      "stats": [
+        { "value": "100%", "label": "Satisfaction" },
+        { "value": "24/7", "label": "Support" }
+      ]
+    },
+    "pillars": {
+      "title": "Four Pillars of Personal Financial Success",
+      "description": "Our comprehensive approach covers every aspect of your personal financial journey, ensuring your assets are protected and your future is secure.",
+      "tax": {
+        "title": "Personal Tax & Accounting",
+        "description": "Expert tax preparation and accounting services to maximize your refunds and ensure compliance with all regulations.",
+        "features": [
+          "Individual Tax Returns",
+          "Tax Planning & Strategy",
+          "IRS Representation",
+          "Bookkeeping Services",
+          "Quarterly Filings",
+          "Audit Support"
+        ]
+      },
+      "planning": {
+        "title": "Financial & Investment Planning",
+        "description": "Strategic investment planning and wealth management designed to grow and protect your assets for the long term.",
+        "features": [
+          "Investment Strategy",
+          "Retirement Planning",
+          "Portfolio Management",
+          "Estate Planning",
+          "Risk Assessment",
+          "Wealth Preservation"
+        ]
+      },
+      "credit": {
+        "title": "Credit & Debt Resolution",
+        "description": "Rebuild your credit score and eliminate debt with our proven strategies and 100% money-back guarantee.",
+        "badge": "Money Back Guarantee",
+        "features": [
+          "Credit Score Repair",
+          "Debt Consolidation",
+          "Credit Monitoring",
+          "Dispute Resolution",
+          "Financial Counseling",
+          "Budgeting Support"
+        ]
+      },
+      "realEstate": {
+        "title": "Personal Real Estate & Insurance",
+        "description": "Comprehensive real estate guidance and insurance solutions to protect your most valuable assets and investments.",
+        "features": [
+          "Real Estate Consulting",
+          "Property Investment",
+          "Home Buying Guidance",
+          "Insurance Planning",
+          "Risk Management",
+          "Asset Protection"
+        ]
+      }
+    },
+    "process": {
+      "title": "Our Proven 4-Step Process",
+      "description": "From initial consultation to ongoing support, we guide you through every step of your financial journey with personalized attention and expertise.",
+      "steps": {
+        "1": {
+          "title": "Expert Consultation",
+          "description": "We start with a comprehensive assessment of your current financial situation and goals.",
+          "bullets": [
+            "Financial Health Check",
+            "Goal Setting Session",
+            "Service Recommendations"
+          ]
+        },
+        "2": {
+          "title": "Custom Strategy",
+          "description": "We develop a personalized financial strategy tailored to your unique needs and circumstances.",
+          "bullets": [
+            "Personalized Plan",
+            "Timeline & Milestones",
+            "Risk Assessment"
+          ]
+        },
+        "3": {
+          "title": "Implementation",
+          "description": "Our expert team executes your financial strategy with precision and attention to detail.",
+          "bullets": [
+            "Expert Execution",
+            "Regular Updates",
+            "Quality Assurance"
+          ]
+        },
+        "4": {
+          "title": "Ongoing Support",
+          "description": "We provide continuous monitoring and adjustments to ensure your financial success.",
+          "bullets": [
+            "24/7 Support",
+            "Performance Tracking",
+            "Strategy Adjustments"
+          ]
+        }
+      }
+    },
+    "guarantees": {
+      "title": "Why Choose Our Individual Services?",
+      "description": "We stand behind our services with guarantees and benefits that put your financial well-being first.",
+      "moneyBack": {
+        "title": "100% Money Back Guarantee",
+        "description": "Our credit and debt resolution services come with a complete satisfaction guarantee. If we don't deliver the promised results, you get your money back - no questions asked.",
+        "highlight": "✓ Results within 60-90 days or full refund"
+      },
+      "bilingual": {
+        "title": "Bilingual Services - Hablamos Español",
+        "description": "Our certified bilingual team provides complete financial services in both English and Spanish, ensuring clear communication and understanding throughout your financial journey.",
+        "highlight": "✓ Native Spanish-speaking advisors available"
+      },
+      "military": {
+        "title": "Military & Veteran Discounts",
+        "description": "Special VIP pricing and exclusive benefits for active military personnel, veterans, and their families. It's our way of saying thank you for your service.",
+        "highlight": "✓ Up to 25% discount on all services"
+      },
+      "support": {
+        "title": "24/7 Support & Monitoring",
+        "description": "Round-the-clock support and continuous monitoring of your financial progress. Our team is always available when you need assistance or have questions.",
+        "highlight": "✓ Dedicated support team and emergency hotline"
+      },
+      "stats": {
+        "title": "Success Statistics",
+        "items": [
+          { "value": "17+", "label": "Years Experience" },
+          { "value": "10K+", "label": "Clients Served" },
+          { "value": "98%", "label": "Satisfaction Rate" },
+          { "value": "$50M+", "label": "Assets Protected" }
+        ]
+      },
+      "included": {
+        "title": "What's Included",
+        "items": [
+          "Free initial consultation and financial assessment",
+          "Personalized financial strategy development",
+          "Regular progress reports and updates",
+          "Access to exclusive financial tools and resources",
+          "Ongoing support and strategy adjustments"
+        ]
+      }
+    },
+    "success": {
+      "title": "Real Success Stories from Real Clients",
+      "description": "See how our personalized approach has transformed the financial lives of individuals just like you.",
+      "stories": [
+        {
+          "name": "Maria Elena Rodriguez",
+          "role": "Restaurant Owner, Atlanta",
+          "quote": "The bilingual support made all the difference. They explained everything in Spanish and helped me understand every step. Now I own two restaurants and my credit is excellent!",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg"
+        },
+        {
+          "name": "James Thompson",
+          "role": "Army Veteran, Birmingham",
+          "quote": "The military discount was nice, but the expertise was invaluable. They understood my unique situation and created a plan that actually works. I'm on track for a comfortable retirement!",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
+        },
+        {
+          "name": "Sarah Williams",
+          "role": "Real Estate Investor, Houston",
+          "quote": "Their real estate expertise and tax strategies helped me build a multi-million dollar portfolio. The personal attention and ongoing support made all the difference in my success.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg"
+        },
+        {
+          "name": "Robert Johnson",
+          "role": "Retiree, Atlanta",
+          "quote": "I thought it was too late to secure my retirement, but they showed me it wasn't. Now I have peace of mind knowing my family and I are financially secure for decades to come.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-4.jpg"
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Transparent Pricing for Personal Services",
+      "description": "Choose the package that best fits your needs. All packages include our personal touch guarantee and bilingual support.",
+      "mostPopular": "Most Popular",
+      "taxEssentials": {
+        "title": "Tax Essentials",
+        "price": "$199",
+        "period": "per tax return",
+        "features": [
+          "Individual tax return preparation",
+          "Basic tax planning advice",
+          "Electronic filing included",
+          "Bilingual support",
+          "1 year of support"
+        ],
+        "button": "Get Started"
+      },
+      "wealthBuilder": {
+        "title": "Wealth Builder",
+        "price": "$299",
+        "period": "per month",
+        "features": [
+          "Investment planning & management",
+          "Retirement strategy development",
+          "Monthly portfolio reviews",
+          "Tax-optimized strategies",
+          "24/7 support access"
+        ],
+        "button": "Start Building"
+      },
+      "creditRepairPro": {
+        "title": "Credit Repair Pro",
+        "price": "$149",
+        "period": "per month",
+        "features": [
+          "Complete credit analysis",
+          "Dispute resolution service",
+          "Credit monitoring included",
+          "100% money back guarantee",
+          "Dedicated credit specialist"
+        ],
+        "button": "Fix My Credit"
+      },
+      "assetProtection": {
+        "title": "Asset Protection",
+        "price": "$399",
+        "period": "per month",
+        "features": [
+          "Real estate consulting",
+          "Insurance optimization",
+          "Estate planning guidance",
+          "Asset protection strategies",
+          "Priority support"
+        ],
+        "button": "Protect Assets"
+      }
+    }
+  },
+  "solutions_tax": {
+    "common": {
+      "scheduleConsultation": "Schedule Tax Consultation",
+      "downloadChecklist": "Tax Checklist"
+    },
+    "hero": {
+      "title": "Expert Tax Preparation &",
+      "highlight": "Accounting Services",
+      "description": "Maximize your tax savings and streamline your financial records with our comprehensive personal tax and accounting solutions. Bilingual support available.",
+      "card": {
+        "title": "Tax Season Ready",
+        "stat0": { "value": "$2,500", "label": "Avg. Refund" },
+        "stat1": { "value": "48hr", "label": "Turnaround" }
+      }
+    },
+    "services": {
+      "title": "Complete Tax & Accounting Solutions",
+      "description": "From simple tax returns to complex financial planning, our certified professionals ensure maximum savings and complete compliance.",
+      "individual": {
+        "title": "Individual Tax Returns",
+        "description": "Professional preparation of federal and state returns with maximum deduction identification.",
+        "features": [
+          "Form 1040 Preparation",
+          "Itemized Deductions",
+          "Schedule C (Self-Employment)",
+          "Multi-State Filing"
+        ]
+      },
+      "realEstate": {
+        "title": "Real Estate Tax Planning",
+        "description": "Specialized strategies for property owners, investors, and professionals.",
+        "features": [
+          "Rental Property Income",
+          "Depreciation Strategies",
+          "1031 Exchanges",
+          "Capital Gains Optimization"
+        ]
+      },
+      "investment": {
+        "title": "Investment Tax Services",
+        "description": "Expert handling of investment income, gains, and complex instruments.",
+        "features": [
+          "Stock & Bond Transactions",
+          "Cryptocurrency Reporting",
+          "Dividend Income",
+          "Options & Futures"
+        ]
+      },
+      "bookkeeping": {
+        "title": "Personal Bookkeeping",
+        "description": "Organized records and expense tracking for personal finances.",
+        "features": [
+          "Monthly Reconciliation",
+          "Expense Categorization",
+          "Receipt Management",
+          "Financial Reports"
+        ]
+      },
+      "education": {
+        "title": "Education Tax Benefits",
+        "description": "Maximize credits and deductions for students and families.",
+        "features": [
+          "American Opportunity Credit",
+          "Lifetime Learning Credit",
+          "Student Loan Interest",
+          "529 Plan Strategies"
+        ]
+      },
+      "irs": {
+        "title": "IRS Representation",
+        "description": "Professional resolution of tax issues with federal and state agencies.",
+        "features": [
+          "Audit Defense",
+          "Payment Plans",
+          "Penalty Abatement",
+          "Offer in Compromise"
+        ]
+      }
+    },
+    "process": {
+      "title": "Our Streamlined Tax Process",
+      "description": "From initial consultation to final filing, we make tax preparation simple, efficient, and stress‑free.",
+      "steps": {
+        "1": {
+          "title": "Initial Consultation",
+          "description": "Expert Consultation to understand your tax situation and opportunities.",
+          "bullets": [
+            "Personalized review",
+            "Savings opportunities",
+            "Plan of action"
+          ]
+        },
+        "2": {
+          "title": "Document Collection",
+          "description": "Secure upload portal and checklist for required documents.",
+          "bullets": [
+            "Secure portal",
+            "Comprehensive checklist",
+            "Guided support"
+          ]
+        },
+        "3": {
+          "title": "Expert Preparation",
+          "description": "Certified professionals prepare with maximum deductions and accuracy.",
+          "bullets": [
+            "Certified preparers",
+            "Max deductions",
+            "Strict accuracy"
+          ]
+        },
+        "4": {
+          "title": "Review & Filing",
+          "description": "Detailed review prior to electronic filing and confirmation.",
+          "bullets": [
+            "Detailed review",
+            "E‑file submission",
+            "Acceptance confirmation"
+          ]
+        }
+      }
+    },
+    "pricing": {
+      "title": "Transparent Tax Service Pricing",
+      "description": "No hidden fees. No surprises. Just honest, upfront pricing for professional tax services.",
+      "mostPopular": "Most Popular",
+      "basic": {
+        "title": "Basic Tax Return",
+        "price": "$149",
+        "period": "",
+        "features": [
+          "Form 1040 Preparation",
+          "Standard Deduction",
+          "Electronic Filing",
+          "Basic Tax Review",
+          "Refund Tracking"
+        ],
+        "button": "Get Started"
+      },
+      "comprehensive": {
+        "title": "Comprehensive Return",
+        "price": "$299",
+        "period": "",
+        "features": [
+          "Everything in Basic",
+          "Itemized Deductions",
+          "Schedule C (Self‑Employment)",
+          "Investment Income",
+          "Rental Property",
+          "Multi‑State Filing"
+        ],
+        "button": "Get Started"
+      },
+      "premium": {
+        "title": "Premium Package",
+        "price": "$499",
+        "period": "",
+        "features": [
+          "Everything in Comprehensive",
+          "Complex Investments",
+          "Business Income (K‑1s)",
+          "Year‑Round Tax Planning",
+          "Quarterly Check‑ins",
+          "Audit Protection"
+        ],
+        "button": "Get Started"
+      }
+    },
+    "checklist": {
+      "title": "Tax Document Checklist",
+      "description": "Ensure a smooth tax preparation process with our comprehensive document checklist.",
+      "personal": {
+        "title": "Personal Information",
+        "items": [
+          "Social Security Cards (all family members)",
+          "Birth dates for all dependents",
+          "Bank account information for direct deposit",
+          "Prior year tax return",
+          "Valid government ID"
+        ]
+      },
+      "income": {
+        "title": "Income Documents",
+        "items": [
+          "W‑2 forms from all employers",
+          "1099 forms (INT, DIV, MISC, NEC, etc.)",
+          "Self‑employment income records",
+          "Unemployment compensation (1099‑G)",
+          "Social Security/Retirement statements (SSA‑1099)"
+        ]
+      },
+      "deductions": {
+        "title": "Deduction Documents",
+        "items": [
+          "Mortgage interest statements (1098)",
+          "Property tax records",
+          "Charitable contribution receipts",
+          "Medical and dental expenses",
+          "Childcare expenses (provider info)"
+        ]
+      },
+      "investments": {
+        "title": "Investment & Retirement",
+        "items": [
+          "Brokerage statements (1099‑B)",
+          "IRA contribution records",
+          "401(k) contribution summaries",
+          "HSA contribution and distribution records",
+          "529/ESA statements"
+        ]
+      },
+      "cta": {
+        "title": "Need Help Organizing Your Documents?",
+        "description": "Our team can help you identify and organize all necessary tax documents.",
+        "button": "Download Full Checklist"
+      }
+    },
+    "tips": {
+      "title": "Essential Tax Tips & Insights",
+      "description": "Stay informed with expert advice and strategies to maximize your savings year‑round.",
+      "readMore": "Book Consultation",
+      "recordKeeping": {
+        "title": "Record Keeping Best Practices",
+        "description": "Maintain organized records to maximize deductions and simplify preparation."
+      },
+      "retirement": {
+        "title": "Retirement Contribution Limits",
+        "description": "Maximize savings while reducing current‑year tax liability."
+      },
+      "homeOffice": {
+        "title": "Home Office Deduction",
+        "description": "Understand requirements and maximize your home office deduction."
+      },
+      "educationCredits": {
+        "title": "Education Tax Credits",
+        "description": "Navigate education benefits and choose the best credits."
+      },
+      "investment": {
+        "title": "Investment Tax Strategies",
+        "description": "Optimize your portfolio with tax‑efficient strategies."
+      },
+      "yearEnd": {
+        "title": "Year‑End Tax Planning",
+        "description": "Strategic moves before December 31st to minimize liability."
+      }
+    },
+    "testimonials": {
+      "title": "What Our Tax Clients Say",
+      "description": "Real stories from satisfied clients who trust us with tax preparation and planning.",
+      "items": [
+        {
+          "name": "Maria Rodriguez",
+          "role": "Small Business Owner",
+          "quote": "They found deductions I never knew existed! My refund was higher and the bilingual service made it easy.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg"
+        },
+        {
+          "name": "Michael Chen",
+          "role": "Real Estate Investor",
+          "quote": "Complex rental property taxes made simple. Their planning saved me thousands.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg"
+        },
+        {
+          "name": "James Thompson",
+          "role": "Military Veteran",
+          "quote": "They caught an error from my previous preparer and secured an amended refund.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "companyName": "JB Networking Systems LLC",
+    "companyTagline": "Full-Service Financial Network",
+    "description": "Since 2007, safeguarding assets with a personal touch. Your trusted partner for comprehensive financial solutions across Georgia, Alabama, and Texas.",
+    "sections": {
+      "individualServices": "Individual Services",
+      "businessServices": "Business Services",
+      "contactInfo": "Contact Info"
+    },
+    "contact": {
+      "locations": "Multiple Locations:",
+      "locationsList": "Georgia | Alabama | Texas",
+      "phone": "(555) 123-4567",
+      "email": "info@jbnetworking.com",
+      "hours": "Mon-Fri: 9AM-6PM",
+      "weekends": "Weekends by Appointment"
+    },
+    "copyright": "© 2025 JB Networking Systems LLC. All rights reserved.",
+    "links": {
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "accessibility": "Accessibility"
+    },
+    "badges": {
+      "hablamosEspanol": "Hablamos Español",
+      "militaryDiscounts": "Military Discounts"
+    }
+  },
+  "solutions_credit": {
+    "common": {
+      "ctaAnalysis": "Free Credit Analysis",
+      "ctaCall": "Call (470) 288-3365"
+    },
+    "hero": {
+      "badge": "100% MONEY BACK GUARANTEE",
+      "title": "Credit & Debt Resolution",
+      "highlight": "Solutions That Work",
+      "description": "Transform your financial future with our proven credit repair and debt resolution services. We offer fast-tracked debt resolution for IRS, State, and student loans. We guarantee results or your money back.",
+      "card": {
+        "title": "Guaranteed Results",
+        "subtitle": "Expertise in credit repair and debt resolution since 2007.",
+        "stat0": { "value": "Expert", "label": "Resolution" },
+        "stat1": { "value": "Guaranteed", "label": "Service" }
+      }
+    },
+    "guarantee": {
+      "badge": "100% MONEY BACK GUARANTEE",
+      "title": "Our Iron-Clad Guarantee Promise",
+      "description": "We're so confident in our credit repair services that we offer a complete money-back guarantee.",
+      "mostPopular": "Most Popular",
+      "noResults": {
+        "title": "No Results, No Payment",
+        "text": "If we don't improve your score, you don't pay.",
+        "footer": "100% Risk-Free"
+      },
+      "days": {
+        "title": "90-Day Guarantee",
+        "text": "See significant improvements within 90 days or full refund.",
+        "footer": "Fast Results Guaranteed"
+      },
+      "written": {
+        "title": "Written Guarantee",
+        "text": "Legally binding and transparent.",
+        "footer": "Legally Protected"
+      },
+      "cta": {
+        "title": "Ready to Start Your Credit Transformation?",
+        "description": "Join thousands who improved their credit with our program.",
+        "button": "Get Your Free Credit Analysis Now"
+      }
+    },
+    "services": {
+      "title": "Comprehensive Credit & Debt Solutions",
+      "description": "From credit repair to business credit building and tax debt resolution, we offer a complete suite to achieve financial freedom.",
+      "repair": {
+        "title": "Credit Repair",
+        "description": "Remove negative items and rebuild credit with our guaranteed service.",
+        "features": [
+          "Dispute Inaccurate Items",
+          "Remove Collections",
+          "Charge-off Removal",
+          "Late Payment Removal"
+        ]
+      },
+      "consolidation": {
+        "title": "Student Loan Resolution",
+        "description": "Fast-tracked resolution and default management for student loan debts.",
+        "features": [
+          "Default Management",
+          "Consolidation Options",
+          "Payment Plan Negotiation",
+          "Document Preparation"
+        ]
+      },
+      "education": {
+        "title": "Business Credit Building",
+        "description": "Establish and grow your business credit profile separate from your personal credit.",
+        "features": [
+          "Establish Business Profile",
+          "Vendor Credit Lines",
+          "Financial Tradelines",
+          "Separate Personal/Business"
+        ]
+      },
+      "monitoring": {
+        "title": "Credit Trade Lines",
+        "description": "Personal & Business tradelines to boost your credit history and score.",
+        "features": [
+          "Authorized User Tradelines",
+          "Business Tradelines",
+          "Improve Credit Mix",
+          "Increase Credit Age"
+        ]
+      },
+      "settlement": {
+        "title": "Tax Debt Resolution",
+        "description": "Fast-tracked debt resolution and settlement for IRS and State tax debts.",
+        "features": [
+          "IRS Tax Debt Resolution",
+          "State Tax Debt Resolution",
+          "Offer in Compromise",
+          "Payment Plans"
+        ]
+      },
+      "counseling": {
+        "title": "Financial Consulting",
+        "description": "Default management consulting and document preparation services.",
+        "features": [
+          "Default Management",
+          "Document Preparation",
+          "Financial Analysis",
+          "Personalized Action Plan"
+        ]
+      }
+    },
+    "process": {
+      "title": "Our Proven 4-Step Process",
+      "description": "Refined over 17 years to deliver maximum results in minimum time.",
+      "steps": {
+        "1": {
+          "title": "Free Analysis",
+          "description": "Pull reports and identify negative items.",
+          "bullets": [
+            "All three bureaus",
+            "Every negative item",
+            "Opportunity mapping"
+          ]
+        },
+        "2": {
+          "title": "Custom Strategy",
+          "description": "Personalized plan targeting your issues.",
+          "bullets": [
+            "Personalized plan",
+            "Proven disputes",
+            "Prioritized actions"
+          ]
+        },
+        "3": {
+          "title": "Active Disputes",
+          "description": "We file disputes and handle follow-ups.",
+          "bullets": ["Bureau disputes", "Creditor contacts", "Follow-ups"]
+        },
+        "4": {
+          "title": "Results Delivered",
+          "description": "Score improves as negatives are removed.",
+          "bullets": ["Removals tracked", "Score gains", "Next steps"]
+        }
+      },
+      "timeline": {
+        "title": "Timeline & Expectations",
+        "items": [
+          {
+            "title": "Days 1-30",
+            "text": "Initial disputes filed; first removals begin."
+          },
+          {
+            "title": "Days 31-60",
+            "text": "Improvements visible; additional disputes."
+          },
+          {
+            "title": "Days 61-90",
+            "text": "Maximum results; final optimizations."
+          }
+        ]
+      },
+      "results": {
+        "title": "Average Results",
+        "items": [
+          { "value": "127", "label": "Point Increase" },
+          { "value": "73%", "label": "Items Removed" },
+          { "value": "45", "label": "Days Average" },
+          { "value": "98%", "label": "Success Rate" }
+        ]
+      }
+    },
+    "success": {
+      "title": "Real Success Stories",
+      "description": "See how clients transformed their credit scores.",
+      "items": [
+        {
+          "name": "Marcus Johnson",
+          "role": "Houston, TX",
+          "quote": "Now I qualify for the best rates!",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg",
+          "before": "487",
+          "after": "742",
+          "days": "67"
+        },
+        {
+          "name": "Sofia Martinez",
+          "role": "Atlanta, GA",
+          "quote": "Approved for my dream home mortgage!",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg",
+          "before": "521",
+          "after": "789",
+          "days": "52"
+        },
+        {
+          "name": "David Thompson",
+          "role": "Birmingham, AL",
+          "quote": "My family can finally buy our first home!",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg",
+          "before": "456",
+          "after": "701",
+          "days": "81"
+        }
+      ],
+      "cta": {
+        "title": "Join Our Success Stories",
+        "button": "Start Your Success Story Today",
+        "stats": [
+          { "value": "15,000+", "label": "Clients Helped" },
+          { "value": "98%", "label": "Success Rate" },
+          { "value": "156", "label": "Avg Point Increase" },
+          { "value": "47", "label": "Days Average" }
+        ]
+      }
+    },
+    "pricing": {
+      "title": "Transparent Pricing Plans",
+      "description": "Choose the plan that fits your needs. All plans include our guarantee and unlimited disputes.",
+      "mostPopular": "MOST POPULAR",
+      "basic": {
+        "title": "Basic Plan",
+        "price": "$99",
+        "period": "/month",
+        "features": [
+          "Credit report analysis",
+          "Dispute up to 5 items per month",
+          "Monthly progress reports",
+          "Basic credit education",
+          "90-day money back guarantee"
+        ],
+        "button": "Choose Basic"
+      },
+      "premium": {
+        "title": "Premium Plan",
+        "price": "$149",
+        "period": "/month",
+        "features": [
+          "Everything in Basic Plan",
+          "Unlimited disputes per month",
+          "Creditor intervention calls",
+          "Score tracking & monitoring",
+          "Personal credit counselor",
+          "Priority customer support"
+        ],
+        "button": "Choose Premium"
+      },
+      "elite": {
+        "title": "Elite Plan",
+        "price": "$249",
+        "period": "/month",
+        "features": [
+          "Everything in Premium Plan",
+          "Expedited processing",
+          "Debt settlement assistance",
+          "Legal consultation included",
+          "Identity theft protection",
+          "Dedicated account manager"
+        ],
+        "button": "Choose Elite"
+      },
+      "discounts": {
+        "title": "Special Discounts Available",
+        "items": [
+          {
+            "title": "VIP Military Service",
+            "text": "For Active Duty, Retired, & Reservists"
+          },
+          { "title": "Family Plans", "text": "Save 15% for couples" },
+          { "title": "Annual Payment", "text": "Save 2 months free" }
+        ]
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Get answers about our services and guarantee.",
+      "items": [
+        {
+          "q": "How does your money-back guarantee work?",
+          "a": "Our Credit Service comes with a money-back guarantee. If we don't deliver results, you get 100% back."
+        },
+        {
+          "q": "What kind of debt resolution do you handle?",
+          "a": "We specialize in fast-tracked debt resolution for the IRS, State, and student loan defaults."
+        },
+        {
+          "q": "Do you offer business credit services?",
+          "a": "Yes, we offer both business credit building to establish your business profile and credit tradelines for personal and business use."
+        },
+        {
+          "q": "How long does credit repair typically take?",
+          "a": "Most clients see improvements within 30-45 days; significant results are common by 90 days."
+        },
+        {
+          "q": "Is credit repair legal?",
+          "a": "Absolutely. The Fair Credit Reporting Act (FCRA) gives you the right to dispute inaccurate information on your credit reports. We exercise that right on your behalf."
+        },
+        {
+          "q": "Do you offer services in Spanish?",
+          "a": "Sí. We have bilingual counselors and offer all services in Spanish (Hablamos Español)."
+        }
+      ]
+    }
+  },
+  "solutions_real_estate": {
+    "breadcrumb": {
+      "home": "Home",
+      "individuals": "Solutions for Individuals",
+      "current": "Personal Real Estate & Insurance"
+    },
+    "common": {
+      "ctaConsultation": "Get Expert Consultation",
+      "ctaCall": "Call Expert"
+    },
+    "hero": {
+      "title": "Personal Real Estate &",
+      "highlight": "Insurance Solutions",
+      "description": "Comprehensive real estate consulting, property management, and insurance planning to protect your most valuable assets.",
+      "tiles": [
+        { "title": "Real Estate", "subtitle": "Management" },
+        { "title": "Insurance", "subtitle": "Protection" },
+        { "title": "Leasing", "subtitle": "Commercial & Residential" },
+        { "title": "Personal", "subtitle": "Service" }
+      ]
+    },
+    "overview": {
+      "title": "Complete Real Estate & Insurance Services",
+      "description": "From property investment guidance to comprehensive insurance coverage, we protect your assets and help you make informed decisions.",
+      "realEstate": {
+        "title": "Real Estate Services",
+        "subtitle": "Expert guidance for all your property needs",
+        "features": [
+          { "title": "Property Mgmt", "subtitle": "Full-service management" },
+          { "title": "Leasing", "subtitle": "Commercial & Residential" },
+          { "title": "Agent Services", "subtitle": "with Messiah Mason" },
+          { "title": "Transactions", "subtitle": "Buy/sell support" }
+        ],
+        "bullets": [
+          "Real Property Management",
+          "Commercial Leasing",
+          "Residential Leasing",
+          "Real Estate Agent: Messiah Mason"
+        ]
+      },
+      "insurance": {
+        "title": "Insurance Solutions",
+        "subtitle": "Comprehensive coverage for peace of mind",
+        "features": [
+          { "title": "Life Insurance", "subtitle": "Family security" },
+          { "title": "Property", "subtitle": "Asset protection" },
+          { "title": "Casualty", "subtitle": "Liability coverage" },
+          { "title": "Accident/Sickness", "subtitle": "Income protection" }
+        ],
+        "bullets": [
+          "Licensed Agent Services",
+          "Life Insurance",
+          "Accident & Sickness",
+          "Property & Casualty"
+        ]
+      }
+    },
+    "services": {
+      "title": "Specialized Service Areas",
+      "description": "Our expertise covers every aspect of real estate and insurance planning",
+      "propertyManagement": {
+        "title": "Real Property Management",
+        "description": "Professional, full-service management for your real estate assets, ensuring peace of mind and optimal returns.",
+        "features": [
+          "Tenant Screening & Placement",
+          "Rent Collection & Accounting",
+          "Maintenance & Repairs",
+          "Financial Reporting"
+        ]
+      },
+      "leasing": {
+        "title": "Commercial & Residential Leasing",
+        "description": "Expert leasing services for both commercial and residential properties, from marketing to tenant relations.",
+        "features": [
+          "Property Marketing",
+          "Lease Negotiation",
+          "Tenant Relations",
+          "Market Analysis"
+        ]
+      },
+      "agentServices": {
+        "title": "Real Estate Agent Services",
+        "description": "Featuring dedicated agent services from Messiah Mason for all your buying and selling needs.",
+        "features": [
+          "Buyer Representation",
+          "Seller Representation",
+          "Property Showings",
+          "Transaction Management"
+        ]
+      },
+      "lifeInsurance": {
+        "title": "Life Insurance",
+        "description": "Protect your family's financial future with our tailored life insurance policies from licensed agents.",
+        "features": [
+          "Term Life Insurance",
+          "Whole Life Insurance",
+          "Policy Reviews",
+          "Beneficiary Planning"
+        ]
+      },
+      "propertyCasualty": {
+        "title": "Property & Casualty Insurance",
+        "description": "Protect your home, auto, and other valuable assets from unforeseen events.",
+        "features": [
+          "Homeowners Insurance",
+          "Auto Insurance",
+          "Property Protection",
+          "Casualty & Liability Coverage"
+        ]
+      },
+      "accidentSickness": {
+        "title": "Accident & Sickness Insurance",
+        "description": "Coverage to protect your income and cover expenses in case of an unexpected accident or illness.",
+        "features": [
+          "Disability Income",
+          "Medical Expense Coverage",
+          "Accident Protection",
+          "Policy Customization"
+        ]
+      }
+    },
+    "process": {
+      "title": "Our Proven Process",
+      "description": "From initial consultation to ongoing support, we guide you through every step of your real estate and insurance journey.",
+      "reasonsTitle": "Why Our Process Works",
+      "statsTitle": "Success Statistics",
+      "steps": {
+        "1": {
+          "title": "Initial Consultation",
+          "description": "We discuss your goals, assess your current situation, and understand your specific needs and preferences.",
+          "bullets": [
+            "Goal alignment",
+            "Needs assessment",
+            "Preference mapping"
+          ]
+        },
+        "2": {
+          "title": "Analysis & Research",
+          "description": "Comprehensive market analysis, property research, and insurance needs assessment tailored to your situation.",
+          "bullets": ["Market research", "Risk analysis", "Coverage assessment"]
+        },
+        "3": {
+          "title": "Custom Strategy",
+          "description": "Development of personalized strategies and recommendations based on our research and your objectives.",
+          "bullets": ["Personalized plan", "Action roadmap", "Milestones"]
+        },
+        "4.": {
+          "title": "Implementation & Support",
+          "description": "Execute the plan with ongoing support, regular reviews, and adjustments as your needs evolve.",
+          "bullets": ["Execution", "Ongoing reviews", "Adjustments"]
+        }
+      },
+      "reasons": [
+        {
+          "title": "Personalized Approach:",
+          "text": "Every client receives customized solutions based on their unique circumstances and goals."
+        },
+        {
+          "title": "Expert Knowledge:",
+          "text": "Our team stays current with market trends, regulations, and best practices in both real estate and insurance."
+        },
+        {
+          "title": "Ongoing Support:",
+          "text": "We maintain long-term relationships, providing continuous guidance as your needs change."
+        }
+      ],
+      "stats": {
+        "items": [
+          { "value": "95%", "label": "Client Satisfaction" },
+          { "value": "$2.3M", "label": "Avg. Portfolio Value" },
+          { "value": "15%", "label": "Avg. ROI Increase" },
+          { "value": "30", "label": "Days Avg. Process" }
+        ]
+      }
+    },
+    "comparison": {
+      "title": "Insurance Coverage Comparison",
+      "description": "Compare different insurance options to find the perfect coverage for your needs",
+      "included": "Included",
+      "notIncluded": "Not Included",
+      "headers": {
+        "coverage": "Coverage Type",
+        "basic": "Basic Plan",
+        "standard": "Standard Plan",
+        "premium": "Premium Plan"
+      },
+      "rows": [
+        {
+          "label": "Dwelling Protection",
+          "values": ["$250,000", "$500,000", "$1,000,000"]
+        },
+        {
+          "label": "Personal Property",
+          "values": ["$100,000", "$200,000", "$400,000"]
+        },
+        {
+          "label": "Liability Coverage",
+          "values": ["$300,000", "$500,000", "$1,000,000"]
+        },
+        { "label": "Deductible", "values": ["$2,500", "$1,000", "$500"] },
+        {
+          "label": "Additional Living Expenses",
+          "values": ["Not Included", "Included", "Included"]
+        },
+        {
+          "label": "Identity Theft Protection",
+          "values": ["Not Included", "Not Included", "Included"]
+        },
+        {
+          "label": "Monthly Premium",
+          "values": ["$89", "$149", "$229"],
+          "emphasis": true
+        },
+        {
+          "label": "",
+          "values": ["Select Plan", "Most Popular", "Select Plan"],
+          "isCta": true
+        }
+      ]
+    },
+    "success": {
+      "title": "Client Success Stories",
+      "description": "Real results from real clients who trusted us with their real estate and insurance needs",
+      "items": [
+        {
+          "name": "Sarah Williams",
+          "role": "Real Estate Investor",
+          "quote": "JB Networking Systems helped me build a real estate portfolio worth over $2 million in just 3 years. Their market analysis and investment strategies were spot-on, and their insurance recommendations saved me thousands in premiums while providing better coverage.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg",
+          "stats": [
+            { "value": "$2.1M", "label": "Portfolio Value" },
+            { "value": "18%", "label": "Annual ROI" },
+            { "value": "$3,200", "label": "Insurance Savings" }
+          ]
+        },
+        {
+          "name": "Michael Chen",
+          "role": "Homeowner",
+          "quote": "When I needed to purchase my first home, JB Networking Systems guided me through the entire process. They found me the perfect property below market value and set up comprehensive insurance coverage that protected me when a storm damaged my roof last year.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg",
+          "stats": [
+            { "value": "$45K", "label": "Below Market" },
+            { "value": "$18K", "label": "Insurance Claim" },
+            { "value": "30", "label": "Days to Close" }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Get answers to common questions about our real estate and insurance services",
+      "items": [
+        {
+          "q": "What types of real estate services do you offer?",
+          "a": "We provide comprehensive real estate services, including Real Property Management, Commercial and Residential Leasing, and full agent services through Messiah Mason."
+        },
+        {
+          "q": "Who is your real estate agent?",
+          "a": "We partner with Messiah Mason, a dedicated real estate agent, to handle all your buying and selling needs."
+        },
+        {
+          "q": "What kind of insurance do you provide?",
+          "a": "As licensed agents, we offer Life, Accident & Sickness, Property, and Casualty insurance to cover all your personal and professional needs."
+        },
+        {
+          "q": "What is Real Property Management?",
+          "a": "It is our comprehensive service for managing your rental properties, including leasing, maintenance, and rent collection, allowing you to be a hands-off investor."
+        },
+        {
+          "q": "Do you offer bilingual services?",
+          "a": "Absolutely! We provide full services in both English and Spanish (Hablamos Español) to ensure clear communication and understanding throughout the entire process."
+        },
+        {
+          "q": "Do you offer military discounts?",
+          "a": "Yes! We're proud to offer VIP services and exclusive discounts for Active Duty, Retired, & Reservists as a thank you for their service."
+        }
+      ]
+    }
+  },
+  "solutions_business": {
+    "breadcrumb": {
+      "home": "Home",
+      "current": "Solutions for Businesses"
+    },
+    "hero": {
+      "title": "Comprehensive Business",
+      "highlight": "Financial Solutions",
+      "description": "From startup formation to franchise expansion, we provide the complete financial infrastructure your business needs to thrive. We specialize in business management, tax, credit building, and branding.",
+      "card": {
+        "title": "Your Business Success Partner",
+        "description": "Your one-stop solution for business formation, tax compliance, credit building, and growth strategies.",
+        "stat0": { "value": "500+", "label": "Businesses Formed" },
+        "stat1": { "value": "24/7", "label": "Business Support" }
+      },
+      "ctaStart": "Start Your Business Today",
+      "ctaTax": "Business Tax Services"
+    },
+    "services": {
+      "title": "Complete Business Financial Services",
+      "description": "Everything your business needs to succeed, from formation to expansion, all under one roof with personalized support.",
+      "tax": {
+        "title": "Business Tax & Accounting",
+        "description": "Complete tax preparation, bookkeeping, and payroll services to keep your business compliant and profitable.",
+        "features": [
+          "Accountant/CPA Services",
+          "Corporate Tax Returns (All States)",
+          "Quarterly Tax Prep & Filing",
+          "Full Payroll Services",
+          "Accounting Services",
+          "Tax Agent/Prep"
+        ],
+        "ctaPrimary": "Get Started",
+        "ctaSecondary": "Learn More"
+      },
+      "credit": {
+        "title": "Business Credit Building",
+        "description": "Establish and build strong business credit to secure financing and growth opportunities.",
+        "features": [
+          "Business Credit Profile Setup",
+          "Credit Trade Lines (Personal & Business)",
+          "Credit Monitoring",
+          "Financing Assistance",
+          "Vendor Credit Setup",
+          "Credit Optimization"
+        ],
+        "ctaPrimary": "Build Credit Now",
+        "ctaSecondary": "Credit Analysis"
+      },
+      "corporate": {
+        "title": "Corporate Services & Startups",
+        "description": "Complete business formation, management, branding, and document preparation services.",
+        "features": [
+          "Start Up Business Formation",
+          "Corporate Filing",
+          "Business Management",
+          "Business Branding",
+          "Document Preparation",
+          "Investment Guidance"
+        ],
+        "ctaPrimary": "Form Business",
+        "ctaSecondary": "Consultation"
+      },
+      "franchise": {
+        "title": "Franchise Opportunities",
+        "description": "Explore lucrative franchise opportunities with our partner companies, Money Magnet JB LLC and On Sole Inventory LLP.",
+        "features": [
+          "Franchise Evaluation",
+          "Investment Analysis",
+          "Financing Assistance",
+          "Operations Setup",
+          "Money Magnet JB LLC",
+          "On Sole Inventory LLP"
+        ],
+        "badge": "Featured Opportunity",
+        "ctaPrimary": "Explore Franchises",
+        "ctaSecondary": "Investment Guide"
+      }
+    },
+    "process": {
+      "title": "Our Proven Business Success Process",
+      "description": "From initial consultation to ongoing support, we guide your business through every stage of growth with our comprehensive approach.",
+      "steps": {
+        "1": {
+          "title": "Initial Consultation",
+          "description": "Free comprehensive business assessment to understand your goals and challenges.",
+          "bullets": [
+            "Goals & Challenges",
+            "Opportunity Mapping",
+            "Requirements"
+          ]
+        },
+        "2": {
+          "title": "Strategic Planning",
+          "description": "Develop customized business strategies and financial roadmaps for success.",
+          "bullets": ["Roadmap", "Milestones", "Budgeting"]
+        },
+        "3": {
+          "title": "Implementation",
+          "description": "Execute formation, setup systems, and establish financial infrastructure.",
+          "bullets": ["Entity Formation", "Systems Setup", "Compliance"]
+        },
+        "4": {
+          "title": "Ongoing Support",
+          "description": "Continuous monitoring, optimization, and growth support for long-term success.",
+          "bullets": ["Monitoring", "Optimization", "Scaling"]
+        }
+      },
+      "why": {
+        "title": "Why Businesses Choose Us",
+        "items": [
+          {
+            "icon": "users",
+            "title": "Expert Team",
+            "text": "Certified professionals with decades of combined business formation and financial experience."
+          },
+          {
+            "icon": "clock",
+            "title": "Fast Turnaround",
+            "text": "Quick business formation and setup processes to get you operational faster."
+          },
+          {
+            "icon": "shield",
+            "title": "Compliance Guarantee",
+            "text": "We ensure all filings and registrations meet state and federal requirements."
+          }
+        ]
+      },
+      "packages": {
+        "title": "Business Formation Packages",
+        "items": [
+          { "title": "Basic LLC Package", "price": "Starting at $299" },
+          {
+            "title": "Premium Corporation Package",
+            "price": "Starting at $599"
+          },
+          { "title": "Complete Business Setup", "price": "Starting at $999" }
+        ],
+        "cta": "View All Packages"
+      }
+    },
+    "industries": {
+      "title": "Industry Specializations",
+      "description": "We serve businesses across diverse industries with specialized knowledge and tailored solutions for each sector.",
+      "items": [
+        {
+          "icon": "utensils",
+          "title": "Restaurants & Food Service",
+          "text": "Specialized tax planning, inventory management, and compliance for food service businesses.",
+          "features": [
+            "Sales Tax Management",
+            "Inventory Accounting",
+            "Tip Reporting"
+          ]
+        },
+        {
+          "icon": "home",
+          "title": "Real Estate",
+          "text": "Comprehensive financial services for real estate professionals and investment companies.",
+          "features": [
+            "1031 Exchanges",
+            "Property Management",
+            "Investment Analysis"
+          ]
+        },
+        {
+          "icon": "truck",
+          "title": "Transportation & Logistics",
+          "text": "Specialized services for trucking companies, delivery services, and logistics businesses.",
+          "features": [
+            "DOT Compliance",
+            "Fleet Management",
+            "Fuel Tax Reporting"
+          ]
+        },
+        {
+          "icon": "laptop",
+          "title": "Technology & Consulting",
+          "text": "Financial solutions for tech startups, consulting firms, and professional services.",
+          "features": [
+            "R&D Tax Credits",
+            "Intellectual Property",
+            "Contract Management"
+          ]
+        },
+        {
+          "icon": "heartbeat",
+          "title": "Healthcare & Medical",
+          "text": "Specialized accounting and compliance services for healthcare providers and medical practices.",
+          "features": [
+            "HIPAA Compliance",
+            "Medical Billing",
+            "Practice Management"
+          ]
+        },
+        {
+          "icon": "shopping",
+          "title": "Retail & E-commerce",
+          "text": "Complete financial solutions for retail stores, online businesses, and e-commerce platforms.",
+          "features": [
+            "Multi-State Sales Tax",
+            "Inventory Valuation",
+            "Payment Processing"
+          ]
+        }
+      ]
+    },
+    "success": {
+      "title": "Business Success Stories",
+      "description": "Real results from real businesses - see how we've helped companies across industries achieve their financial goals.",
+      "items": [
+        {
+          "name": "Carlos Rodriguez",
+          "role": "Restaurant Chain Owner",
+          "quote": "JB Networking Systems helped me expand from one restaurant to five locations across three states. Their expertise in multi-state tax compliance and franchise setup was invaluable.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg",
+          "stats": [
+            { "value": "5", "label": "Locations" },
+            { "value": "3", "label": "States" },
+            { "value": "300%", "label": "Growth" }
+          ]
+        },
+        {
+          "name": "Jennifer Park",
+          "role": "Tech Startup Founder",
+          "quote": "From LLC formation to securing our first round of funding, their business credit building services helped us establish the financial foundation we needed to scale rapidly.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg",
+          "stats": [
+            { "value": "$2M", "label": "Funding Raised" },
+            { "value": "850", "label": "Credit Score" },
+            { "value": "25", "label": "Employees" }
+          ]
+        }
+      ],
+      "cta": {
+        "title": "Ready to Write Your Success Story?",
+        "description": "Join hundreds of successful businesses that trust JB Networking Systems for their financial and business formation needs.",
+        "button": "Start Your Business Journey"
+      }
+    },
+    "resources": {
+      "title": "Business Resources & Tools",
+      "description": "Access valuable resources, calculators, and guides to help you make informed business decisions.",
+      "items": [
+        {
+          "icon": "calculator",
+          "title": "Tax Calculator",
+          "text": "Estimate your business tax liability and plan accordingly with our interactive calculator.",
+          "cta": "Calculate Now →"
+        },
+        {
+          "icon": "file",
+          "title": "Business Formation Guide",
+          "text": "Comprehensive guide comparing LLC vs Corporation and choosing the right structure.",
+          "cta": "Download Guide →"
+        },
+        {
+          "icon": "chart",
+          "title": "Cash Flow Projector",
+          "text": "Plan your business finances with our advanced cash flow projection tool.",
+          "cta": "Start Projecting →"
+        },
+        {
+          "icon": "credit",
+          "title": "Credit Score Checker",
+          "text": "Check your business credit score and get personalized improvement recommendations.",
+          "cta": "Check Score →"
+        },
+        {
+          "icon": "book",
+          "title": "Business Blog",
+          "text": "Stay updated with the latest business tax laws, financial tips, and industry insights.",
+          "cta": "Read Articles →"
+        },
+        {
+          "icon": "video",
+          "title": "Seminars & Classes",
+          "text": "Sign up to hear about our latest sales, seminars, and classes on financial topics.",
+          "cta": "Sign Up Now →"
+        }
+      ]
+    }
+  },
+  "solutions_financial": {
+    "breadcrumb": {
+      "home": "Home",
+      "individuals": "Solutions for Individuals",
+      "current": "Financial & Investment Planning"
+    },
+    "hero": {
+      "badge": "Financial & Investment Planning",
+      "title": "Making &",
+      "highlight": "Obtaining Goals",
+      "description": "As your financial consultant, I start by documenting your goals and then compare them to your current portfolio. I use proven investment strategies designed to meet your risk tolerance and stand up against market volatility.",
+      "ctaAnalysis": "Free Portfolio Analysis",
+      "ctaAdvisor": "Speak with Advisor",
+      "cardTitle": "Start Your Journey",
+      "cardStat0": { "value": "$0", "label": "Minimum Investment" },
+      "cardStat1": { "value": "24/7", "label": "Portfolio Access" }
+    },
+    "services": {
+      "title": "Comprehensive Investment Solutions",
+      "description": "From retirement planning to portfolio management, we offer a full spectrum of investment services to help you achieve your financial goals.",
+      "retirement": {
+        "title": "Financial Services",
+        "description": "Comprehensive planning for your future, including retirement and estate planning.",
+        "value": "17+",
+        "valueLabel": "Years of Experience"
+      },
+      "portfolio": {
+        "title": "Portfolio Management",
+        "description": "Diversified investment portfolios tailored to your risk profile and goals.",
+        "value": "Proven",
+        "valueLabel": "Strategies"
+      },
+      "education": {
+        "title": "Loans",
+        "description": "Access to personal and business loans to finance your goals.",
+        "value": "Personal",
+        "valueLabel": "& Business Loans"
+      },
+      "risk": {
+        "title": "Investments",
+        "description": "Strategic investment opportunities to grow your wealth.",
+        "value": "Risk",
+        "valueLabel": "Managed"
+      }
+    },
+    "philosophy": {
+      "title": "Building Strong & Solid Futures",
+      "description": "We're passionate about helping both companies and individuals with diversifying portfolios, managing assets, analyzing market trends, and reducing financial risk and tax risk. My goal? To safeguard the dreams you strive to achieve the assets you have worked so hard to accumulate.",
+      "items": [
+        {
+          "title": "Goal-Based Planning",
+          "text": "Every investment strategy is tailored to your specific financial goals, timeline, and risk tolerance."
+        },
+        {
+          "title": "Diversified Approach",
+          "text": "We spread risk across multiple asset classes, sectors, and geographic regions to optimize returns."
+        },
+        {
+          "title": "Regular Rebalancing",
+          "text": "Systematic portfolio reviews and adjustments to maintain optimal asset allocation over time."
+        },
+        {
+          "title": "Unbiased Guidance",
+          "text": "You can count on unbiased recommendations and impartial guidance based directly on your needs and goals."
+        }
+      ],
+      "chart": {
+        "title": "Sample Portfolio Allocation",
+        "labels": ["Stocks", "Bonds", "Real Estate", "Cash"],
+        "summaryGrowth": "Growth Assets",
+        "summaryConservative": "Conservative Assets"
+      }
+    },
+    "performance": {
+      "title": "Investment Performance Overview",
+      "description": "Track your investment performance with our comprehensive dashboard showing historical returns, asset allocation, and goal progress.",
+      "chartTitle": "Portfolio Performance (5 Years)",
+      "series": {
+        "portfolio": "Your Portfolio",
+        "sp500": "S&P 500",
+        "benchmark": "Benchmark"
+      },
+      "metrics": {
+        "title": "Key Metrics",
+        "items": [
+          { "value": "+12.4%", "label": "Total Return (YTD)" },
+          { "value": "+8.7%", "label": "5-Year Average" },
+          { "value": "Moderate", "label": "Risk Score" },
+          { "value": "1.24", "label": "Sharpe Ratio" }
+        ]
+      },
+      "nextReview": {
+        "title": "Next Review Date",
+        "subtitle": "Your quarterly portfolio review is scheduled for:",
+        "date": "March 15, 2024"
+      },
+      "highlights": {
+        "items": [
+          { "value": "Top 15%", "label": "Performance Ranking" },
+          { "value": "0.75%", "label": "Management Fee" },
+          { "value": "15+ Years", "label": "Average Holding Period" },
+          { "value": "2,500+", "label": "Satisfied Clients" }
+        ]
+      }
+    },
+    "calculator": {
+      "title": "Retirement Planning Calculator",
+      "description": "Use our interactive calculator to estimate how much you need to save for retirement and see how different scenarios impact your financial future.",
+      "inputsTitle": "Calculator Inputs",
+      "resultsTitle": "Projection Results",
+      "currentAge": "Current Age",
+      "retirementAge": "Retirement Age",
+      "currentSavings": "Current Savings ($)",
+      "monthlyContribution": "Monthly Contribution ($)",
+      "annualReturn": "Expected Annual Return (%)",
+      "projectedSavings": "Projected Retirement Savings",
+      "yearsToRetirement": "Years to Retirement",
+      "totalContributions": "Total Contributions",
+      "monthlyIncomeTitle": "Monthly Retirement Income",
+      "withdrawalRule": "Based on 4% withdrawal rule",
+      "breakdownTitle": "Savings Breakdown:",
+      "principal": "Principal Contributions:",
+      "growth": "Investment Growth:",
+      "ctaSchedule": "Schedule Planning Session"
+    },
+    "options": {
+      "title": "Investment Options & Strategies",
+      "description": "Choose from a wide range of investment vehicles and strategies designed to meet different risk tolerances and financial objectives.",
+      "labels": { "targetReturn": "Target Return", "horizon": "Time Horizon" },
+      "mostPopular": "Most Popular",
+      "learnMore": "Learn More",
+      "composition": "Portfolio Composition:",
+      "assets": {
+        "govBonds": "Government Bonds",
+        "corpBonds": "Corporate Bonds",
+        "dividend": "Dividend Stocks",
+        "cash": "Cash/Money Market",
+        "largeCap": "Large Cap Stocks",
+        "international": "International Stocks",
+        "bonds": "Bonds",
+        "reits": "REITs",
+        "growth": "Growth Stocks",
+        "smallCap": "Small Cap Stocks",
+        "emerging": "Emerging Markets",
+        "alternatives": "Alternative Investments"
+      },
+      "conservative": {
+        "title": "Conservative Growth",
+        "risk": "Risk Level: Low",
+        "return": "4-6%",
+        "horizon": "3-5 years",
+        "comp": ["40%", "30%", "25%", "5%"]
+      },
+      "balanced": {
+        "title": "Balanced Growth",
+        "risk": "Risk Level: Moderate",
+        "return": "7-9%",
+        "horizon": "5-10 years",
+        "comp": ["35%", "20%", "30%", "10%", "5%"]
+      },
+      "aggressive": {
+        "title": "Aggressive Growth",
+        "risk": "Risk Level: High",
+        "return": "10-12%",
+        "horizon": "10+ years",
+        "comp": ["50%", "20%", "15%", "10%", "5%"]
+      },
+      "accounts": {
+        "title": "Specialized Investment Accounts",
+        "items": [
+          {
+            "title": "Traditional IRA",
+            "text": "Tax-deferred retirement savings with potential tax deductions",
+            "limit": "$6,500 limit"
+          },
+          {
+            "title": "Roth IRA",
+            "text": "Tax-free growth and withdrawals in retirement",
+            "limit": "$6,500 limit"
+          },
+          {
+            "title": "401(k) Plans",
+            "text": "Employer-sponsored retirement plans with matching",
+            "limit": "$22,500 limit"
+          },
+          {
+            "title": "529 Plans",
+            "text": "Tax-advantaged education savings accounts",
+            "limit": "No federal limit"
+          }
+        ]
+      }
+    },
+    "success": {
+      "title": "Client Success Stories",
+      "description": "Real results from real clients who trusted us with their financial future. See how our personalized approach has helped them achieve their goals.",
+      "items": [
+        {
+          "name": "David Martinez",
+          "role": "Software Engineer, Age 42",
+          "quote": "Started with just $25K at age 35. Through consistent investing and JB's guidance, I'm now on track for early retirement at 55.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
+        },
+        {
+          "name": "Jennifer Chen",
+          "role": "Teacher, Age 38",
+          "quote": "Thanks to their 529 plan strategy, I've saved enough for both my kids' college education while still building my retirement nest egg.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg"
+        },
+        {
+          "name": "Robert Johnson",
+          "role": "Military Veteran, Age 55",
+          "quote": "The military discount was nice, but their expertise in transitioning my TSP and maximizing my pension was invaluable.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg"
+        }
+      ],
+      "aggregate": {
+        "title": "Aggregate Client Results",
+        "items": [
+          { "value": "$2.8B+", "label": "Assets Under Management" },
+          { "value": "8.7%", "label": "Average Annual Return" },
+          { "value": "95%", "label": "Client Retention Rate" },
+          { "value": "2,500+", "label": "Satisfied Clients" }
+        ]
+      }
+    }
+  },
+  "solutions_business_credit": {
+    "breadcrumb": {
+      "home": "Home",
+      "business": "Solutions for Businesses",
+      "current": "Business Credit Building"
+    },
+    "hero": {
+      "badge": "Business Solutions",
+      "title": "Build Strong",
+      "highlight": "Business Credit",
+      "description": "Establish and strengthen your business credit profile with our comprehensive credit building services and trade lines. Access better financing, lower interest rates, and enhanced business opportunities.",
+      "ctaAssess": "Start Credit Assessment",
+      "ctaGuide": "Free Credit Guide",
+      "stats": [
+        { "value": "90%", "label": "Success Rate" },
+        { "value": "30-90", "label": "Days Average" },
+        { "value": "$500K+", "label": "Credit Secured" }
+      ],
+      "card": {
+        "title": "Credit Score Improvement",
+        "startLabel": "Starting Score",
+        "targetLabel": "Target Score",
+        "timeline": "Typical Improvement Timeline",
+        "timelineValue": "30-90 Days"
+      }
+    },
+    "services": {
+      "title": "Complete Business Credit Solutions",
+      "description": "Our comprehensive approach covers every aspect of business credit building, from initial setup to trade lines and ongoing monitoring.",
+      "setup": {
+        "title": "Business Credit Building",
+        "description": "Establish your business credit foundation with proper entity formation and credit bureau registration.",
+        "features": [
+          "EIN Registration",
+          "D-U-N-S Number Setup",
+          "Business Bank Account",
+          "Credit Bureau Registration"
+        ],
+        "price": "Starting at $497"
+      },
+      "program": {
+        "title": "Credit Trade Lines",
+        "badge": "Most Popular",
+        "description": "Comprehensive credit building with personal and business trade lines, vendor accounts, and strategic credit applications.",
+        "features": [
+          "Personal Trade Lines",
+          "Business Trade Lines",
+          "Vendor Net 30 Accounts",
+          "Business Credit Cards",
+          "Credit Monitoring"
+        ],
+        "price": "Starting at $997"
+      },
+      "protection": {
+        "title": "Credit Protection",
+        "description": "Ongoing monitoring and protection services to maintain and improve your business credit profile.",
+        "features": [
+          "Monthly Monitoring",
+          "Dispute Resolution",
+          "Credit Optimization",
+          "Ongoing Support"
+        ],
+        "price": "Starting at $297/month"
+      }
+    },
+    "process": {
+      "title": "Our Proven 5-Step Process",
+      "description": "We follow a systematic approach to ensure your business credit is built efficiently and effectively.",
+      "steps": {
+        "1": {
+          "title": "Business Foundation Analysis",
+          "description": "Analyze your current structure and credit profile.",
+          "bullets": [
+            "Business Entity Review",
+            "Current Credit Assessment",
+            "Documentation Audit",
+            "Compliance Check"
+          ]
+        },
+        "2": {
+          "title": "Credit Foundation Setup",
+          "description": "Establish essential registrations and accounts.",
+          "bullets": [
+            "EIN & D-U-N-S Registration",
+            "Business Banking Setup",
+            "Credit Bureau Registration",
+            "Business Address Verification"
+          ]
+        },
+        "3": {
+          "title": "Initial Credit Building",
+          "description": "Start with starter tradelines and vendor accounts.",
+          "bullets": [
+            "Starter Trade Lines",
+            "Vendor Net 30 Accounts",
+            "Business Credit Cards",
+            "Payment History Building"
+          ]
+        },
+        "4": {
+          "title": "Credit Enhancement",
+          "description": "Improve limits, mix, and score with advanced trade lines.",
+          "bullets": [
+            "Higher Limit Accounts",
+            "Premium Trade Lines",
+            "Credit Mix Optimization",
+            "Score Improvement Strategy"
+          ]
+        },
+        "5": {
+          "title": "Monitoring & Maintenance",
+          "description": "Ongoing monitoring and optimization.",
+          "bullets": [
+            "Monthly Credit Monitoring",
+            "Dispute Management",
+            "Credit Optimization",
+            "Ongoing Support & Consultation"
+          ]
+        }
+      }
+    },
+    "benefits": {
+      "title": "Benefits of Strong Business Credit",
+      "description": "Building strong business credit opens doors to better financing options, improved cash flow, and enhanced business opportunities.",
+      "items": [
+        {
+          "title": "Lower Interest Rates",
+          "text": "Access better financing terms with rates as low as 0% APR on business credit cards and loans."
+        },
+        {
+          "title": "Higher Credit Limits",
+          "text": "Qualify for higher credit limits and larger loan amounts to fuel business growth and expansion."
+        },
+        {
+          "title": "Personal Credit Protection",
+          "text": "Separate business and personal credit to protect your personal assets and credit score."
+        },
+        {
+          "title": "Business Growth",
+          "text": "Access capital for inventory, equipment, expansion, and other growth opportunities."
+        },
+        {
+          "title": "Better Vendor Terms",
+          "text": "Negotiate better payment terms with suppliers and vendors based on strong credit history."
+        },
+        {
+          "title": "Business Credibility",
+          "text": "Enhance your business reputation and credibility with customers, vendors, and partners."
+        },
+        {
+          "title": "Cash Flow Improvement",
+          "text": "Improve cash flow with access to business credit lines and flexible financing options."
+        },
+        {
+          "title": "Business Valuation",
+          "text": "Increase your business valuation with established credit history and financial stability."
+        }
+      ]
+    },
+    "success": {
+      "title": "Success Stories",
+      "description": "See how our business credit building services have helped companies achieve their financing goals and grow their businesses.",
+      "items": [
+        {
+          "name": "Michael Rodriguez",
+          "role": "Construction Company Owner",
+          "quote": "JB Networking Systems helped us build our business credit from scratch. Within 90 days, we went from having no business credit to securing a $150,000 equipment loan at 4.5% interest.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg",
+          "stats": [
+            { "value": "$150K", "label": "Credit Secured" },
+            { "value": "90", "label": "Days Timeline" }
+          ]
+        },
+        {
+          "name": "Sarah Thompson",
+          "role": "Restaurant Chain Owner",
+          "quote": "We established strong business credit and secured $300,000 in funding across multiple credit lines.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg",
+          "stats": [
+            { "value": "$300K", "label": "Total Funding" },
+            { "value": "2", "label": "New Locations" }
+          ]
+        },
+        {
+          "name": "David Chen",
+          "role": "Tech Startup Founder",
+          "quote": "Established multiple credit lines totaling $75,000 with 0% intro APR used for product development and marketing.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg",
+          "stats": [
+            { "value": "$75K", "label": "Credit Lines" },
+            { "value": "0%", "label": "Intro APR" }
+          ]
+        },
+        {
+          "name": "Maria Garcia",
+          "role": "E‑commerce Business Owner",
+          "quote": "$100,000 in revolving credit lines allowed us to stock up during peak seasons and maximize profits.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg",
+          "stats": [
+            { "value": "$100K", "label": "Revolving Credit" },
+            { "value": "60", "label": "Days Timeline" }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Get answers to common questions about business credit building and our services.",
+      "items": [
+        {
+          "q": "How long does it take to build business credit?",
+          "a": "You can start seeing tradelines within 30-60 days; strong profiles typically in 3-6 months."
+        },
+        {
+          "q": "What's the difference between business credit and personal credit?",
+          "a": "Business credit is tied to your EIN, not SSN; it doesn’t appear on personal reports and protects personal assets."
+        },
+        {
+          "q": "What are Credit Trade Lines?",
+          "a": "We offer both Personal and Business tradelines. These are established lines of credit that can be added to your profile to boost your credit history, age, and mix, often resulting in a faster score increase."
+        },
+        {
+          "q": "How much credit can I qualify for?",
+          "a": "Depends on revenue, time in business, and profile strength; clients often secure $25,000–$500,000+."
+        },
+        {
+          "q": "Do you offer services in Spanish?",
+          "a": "Sí. We have bilingual counselors and offer all services in Spanish (Hablamos Español)."
+        },
+        {
+          "q": "Do you offer military discounts?",
+          "a": "Yes! We're proud to offer VIP services and exclusive discounts for Active Duty, Retired, & Reservists."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Investment in Your Business Future",
+      "description": "Choose the package that best fits your business credit building needs. All packages include our money-back guarantee.",
+      "mostPopular": "Most Popular",
+      "starter": {
+        "title": "Starter Package",
+        "price": "$497",
+        "period": "One-time setup fee",
+        "features": [
+          "Business Credit Profile Setup",
+          "EIN & D-U-N-S Registration",
+          "Credit Bureau Registration",
+          "Initial Trade Line Setup",
+          "30-Day Support"
+        ],
+        "button": "Get Started"
+      },
+      "professional": {
+        "title": "Professional Package",
+        "price": "$997",
+        "period": "Complete credit building",
+        "features": [
+          "Everything in Starter Package",
+          "10+ Vendor Trade Lines",
+          "Business Credit Cards Setup",
+          "Net 30 Account Applications",
+          "Credit Monitoring (3 months)",
+          "90-Day Support"
+        ],
+        "button": "Choose Professional"
+      },
+      "premium": {
+        "title": "Premium Package",
+        "price": "$1497",
+        "period": "Complete solution",
+        "features": [
+          "Everything in Professional Package",
+          "20+ Premium Trade Lines",
+          "High-Limit Credit Applications",
+          "Credit Optimization Strategy",
+          "12 Months Credit Monitoring",
+          "Unlimited Support"
+        ],
+        "button": "Choose Premium"
+      },
+      "guarantee": {
+        "title": "100% Money-Back Guarantee",
+        "items": [
+          { "title": "Protected Investment" },
+          { "title": "Timely Results" },
+          { "title": "Guaranteed Satisfaction" }
+        ],
+        "text": "Our Credit Service comes with a money-back guarantee. If we don't deliver the results we promise within the specified timeframe, you get your investment back."
+      }
+    }
+  },
+  "solutions_corporate": {
+    "breadcrumb": {
+      "home": "Home",
+      "business": "Solutions for Businesses",
+      "current": "Corporate Services"
+    },
+    "hero": {
+      "badge": "Corporate Services",
+      "title": "Business Formation &",
+      "highlight": "Corporate Compliance",
+      "description": "Founded in 2007, we have years of experience in accounting, financial services, and tax preparation for individuals and businesses. Let us help you start and manage your business.",
+      "ctaStart": "Start Your Business",
+      "ctaGuide": "Free Guide",
+      "card": {
+        "title": "Quick Business Setup",
+        "items": [
+          "LLC & Corporation Formation",
+          "EIN & Tax ID Registration",
+          "Document Preparation",
+          "State Compliance Filing"
+        ],
+        "cta": "Get Started Today"
+      }
+    },
+    "formation": {
+      "title": "Complete Business Formation Services",
+      "description": "Whether you're starting a new venture or restructuring an existing business, we provide end-to-end formation services with expert guidance at every step.",
+      "cards": [
+        {
+          "icon": "handshake",
+          "title": "LLC Formation",
+          "text": "Establish your Limited Liability Company with complete legal protection and tax advantages.",
+          "features": [
+            "Articles of Organization",
+            "Operating Agreement",
+            "EIN Registration",
+            "State Filing & Compliance"
+          ],
+          "priceLabel": "Starting at",
+          "price": "$299",
+          "button": "Get Started",
+          "badge": ""
+        },
+        {
+          "icon": "building",
+          "title": "Corporation Setup",
+          "text": "Form a C-Corp or S-Corp with comprehensive incorporation services and ongoing support.",
+          "features": [
+            "Articles of Incorporation",
+            "Corporate Bylaws",
+            "Stock Certificates",
+            "Board Resolutions"
+          ],
+          "priceLabel": "Starting at",
+          "price": "$499",
+          "button": "Get Started",
+          "badge": "Most Popular"
+        },
+        {
+          "icon": "users",
+          "title": "Business Management",
+          "text": "Ongoing management services for corporations and startups to ensure compliance and strategic growth.",
+          "features": [
+            "Corporate Oversight",
+            "Strategic Planning",
+            "Compliance Management",
+            "Document Preparation"
+          ],
+          "priceLabel": "Starting at",
+          "price": "$399",
+          "button": "Get Started",
+          "badge": ""
+        },
+        {
+          "icon": "shield",
+          "title": "Nonprofit Formation",
+          "text": "Establish 501(c)(3) organizations with full tax-exempt status and compliance.",
+          "features": [
+            "Articles of Incorporation",
+            "501(c)(3) Application",
+            "Bylaws & Policies",
+            "Board Setup"
+          ],
+          "priceLabel": "Starting at",
+          "price": "$799",
+          "button": "Get Started",
+          "badge": ""
+        },
+        {
+          "icon": "pen",
+          "title": "Document Preparation",
+          "text": "Professional preparation of all necessary legal and financial documents for your business.",
+          "features": [
+            "Contracts & Agreements",
+            "Filings & Applications",
+            "Compliance Documents",
+            "Immigration Paperwork"
+          ],
+          "priceLabel": "Starting at",
+          "price": "$349",
+          "button": "Get Started",
+          "badge": ""
+        },
+        {
+          "icon": "lightbulb",
+          "title": "Business Branding",
+          "text": "Establish your brand identity with our startup branding and business management services.",
+          "features": [
+            "Brand Strategy",
+            "Logo & Identity Design",
+            "Marketing Materials",
+            "Business Launch Plan"
+          ],
+          "priceLabel": "Starting at",
+          "price": "$599",
+          "button": "Get Started",
+          "badge": ""
+        }
+      ]
+    },
+    "compliance": {
+      "title": "Ongoing Compliance & Corporate Maintenance",
+      "description": "Keep your business in good standing with comprehensive compliance services, annual filings, and corporate maintenance to protect your legal status and avoid penalties.",
+      "left": {
+        "title": "Stay Compliant, Stay Protected",
+        "text": "Business compliance isn't a one-time task. Our ongoing services ensure your business maintains good standing with state authorities, meets all filing requirements, and stays protected from legal and financial risks.",
+        "items": [
+          {
+            "title": "Annual State Filings",
+            "text": "Automated annual report filing to maintain your business registration and avoid dissolution."
+          },
+          {
+            "title": "Corporate Record Maintenance",
+            "text": "Keep corporate books, meeting minutes, and resolutions current and legally compliant."
+          },
+          {
+            "title": "Compliance Monitoring",
+            "text": "Proactive monitoring of filing deadlines and regulatory changes affecting your business."
+          }
+        ]
+      },
+      "checklist": {
+        "title": "Compliance Checklist",
+        "rows": [
+          {
+            "label": "Annual State Filing",
+            "status": "Due: March 1",
+            "variant": "ok"
+          },
+          {
+            "label": "Registered Agent Update",
+            "status": "Current",
+            "variant": "ok"
+          },
+          {
+            "label": "Corporate Minutes",
+            "status": "Update Needed",
+            "variant": "warn"
+          },
+          { "label": "Tax ID Status", "status": "Active", "variant": "ok" }
+        ],
+        "cta": "Schedule Compliance Review"
+      },
+      "tiles": [
+        {
+          "title": "Registered Agent Service",
+          "text": "Professional registered agent service in all states we serve.",
+          "price": "$99",
+          "period": "per year",
+          "button": "Add Service"
+        },
+        {
+          "title": "Annual Report Filing",
+          "text": "Automated annual state report filing and compliance tracking.",
+          "price": "$149",
+          "period": "per filing",
+          "button": "Add Service"
+        },
+        {
+          "title": "Corporate Kit",
+          "text": "Complete corporate record book with seals, certificates, and forms.",
+          "price": "$199",
+          "period": "one-time",
+          "button": "Add Service"
+        },
+        {
+          "title": "Compliance Audit",
+          "text": "Comprehensive review of your business compliance status.",
+          "price": "$299",
+          "period": "per audit",
+          "button": "Add Service"
+        }
+      ]
+    },
+    "timeline": {
+      "title": "Our Streamlined Process",
+      "description": "From initial consultation to business launch, we guide you through every step with expert support and transparent communication.",
+      "total": {
+        "title": "Total Timeline: 5-10 Business Days",
+        "subtitle": "Most business formations completed within one week",
+        "button": "Start Your Business Formation Today"
+      },
+      "steps": [
+        {
+          "icon": "handshake",
+          "title": "1. Initial Consultation",
+          "text": "Expert Consultation to understand your business goals, structure needs, and compliance requirements.",
+          "time": "30 minutes"
+        },
+        {
+          "icon": "file",
+          "title": "2. Document Preparation",
+          "text": "We prepare all necessary formation documents, including articles, agreements, and state filings.",
+          "time": "1-2 business days"
+        },
+        {
+          "icon": "building",
+          "title": "3. State Filing & Registration",
+          "text": "Submit all required documents to state authorities and handle the complete registration process.",
+          "time": "3-5 business days"
+        },
+        {
+          "icon": "id",
+          "title": "4. EIN & Tax Setup",
+          "text": "Obtain your Federal Tax ID (EIN) and set up your business for proper tax reporting and compliance.",
+          "time": "1-2 business days"
+        },
+        {
+          "icon": "check",
+          "title": "5. Final Delivery & Support",
+          "text": "Receive your complete business package with ongoing support for compliance and growth.",
+          "time": "Same day"
+        }
+      ]
+    },
+    "states": {
+      "title": "State-Specific Requirements",
+      "description": "Each state has unique requirements for business formation and compliance. Our experts ensure your business meets all local regulations and maintains good standing.",
+      "cards": [
+        {
+          "state": "Georgia (Corporate Office)",
+          "fees": [
+            {
+              "label": "Address:",
+              "value": "2245 Wisteria Dr. Suite 214, Snellville, GA 30078"
+            },
+            { "label": "Phone:", "value": "470.288.3365" },
+            { "label": "Manager:", "value": "T BRANDY J." },
+            { "label": "Annual Report:", "value": "$50" }
+          ],
+          "requirements": [
+            "Registered Agent Required",
+            "Annual Registration Due March 1",
+            "Publication Not Required",
+            "Hablamos Español"
+          ],
+          "cta": "Form in Georgia"
+        },
+        {
+          "state": "Alabama (Regional Office)",
+          "fees": [
+            {
+              "label": "Address:",
+              "value": "11 WATER STREET SUITE 10290, MOBILE, AL 36602"
+            },
+            { "label": "Phone:", "value": "251.220.7795" },
+            { "label": "Manager:", "value": "T Brandy Johnson" },
+            { "label": "Annual Report:", "value": "$100" }
+          ],
+          "requirements": [
+            "Registered Agent Required",
+            "Annual Report Due by March 15",
+            "Business Privilege Tax Required",
+            "Certificate of Formation"
+          ],
+          "cta": "Form in Alabama"
+        },
+        {
+          "state": "Texas (District Office)",
+          "fees": [
+            {
+              "label": "Address:",
+              "value": "600 W 6TH STREET SUITE 400, FORT WORTH, TX 76102"
+            },
+            { "label": "Phone:", "value": "469.450.0511" },
+            { "label": "Manager:", "value": "David Sutton" },
+            { "label": "Franchise Tax:", "value": "Varies" }
+          ],
+          "requirements": [
+            "Registered Agent Required",
+            "No Annual Report Required",
+            "Franchise Tax Filing Required",
+            "Certificate of Formation"
+          ],
+          "cta": "Form in Texas"
+        }
+      ],
+      "notSure": {
+        "title": "Not Sure Which State to Choose?",
+        "text": "Our experts can help you determine the best state for your business based on your specific needs, tax implications, and business activities.",
+        "tiles": [
+          {
+            "title": "Tax Analysis",
+            "text": "Compare tax implications across states"
+          },
+          {
+            "title": "Legal Benefits",
+            "text": "Understand legal protections and requirements"
+          },
+          {
+            "title": "Business Growth",
+            "text": "Plan for future expansion and opportunities"
+          }
+        ],
+        "cta": "Schedule Free State Consultation"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Get answers to common questions about business formation, compliance, and our corporate services.",
+      "items": [
+        {
+          "q": "What's the difference between an LLC and Corporation?",
+          "a": "LLCs offer flexibility in management and tax treatment with simpler compliance requirements. Corporations provide stronger liability protection and easier access to investment capital but have more complex tax and compliance obligations."
+        },
+        {
+          "q": "How long does business formation take?",
+          "a": "Most business formations are completed within 5-10 business days including document preparation, state filing, and EIN registration. Expedited services available."
+        },
+        {
+          "q": "Do I need a registered agent?",
+          "a": "Yes, all businesses formed in GA, AL, and TX must have a registered agent with a physical address in the state. We provide professional registered agent services."
+        },
+        {
+          "q": "What ongoing compliance is required?",
+          "a": "Requirements vary by state and entity type but typically include annual filings, maintaining corporate records, and paying required fees. Our compliance services handle all ongoing requirements."
+        },
+        {
+          "q": "Do you handle document preparation?",
+          "a": "Yes, we specialize in document preparation for business, financial, and immigration needs."
+        },
+        {
+          "q": "What documents will I receive after formation?",
+          "a": "Certificate of Formation/Articles of Incorporation, EIN confirmation, Operating Agreement or Bylaws, and other corporate documents. Corporate kit on request."
+        },
+        {
+          "q": "Do you offer bilingual services?",
+          "a": "Sí. Full bilingual support in English and Spanish (Hablamos Español) for all corporate services."
+        },
+        {
+          "q": "Do you offer military discounts?",
+          "a": "Yes! Active Duty, Retired, & Reservists will always receive VIP service and discounts."
+        }
+      ],
+      "stillQuestions": {
+        "title": "Still Have Questions?",
+        "text": "Our business formation experts are ready to help you make the right decisions for your business.",
+        "button": "Schedule Expert Consultation"
+      }
+    },
+    "success": {
+      "title": "Business Success Stories",
+      "description": "Real results from clients who trusted us with formation and compliance.",
+      "items": [
+        {
+          "name": "Alicia Brown",
+          "role": "Ecommerce Founder",
+          "quote": "Formed our LLC in 48 hours and set up our EIN the next day. We were selling within a week.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg"
+        },
+        {
+          "name": "Thomas Lee",
+          "role": "Consulting Agency Owner",
+          "quote": "They handled our S‑Corp election, bylaws, and annual filings seamlessly. Compliance is on autopilot now.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg"
+        },
+        {
+          "name": "Priya Patel",
+          "role": "Nonprofit Director",
+          "quote": "Our 501(c)(3) was approved quickly. Their guidance on governance and records was invaluable.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg"
+        }
+      ]
+    }
+  },
+  "solutions_franchise": {
+    "breadcrumb": {
+      "home": "Home",
+      "business": "Solutions for Businesses",
+      "current": "Franchise Opportunities"
+    },
+    "hero": {
+      "badge": "Limited Franchise Opportunities Available",
+      "title": "Own Your",
+      "highlight": "Financial Future",
+      "description": "Join the JB Networking Systems LLC franchise family and build a thriving financial services business with our proven 17-year track record, comprehensive training, and ongoing support.",
+      "ctaKit": "Download Franchise Kit",
+      "ctaVideo": "Watch Overview Video",
+      "stats": [
+        { "value": "$150K+", "label": "Avg Annual Revenue" },
+        { "value": "95%", "label": "Franchisee Satisfaction" },
+        { "value": "6", "label": "Months to Profitability" }
+      ],
+      "form": {
+        "title": "Start Your Franchise",
+        "text": "Complete the form below to receive your franchise information package and schedule a discovery call.",
+        "name": "Full Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "range": "Investment Range",
+        "ranges": ["$50K - $100K", "$100K - $200K", "$200K+"],
+        "submit": "Get Franchise Information"
+      }
+    },
+    "overview": {
+      "title": "Why Choose JB Networking Systems Franchise?",
+      "description": "With over 17 years of proven success, our franchise model offers you the opportunity to own a profitable financial services business with comprehensive support and training.",
+      "features": [
+        {
+          "title": "Proven Success",
+          "text": "17+ years of industry experience with a track record of helping thousands of clients achieve financial success."
+        },
+        {
+          "title": "Complete Training",
+          "text": "Comprehensive 8-week training program covering all aspects of financial services and business operations."
+        },
+        {
+          "title": "Ongoing Support",
+          "text": "24/7 support system with dedicated franchise coaches, marketing assistance, and operational guidance."
+        },
+        {
+          "title": "High ROI",
+          "text": "Multiple revenue streams with high-margin services ensuring strong return on investment and scalable growth."
+        }
+      ],
+      "streams": {
+        "title": "Multiple Revenue Streams",
+        "text": "Our franchise model provides diverse income opportunities across five core service verticals, ensuring year-round revenue stability.",
+        "items": [
+          {
+            "title": "Tax & Accounting Services",
+            "text": "Seasonal tax preparation, year-round bookkeeping, payroll services, and business accounting."
+          },
+          {
+            "title": "Financial Planning",
+            "text": "Investment advisory, retirement planning, insurance services, and wealth management."
+          },
+          {
+            "title": "Credit & Debt Resolution",
+            "text": "High-margin credit repair services with money-back guarantee and ongoing monitoring."
+          },
+          {
+            "title": "Business Services",
+            "text": "Corporate formation, business credit building, and ongoing corporate compliance services."
+          },
+          {
+            "title": "Real Estate & Insurance",
+            "text": "Real estate consulting, property investment guidance, and comprehensive insurance solutions."
+          }
+        ]
+      },
+      "revenue": {
+        "title": "Revenue Potential",
+        "year1": "Year 1 Revenue",
+        "year2": "Year 2 Revenue",
+        "year3": "Year 3+ Revenue",
+        "margin": "Net Profit Margin"
+      },
+      "investment": {
+        "title": "Investment Breakdown",
+        "items": [
+          { "label": "Franchise Fee", "value": "$45,000" },
+          { "label": "Equipment & Setup", "value": "$15,000" },
+          { "label": "Initial Marketing", "value": "$10,000" },
+          { "label": "Working Capital", "value": "$25,000" },
+          { "label": "Total Investment", "value": "$95,000" }
+        ]
+      }
+    },
+    "training": {
+      "title": "Comprehensive Training & Support Program",
+      "description": "We don't just give you a franchise - we give you a complete business system with ongoing support to ensure your success.",
+      "initial": {
+        "title": "Initial Training",
+        "text": "8-week comprehensive training program covering all aspects of financial services, business operations, and franchise systems.",
+        "weeks": [
+          {
+            "title": "Week 1-2: Foundations",
+            "items": [
+              "Financial Services Overview",
+              "Franchise System Training",
+              "Legal & Compliance",
+              "Software & Technology"
+            ]
+          },
+          {
+            "title": "Week 3-4: Core Services",
+            "items": [
+              "Tax Preparation Mastery",
+              "Credit Repair Certification",
+              "Investment Planning",
+              "Business Formation"
+            ]
+          },
+          {
+            "title": "Week 5-6: Advanced Skills",
+            "items": [
+              "Client Consultation",
+              "Sales & Marketing",
+              "Customer Retention",
+              "Quality Assurance"
+            ]
+          },
+          {
+            "title": "Week 7-8: Launch Prep",
+            "items": [
+              "Grand Opening Strategy",
+              "Local Marketing Campaign",
+              "Operations Management",
+              "Final Certification"
+            ]
+          }
+        ]
+      },
+      "support": {
+        "title": "Ongoing Support",
+        "text": "Continuous support system with dedicated franchise coaches, regular check-ins, and resource updates.",
+        "features": [
+          "Dedicated Franchise Coach",
+          "24/7 Helpdesk",
+          "Franchise Network",
+          "Performance Analytics",
+          "Marketing Support",
+          "System Updates"
+        ]
+      },
+      "launch": {
+        "title": "Launch Support",
+        "text": "Comprehensive grand opening support to ensure a successful launch and immediate market presence.",
+        "package": {
+          "title": "Grand Opening Package",
+          "items": [
+            "$5,000 Marketing Budget",
+            "Local Media Campaign",
+            "Digital Marketing Setup",
+            "Community Outreach Events",
+            "On-Site Launch Support",
+            "First 100 Client Campaign"
+          ]
+        },
+        "timeline": {
+          "title": "Launch Timeline",
+          "phases": [
+            {
+              "title": "Week 1-2",
+              "text": "Location setup and equipment installation"
+            },
+            {
+              "title": "Week 3-4",
+              "text": "Marketing campaign launch and community outreach"
+            },
+            {
+              "title": "Week 5-6",
+              "text": "Grand opening event and first client acquisitions"
+            }
+          ]
+        }
+      }
+    },
+    "success": {
+      "title": "Franchisee Success Stories",
+      "description": "Hear from our successful franchise owners who have built thriving businesses with JB Networking Systems LLC.",
+      "items": [
+        {
+          "name": "David Martinez",
+          "role": "Franchise Owner - Houston, TX",
+          "note": "Opened: January 2022",
+          "quote": "The training program was incredibly comprehensive, and the ongoing support has been exceptional.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg",
+          "stats": [
+            { "value": "$285K", "label": "Year 2 Revenue" },
+            { "value": "42%", "label": "Profit Margin" }
+          ]
+        },
+        {
+          "name": "Angela Thompson",
+          "role": "Franchise Owner - Birmingham, AL",
+          "note": "Opened: March 2021",
+          "quote": "Proven systems with multiple revenue streams. Credit services have been particularly profitable.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg",
+          "stats": [
+            { "value": "$320K", "label": "Year 3 Revenue" },
+            { "value": "38%", "label": "Profit Margin" }
+          ]
+        }
+      ],
+      "aggregate": [
+        { "value": "95%", "label": "Franchisee Satisfaction Rate" },
+        { "value": "$235K", "label": "Average Annual Revenue" },
+        { "value": "18", "label": "Months Average ROI" }
+      ]
+    },
+    "territory": {
+      "title": "Territory Availability & Requirements",
+      "description": "We're selectively expanding our franchise network in key markets. See if your area is available and learn about our franchisee requirements.",
+      "priority": {
+        "title": "Priority Markets",
+        "badge": "Limited Availability",
+        "ga": [
+          "Savannah Metro",
+          "Augusta Metro",
+          "Columbus Metro",
+          "Macon Metro"
+        ],
+        "al": [
+          "Mobile Metro",
+          "Montgomery Metro",
+          "Huntsville Metro",
+          "Tuscaloosa Metro"
+        ]
+      },
+      "secondary": {
+        "title": "Secondary Markets",
+        "badge": "Available",
+        "tx": [
+          "San Antonio Metro",
+          "Fort Worth Metro",
+          "El Paso Metro",
+          "Corpus Christi Metro"
+        ],
+        "fl": [
+          "Jacksonville Metro",
+          "Tampa Metro",
+          "Orlando Metro",
+          "Tallahassee Metro"
+        ]
+      },
+      "protection": {
+        "title": "Territory Protection",
+        "items": [
+          "Exclusive territory rights with population-based boundaries",
+          "Minimum 50,000 population territory guarantee",
+          "No competing franchises within your territory",
+          "Right of first refusal for adjacent territories"
+        ]
+      },
+      "financial": {
+        "title": "Financial Requirements",
+        "items": [
+          { "label": "Liquid Capital", "value": "$150,000" },
+          { "label": "Net Worth", "value": "$300,000" },
+          { "label": "Total Investment", "value": "$95,000" },
+          { "label": "Financing Available", "value": "Up to 70%" }
+        ]
+      },
+      "candidate": {
+        "title": "Ideal Candidate Profile",
+        "items": [
+          "Education: Bachelor's preferred",
+          "Experience: 5+ years management or customer service",
+          "People Skills: Strong communication",
+          "Business Acumen: Growth-oriented",
+          "Language Skills: Bilingual preferred"
+        ]
+      },
+      "timeline": {
+        "title": "Franchise Process Timeline",
+        "steps": [
+          "Initial Application & Review (1-2 weeks)",
+          "Discovery Day & Interviews (1 week)",
+          "Financial Verification & Approval (2 weeks)",
+          "Franchise Agreement & Training (8 weeks)",
+          "Grand Opening & Launch Support (2 weeks)"
+        ]
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Get answers to the most common questions about our franchise opportunity.",
+      "items": [
+        {
+          "q": "What is the total investment required?",
+          "a": "The total investment is $95,000 including fees, setup, marketing, and working capital. Financing available up to 70%."
+        },
+        {
+          "q": "How long does it take to become profitable?",
+          "a": "Most franchisees reach profitability within 6-9 months with our training and launch support."
+        },
+        {
+          "q": "Do I need prior experience in financial services?",
+          "a": "Not required. Our 8-week training covers everything you need."
+        },
+        {
+          "q": "What ongoing fees are required?",
+          "a": "6% royalty and 2% marketing fee support training, tech, and franchise services."
+        },
+        {
+          "q": "Can I operate from home initially?",
+          "a": "Yes. Many start from home and later transition to a commercial location with our guidance."
+        },
+        {
+          "q": "What support do I receive after opening?",
+          "a": "Dedicated coach, 24/7 helpdesk, reviews, ongoing training, marketing, and peer network."
+        },
+        {
+          "q": "How large is my protected territory?",
+          "a": "Minimum 50,000 people; typical 75,000–150,000."
+        },
+        {
+          "q": "Can I own multiple territories?",
+          "a": "Yes. Right of first refusal on adjacent territories and support for multi-unit development."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Start Your Franchise Journey?",
+      "description": "Join the JB Networking Systems LLC family and build a profitable financial services business with our proven system, comprehensive training, and ongoing support.",
+      "features": [
+        {
+          "title": "Download Franchise Kit",
+          "text": "Complete franchise information package with all the details you need"
+        },
+        {
+          "title": "Schedule Discovery Call",
+          "text": "One-on-one discussion about the opportunity and your goals"
+        },
+        {
+          "title": "Start Your Business",
+          "text": "Complete training and launch your franchise with full support"
+        }
+      ],
+      "buttons": {
+        "kit": "Download Franchise Kit",
+        "call": "Call (555) 123-4567"
+      },
+      "incentives": [
+        "Reduced franchise fee for qualified veterans",
+        "Financing available up to 70%",
+        "Fast-track approval for qualified candidates",
+        "Premium territories still available"
+      ]
+    }
+  },
+
+  "solutions_business_tax": {
+    "breadcrumb": {
+      "home": "Home",
+      "business": "Solutions for Businesses",
+      "current": "Business Tax & Accounting"
+    },
+    "hero": {
+      "title": "Professional Business",
+      "highlight": "Tax & Accounting",
+      "subtitle": "Services",
+      "description": "Expert tax preparation (Fed & All States), quarterly tax filing, CPA services, and accounting solutions to help your business thrive and stay compliant.",
+      "ctaQuote": "Get Free Quote",
+      "ctaChecklist": "Tax Checklist",
+      "card": {
+        "title": "Tax Season Ready?",
+        "text": "Let us handle your business taxes while you focus on growing your company.",
+        "tiles": ["Tax Prep", "Bookkeeping", "Payroll", "Compliance"]
+      }
+    },
+    "overview": {
+      "title": "Complete Business Financial Management",
+      "description": "From startup to established enterprise, we provide comprehensive tax and accounting solutions tailored to your business needs.",
+      "items": [
+        {
+          "title": "Tax Agent/Prep (Fed & All States)",
+          "text": "Expert preparation of federal and all state returns, plus quarterly tax prep & filing."
+        },
+        {
+          "title": "Accounting & CPA Services",
+          "text": "Accurate record-keeping, financial statements, and full CPA services for individuals and businesses."
+        },
+        {
+          "title": "Payroll Services",
+          "text": "Complete payroll processing, tax withholdings, and compliance."
+        },
+        {
+          "title": "IRS/State Debt Resolution",
+          "text": "Fast-tracked debt resolution and document preparation for tax issues."
+        }
+      ],
+      "why": {
+        "title": "Why Choose Our Business Tax Services?",
+        "items": [
+          {
+            "title": "Year-Round Support",
+            "text": "Not just tax season - we're here all year"
+          },
+          {
+            "title": "Maximum Deductions",
+            "text": "We find every legal deduction available"
+          },
+          {
+            "title": "Bilingual Service",
+            "text": "Hablamos Español for your convenience"
+          }
+        ]
+      }
+    },
+    "services": {
+      "title": "Comprehensive Service Portfolio",
+      "description": "Every service designed to streamline your business operations and maximize your financial efficiency.",
+      "tax": {
+        "title": "Tax Preparation & Planning",
+        "subtitle": "Strategic tax solutions for every business structure",
+        "items": [
+          {
+            "title": "Corporate Filing",
+            "text": "Complete preparation and filing for C-Corps and S-Corps"
+          },
+          {
+            "title": "Accountant/CPA (Indiv/Biz)",
+            "text": "Partnership tax filings, K-1 preparation, and full CPA services"
+          },
+          {
+            "title": "Tax Agent/Prep (All States)",
+            "text": "Optimal tax election strategies and filings for LLCs and all states"
+          },
+          {
+            "title": "Quarterly Taxes Prep & File",
+            "text": "Calculation and payment scheduling for quarterly taxes"
+          },
+          {
+            "title": "Document Preparation",
+            "text": "Professional preparation for all tax-related documents"
+          }
+        ]
+      },
+      "books": {
+        "title": "Bookkeeping & Financial Records",
+        "subtitle": "Accurate financial management and reporting",
+        "items": [
+          {
+            "title": "Monthly Financial Statements",
+            "text": "P&L, Balance Sheet, and Cash Flow reports"
+          },
+          {
+            "title": "Accounts Payable/Receivable",
+            "text": "Complete AP/AR management and tracking"
+          },
+          {
+            "title": "Bank Reconciliations",
+            "text": "Monthly reconciliation of all accounts"
+          },
+          {
+            "title": "QuickBooks Setup & Training",
+            "text": "Software implementation and staff training"
+          },
+          {
+            "title": "Financial Analysis",
+            "text": "Business performance insights and recommendations"
+          }
+        ]
+      },
+      "payroll": {
+        "title": "Payroll Services",
+        "subtitle": "Complete payroll management and compliance",
+        "items": [
+          {
+            "title": "Payroll Processing",
+            "text": "Bi-weekly, semi-monthly, or monthly payroll runs"
+          },
+          {
+            "title": "Tax Withholdings & Deposits",
+            "text": "Federal, state, and local tax compliance"
+          },
+          {
+            "title": "W-2 & 1099 Preparation",
+            "text": "Year-end forms and electronic filing"
+          },
+          {
+            "title": "Unemployment & Workers' Comp",
+            "text": "State unemployment and workers' compensation filings"
+          },
+          {
+            "title": "Direct Deposit Setup",
+            "text": "Electronic payment processing for employees"
+          }
+        ]
+      },
+      "advisory": {
+        "title": "Compliance & Advisory",
+        "subtitle": "Stay compliant and make informed decisions",
+        "items": [
+          {
+            "title": "IRS & State Debt Resolution",
+            "text": "Fast-tracked debt resolution with the IRS and State tax authorities."
+          },
+          {
+            "title": "Sales Tax Management",
+            "text": "Multi-state sales tax filing and compliance"
+          },
+          {
+            "title": "Business License Renewals",
+            "text": "Track and manage license renewal deadlines"
+          },
+          {
+            "title": "Financial Consulting",
+            "text": "Strategic advice for business growth and efficiency"
+          },
+          {
+            "title": "Notary",
+            "text": "Official notary services available for your business documents."
+          }
+        ]
+      }
+    },
+    "pricing": {
+      "title": "Transparent Business Tax & Accounting Pricing",
+      "description": "Choose the service level that fits your business needs. All plans include our personal touch and bilingual support.",
+      "mostPopular": "Most Popular",
+      "startup": {
+        "title": "Startup Package",
+        "subtitle": "Perfect for new businesses and sole proprietors",
+        "price": "$299",
+        "period": "",
+        "note": "Starting price for basic business return",
+        "features": [
+          "Basic Business Tax Return",
+          "Schedule C (Sole Proprietorship)",
+          "Basic Bookkeeping Review",
+          "Tax Planning Consultation",
+          "Electronic Filing",
+          "Bilingual Support"
+        ],
+        "button": "Get Started"
+      },
+      "growth": {
+        "title": "Growth Package",
+        "subtitle": "Ideal for established small to medium businesses",
+        "price": "$799",
+        "period": "",
+        "note": "Starting price for comprehensive services",
+        "features": [
+          "Corporate/Partnership Tax Returns",
+          "Monthly Bookkeeping Services",
+          "Quarterly Financial Statements",
+          "Basic Payroll Processing",
+          "Sales Tax Filings",
+          "Year-Round Support",
+          "Priority Scheduling"
+        ],
+        "button": "Choose Growth"
+      },
+      "enterprise": {
+        "title": "Enterprise Package",
+        "subtitle": "Comprehensive solutions for larger businesses",
+        "price": "$1,499",
+        "period": "",
+        "note": "Starting price for full-service package",
+        "features": [
+          "Complex Business Tax Returns",
+          "Full Bookkeeping & CFO Services",
+          "Complete Payroll Management",
+          "Multi-State Tax Compliance",
+          "Financial Planning & Analysis",
+          "Dedicated Account Manager",
+          "24/7 Support Access"
+        ],
+        "button": "Contact Us"
+      },
+      "discounts": {
+        "title": "Special Discounts Available",
+        "items": [
+          {
+            "title": "VIP Military Service",
+            "text": "Active Duty, Retired, & Reservists will always receive VIP service."
+          },
+          {
+            "title": "Tax Referral Bonus",
+            "text": "UP T0 $70 Instant payout for each tax referral!"
+          },
+          {
+            "title": "Accounting Discount",
+            "text": "Accounting contracts 40% off all services (excluding app fee)."
+          }
+        ]
+      }
+    },
+    "industries": {
+      "title": "Industry-Specific Expertise",
+      "description": "We understand the unique tax and accounting challenges across different industries and provide specialized solutions.",
+      "items": [
+        {
+          "title": "Retail & E-commerce",
+          "text": "Inventory management, sales tax compliance, multi-state nexus issues, and marketplace seller requirements.",
+          "bullets": [
+            "Multi-state sales tax compliance",
+            "Inventory valuation methods",
+            "Marketplace seller tax issues"
+          ]
+        },
+        {
+          "title": "Real Estate",
+          "text": "1031 exchanges, depreciation strategies, rental property management, and real estate professional status.",
+          "bullets": [
+            "Like-kind exchanges (1031)",
+            "Depreciation optimization",
+            "Rental property accounting"
+          ]
+        },
+        {
+          "title": "Restaurants & Food Service",
+          "text": "Tip reporting, labor cost management, food cost accounting, and franchise compliance requirements.",
+          "bullets": [
+            "Tip allocation and reporting",
+            "Food cost optimization",
+            "Franchise tax compliance"
+          ]
+        },
+        {
+          "title": "Transportation & Logistics",
+          "text": "Heavy vehicle use tax, fuel tax credits, per-mile deductions, and DOT compliance requirements.",
+          "bullets": [
+            "HVUT and IFTA reporting",
+            "Mileage deduction optimization",
+            "Equipment depreciation"
+          ]
+        },
+        {
+          "title": "Healthcare & Professional Services",
+          "text": "Medical practice management, professional liability, equipment financing, and healthcare-specific deductions.",
+          "bullets": [
+            "Medical equipment depreciation",
+            "Professional liability expenses",
+            "Healthcare compliance"
+          ]
+        },
+        {
+          "title": "Construction & Contracting",
+          "text": "Job costing, percentage-of-completion accounting, equipment depreciation, and prevailing wage compliance.",
+          "bullets": [
+            "Job cost accounting",
+            "Equipment depreciation strategies",
+            "Prevailing wage compliance"
+          ]
+        }
+      ]
+    },
+    "process": {
+      "title": "Our Streamlined Process",
+      "description": "From initial consultation to ongoing support, we make business tax and accounting simple and stress-free.",
+      "steps": [
+        {
+          "title": "Initial Consultation",
+          "text": "Comprehensive review of your business structure, current processes, and goals.",
+          "bullets": [
+            "Business structure analysis",
+            "Current process evaluation",
+            "Goal identification"
+          ]
+        },
+        {
+          "title": "Custom Solution Design",
+          "text": "Tailored service package, timeline, and budget planning.",
+          "bullets": [
+            "Service package customization",
+            "Timeline establishment",
+            "Budget planning"
+          ]
+        },
+        {
+          "title": "Implementation & Setup",
+          "text": "Systems integration, staff training, and documentation.",
+          "bullets": [
+            "System setup and integration",
+            "Staff training",
+            "Process documentation"
+          ]
+        },
+        {
+          "title": "Ongoing Support & Monitoring",
+          "text": "Regular reviews, proactive planning, and 24/7 support.",
+          "bullets": [
+            "Regular performance reviews",
+            "Proactive tax planning",
+            "24/7 support access"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "description": "Get answers to common questions about our business tax and accounting services.",
+      "items": [
+        {
+          "q": "What business structures do you handle?",
+          "a": "We are accountants/CPAs for both Individuals and Businesses, including sole proprietorships, partnerships, LLCs, S-Corps, and C-Corps."
+        },
+        {
+          "q": "Do you provide year-round support?",
+          "a": "Yes, we provide year-round support, including quarterly tax prep and filing and ongoing accounting services."
+        },
+        {
+          "q": "Can you help with multi-state tax issues?",
+          "a": "Yes, we are Tax Agents and Preparers for Federal and all states, handling all multi-state compliance."
+        },
+        {
+          "q": "What accounting software do you support?",
+          "a": "We support all major accounting software and can provide setup and training as part of our Accounting Services."
+        },
+        {
+          "q": "How do you handle payroll tax compliance?",
+          "a": "Our Payroll Services include withholdings, deposits, quarterly filings, annual reports, and unemployment taxes."
+        },
+        {
+          "q": "What if I get audited by the IRS?",
+          "a": "We provide full audit representation and specialize in fast-tracked debt resolution with the IRS and State authorities."
+        },
+        {
+          "q": "Do you offer bilingual services?",
+          "a": "Sí, (Hablamos Español) full services are available in Spanish."
+        },
+        {
+          "q": "What are your fees for business tax preparation?",
+          "a": "Our fees are transparent. We offer 40% off accounting contracts (excluding app fee) and $70 for tax referrals. Contact us for a free quote."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Streamline Your Business Finances?",
+      "description": "Let us handle your tax and accounting needs while you focus on growing your business.",
+      "features": [
+        {
+          "title": "Free Tax Assessment",
+          "text": "Comprehensive review of your current tax situation"
+        },
+        {
+          "title": "Year-Round Support",
+          "text": "Ongoing assistance beyond tax season"
+        },
+        {
+          "title": "Maximize Deductions",
+          "text": "Find every legal deduction to minimize your tax liability"
+        }
+      ],
+      "buttons": {
+        "primary": "Schedule Expert Consultation",
+        "secondary": "Call (470) 288-3365"
+      },
+      "badges": [
+        "Hablamos Español",
+        "Military Discounts Available",
+        "Licensed & Insured"
+      ]
+    }
+  },
+ "locations_page": {
+    "breadcrumb": { "home": "Home", "current": "Locations" },
+    "hero": {
+      "title": "Our",
+      "highlight": "Locations",
+      "description": "Serving clients across Georgia, Alabama, and Texas with convenient office locations and comprehensive financial services.",
+      "stats": [
+        { "value": "3", "label": "States" },
+        { "value": "3", "label": "Main Offices" },
+        { "value": "17+", "label": "Years Serving" }
+      ]
+    },
+    "map": {
+      "title": "Find Your Nearest Office",
+      "description": "Click on any location marker to view detailed office information, contact details, and get directions.",
+      "filters": ["Georgia Offices", "Alabama Offices", "Texas Offices"],
+      "legend": {
+        "title": "Legend",
+        "main": "Main Offices",
+        "partners": "Partner Locations"
+      },
+      "overlayTitle": "Interactive Map",
+      "overlayText": "Click on location markers to view office details, hours, services, and get driving directions.",
+      "markers": ["Snellville, GA", "Mobile, AL", "Fort Worth, TX"]
+    },
+    "offices": {
+      "title": "Office Locations & Details",
+      "description": "Each of our offices provides the full range of services with local expertise and personalized attention.",
+      "items": [
+        {
+          "name": "Snellville, GA (Corporate Office)",
+          "area": "Operation Manager: T BRANDY J.",
+          "address": ["2245 Wisteria Dr. Suite 214", "Snellville, GA 30078"],
+          "phone": "470.288.3365 (Corporate Office)",
+          "email": "tbrandy@jbnetworkingsystems.com",
+          "hours": [
+            "Monday - Thursday: 8:00am-5:00pm",
+            "Friday: 8:00am-4:00pm",
+            "Saturday: 8:00am-2:00pm (Appt Only)",
+            "Sunday: Closed"
+          ],
+          "specialties": [
+            "Corporate HQ",
+            "Tax Agent/Prep",
+            "Accounting/CPA",
+            "Hablamos Español"
+          ]
+        },
+        {
+          "name": "Mobile, AL (Regional Office)",
+          "area": "Executive Manager: T Brandy Johnson",
+          "address": ["11 WATER STREET SUITE 10290", "MOBILE, AL 36602"],
+          "phone": "251.220.7795 (Office)",
+          "email": "info@jbnetworkingsystems.com",
+          "hours": [
+            "Monday - Thursday: 8:00am-5:00pm",
+            "Friday: 8:00am-4:00pm",
+            "Saturday: 8:00am-2:00pm (Appt Only)",
+            "Sunday: Closed"
+          ],
+          "specialties": [
+            "Regional Management",
+            "Financial Services",
+            "Credit Repair",
+            "Business Services"
+          ]
+        },
+        {
+          "name": "Fort Worth, TX (District Office)",
+          "area": "Operations Manager: David Sutton",
+          "address": ["600 W 6TH STREET SUITE 400", "FORT WORTH, TX 76102"],
+          "phone": "469.450.0511 (Office)",
+          "email": "info@jbnetworkingsystems.com",
+          "hours": [
+            "Monday - Thursday: 8:00am-5:00pm",
+            "Friday: 8:00am-4:00pm",
+            "Saturday: 8:00am-2:00pm (Appt Only)",
+            "Sunday: Closed"
+          ],
+          "specialties": [
+            "District Operations",
+            "Business Credit",
+            "Franchise Opps",
+            "Real Property Mgmt"
+          ]
+        }
+      ],
+      "buttons": { "directions": "Get Directions", "book": "Book Visit" }
+    },
+    "additional": {
+      "title": "Partner Companies & Satellite Offices",
+      "description": "In addition to our main offices, we work with trusted partners to provide a full network of services.",
+      "items": [
+        {
+          "title": "Si'van Tax LLC",
+          "subtitle": "Partner Company",
+          "text": "Specialized tax preparation services."
+        },
+        {
+          "title": "Genary NuMed Advance LLC",
+          "subtitle": "Partner Company",
+          "text": "Partner services and support."
+        },
+        {
+          "title": "Money Magnet JB LLC",
+          "subtitle": "Partner Company",
+          "text": "Franchise opportunities and business branding."
+        },
+        {
+          "title": "On Sole Inventory LLP",
+          "subtitle": "Partner Company",
+          "text": "Franchise opportunities and inventory management."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Visit Us Today",
+      "description": "Ready to experience the difference? Visit any of our locations or schedule a consultation at your preferred office.",
+      "features": [
+        {
+          "title": "Schedule Appointment",
+          "text": "Book your Expert Consultation at any office. Online scheduling 24/7."
+        },
+        {
+          "title": "Events",
+          "text": "We offer OFFICE APPT and ZOOM APPT options for your convenience."
+        },
+        {
+          "title": "Accessibility",
+          "text": "All offices are fully accessible and ADA compliant."
+        },
+        {
+          "title": "Bilingual Services",
+          "text": "Hablamos Español - Full services in English and Spanish."
+        }
+      ],
+      "form": {
+        "title": "Quick Contact Form",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "email": "Email Address",
+        "phone": "Phone Number",
+        "preferredOffice": "Preferred Office",
+        "officeOptions": [
+          "Select an office",
+          "Snellville, GA (Corporate)",
+          "Mobile, AL (Regional)",
+          "Fort Worth, TX (District)",
+          "Virtual Consultation (ZOOM)"
+        ],
+        "services": "Services Interested In",
+        "serviceOptions": [
+          "Tax Agent/Prep",
+          "Accounting/CPA",
+          "Credit Repair",
+          "Business Credit",
+          "Financial Services/Loans",
+          "Insurance",
+          "Real Property Mgmt",
+          "Business Formation",
+          "Document Prep",
+          "Franchise Opps"
+        ],
+        "message": "Message",
+        "messagePlaceholder": "Tell us how we can help you...",
+        "submit": "Send Message & Schedule Consultation"
+      }
+    },
+    "areas": {
+      "title": "Service Areas & Coverage",
+      "description": "While our main offices are strategically located, we serve clients throughout the surrounding regions and beyond.",
+      "states": [
+        {
+          "title": "Georgia Coverage",
+          "areasTitle": "Primary Service Areas:",
+          "items": [
+            "Snellville",
+            "Gwinnett County",
+            "Atlanta Metro Area",
+            "Surrounding Areas",
+            "State-wide Virtual Services",
+            "And more..."
+          ]
+        },
+        {
+          "title": "Alabama Coverage",
+          "areasTitle": "Primary Service Areas:",
+          "items": [
+            "Mobile",
+            "Mobile County",
+            "Baldwin County",
+            "Surrounding Areas",
+            "State-wide Virtual Services",
+            "And more..."
+          ]
+        },
+        {
+          "title": "Texas Coverage",
+          "areasTitle": "Primary Service Areas:",
+          "items": [
+            "Fort Worth",
+            "Tarrant County",
+            "Dallas-Fort Worth Metro",
+            "Surrounding Areas",
+            "State-wide Virtual Services",
+            "And more..."
+          ]
+        }
+      ],
+      "remote": {
+        "title": "Remote Services Available",
+        "text": "We offer comprehensive remote services including virtual consultations (ZOOM APPT), secure document sharing, and online meetings.",
+        "items": [
+          "ZOOM APPT",
+          "Secure File Sharing",
+          "Mobile Support"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ready to Visit Our Office?",
+      "description": "Experience the personal touch that sets us apart. Schedule your Expert Consultation at the office most convenient for you.",
+      "buttons": {
+        "primary": "Schedule Office Visit",
+        "secondary": "Call (470) 288-3365"
+      },
+      "badges": [
+        "Hablamos Español",
+        "VIP Military Service",
+        "Money Back Guarantee (Credit Service)"
+      ]
+    }
+  },
+ "about_page": {
+    "hero": {
+      "title": "Professional Financial & Tax Services,",
+      "highlight": "With a Personal Touch!",
+      "description": "Founded in 2007, JB Networking Systems LLC provides comprehensive, expert financial solutions. Discover how we became a trusted full-service financial network across three states.",
+      "stats": [
+        { "value": "2007", "label": "Founded" },
+        { "value": "17+", "label": "Years of Excellence" },
+        { "value": "3", "label": "States Served" }
+      ]
+    },
+    "history": {
+      "title": "About JBNS",
+      "p1": "JB Networking Systems LLC AND all partner companies, was founded in 2007. With several years' experience in immigration, accounting, financial services, tax preparation, both individual and business.",
+      "p2": "Our Credit Service is another one of the company's expertise with a money back guarantee. We have fast tracked to Debt resolution with the IRS, State, and student loan debts as default management consultants and documents preparation.",
+      "p3": "What started as a local tax preparation service in Georgia has grown into a full-service financial network spanning three states, serving thousands of individuals and businesses.",
+      "principlesTitle": "Our Founding Principles",
+      "principles": [
+        "Safeguard every client's financial assets with unwavering dedication",
+        "Maintain personal relationships in an increasingly digital world",
+        "Serve diverse communities with bilingual expertise (Hablamos Español)",
+        "Honor our military community with VIP service and recognition"
+      ],
+      "stats": [
+        { "value": "10,000+", "label": "Clients Served" },
+        { "value": "98%", "label": "Satisfaction Rate" },
+        { "value": "$50M+", "label": "Assets Protected" },
+        { "value": "24/7", "label": "Support Available" }
+      ]
+    },
+    "timeline": {
+      "title": "Our Journey Through the Years",
+      "description": "From a single office in Georgia to a multi-state financial network, here's how we've grown while maintaining our core values.",
+      "items": [
+        {
+          "year": "2007",
+          "title": "Company Founded",
+          "text": "Established in Georgia with a focus on personal tax preparation, accounting, and immigration services."
+        },
+        {
+          "year": "2010",
+          "title": "Bilingual Services Launch",
+          "text": "Introduced comprehensive Spanish-language services (Hablamos Español) for our community."
+        },
+        {
+          "year": "2013",
+          "title": "Alabama Expansion",
+          "text": "Opened our first Alabama regional office in Mobile."
+        },
+        {
+          "year": "2016",
+          "title": "Full-Service Evolution",
+          "text": "Expanded to financial planning, credit repair (with money-back guarantee), and debt resolution."
+        },
+        {
+          "year": "2019",
+          "title": "Texas Market Entry",
+          "text": "Established our district office in Fort Worth, Texas."
+        },
+        {
+          "year": "2022",
+          "title": "VIP Military Program Launch",
+          "text": "Introduced VIP military discounts for Active Duty, Retired, & Reservists."
+        },
+        {
+          "year": "2024",
+          "title": "17 Years of Excellence",
+          "text": "Continuing to grow while safeguarding assets with a personal touch."
+        }
+      ]
+    },
+    "mission": {
+      "title": "Our Mission & Core Values",
+      "subtitle": "Everything we do is guided by our commitment to safeguarding your assets while providing the personal touch that sets us apart.",
+      "mission": {
+        "title": "Making & Obtaining Goals",
+        "text": "As your financial consultant, I start by documenting your goals and then compare them to your current portfolio. I use proven investment strategies designed to meet your risk tolerance and stand up against market volatility. You can count on unbiased recommendations and impartial guidance based directly on your needs and goals."
+      },
+      "vision": {
+        "title": "Building Strong & Solid Futures",
+        "text": "We're passionate about helping both companies and individuals with diversifying portfolios, managing assets, analyzing market trends, and reducing financial risk and tax risk. My goal? To safeguard the dreams you strive to achieve the assets you have worked so hard to accumulate."
+      },
+      "valuesTitle": "Our Core Values",
+      "values": [
+        {
+          "title": "Trust & Integrity",
+          "text": "We operate with complete transparency and honesty."
+        },
+        {
+          "title": "Personal Touch",
+          "text": "Every client receives personalized attention and customized solutions."
+        },
+        {
+          "title": "Excellence & Expertise",
+          "text": "We uphold the highest standards and invest in education."
+        },
+        {
+          "title": "Community & Diversity",
+          "text": "We celebrate diversity and serve with cultural understanding (Hablamos Español)."
+        },
+        {
+          "title": "Service & Patriotism",
+          "text": "We honor our military community with VIP recognition and benefits."
+        }
+      ]
+    },
+    "leadership": {
+      "title": "Meet Our Leadership Team",
+      "description": "Our experienced leadership team combines decades of financial expertise with a shared commitment to client success and community service.",
+      "members": [
+        {
+          "name": "T BRANDY J.",
+          "role": "Operation Manager (Snellville, GA)",
+          "bio": "Oversees corporate office operations and client services in Georgia.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg"
+        },
+        {
+          "name": "T Brandy Johnson",
+          "role": "Executive Manager (Mobile, AL)",
+          "bio": "Manages regional operations and financial services for Alabama.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-7.jpg"
+        },
+        {
+          "name": "David Sutton",
+          "role": "Operations Manager (Fort Worth, TX)",
+          "bio": "Leads the district office and client relations in Texas.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
+        },
+        {
+          "name": "Placeholder Manager 1",
+          "role": "Director of Finance",
+          "bio": "Placeholder bio for additional team member.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg"
+        },
+        {
+          "name": "Placeholder Manager 2",
+          "role": "Director of Services",
+          "bio": "Placeholder bio for additional team member.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg"
+        },
+        {
+          "name": "Placeholder Manager 3",
+          "role": "Director of Compliance",
+          "bio": "Placeholder bio for additional team member.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg"
+        }
+      ],
+      "cta": {
+        "title": "Join Our Growing Team",
+        "text": "We're always looking for passionate financial professionals.",
+        "button": "View Career Opportunities"
+      }
+    },
+    "certifications": {
+      "title": "Our Services & Expertise",
+      "description": "Our commitment to excellence is reflected in our comprehensive service offerings.",
+      "certsTitle": "Tax & Accounting",
+      "certs": [
+        {
+          "title": "Accountant/CPA (Indiv/Biz)",
+          "text": "Licensed CPAs for all business and personal needs"
+        },
+        {
+          "title": "Tax Agent/Prep (Fed & All States)",
+          "text": "Expert tax preparation for all 50 states and federal returns"
+        },
+        {
+          "title": "Quarterly Taxes Prep & File",
+          "text": "Timely filing of all quarterly tax documents"
+        },
+        {
+          "title": "Accounting Services",
+          "text": "Full-service accounting and bookkeeping"
+        }
+      ],
+      "membershipsTitle": "Financial & Credit Services",
+      "memberships": [
+        {
+          "title": "Credit Repair (Money-Back Guarantee)",
+          "text": "Proven credit repair services with guaranteed results"
+        },
+        {
+          "title": "Business Credit Building",
+          "text": "Establish and grow your business credit profile"
+        },
+        {
+          "title": "Credit Trade Lines (Personal & Business)",
+          "text": "Boost your credit profile with our tradeline services"
+        },
+        {
+          "title": "Financial Services & Loans",
+          "text": "Access to personal and business loans and financial planning"
+        },
+        {
+          "title": "Investments",
+          "text": "Investment strategies and portfolio management"
+        }
+      ],
+      "partnersTitle": "Property & Documentation",
+      "partners": [
+        {
+          "title": "Licensed Insurance Agent",
+          "text": "Life, Accident, Sickness, Casualty, & Property insurance"
+        },
+        {
+          "title": "Real Property Management",
+          "text": "Full-service management for residential and commercial properties"
+        },
+        {
+          "title": "Document Preparation",
+          "text": "Expert preparation for financial, legal, and immigration documents"
+        }
+      ]
+    },
+    "community": {
+      "title": "Discounts, Referrals & VIPs",
+      "description": "We believe in rewarding our clients and honoring those who serve.",
+      "programsTitle": "Referral & Discount Programs",
+      "programs": [
+        "UP TO $70 Instant payout for each tax referral!",
+        "Accounting contracts 40% off all services (excluding app fee)",
+        "Active Duty, Retired, & Reservists will always receive VIP service",
+        "Placeholder Program",
+        "Another Placeholder Program"
+      ],
+      "reportTitle": "Our Commitment",
+      "reportStats": [
+        { "value": "$70", "label": "Per Tax Referral" },
+        { "value": "40%", "label": "Accounting Discount" },
+        { "value": "VIP", "label": "Military Service" },
+        { "value": "100%", "label": "Satisfaction" }
+      ],
+      "charityTitle": "How to Qualify",
+      "charities": [
+        {
+          "title": "Tax Referrals",
+          "text": "Refer a new tax client and receive an instant payout up to $70."
+        },
+        {
+          "title": "Accounting Contracts",
+          "text": "Sign a new accounting contract to receive 40% off your services."
+        },
+        {
+          "title": "Military VIP Service",
+          "text": "Present your military ID (Active, Retired, Reservist) to receive VIP service."
+        },
+        {
+          "title": "Placeholder Charity",
+          "text": "Placeholder text for an additional community item."
+        }
+      ],
+      "involved": {
+        "title": "Ask About Our Discounts",
+        "text": "Contact us today to learn more about our referral programs and VIP discounts.",
+        "button": "Contact Us Now"
+      }
+    },
+    "cta": {
+      "title": "Experience the Personal Touch Difference",
+      "description": "For over 17 years, we've built our reputation on relationships, trust, and genuine care for each client's success.",
+      "features": [
+        {
+          "title": "Personal Relationships",
+          "text": "We know our clients by name, not number"
+        },
+        {
+          "title": "Proven Expertise",
+          "text": "17+ years of safeguarding client assets"
+        },
+        {
+          "title": "Genuine Care",
+          "text": "Your financial success is our personal mission"
+        }
+      ],
+      "buttons": {
+        "primary": "Meet with Our Team",
+        "secondary": "Call (470) 288-3365"
+      },
+      "badges": [
+        "Hablamos Español",
+        "VIP Military Service",
+        "Money Back Guarantee"
+      ]
+    }
+  },
+  "consultation": {
+    "hero": {
+      "title": "Contact Us for a Consultation",
+      "subtitle": "Send us a message, and tell us more about your financial goals and needs. We will get back to you soon to schedule a consultation."
+    },
+    "benefits": {
+      "title": "Your First Step to a Solid Financial Future",
+      "description": "Our comprehensive consultation process ensures we understand your needs and provide the best solutions for your financial success.",
+      "items": {
+        "0": {
+          "title": "Comprehensive Assessment",
+          "text": "We'll review your current financial situation, goals, and challenges to create a personalized action plan."
+        },
+        "1": {
+          "title": "Expert Recommendations",
+          "text": "Receive tailored advice from our certified professionals with 17+ years of experience."
+        },
+        "2": {
+          "title": "Clear Action Plan",
+          "text": "Leave with a step-by-step roadmap to achieve your objectives and a timeline for implementation."
+        }
+      }
+    },
+    "form": {
+      "title": "Book Your Consultation",
+      "description": "Fill out the form below and we'll contact you within 24 hours to schedule your Expert Consultation at your preferred location.",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "preferredLocation": "Preferred Location",
+      "preferredLanguage": "Preferred Language",
+      "servicesOfInterest": "Services of Interest",
+      "preferredDate": "Preferred Date",
+      "preferredTime": "Preferred Time",
+      "about": "Tell us about your financial goals and needs",
+      "military": "Active Duty, Retired, & Reservists will always receive VIP service. (Check to apply)",
+      "marketingConsent": "I agree to receive communications regarding my consultation and services.",
+      "freeConsent": "I acknowledge that this consultation is free and there is no obligation to purchase services.",
+      "submit": "Schedule My Expert Consultation",
+      "requiredError": "Please fill in all required fields.",
+      "serverError": "Something went wrong. Please try again later.",
+      "success": "Thank you! Your consultation request has been submitted. We will contact you within 24 hours to confirm your appointment.",
+      "locations": {
+        "0": "Snellville, GA (Corporate)",
+        "1": "Mobile, AL (Regional)",
+        "2": "Fort Worth, TX (District)",
+        "3": "Virtual Consultation (ZOOM APPT)"
+      },
+      "languages": {
+        "0": "English",
+        "1": "Spanish",
+        "2": "Both English & Spanish"
+      },
+      "timeSlots": {
+        "0": "Morning (8:00 AM - 12:00 PM)",
+        "1": "Afternoon (12:00 PM - 5:00 PM)",
+        "2": "Saturday (8:00 AM - 2:00 PM) (Appt Only)"
+      },
+      "services": {
+        "0": "Tax Agent/Prep (Personal or Business)",
+        "1": "Accounting/CPA Services",
+        "2": "Payroll Services",
+        "3": "Credit Repair (Money-Back Guarantee)",
+        "4": "Business Credit Building / Trade Lines",
+        "5": "Financial Services / Loans",
+        "6": "Life Insurance / Accident / Property",
+        "7": "Real Property Management / Leasing",
+        "8": "Business Formation / Management",
+        "9": "Document Preparation",
+        "10": "Franchise Opportunities"
+      }
+    },
+    "sidebar": {
+      "quickContact": {
+        "title": "Prefer to Call or Email?",
+        "callTitle": "Call Now (Office)",
+        "phone": "470.288.3365",
+        "callTitleDirect": "Call Now (Direct)",
+        "phoneDirect": "469.450.0511",
+        "hours": "Mon-Thu: 8am-5pm | Fri: 8am-4pm | Sat: 8am-2pm (Appt Only)",
+        "emailTitle": "Email Us",
+        "email": "info@jbnetworkingsystems.com",
+        "sla": "We respond within 24 hours",
+        "bilingualTitle": "Bilingual Support",
+        "bilingual": "Hablamos Español",
+        "bilingualNote": "Full services available in Spanish"
+      },
+      "faqTitle": "Consultation FAQ",
+      "faq": {
+        "0": {
+          "q": "How long is the consultation?",
+          "a": "Typically 45-60 minutes, allowing time for a thorough assessment of your needs."
+        },
+        "1": {
+          "q": "Do I need to pay for an appointment?",
+          "a": "We offer 'OFFICE APPT' and 'ZOOM APPT' options. Your initial consultation is free."
+        },
+        "2": {
+          "q": "Is there really no obligation?",
+          "a": "Absolutely. The consultation is completely free with no pressure to purchase any services."
+        },
+        "3": {
+          "q": "Can I do a virtual consultation?",
+          "a": "Yes! We offer 'ZOOM APPT' for your convenience. Please select 'Virtual Consultation' in the form."
+        },
+        "4": {
+          "q": "What about the money-back guarantee?",
+          "a": "Our 100% money-back guarantee applies specifically to our Credit Service."
+        }
+      },
+      "trust": {
+        "title": "Why Thousands Trust Us",
+        "items": {
+          "0": { "value": "17+", "label": "Years Experience" },
+          "1": { "value": "3", "label": "State Locations" },
+          "2": { "value": "100%", "label": "Satisfaction Rate" },
+          "3": { "value": "VIP", "label": "Military Service" }
+        }
+      }
+    },
+    "offices": {
+      "title": "Choose Your Preferred Location",
+      "description": "Visit us at any of our convenient locations across Georgia, Alabama, and Texas.",
+      "items": {
+        "0": {
+          "title": "Snellville, GA (Corporate Office)",
+          "area": "Operation Manager: T BRANDY J.",
+          "address": "2245 Wisteria Dr. Suite 214, Snellville, GA 30078",
+          "phone": "470.288.3365 (Corporate Office)",
+          "email": "tbrandy@jbnetworkingsystems.com",
+          "hours": "Mon-Thu: 8am-5pm, Fri: 8am-4pm"
+        },
+        "1": {
+          "title": "Mobile, AL (Regional Office)",
+          "area": "Executive Manager: T Brandy Johnson",
+          "address": "11 WATER STREET SUITE 10290, MOBILE, AL 36602",
+          "phone": "251.220.7795 (Office)",
+          "email": "info@jbnetworkingsystems.com",
+          "hours": "Mon-Fri: 9AM-6PM"
+        },
+        "2": {
+          "title": "Fort Worth, TX (District Office)",
+          "area": "Operations Manager: David Sutton",
+          "address": "600 W 6TH STREET SUITE 400, FORT WORTH, TX 76102",
+          "phone": "469.450.0511 (Office)",
+          "email": "info@jbnetworkingsystems.com",
+          "hours": "Mon-Fri: 9AM-6PM"
+        }
+      }
+    },
+    "services": {
+      "title": "Services We'll Discuss",
+      "description": "During your consultation, we can address any of these comprehensive financial services.",
+      "items": {
+        "0": {
+          "title": "Tax & Accounting",
+          "highlight": "",
+          "points": {
+            "0": "Accountant/CPA (Indiv/Biz)",
+            "1": "Tax Agent/Prep (All States)",
+            "2": "Payroll Services",
+            "3": "Quarterly Tax Prep & File"
+          }
+        },
+        "1": {
+          "title": "Financial & Investments",
+          "highlight": "",
+          "points": {
+            "0": "Financial Services",
+            "1": "Investment Planning",
+            "2": "Personal & Business Loans",
+            "3": "Risk Assessment"
+          }
+        },
+        "2": {
+          "title": "Credit & Debt Resolution",
+          "highlight": "Guaranteed",
+          "points": {
+            "0": "Credit Repair (Money-Back Guarantee)",
+            "1_": "Business Credit Building",
+            "2": "Credit Trade Lines",
+            "3": "IRS/State Debt Resolution"
+          }
+        },
+        "3": {
+          "title": "Business Services",
+          "highlight": "",
+          "points": {
+            "0": "Start Up Business Formation",
+            "1": "Corporate Filing",
+            "2": "Business Management",
+            "3": "Business Branding"
+          }
+        },
+        "4": {
+          "title": "Real Estate & Insurance",
+          "highlight": "",
+          "points": {
+            "0": "Real Property Management",
+            "1": "Commercial & Residential Leasing",
+            "2": "Real Estate Agent (Messiah Mason)",
+            "3": "Licensed Insurance Agent"
+          }
+        },
+        "5": {
+          "title": "Other Services",
+          "highlight": "",
+          "points": {
+            "0": "Document Preparation",
+            "1": "Franchise Opportunities",
+            "2": "Notary Services",
+            "3": "Immigration Services"
+          }
+        }
+      }
+    }
+  }
+}

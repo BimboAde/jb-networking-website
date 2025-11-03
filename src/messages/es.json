@@ -1,0 +1,270 @@
+{
+  "common": {
+    "bookConsultation": "Reservar Consulta",
+    "learnMore": "Saber Más",
+    "getDirections": "Obtener Direcciones",
+    "callNow": "Llamar Ahora",
+    "scheduleFreeConsultation": "Programar Consulta Gratuita",
+    "watchOurStory": "Ver Nuestra Historia",
+    "readMore": "Leer Más"
+  },
+  "header": {
+    "companyName": "JB Networking Systems LLC",
+    "companyTagline": "Red Financiera de Servicios Completos",
+    "solutionsForIndividuals": "Soluciones para Individuos",
+    "solutionsForBusinesses": "Soluciones para Empresas",
+    "aboutUs": "Acerca de Nosotros",
+    "locations": "Ubicaciones",
+    "english": "Inglés",
+    "spanish": "Español",
+    "individualServices": {
+      "personalTaxAccounting": "Impuestos y Contabilidad Personal",
+      "financialInvestmentPlanning": "Planificación Financiera e Inversión",
+      "creditDebtResolution": "Resolución de Crédito y Deuda",
+      "personalRealEstateInsurance": "Bienes Raíces e Seguros Personales"
+    },
+    "businessServices": {
+      "businessTaxAccounting": "Impuestos y Contabilidad Empresarial",
+      "businessCreditBuilding": "Construcción de Crédito Empresarial",
+      "corporateServices": "Servicios Corporativos",
+      "franchiseOpportunities": "Oportunidades de Franquicia"
+    }
+  },
+  "hero": {
+    "title": "Proteja Sus Activos con un",
+    "titleHighlight": "Toque Personal",
+    "description": "Desde 2007, JB Networking Systems LLC ha sido su red financiera de servicios completos de confianza, proporcionando soluciones integrales de impuestos, contabilidad, inversión y crédito en Georgia, Alabama y Texas.",
+    "stats": {
+      "yearsServing": "Años Sirviendo",
+      "stateLocations": "Ubicaciones Estatales",
+      "moneyBackGuarantee": "Garantía de Devolución de Dinero"
+    },
+    "trustExpertise": {
+      "title": "Confianza y Experiencia",
+      "description": "Nuestros profesionales certificados brindan soluciones financieras personalizadas con soporte bilingüe y descuentos militares.",
+      "certified": "Certificado",
+      "bilingual": "Bilingüe"
+    }
+  },
+  "video": {
+    "title": "Conozca a Sus Socios Financieros",
+    "description": "Descubra cómo JB Networking Systems LLC ha estado ayudando a familias y empresas a lograr el éxito financiero desde 2007.",
+    "stats": {
+      "yearsOfExcellence": "Años de Excelencia",
+      "satisfiedClients": "Clientes Satisfechos",
+      "stateLocations": "Ubicaciones Estatales",
+      "moneyBackGuarantee": "Garantía de Devolución de Dinero"
+    }
+  },
+  "services": {
+    "title": "Soluciones Financieras Integrales",
+    "description": "Desde la preparación de impuestos hasta la planificación de inversiones, la reparación de crédito hasta la formación de empresas: somos su socio financiero completo.",
+    "taxAccounting": {
+      "title": "Impuestos y Contabilidad",
+      "description": "Servicios profesionales de preparación de impuestos, contabilidad y servicios contables para individuos y empresas.",
+      "features": {
+        "personalTaxReturns": "Declaraciones de Impuestos Personales",
+        "businessTaxPreparation": "Preparación de Impuestos Empresariales",
+        "payrollServices": "Servicios de Nómina",
+        "bookkeeping": "Contabilidad"
+      }
+    },
+    "financialPlanning": {
+      "title": "Planificación Financiera",
+      "description": "Planificación estratégica de inversiones y gestión de patrimonio para asegurar su futuro financiero.",
+      "features": {
+        "investmentStrategy": "Estrategia de Inversión",
+        "retirementPlanning": "Planificación de Jubilación",
+        "portfolioManagement": "Gestión de Cartera",
+        "riskAssessment": "Evaluación de Riesgos"
+      }
+    },
+    "creditDebtResolution": {
+      "title": "Resolución de Crédito y Deuda",
+      "description": "Reconstruya su puntaje de crédito y resuelva problemas de deuda con nuestro programa de resultados garantizados.",
+      "features": {
+        "creditRepair": "Reparación de Crédito",
+        "debtConsolidation": "Consolidación de Deuda",
+        "creditMonitoring": "Monitoreo de Crédito",
+        "financialCounseling": "Asesoría Financiera"
+      }
+    },
+    "businessServices": {
+      "title": "Servicios Empresariales",
+      "description": "Formación empresarial completa, servicios corporativos y oportunidades de franquicia.",
+      "features": {
+        "businessFormation": "Formación Empresarial",
+        "corporateFiling": "Tramitación Corporativa",
+        "businessCreditBuilding": "Construcción de Crédito Empresarial",
+        "franchiseSupport": "Soporte de Franquicia"
+      }
+    },
+    "realEstateInsurance": {
+      "title": "Bienes Raíces e Seguros",
+      "description": "Servicios integrales de bienes raíces y soluciones de seguros para su protección.",
+      "features": {
+        "realEstateConsulting": "Consultoría Inmobiliaria",
+        "propertyInvestment": "Inversión en Propiedades",
+        "insurancePlanning": "Planificación de Seguros",
+        "riskManagement": "Gestión de Riesgos"
+      }
+    },
+    "moneyBackGuaranteeBadge": "Garantía de Devolución de Dinero"
+  },
+  "whyChooseUs": {
+    "title": "¿Por Qué Elegir JB Networking Systems LLC?",
+    "description": "Con más de 17 años de experiencia, hemos construido nuestra reputación en la confianza, la experiencia y el servicio personalizado. Nuestro equipo multilingüe atiende a clientes en tres estados con el compromiso de proteger su futuro financiero.",
+    "features": {
+      "trustedSince2007": {
+        "title": "De Confianza Desde 2007",
+        "description": "Más de 17 años de experiencia probada en servicios financieros con miles de clientes satisfechos."
+      },
+      "bilingualServices": {
+        "title": "Servicios Bilingües",
+        "description": "Hablamos Español - Servicios completos disponibles en inglés y español para su conveniencia."
+      },
+      "militaryDiscounts": {
+        "title": "Descuentos Militares",
+        "description": "Precios VIP especiales y descuentos exclusivos para nuestro personal militar y veteranos."
+      },
+      "moneyBackGuarantee": {
+        "title": "Garantía de Devolución de Dinero",
+        "description": "Garantía de satisfacción del 100% en nuestros servicios de resolución de crédito y deuda: resultados o su dinero de vuelta."
+      }
+    },
+    "commitment": {
+      "title": "Nuestro Compromiso",
+      "stats": {
+        "supportAvailable": "Soporte Disponible",
+        "confidentialService": "Servicio Confidencial",
+        "stateCoverage": "Cobertura Estatal",
+        "solutionsAvailable": "Soluciones Disponibles"
+      }
+    },
+    "cta": {
+      "title": "¿Listo para Comenzar?",
+      "description": "Programe su consulta gratuita hoy y descubra cómo podemos ayudar a proteger su futuro financiero.",
+      "button": "Reservar Consulta Gratuita"
+    }
+  },
+  "locations": {
+    "title": "Sirviendo Tres Estados",
+    "description": "Con oficinas estratégicamente ubicadas en Georgia, Alabama y Texas, siempre estamos cerca para atender sus necesidades financieras.",
+    "georgia": {
+      "title": "Oficina de Georgia",
+      "area": "Área Metropolitana de Atlanta",
+      "address": "123 Peachtree Street\nAtlanta, GA 30309",
+      "phone": "(404) 555-0123",
+      "email": "georgia@jbnetworking.com"
+    },
+    "alabama": {
+      "title": "Oficina de Alabama",
+      "area": "Área de Birmingham",
+      "address": "456 Commerce Drive\nBirmingham, AL 35203",
+      "phone": "(205) 555-0123",
+      "email": "alabama@jbnetworking.com"
+    },
+    "texas": {
+      "title": "Oficina de Texas",
+      "area": "Área de Houston",
+      "address": "789 Main Street\nHouston, TX 77002",
+      "phone": "(713) 555-0123",
+      "email": "texas@jbnetworking.com"
+    },
+    "map": {
+      "title": "Mapa Interactivo de Oficinas",
+      "description": "Encuentre la oficina más cercana y planifique su visita",
+      "placeholder": "Mapa Interactivo",
+      "placeholderDescription": "Haga clic en cualquier marcador de ubicación para ver los detalles de la oficina y las direcciones"
+    }
+  },
+  "testimonials": {
+    "title": "Lo Que Dicen Nuestros Clientes",
+    "description": "No solo confíe en nuestra palabra. Esto es lo que nuestros clientes satisfechos tienen que decir sobre nuestros servicios.",
+    "maria": {
+      "name": "María Rodríguez",
+      "role": "Propietaria de Pequeña Empresa",
+      "text": "JB Networking Systems me ayudó a establecer mi negocio y administrar todos los requisitos fiscales. Su apoyo bilingüe hizo todo mucho más fácil. ¡No podría haberlo hecho sin ellos!"
+    },
+    "james": {
+      "name": "James Thompson",
+      "role": "Veterano Militar",
+      "text": "El descuento militar fue una buena bonificación, pero el valor real fue su experiencia en reparación de crédito. Cumplieron exactamente lo que prometieron y mi puntaje de crédito mejoró significativamente."
+    },
+    "sarah": {
+      "name": "Sarah Williams",
+      "role": "Inversora en Bienes Raíces",
+      "text": "Su enfoque integral de planificación financiera y consultoría inmobiliaria me ayudó a construir una cartera de inversión exitosa. Profesionales, confiables y orientados a resultados."
+    },
+    "michael": {
+      "name": "Michael Chen",
+      "role": "Ejecutivo Corporativo",
+      "text": "He estado usando sus servicios de impuestos e inversiones durante más de 5 años. Consistently entregan excelentes resultados y su toque personal hace toda la diferencia."
+    },
+    "lisa": {
+      "name": "Lisa García",
+      "role": "Propietaria de Franquicia",
+      "text": "Desde la configuración de la franquicia hasta el soporte empresarial continuo, JB Networking Systems ha sido fundamental en mi éxito. Su experiencia en formación empresarial no tiene igual."
+    },
+    "robert": {
+      "name": "Robert Johnson",
+      "role": "Jubilado",
+      "text": "Sus servicios de planificación de jubilación me dieron tranquilidad. Me ayudaron a optimizar mis inversiones y asegurar un futuro financiero seguro para mi familia."
+    }
+  },
+  "cta": {
+    "title": "¿Listo para Proteger Su Futuro Financiero?",
+    "description": "Únase a miles de clientes satisfechos que confían en JB Networking Systems LLC con su éxito financiero. Programe su consulta gratuita hoy y descubra cómo nuestro toque personal puede marcar la diferencia.",
+    "features": {
+      "freeConsultation": {
+        "title": "Consulta Gratuita",
+        "description": "Sin obligación, evaluación personalizada de sus necesidades financieras"
+      },
+      "personalTouch": {
+        "title": "Toque Personal",
+        "description": "Profesionales dedicados que se preocupan por su éxito"
+      },
+      "guaranteedResults": {
+        "title": "Resultados Garantizados",
+        "description": "Garantía de devolución de dinero en servicios de crédito: entregamos resultados"
+      }
+    },
+    "buttons": {
+      "bookConsultation": "Reserve Su Consulta Gratuita",
+      "callNumber": "Llame al (555) 123-4567"
+    },
+    "badges": {
+      "hablamosEspanol": "Hablamos Español",
+      "militaryDiscounts": "Descuentos Militares Disponibles"
+    }
+  },
+  "footer": {
+    "companyName": "JB Networking Systems LLC",
+    "companyTagline": "Red Financiera de Servicios Completos",
+    "description": "Desde 2007, protegiendo activos con un toque personal. Su socio de confianza para soluciones financieras integrales en Georgia, Alabama y Texas.",
+    "sections": {
+      "individualServices": "Servicios Individuales",
+      "businessServices": "Servicios Empresariales",
+      "contactInfo": "Información de Contacto"
+    },
+    "contact": {
+      "locations": "Múltiples Ubicaciones:",
+      "locationsList": "Georgia | Alabama | Texas",
+      "phone": "(555) 123-4567",
+      "email": "info@jbnetworking.com",
+      "hours": "Lun-Vie: 9AM-6PM",
+      "weekends": "Fines de Semana con Cita"
+    },
+    "copyright": "© 2024 JB Networking Systems LLC. Todos los derechos reservados.",
+    "links": {
+      "privacyPolicy": "Política de Privacidad",
+      "termsOfService": "Términos de Servicio",
+      "accessibility": "Accesibilidad"
+    },
+    "badges": {
+      "hablamosEspanol": "Hablamos Español",
+      "militaryDiscounts": "Descuentos Militares"
+    }
+  }
+}
+

@@ -1,0 +1,46 @@
+export const COMPANY = {
+  name: 'JB Networking Systems LLC',
+  tagline: 'Full-Service Financial Network',
+  contact: {
+    phone: '(555) 123-4567',
+    email: 'info@jbnetworking.com',
+    consultationEmail: 'consultations@jbnetworking.com',
+    hoursWeekdays: 'Mon-Fri: 9AM-6PM',
+    hoursWeekends: 'Weekends by Appointment',
+  },
+  social: {
+    facebook: '#',
+    twitter: '#',
+    linkedin: '#',
+    instagram: '#',
+  },
+  offices: [
+    {
+      id: 'georgia',
+      name: 'Georgia Office',
+      area: 'Atlanta Metro Area',
+      address: ['123 Peachtree Street', 'Atlanta, GA 30309'],
+      phone: '(404) 555-0123',
+      email: 'georgia@jbnetworking.com',
+      hours: ['Monday - Friday: 9:00 AM - 6:00 PM', 'Saturday: 10:00 AM - 4:00 PM', 'Sunday: By Appointment'],
+    },
+    {
+      id: 'alabama',
+      name: 'Alabama Office',
+      area: 'Birmingham Area',
+      address: ['456 Commerce Drive', 'Birmingham, AL 35203'],
+      phone: '(205) 555-0123',
+      email: 'alabama@jbnetworking.com',
+      hours: ['Monday - Friday: 8:30 AM - 5:30 PM', 'Saturday: 9:00 AM - 3:00 PM', 'Sunday: Closed'],
+    },
+    {
+      id: 'texas',
+      name: 'Texas Office',
+      area: 'Houston Area',
+      address: ['789 Main Street', 'Houston, TX 77002'],
+      phone: '(713) 555-0123',
+      email: 'texas@jbnetworking.com',
+      hours: ['Monday - Friday: 9:00 AM - 7:00 PM', 'Saturday: 10:00 AM - 5:00 PM', 'Sunday: By Appointment'],
+    },
+  ],
+} as const;
