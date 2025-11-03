@@ -4051,5 +4051,38 @@
         }
       }
     }
+  },
+  "legal": {
+    "terms": {
+      "title": "Terms of Service",
+      "lastUpdated": "Last updated: Jan 1, 2025",
+      "sections": [
+        { "title": "Introduction", "text": "These Terms govern your use of our website and services." },
+        { "title": "Use of Services", "text": "You agree to use our services in compliance with applicable laws." },
+        { "title": "Privacy", "text": "Your use is also governed by our Cookie Policy and privacy practices." },
+        { "title": "Disclaimers", "text": "Content is provided for informational purposes only." },
+        { "title": "Contact", "text": "Questions? Contact us using the details on our site." }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "intro": "This policy explains how we use cookies and how you can manage your preferences.",
+      "essential": { "title": "Essential Cookies", "text": "Strictly necessary for core functionality and security." },
+      "functional": { "title": "Functional Cookies", "text": "Enable additional features and personalization." },
+      "analytics": { "title": "Analytics Cookies", "text": "Help us understand website traffic and usage." },
+      "marketing": { "title": "Marketing Cookies", "text": "Used to deliver personalized ads and measure effectiveness." }
+    }
+  },
+  "cookie_consent": {
+    "title": "Your privacy matters",
+    "message": "We use cookies to enhance your experience, analyze usage, and for marketing. Manage your preferences below.",
+    "policyLabel": "Cookie Policy",
+    "buttons": { "acceptAll": "Accept all", "reject": "Reject non-essential", "manage": "Manage preferences", "save": "Save preferences" },
+    "categories": {
+      "essential": { "title": "Essential", "text": "Required for the website to function." },
+      "functional": { "title": "Functional", "text": "Enhances functionality and personalization." },
+      "analytics": { "title": "Analytics", "text": "Helps us understand site usage and improve." },
+      "marketing": { "title": "Marketing / Sale/Share", "text": "Used for ads and may be considered sale/share under US state privacy laws." }
+    }
   }
 }

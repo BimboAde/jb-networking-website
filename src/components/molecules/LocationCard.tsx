@@ -13,7 +13,7 @@ type LocationCardProps = {
   requestMeetingHref?: string;
 };
 
-export const LocationCard = ({ title, area, address, phone, email, getDirectionsLabel, requestMeetingLabel, requestMeetingHref }: LocationCardProps) => {
+export const LocationCard = ({ title, area, address, phone, email, requestMeetingLabel, requestMeetingHref }: LocationCardProps) => {
   return (
     <div className="bg-white rounded-xl p-8 shadow-lg text-center">
       <div className="w-16 h-16 bg-brand-green rounded-full mx-auto flex items-center justify-center mb-6">
