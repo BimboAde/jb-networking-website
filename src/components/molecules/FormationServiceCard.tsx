@@ -28,10 +28,10 @@ export const FormationServiceCard = ({ dict, baseIndex }: FormationServiceCardPr
         ))}
       </ul>
       <div className="border-t pt-4">
-        <div className="flex justify-between items-center mb-3">
+        {/* <div className="flex justify-between items-center mb-3">
           <span className="text-sm text-gray-500">{priceLabel}</span>
           <span className="text-2xl font-bold text-brand-green">{price}</span>
-        </div>
+        </div> */}
         <button className="w-full bg-brand-green text-white py-2 rounded-lg font-medium hover:bg-brand-light-green transition-colors">{button}</button>
       </div>
     </div>

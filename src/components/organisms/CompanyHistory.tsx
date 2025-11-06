@@ -1,6 +1,7 @@
 import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import Image from 'next/image';
+import { images } from '@/data/images';
 
 export const CompanyHistory = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'about_page.history');
@@ -29,7 +30,7 @@ export const CompanyHistory = ({ dict }: { dict: Dict }) => {
           </div>
           <div className="space-y-8">
             <div className="h-64 overflow-hidden rounded-2xl relative">
-              <Image fill src="/window.svg" alt="Office" className="object-cover" />
+              <Image fill src={images.aboutPageImage1.src} alt={images.aboutPageImage1.alt} className="object-cover" />
             </div>
             <div className="grid grid-cols-2 gap-6">
               {[0,1,2,3].map((i) => (

@@ -44,8 +44,8 @@ export default async function TaxAccountingPage({ params }: PageParams) {
         <TaxServicesGrid dict={dict} />
         <TaxProcess dict={dict} />
         {/* <TaxPricing dict={dict} /> */}
-        <TaxChecklist dict={dict} />
-          <TaxTips dict={dict} />
+        {/* <TaxChecklist dict={dict} /> */}
+          <TaxTips dict={dict} lang={lang} />
           {/* <TaxTestimonials dict={dict} />  */}
         <CTASection dict={dict} lang={lang} />
       </main>

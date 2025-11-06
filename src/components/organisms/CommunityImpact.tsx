@@ -1,6 +1,7 @@
 import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import Image from 'next/image';
+import { images } from '@/data/images';
 
 export const CommunityImpact = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'about_page.community');
@@ -14,7 +15,7 @@ export const CommunityImpact = ({ dict }: { dict: Dict }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
           <div className="space-y-8">
             <div className="h-80 overflow-hidden rounded-2xl relative">
-              <Image src="/globe.svg" alt="Community" fill className="object-cover" />
+              <Image src={images.aboutPageImage2.src} alt={images.aboutPageImage2.alt} fill className="object-cover" />
             </div>
             <div className="bg-brand-gray rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-brand-green mb-6 font-poppins">{t('programsTitle')}</h3>

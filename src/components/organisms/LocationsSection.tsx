@@ -43,7 +43,7 @@ export const LocationsSection = ({ dict, consultationHref }: { dict: Dict; consu
           variants={fadeInUp}
           className="text-center mb-16"
         >
-          <Heading level={2} className="mb-4">
+          <Heading level={2} className="mb-4 text-brand-green">
             {t('title')}
           </Heading>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">{t('description')}</p>

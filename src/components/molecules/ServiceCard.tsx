@@ -13,6 +13,7 @@ type ServiceCardProps = {
   featuresKey: string[];
   hasBadge?: boolean;
   badgeTextKey?: string;
+  href?: string;
 };
 
 export const ServiceCard = ({
@@ -23,6 +24,7 @@ export const ServiceCard = ({
   featuresKey,
   hasBadge = false,
   badgeTextKey,
+  href,
 }: ServiceCardProps) => {
   const t = getT(dict);
   const tCommon = getT(dict, 'common');
@@ -53,7 +55,7 @@ export const ServiceCard = ({
           </li>
         ))}
       </ul>
-      <Button variant="primary" className="text-brand-green font-semibold hover:text-brand-light-green bg-transparent hover:bg-transparent p-0">
+      <Button href={href} variant="primary" className="text-brand-green font-semibold hover:text-brand-light-green bg-transparent hover:bg-transparent p-0">
         {tCommon('learnMore')} →
       </Button>
     </MotionDiv>

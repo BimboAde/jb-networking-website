@@ -46,10 +46,10 @@ export const ComplianceServices = ({ dict }: { dict: Dict }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.0.title'} textKey={'solutions_corporate.compliance.tiles.0.text'} price={t('tiles.0.price')} period={t('tiles.0.period')} ctaKey={'common.addService'} />
-          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.1.title'} textKey={'solutions_corporate.compliance.tiles.1.text'} price={t('tiles.1.price')} period={t('tiles.1.period')} ctaKey={'common.addService'} />
-          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.2.title'} textKey={'solutions_corporate.compliance.tiles.2.text'} price={t('tiles.2.price')} period={t('tiles.2.period')} ctaKey={'common.addService'} />
-          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.3.title'} textKey={'solutions_corporate.compliance.tiles.3.text'} price={t('tiles.3.price')} period={t('tiles.3.period')} ctaKey={'common.addService'} />
+          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.0.title'} textKey={'solutions_corporate.compliance.tiles.0.text'} price={t('tiles.0.price')} period={t('tiles.0.period')} ctaKey={'common.contactUs'} />
+          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.1.title'} textKey={'solutions_corporate.compliance.tiles.1.text'} price={t('tiles.1.price')} period={t('tiles.1.period')} ctaKey={'common.contactUs'} />
+          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.2.title'} textKey={'solutions_corporate.compliance.tiles.2.text'} price={t('tiles.2.price')} period={t('tiles.2.period')} ctaKey={'common.contactUs'} />
+          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.3.title'} textKey={'solutions_corporate.compliance.tiles.3.text'} price={t('tiles.3.price')} period={t('tiles.3.period')} ctaKey={'common.contactUs'} />
         </div>
       </div>
     </section>

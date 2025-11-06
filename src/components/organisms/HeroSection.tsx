@@ -60,7 +60,7 @@ export const HeroSection = ({ dict }: { dict: Dict }) => {
             <div className="bg-white rounded-2xl p-0 shadow-2xl overflow-hidden">
               <div className="relative w-full" style={{ aspectRatio: '4 / 3' }}>
                 <Image
-                  src={images.trustCardImageUrl || '/jblogo.png'}
+                  src={images.homePageImage.src || '/jblogo.png'}
                   alt={t('trustExpertise.title')}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"

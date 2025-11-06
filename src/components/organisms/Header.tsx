@@ -17,17 +17,17 @@ export const Header = ({ dict, lang }: { dict: Dict; lang: string }) => {
   };
 
   const individualServices = [
-    { label: t('individualServices.personalTaxAccounting'), href: withLang('/solutions/individuals/tax-accounting') },
-    { label: t('individualServices.financialInvestmentPlanning'), href: withLang('/solutions/individuals/financial-planning') },
+    { label: t('individualServices.personalTaxAccounting'), href: withLang('/solutions/individuals/tax-client-intake') },
+    { label: t('individualServices.financialInvestmentPlanning'), href: withLang('/solutions/individuals/financial-insurance-planning') },
     { label: t('individualServices.creditDebtResolution'), href: withLang('/solutions/individuals/credit-debt-resolution') },
-    { label: t('individualServices.personalRealEstateInsurance'), href: withLang('/solutions/individuals/real-estate-insurance') },
+    { label: t('individualServices.personalRealEstateInsurance'), href: withLang('/solutions/individuals/real-estate-mortgage') },
   ];
 
   const businessServices = [
-    { label: t('businessServices.businessTaxAccounting'), href: withLang('/solutions/businesses/business-tax') },
-    { label: t('businessServices.businessCreditBuilding'), href: withLang('/solutions/businesses/credit-building') },
+    { label: t('businessServices.businessTaxAccounting'), href: withLang('/solutions/businesses/business-accountant-services') },
+    // { label: t('businessServices.businessCreditBuilding'), href: withLang('/solutions/businesses/business-credit-building') },
     { label: t('businessServices.corporateServices'), href: withLang('/solutions/businesses/corporate-services') },
-    { label: t('businessServices.franchiseOpportunities'), href: withLang('/solutions/businesses/franchise-opportunities') },
+    { label: t('businessServices.executiveServices'), href: withLang('/solutions/businesses/executive-services') },
   ];
 
   return (

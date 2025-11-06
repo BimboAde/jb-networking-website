@@ -20,7 +20,7 @@ export const CorporateProcessTimeline = ({ dict }: { dict: Dict }) => {
             ))}
           </div>
         </div>
-        <div className="text-center mt-16">
+        {/* <div className="text-center mt-16">
           <div className="bg-brand-green rounded-2xl p-8 text-white">
             <Heading level={3} className="mb-4 text-white">{t('total.title')}</Heading>
             <p className="text-xl text-green-100 mb-6">{t('total.subtitle')}</p>
@@ -28,7 +28,7 @@ export const CorporateProcessTimeline = ({ dict }: { dict: Dict }) => {
               {t('total.button')}
             </button>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

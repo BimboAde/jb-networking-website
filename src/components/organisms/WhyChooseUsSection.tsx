@@ -45,7 +45,7 @@ export const WhyChooseUsSection = ({ dict }: { dict: Dict }) => {
             viewport={{ once: true }}
             variants={slideInLeft}
           >
-            <Heading level={2} className="mb-6">
+            <Heading level={2} className="mb-6 text-brand-green">
               {t('title')}
             </Heading>
             <p className="text-xl text-gray-600 mb-8">{t('description')}</p>

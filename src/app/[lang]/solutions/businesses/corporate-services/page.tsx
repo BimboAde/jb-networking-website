@@ -46,7 +46,7 @@ export default async function CorporateServicesPage({ params }: PageParams) {
         <FormationServicesGrid dict={dict} />
         <ComplianceServices dict={dict} />
         <CorporateProcessTimeline dict={dict} />
-        <StateRequirements dict={dict} />
+        {/* <StateRequirements dict={dict} /> */}
         <CorporateSuccessStories dict={dict} />
         <CorporateFAQ dict={dict} />
         <CTASection dict={dict} lang={lang} />

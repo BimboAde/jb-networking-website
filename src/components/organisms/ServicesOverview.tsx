@@ -1,76 +1,89 @@
 import { getT, type Dict } from '@/lib/i18n-server';
 import { MotionDiv } from '../atoms/Motion';
-import {
-  Calculator,
-  TrendingUp,
-  CreditCard,
-  Building2,
-  Home,
-} from 'lucide-react';
+import { Calculator, ShieldCheck, CreditCard, Building2, Home, Briefcase } from 'lucide-react';
 import { Heading } from '../atoms/Heading';
 import { ServiceCard } from '../molecules/ServiceCard';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
+import { getT as _getT } from '@/lib/i18n-server';
 
-export const ServicesOverview = ({ dict }: { dict: Dict }) => {
+export const ServicesOverview = ({ dict, lang }: { dict: Dict; lang: string }) => {
   const t = getT(dict, 'services');
+  const withLang = (path: string) => `/${lang}${path.startsWith('/') ? path : '/' + path}`.replace(/\/+$/, '/');
 
   const services = [
     {
       icon: Calculator,
-      titleKey: 'services.taxAccounting.title',
-      descriptionKey: 'services.taxAccounting.description',
+      titleKey: 'services.taxIntake.title',
+      descriptionKey: 'services.taxIntake.description',
       featuresKey: [
-        'services.taxAccounting.features.personalTaxReturns',
-        'services.taxAccounting.features.businessTaxPreparation',
-        'services.taxAccounting.features.payrollServices',
-        'services.taxAccounting.features.bookkeeping',
+        'services.taxIntake.features.0',
+        'services.taxIntake.features.1',
+        'services.taxIntake.features.2',
+        'services.taxIntake.features.3',
       ],
+      href: withLang('/solutions/individuals/tax-client-intake'),
     },
     {
-      icon: TrendingUp,
-      titleKey: 'services.financialPlanning.title',
-      descriptionKey: 'services.financialPlanning.description',
+      icon: ShieldCheck,
+      titleKey: 'services.financialInsurance.title',
+      descriptionKey: 'services.financialInsurance.description',
       featuresKey: [
-        'services.financialPlanning.features.investmentStrategy',
-        'services.financialPlanning.features.retirementPlanning',
-        'services.financialPlanning.features.portfolioManagement',
-        'services.financialPlanning.features.riskAssessment',
+        'services.financialInsurance.features.0',
+        'services.financialInsurance.features.1',
+        'services.financialInsurance.features.2',
+        'services.financialInsurance.features.3',
       ],
+      href: withLang('/solutions/individuals/financial-insurance-planning'),
     },
     {
       icon: CreditCard,
-      titleKey: 'services.creditDebtResolution.title',
-      descriptionKey: 'services.creditDebtResolution.description',
+      titleKey: 'services.creditDebt.title',
+      descriptionKey: 'services.creditDebt.description',
       featuresKey: [
-        'services.creditDebtResolution.features.creditRepair',
-        'services.creditDebtResolution.features.debtConsolidation',
-        'services.creditDebtResolution.features.creditMonitoring',
-        'services.creditDebtResolution.features.financialCounseling',
+        'services.creditDebt.features.0',
+        'services.creditDebt.features.1',
+        'services.creditDebt.features.2',
+        'services.creditDebt.features.3',
       ],
       hasBadge: true,
       badgeTextKey: 'services.moneyBackGuaranteeBadge',
+      href: withLang('/solutions/individuals/credit-debt-resolutions'),
     },
     {
       icon: Building2,
-      titleKey: 'services.businessServices.title',
-      descriptionKey: 'services.businessServices.description',
+      titleKey: 'services.businessAccountant.title',
+      descriptionKey: 'services.businessAccountant.description',
       featuresKey: [
-        'services.businessServices.features.businessFormation',
-        'services.businessServices.features.corporateFiling',
-        'services.businessServices.features.businessCreditBuilding',
-        'services.businessServices.features.franchiseSupport',
+        'services.businessAccountant.features.0',
+        'services.businessAccountant.features.1',
+        'services.businessAccountant.features.2',
+        'services.businessAccountant.features.3',
       ],
+      href: withLang('/solutions/businesses/business-accountant-services'),
     },
     {
       icon: Home,
-      titleKey: 'services.realEstateInsurance.title',
-      descriptionKey: 'services.realEstateInsurance.description',
+      titleKey: 'services.realEstateMortgage.title',
+      descriptionKey: 'services.realEstateMortgage.description',
       featuresKey: [
-        'services.realEstateInsurance.features.realEstateConsulting',
-        'services.realEstateInsurance.features.propertyInvestment',
-        'services.realEstateInsurance.features.insurancePlanning',
-        'services.realEstateInsurance.features.riskManagement',
+        'services.realEstateMortgage.features.0',
+        'services.realEstateMortgage.features.1',
+        'services.realEstateMortgage.features.2',
+        'services.realEstateMortgage.features.3',
       ],
+      href: withLang('/solutions/individuals/real-estate-mortgage'),
+    },
+    {
+      icon: Briefcase,
+      titleKey: 'services.executive.title',
+      descriptionKey: 'services.executive.description',
+      featuresKey: [
+        'services.executive.features.0',
+        'services.executive.features.1',
+        'services.executive.features.2',
+        'services.executive.features.3',
+      ],
+      href: withLang('/solutions/businesses/executive-services'),
     },
   ];
 
@@ -107,6 +120,7 @@ export const ServicesOverview = ({ dict }: { dict: Dict }) => {
               featuresKey={service.featuresKey}
               hasBadge={service.hasBadge}
               badgeTextKey={service.badgeTextKey}
+              href={service.href}
             />
           ))}
         </MotionDiv>

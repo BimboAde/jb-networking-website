@@ -19,19 +19,18 @@ export const Footer = ({ dict, lang }: { dict: Dict; lang?: string }) => {
     { icon: Linkedin, href: '#' },
     { icon: Instagram, href: '#' },
   ];
-
-  const individualServicesLinks = [
-    { label: tHeader('individualServices.personalTaxAccounting'), href: withLang('/solutions/individuals/tax-accounting') },
-    { label: tHeader('individualServices.financialInvestmentPlanning'), href: withLang('/solutions/individuals/financial-planning') },
+  const individualServices = [
+    { label: tHeader('individualServices.personalTaxAccounting'), href: withLang('/solutions/individuals/tax-client-intake') },
+    { label: tHeader('individualServices.financialInvestmentPlanning'), href: withLang('/solutions/individuals/financial-insurance-planning') },
     { label: tHeader('individualServices.creditDebtResolution'), href: withLang('/solutions/individuals/credit-debt-resolution') },
-    { label: tHeader('individualServices.personalRealEstateInsurance'), href: withLang('/solutions/individuals/real-estate-insurance') },
+    { label: tHeader('individualServices.personalRealEstateInsurance'), href: withLang('/solutions/individuals/real-estate-mortgage') },
   ];
 
-  const businessServicesLinks = [
-    { label: tHeader('businessServices.businessTaxAccounting'), href: withLang('/solutions/businesses/business-tax') },
-    { label: tHeader('businessServices.businessCreditBuilding'), href: withLang('/solutions/businesses/credit-building') },
+  const businessServices = [
+    { label: tHeader('businessServices.businessTaxAccounting'), href: withLang('/solutions/businesses/business-accountant-services') },
+    // { label: t('businessServices.businessCreditBuilding'), href: withLang('/solutions/businesses/business-credit-building') },
     { label: tHeader('businessServices.corporateServices'), href: withLang('/solutions/businesses/corporate-services') },
-    { label: tHeader('businessServices.franchiseOpportunities'), href: withLang('/solutions/businesses/franchise-opportunities') },
+    { label: tHeader('businessServices.executiveServices'), href: withLang('/solutions/businesses/executive-services') },
   ];
 
   return (
@@ -62,7 +61,7 @@ export const Footer = ({ dict, lang }: { dict: Dict; lang?: string }) => {
             </h4>
             </Link>
             <ul className="space-y-3">
-              {individualServicesLinks.map((link, index) => (
+              {individualServices.map((link, index) => (
                 <li key={index}>
                   <Link
                     href={link.href}
@@ -82,7 +81,7 @@ export const Footer = ({ dict, lang }: { dict: Dict; lang?: string }) => {
             </h4>
             </Link>
             <ul className="space-y-3">
-              {businessServicesLinks.map((link, index) => (
+              {businessServices.map((link, index) => (
                 <li key={index}>
                   <Link
                     href={link.href}

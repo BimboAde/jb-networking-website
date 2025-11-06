@@ -1,6 +1,6 @@
 import { getT, type Dict } from '@/lib/i18n-server';
 import { MotionDiv } from '../atoms/Motion';
-import { CalendarPlus, Phone, Languages, Medal } from 'lucide-react';
+import { CalendarPlus, Phone, Languages, Medal, Globe, ShieldCheck } from 'lucide-react';
 import { Heading } from '../atoms/Heading';
 import { Button } from '../atoms/Button';
 import { fadeInUp } from '@/lib/animations';
@@ -18,12 +18,12 @@ export const CTASection = ({ dict, lang }: { dict: Dict; lang: string }) => {
       descriptionKey: 'features.freeConsultation.description',
     },
     {
-      icon: Languages,
+      icon: Globe,
       titleKey: 'features.personalTouch.title',
       descriptionKey: 'features.personalTouch.description',
     },
     {
-      icon: Medal,
+      icon: ShieldCheck,
       titleKey: 'features.guaranteedResults.title',
       descriptionKey: 'features.guaranteedResults.description',
     },
@@ -52,11 +52,18 @@ export const CTASection = ({ dict, lang }: { dict: Dict; lang: string }) => {
                 whileInView="animate"
                 viewport={{ once: true }}
                 variants={fadeInUp}
-                className="text-center"
+                whileHover={{ y: -6, scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                transition={{ type: 'spring', stiffness: 260, damping: 20 }}
+                className="text-center bg-white/5 rounded-xl p-6"
               >
-                <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full mx-auto flex items-center justify-center mb-4">
-                  <feature.icon className="w-8 h-8" />
-                </div>
+                <MotionDiv
+                  className="w-16 h-16 bg-white bg-opacity-20 rounded-full mx-auto flex items-center justify-center mb-4"
+                  whileHover={{ rotate: 6, scale: 1.05 }}
+                  transition={{ type: 'spring', stiffness: 300, damping: 15 }}
+                >
+                  <feature.icon className="w-8 h-8 text-brand-green" />
+                </MotionDiv>
                 <h3 className="text-xl font-semibold mb-2">{t(feature.titleKey)}</h3>
                 <p className="text-green-100">{t(feature.descriptionKey)}</p>
               </MotionDiv>
@@ -64,22 +71,26 @@ export const CTASection = ({ dict, lang }: { dict: Dict; lang: string }) => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button
-              variant="secondary"
-              className="px-8 py-4 text-lg font-semibold"
-              href={withLang('/consultation')}
-              icon={<CalendarPlus className="w-5 h-5" />}
-            >
-              {t('buttons.bookConsultation')}
-            </Button>
-            <Button
-              variant="outline"
-              className="px-8 py-4 text-lg font-semibold"
-              href={tel}
-              icon={<Phone className="w-5 h-5" />}
-            >
-              {`Call ${COMPANY.contact.phone}`}
-            </Button>
+            <MotionDiv whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+              <Button
+                variant="secondary"
+                className="px-8 py-4 text-lg font-semibold"
+                href={withLang('/consultation')}
+                icon={<CalendarPlus className="w-5 h-5" />}
+              >
+                {t('buttons.bookConsultation')}
+              </Button>
+            </MotionDiv>
+            <MotionDiv whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+              <Button
+                variant="outline"
+                className="px-8 py-4 text-lg font-semibold"
+                href={tel}
+                icon={<Phone className="w-5 h-5" />}
+              >
+                {`Call ${COMPANY.contact.phone}`}
+              </Button>
+            </MotionDiv>
           </div>
 
           <div className="mt-8 text-center">

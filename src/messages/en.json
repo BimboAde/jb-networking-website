@@ -8,7 +8,7 @@
     "scheduleFreeConsultation": "Schedule Expert Consultation",
     "watchOurStory": "Watch Our Story",
     "readMore": "Read More",
-    
+    "contactUs": "Contact Us",
     "addService": "Add Service"
   },
   "header": {
@@ -21,16 +21,16 @@
     "english": "English",
     "spanish": "Español",
     "individualServices": {
-      "personalTaxAccounting": "Personal Tax & Accounting",
-      "financialInvestmentPlanning": "Financial & Investment Planning",
-      "creditDebtResolution": "Credit & Debt Resolution",
-      "personalRealEstateInsurance": "Personal Real Estate & Insurance"
+      "personalTaxAccounting": "Tax & Client Intake",
+      "financialInvestmentPlanning": "Financial & Insurance Planning",
+      "creditDebtResolution": "Credit & Debt Resolutions",
+      "personalRealEstateInsurance": "Real Estate & Mortgage Services"
     },
     "businessServices": {
-      "businessTaxAccounting": "Business Tax & Accounting",
+      "businessTaxAccounting": "Business & Accountant Services",
       "businessCreditBuilding": "Business Credit Building",
       "corporateServices": "Corporate Services",
-      "franchiseOpportunities": "Franchise Opportunities"
+      "executiveServices": "Executive Services"
     }
   },
   "hero": {
@@ -69,6 +69,66 @@
   "services": {
     "title": "Comprehensive Financial Solutions",
     "description": "From federal tax preparation to investment planning, credit repair to business formation - we're your complete financial partner.",
+    "taxIntake": {
+      "title": "Tax & Client Intake",
+      "description": "Start here to onboard smoothly. We collect your details and documents to prepare and file your taxes accurately and on time.",
+      "features": {
+        "0": "Fast, secure onboarding",
+        "1": "Document checklist guidance",
+        "2": "All states & federal supported",
+        "3": "Bilingual intake available"
+      }
+    },
+    "financialInsurance": {
+      "title": "Financial & Insurance Planning",
+      "description": "Protect and grow your wealth with tailored planning and comprehensive insurance coverage for families and businesses.",
+      "features": {
+        "0": "Life, Accident & Sickness",
+        "1": "Property & Casualty",
+        "2": "Homeowners / Renters",
+        "3": "Annuities & Retirement Planning"
+      }
+    },
+    "creditDebt": {
+      "title": "Credit & Debt Resolutions",
+      "description": "Rebuild credit and eliminate debt with our proven, compliant strategies—backed by our money‑back guarantee.",
+      "features": {
+        "0": "Credit repair (money‑back guarantee)",
+        "1": "IRS/State debt resolution",
+        "2": "Credit monitoring & coaching",
+        "3": "Disputes & default management"
+      }
+    },
+    "businessAccountant": {
+      "title": "Business & Accountant Services",
+      "description": "End‑to‑end accounting, compliance, and business funding services to keep your company audit‑ready and growth‑ready.",
+      "features": {
+        "0": "Accounting & CPA services",
+        "1": "Payroll & filings",
+        "2": "Sales tax & compliance",
+        "3": "Business funding guidance"
+      }
+    },
+    "realEstateMortgage": {
+      "title": "Real Estate & Mortgage Services",
+      "description": "In partnership with licensed realtors and lenders for purchases, refinancing, and investment properties.",
+      "features": {
+        "0": "Mortgage financing consultation",
+        "1": "Investment property guidance",
+        "2": "Buy/Sell and leasing support",
+        "3": "Property risk & coverage review"
+      }
+    },
+    "executive": {
+      "title": "Executive Services",
+      "description": "Professional space and staffing solutions so you can operate like an enterprise from day one.",
+      "features": {
+        "0": "Office & corporate room rentals",
+        "1": "Virtual assistants & reception",
+        "2": "Training room rentals",
+        "3": "Flexible terms & concierge"
+      }
+    },
     "taxAccounting": {
       "title": "Tax & Accounting",
       "description": "Professional tax preparation and accounting services for individuals and businesses, including federal/state filing and corporate compliance.",
@@ -493,21 +553,21 @@
   "solutions_tax": {
     "common": {
       "scheduleConsultation": "Schedule Tax Consultation",
-      "downloadChecklist": "Tax Checklist"
+      "downloadChecklist": "Download Free Tax Checklist"
     },
     "hero": {
       "title": "Expert Tax Preparation &",
-      "highlight": "Accounting Services",
-      "description": "Maximize your tax savings and streamline your financial records with our comprehensive personal tax and accounting solutions. Bilingual support available.",
+      "highlight": "IRS Resolution",
+      "description": "Maximize your tax savings with our expert tax preparation for all states. We also specialize in fast-tracked debt resolution with the IRS and State authorities. Bilingual support available (Hablamos Español).",
       "card": {
         "title": "Tax Season Ready",
-        "stat0": { "value": "$2,500", "label": "Avg. Refund" },
+        "stat0": { "value": "$2,500+", "label": "Avg. Refund" },
         "stat1": { "value": "48hr", "label": "Turnaround" }
       }
     },
     "services": {
-      "title": "Complete Tax & Accounting Solutions",
-      "description": "From simple tax returns to complex financial planning, our certified professionals ensure maximum savings and complete compliance.",
+      "title": "Complete Tax Preparation & Resolution",
+      "description": "From simple individual returns to complex IRS debt, our certified professionals and tax agents ensure maximum savings and complete compliance.",
       "individual": {
         "title": "Individual Tax Returns",
         "description": "Professional preparation of federal and state returns with maximum deduction identification.",
@@ -515,7 +575,7 @@
           "Form 1040 Preparation",
           "Itemized Deductions",
           "Schedule C (Self-Employment)",
-          "Multi-State Filing"
+          "Multi-State Filing (All States)"
         ]
       },
       "realEstate": {
@@ -535,17 +595,7 @@
           "Stock & Bond Transactions",
           "Cryptocurrency Reporting",
           "Dividend Income",
-          "Options & Futures"
-        ]
-      },
-      "bookkeeping": {
-        "title": "Personal Bookkeeping",
-        "description": "Organized records and expense tracking for personal finances.",
-        "features": [
-          "Monthly Reconciliation",
-          "Expense Categorization",
-          "Receipt Management",
-          "Financial Reports"
+          "K-1 (Partnerships/S-Corps)"
         ]
       },
       "education": {
@@ -559,23 +609,43 @@
         ]
       },
       "irs": {
-        "title": "IRS Representation",
-        "description": "Professional resolution of tax issues with federal and state agencies.",
+        "title": "IRS & State Debt Resolution",
+        "description": "Professional resolution of tax issues with all federal and state agencies.",
         "features": [
-          "Audit Defense",
-          "Payment Plans",
-          "Penalty Abatement",
-          "Offer in Compromise"
+          "Fast-Tracked Debt Resolution",
+          "Audit Defense & Representation",
+          "Payment Plans & OIC",
+          "Penalty Abatement"
+        ]
+      },
+      "quarterly": {
+        "title": "Quarterly Tax Filing",
+        "description": "Ensure your business stays compliant with quarterly tax prep and filing.",
+        "features": [
+          "Estimated Tax Calculations",
+          "Form 1040-ES Filing",
+          "Minimize Underpayment Penalties",
+          "Year-Round Tax Planning"
+        ]
+      },
+      "bookkeeping": {
+        "title": "Personal Bookkeeping",
+        "description": "Organized records and expense tracking for accurate returns and easier planning.",
+        "features": [
+          "Monthly Reconciliation",
+          "Expense Categorization",
+          "Receipt Management",
+          "Financial Reports"
         ]
       }
     },
     "process": {
-      "title": "Our Streamlined Tax Process",
+      "title": "Our Streamlined Tax & Intake Process",
       "description": "From initial consultation to final filing, we make tax preparation simple, efficient, and stress‑free.",
       "steps": {
         "1": {
-          "title": "Initial Consultation",
-          "description": "Expert Consultation to understand your tax situation and opportunities.",
+          "title": "Expert Tax Consultation",
+          "description": "A free, expert consultation to understand your unique tax situation and identify savings opportunities.",
           "bullets": [
             "Personalized review",
             "Savings opportunities",
@@ -583,30 +653,30 @@
           ]
         },
         "2": {
-          "title": "Document Collection",
-          "description": "Secure upload portal and checklist for required documents.",
+          "title": "Secure Document Intake",
+          "description": "Our secure client portal and comprehensive checklist make document submission simple and safe.",
           "bullets": [
-            "Secure portal",
+            "Secure portal access",
             "Comprehensive checklist",
             "Guided support"
           ]
         },
         "3": {
           "title": "Expert Preparation",
-          "description": "Certified professionals prepare with maximum deductions and accuracy.",
+          "description": "Our certified tax agents prepare your return, searching for every possible deduction and credit.",
           "bullets": [
             "Certified preparers",
-            "Max deductions",
-            "Strict accuracy"
+            "Maximum deductions",
+            "Strict accuracy review"
           ]
         },
         "4": {
-          "title": "Review & Filing",
-          "description": "Detailed review prior to electronic filing and confirmation.",
+          "title": "Review & E-Filing",
+          "description": "We conduct a detailed review with you before electronically filing for the fastest possible refund.",
           "bullets": [
-            "Detailed review",
-            "E‑file submission",
-            "Acceptance confirmation"
+            "Client-facing review",
+            "Secure e-file submission",
+            "Refund tracking"
           ]
         }
       }
@@ -618,7 +688,7 @@
       "basic": {
         "title": "Basic Tax Return",
         "price": "$149",
-        "period": "",
+        "period": "starting at",
         "features": [
           "Form 1040 Preparation",
           "Standard Deduction",
@@ -631,7 +701,7 @@
       "comprehensive": {
         "title": "Comprehensive Return",
         "price": "$299",
-        "period": "",
+        "period": "starting at",
         "features": [
           "Everything in Basic",
           "Itemized Deductions",
@@ -643,18 +713,31 @@
         "button": "Get Started"
       },
       "premium": {
-        "title": "Premium Package",
+        "title": "Premium (Tax & Debt)",
         "price": "$499",
-        "period": "",
+        "period": "starting at",
         "features": [
           "Everything in Comprehensive",
           "Complex Investments",
-          "Business Income (K‑1s)",
+          "IRS/State Debt Resolution",
           "Year‑Round Tax Planning",
           "Quarterly Check‑ins",
           "Audit Protection"
         ],
         "button": "Get Started"
+      },
+      "discounts": {
+        "title": "Discounts & Referral Bonuses",
+        "items": [
+          {
+            "title": "Tax Referral Bonus",
+            "text": "UP TO $70 instant payout for each new tax referral!"
+          },
+          {
+            "title": "VIP Military Service",
+            "text": "Active Duty, Retired, & Reservists always receive VIP service."
+          }
+        ]
       }
     },
     "checklist": {
@@ -742,19 +825,19 @@
         {
           "name": "Maria Rodriguez",
           "role": "Small Business Owner",
-          "quote": "They found deductions I never knew existed! My refund was higher and the bilingual service made it easy.",
+          "quote": "They found deductions I never knew existed! My refund was higher and the bilingual service (Hablamos Español) made it so easy.",
           "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg"
         },
         {
           "name": "Michael Chen",
           "role": "Real Estate Investor",
-          "quote": "Complex rental property taxes made simple. Their planning saved me thousands.",
+          "quote": "Complex rental property taxes made simple. Their planning saved me thousands and was fast-tracked.",
           "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg"
         },
         {
           "name": "James Thompson",
-          "role": "Military Veteran",
-          "quote": "They caught an error from my previous preparer and secured an amended refund.",
+          "role": "Military Veteran (VIP Service)",
+          "quote": "As a veteran, I appreciate their VIP service. They caught an error from my previous preparer and secured an amended refund.",
           "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
         }
       ]
@@ -1090,62 +1173,87 @@
     "breadcrumb": {
       "home": "Home",
       "individuals": "Solutions for Individuals",
-      "current": "Personal Real Estate & Insurance"
+      "current": "Real Estate & Mortgage"
     },
     "common": {
-      "ctaConsultation": "Get Expert Consultation",
-      "ctaCall": "Call Expert"
+      "ctaConsultation": "Speak to our Realtor",
+      "ctaCall": "Get Pre-qualified"
     },
     "hero": {
       "title": "Personal Real Estate &",
-      "highlight": "Insurance Solutions",
-      "description": "Comprehensive real estate consulting, property management, and insurance planning to protect your most valuable assets.",
+      "highlight": "Mortgage Solutions",
+      "description": "Comprehensive real estate consulting, property management, and mortgage financing in partnership with our expert realtor team.",
       "tiles": [
-        { "title": "Real Estate", "subtitle": "Management" },
-        { "title": "Insurance", "subtitle": "Protection" },
-        { "title": "Leasing", "subtitle": "Commercial & Residential" },
-        { "title": "Personal", "subtitle": "Service" }
+        { "title": "Real Estate", "subtitle": "Agent Services" },
+        { "title": "Mortgage", "subtitle": "Financing" },
+        { "title": "Property Mgmt", "subtitle": "Full-Service" },
+        { "title": "Leasing", "subtitle": "Commercial & Residential" }
       ]
     },
     "overview": {
-      "title": "Complete Real Estate & Insurance Services",
-      "description": "From property investment guidance to comprehensive insurance coverage, we protect your assets and help you make informed decisions.",
+      "title": "Complete Real Estate & Mortgage Services",
+      "description": "From property investment guidance to securing financing, we protect your assets and help you make informed decisions.",
       "realEstate": {
         "title": "Real Estate Services",
-        "subtitle": "Expert guidance for all your property needs",
+        "subtitle": "In partnership with Messiah Mason",
         "features": [
-          { "title": "Property Mgmt", "subtitle": "Full-service management" },
-          { "title": "Leasing", "subtitle": "Commercial & Residential" },
-          { "title": "Agent Services", "subtitle": "with Messiah Mason" },
-          { "title": "Transactions", "subtitle": "Buy/sell support" }
+          {
+            "title": "Property Mgmt",
+            "subtitle": "Full-service management"
+          },
+          {
+            "title": "Leasing",
+            "subtitle": "Commercial & Residential"
+          },
+          {
+            "title": "Agent Services",
+            "subtitle": "with Messiah Mason"
+          },
+          {
+            "title": "Investment",
+            "subtitle": "Investment Properties"
+          }
         ],
         "bullets": [
           "Real Property Management",
           "Commercial Leasing",
           "Residential Leasing",
-          "Real Estate Agent: Messiah Mason"
+          "Real Estate Agent: Messiah Mason",
+          "Investment Properties"
         ]
       },
-      "insurance": {
-        "title": "Insurance Solutions",
-        "subtitle": "Comprehensive coverage for peace of mind",
+      "mortgage": {
+        "title": "Mortgage & Financing",
+        "subtitle": "Financing for your home or investment",
         "features": [
-          { "title": "Life Insurance", "subtitle": "Family security" },
-          { "title": "Property", "subtitle": "Asset protection" },
-          { "title": "Casualty", "subtitle": "Liability coverage" },
-          { "title": "Accident/Sickness", "subtitle": "Income protection" }
+          {
+            "title": "Pre-qualification",
+            "subtitle": "Start your journey"
+          },
+          {
+            "title": "Purchase Loans",
+            "subtitle": "Home or investment"
+          },
+          {
+            "title": "Refinancing",
+            "subtitle": "Lower your rate"
+          },
+          {
+            "title": "Document Prep",
+            "subtitle": "For Lenders"
+          }
         ],
         "bullets": [
-          "Licensed Agent Services",
-          "Life Insurance",
-          "Accident & Sickness",
-          "Property & Casualty"
+          "Mortgage Financing Partnership",
+          "Investment Property Loans",
+          "Refinancing Options",
+          "Document Preparation for Lenders"
         ]
       }
     },
     "services": {
       "title": "Specialized Service Areas",
-      "description": "Our expertise covers every aspect of real estate and insurance planning",
+      "description": "Our expertise covers every aspect of real estate and mortgage planning",
       "propertyManagement": {
         "title": "Real Property Management",
         "description": "Professional, full-service management for your real estate assets, ensuring peace of mind and optimal returns.",
@@ -1176,66 +1284,78 @@
           "Transaction Management"
         ]
       },
-      "lifeInsurance": {
-        "title": "Life Insurance",
-        "description": "Protect your family's financial future with our tailored life insurance policies from licensed agents.",
+      "mortgageFinancing": {
+        "title": "Mortgage Financing",
+        "description": "In partnership with our realtor team, we provide mortgage financing for primary and investment properties.",
         "features": [
-          "Term Life Insurance",
-          "Whole Life Insurance",
-          "Policy Reviews",
-          "Beneficiary Planning"
+          "Pre-qualification & Pre-Approval",
+          "Conventional, FHA, VA Loans",
+          "First-Time Homebuyer Programs",
+          "Documentation Support"
         ]
       },
-      "propertyCasualty": {
-        "title": "Property & Casualty Insurance",
-        "description": "Protect your home, auto, and other valuable assets from unforeseen events.",
+      "refinancing": {
+        "title": "Refinancing Solutions",
+        "description": "Explore options to lower your interest rate, reduce your monthly payment, or tap into your home's equity.",
         "features": [
-          "Homeowners Insurance",
-          "Auto Insurance",
-          "Property Protection",
-          "Casualty & Liability Coverage"
+          "Rate & Term Refinance",
+          "Cash-Out Refinance",
+          "Loan Modification Options",
+          "Portfolio Analysis"
         ]
       },
-      "accidentSickness": {
-        "title": "Accident & Sickness Insurance",
-        "description": "Coverage to protect your income and cover expenses in case of an unexpected accident or illness.",
+      "investmentLoans": {
+        "title": "Investment Property Loans",
+        "description": "Specialized financing solutions designed for real estate investors and property portfolio growth.",
         "features": [
-          "Disability Income",
-          "Medical Expense Coverage",
-          "Accident Protection",
-          "Policy Customization"
+          "Fix & Flip Loans",
+          "Rental Property Loans (DSCR)",
+          "Portfolio Loans",
+          "Commercial Property Financing"
         ]
       }
     },
     "process": {
-      "title": "Our Proven Process",
-      "description": "From initial consultation to ongoing support, we guide you through every step of your real estate and insurance journey.",
+      "title": "Our Proven Property & Mortgage Process",
+      "description": "From initial consultation to closing, we guide you through every step of your real estate and financing journey.",
       "reasonsTitle": "Why Our Process Works",
       "statsTitle": "Success Statistics",
       "steps": {
         "1": {
           "title": "Initial Consultation",
-          "description": "We discuss your goals, assess your current situation, and understand your specific needs and preferences.",
+          "description": "We discuss your goals, assess your current situation, and understand your specific needs for property or financing.",
           "bullets": [
             "Goal alignment",
-            "Needs assessment",
-            "Preference mapping"
+            "Financial assessment",
+            "Property needs"
           ]
         },
         "2": {
           "title": "Analysis & Research",
-          "description": "Comprehensive market analysis, property research, and insurance needs assessment tailored to your situation.",
-          "bullets": ["Market research", "Risk analysis", "Coverage assessment"]
+          "description": "Comprehensive market analysis, property search, and mortgage pre-qualification with our partners.",
+          "bullets": [
+            "Market research",
+            "Property search",
+            "Mortgage pre-qualification"
+          ]
         },
         "3": {
           "title": "Custom Strategy",
-          "description": "Development of personalized strategies and recommendations based on our research and your objectives.",
-          "bullets": ["Personalized plan", "Action roadmap", "Milestones"]
+          "description": "Development of a personalized strategy for buying, selling, or refinancing based on your objectives.",
+          "bullets": [
+            "Personalized plan",
+            "Action roadmap",
+            "Property short-list"
+          ]
         },
-        "4.": {
-          "title": "Implementation & Support",
-          "description": "Execute the plan with ongoing support, regular reviews, and adjustments as your needs evolve.",
-          "bullets": ["Execution", "Ongoing reviews", "Adjustments"]
+        "4": {
+          "title": "Financing & Closing",
+          "description": "We coordinate with lenders, agents, and title companies to ensure a smooth transaction from offer to closing.",
+          "bullets": [
+            "Mortgage Coordination",
+            "Lender Document Prep",
+            "Closing & Funding"
+          ]
         }
       },
       "reasons": [
@@ -1245,7 +1365,7 @@
         },
         {
           "title": "Expert Knowledge:",
-          "text": "Our team stays current with market trends, regulations, and best practices in both real estate and insurance."
+          "text": "Our team and partners stay current with market trends, regulations, and best practices."
         },
         {
           "title": "Ongoing Support:",
@@ -1255,100 +1375,118 @@
       "stats": {
         "items": [
           { "value": "95%", "label": "Client Satisfaction" },
-          { "value": "$2.3M", "label": "Avg. Portfolio Value" },
-          { "value": "15%", "label": "Avg. ROI Increase" },
-          { "value": "30", "label": "Days Avg. Process" }
+          { "value": "500+", "label": "Properties Managed" },
+          { "value": "200+", "label": "Loans Closed" },
+          { "value": "30", "label": "Days Avg. Closing" }
         ]
       }
     },
     "comparison": {
-      "title": "Insurance Coverage Comparison",
-      "description": "Compare different insurance options to find the perfect coverage for your needs",
+      "title": "Mortgage Program Comparison",
+      "description": "Compare different loan options to find the perfect fit for your needs.",
       "included": "Included",
       "notIncluded": "Not Included",
       "headers": {
-        "coverage": "Coverage Type",
-        "basic": "Basic Plan",
-        "standard": "Standard Plan",
-        "premium": "Premium Plan"
+        "coverage": "Loan Type",
+        "basic": "Conventional",
+        "standard": "FHA Loan",
+        "premium": "VA Loan"
       },
       "rows": [
         {
-          "label": "Dwelling Protection",
-          "values": ["$250,000", "$500,000", "$1,000,000"]
+          "label": "Typical Down Payment",
+          "values": [
+            "3-20%",
+            "3.5%",
+            "0%"
+          ]
         },
         {
-          "label": "Personal Property",
-          "values": ["$100,000", "$200,000", "$400,000"]
+          "label": "Minimum Credit Score",
+          "values": [
+            "620+",
+            "580+",
+            "Varies"
+          ]
         },
         {
-          "label": "Liability Coverage",
-          "values": ["$300,000", "$500,000", "$1,000,000"]
-        },
-        { "label": "Deductible", "values": ["$2,500", "$1,000", "$500"] },
-        {
-          "label": "Additional Living Expenses",
-          "values": ["Not Included", "Included", "Included"]
-        },
-        {
-          "label": "Identity Theft Protection",
-          "values": ["Not Included", "Not Included", "Included"]
+          "label": "Best For",
+          "values": [
+            "Good Credit",
+            "First-Time Buyers",
+            "Veterans & Military"
+          ]
         },
         {
-          "label": "Monthly Premium",
-          "values": ["$89", "$149", "$229"],
-          "emphasis": true
+          "label": "Mortgage Insurance (PMI)",
+          "values": [
+            "Varies",
+            "Required",
+            "No PMI"
+          ]
         },
         {
-          "label": "",
-          "values": ["Select Plan", "Most Popular", "Select Plan"],
+          "label": "Loan Limits",
+          "values": [
+            "High",
+            "Varies by County",
+            "High"
+          ]
+        },
+        {
+          "label": "Learn More",
+          "values": [
+            "Select Plan",
+            "Most Popular",
+            "Select Plan"
+          ],
           "isCta": true
         }
       ]
     },
     "success": {
       "title": "Client Success Stories",
-      "description": "Real results from real clients who trusted us with their real estate and insurance needs",
+      "description": "Real results from real clients who trusted us with their real estate and mortgage needs",
       "items": [
         {
           "name": "Sarah Williams",
           "role": "Real Estate Investor",
-          "quote": "JB Networking Systems helped me build a real estate portfolio worth over $2 million in just 3 years. Their market analysis and investment strategies were spot-on, and their insurance recommendations saved me thousands in premiums while providing better coverage.",
+          "quote": "JB Networking Systems helped me build a real estate portfolio worth over $2 million in just 3 years. Their market analysis and investment strategies were spot-on, and their mortgage partners helped me finance each property seamlessly.",
           "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg",
           "stats": [
             { "value": "$2.1M", "label": "Portfolio Value" },
             { "value": "18%", "label": "Annual ROI" },
-            { "value": "$3,200", "label": "Insurance Savings" }
+            { "value": "7", "label": "Properties Financed" }
           ]
         },
         {
           "name": "Michael Chen",
           "role": "Homeowner",
-          "quote": "When I needed to purchase my first home, JB Networking Systems guided me through the entire process. They found me the perfect property below market value and set up comprehensive insurance coverage that protected me when a storm damaged my roof last year.",
+          "quote": "When I needed to purchase my first home, Messiah Mason and the team guided me through the entire process. They found me the perfect property below market value and handled the mortgage coordination, making it stress-free.",
           "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg",
           "stats": [
             { "value": "$45K", "label": "Below Market" },
-            { "value": "$18K", "label": "Insurance Claim" },
-            { "value": "30", "label": "Days to Close" }
+            { "value": "25", "label": "Days to Close" },
+            { "value": "3.5%", "label": "Interest Rate" }
           ]
         }
       ]
     },
     "faq": {
       "title": "Frequently Asked Questions",
-      "description": "Get answers to common questions about our real estate and insurance services",
+      "description": "Get answers to common questions about our real estate and mortgage services",
       "items": [
         {
           "q": "What types of real estate services do you offer?",
-          "a": "We provide comprehensive real estate services, including Real Property Management, Commercial and Residential Leasing, and full agent services through Messiah Mason."
+          "a": "We provide comprehensive real estate services, including Real Property Management, Commercial and Residential Leasing, and full agent services in partnership with Messiah Mason."
         },
         {
           "q": "Who is your real estate agent?",
-          "a": "We partner with Messiah Mason, a dedicated real estate agent, to handle all your buying and selling needs."
+          "a": "We partner with Messiah Mason, a dedicated real estate agent, to handle all your buying, selling, and investment needs."
         },
         {
-          "q": "What kind of insurance do you provide?",
-          "a": "As licensed agents, we offer Life, Accident & Sickness, Property, and Casualty insurance to cover all your personal and professional needs."
+          "q": "Do you provide mortgage financing?",
+          "a": "Yes, we partner with a team of trusted realtors and lenders to provide mortgage financing for primary homes, investment properties, and refinancing."
         },
         {
           "q": "What is Real Property Management?",
@@ -1361,6 +1499,14 @@
         {
           "q": "Do you offer military discounts?",
           "a": "Yes! We're proud to offer VIP services and exclusive discounts for Active Duty, Retired, & Reservists as a thank you for their service."
+        },
+        {
+          "q": "Can you help me find an investment property?",
+          "a": "Absolutely. We specialize in finding and analyzing investment properties, including cash-flow modeling, rent comps, and renovation ROI scenarios to inform your decision."
+        },
+        {
+          "q": "Do you only work in GA, AL, and TX?",
+          "a": "Our physical offices are in those states, but our network for real estate and financing can assist clients in many other areas as well. Contact us for details."
         }
       ]
     }
@@ -1648,49 +1794,154 @@
       ]
     }
   },
-  "solutions_financial": {
+  "solutions_executive": {
+    "hero": {
+      "title": "Executive Workspaces &",
+      "highlight": "On‑Demand Staffing",
+      "description": "Operate like an enterprise—without the overhead. Rent private offices and meeting rooms, add virtual assistants, and host trainings with turnkey technology and support.",
+      "card": {
+        "title": "What You Get",
+        "items": [
+          "Private offices & meeting rooms",
+          "Reception, mail & phone services",
+          "On‑demand virtual assistants",
+          "Training rooms with A/V"
+        ]
+      }
+    },
+    "services": {
+      "title": "Executive Services Portfolio",
+      "description": "Flexible space, professional staffing, and enterprise‑grade amenities tailored to founders, consultants, and growing teams.",
+      "office": {
+        "title": "Office & Corporate Room Rentals",
+        "description": "Professional spaces for client meetings, interviews, workshops, and daily operations.",
+        "features": [
+          "Private offices & conference rooms",
+          "Hourly, daily, monthly options",
+          "High‑speed Wi‑Fi & printing",
+          "Whiteboards, displays & A/V",
+          "Reception & mail handling",
+          "Secure 24/7 access"
+        ],
+        "ctaPrimary": "Check Availability",
+        "ctaSecondary": "Request Tour"
+      },
+      "virtual": {
+        "title": "Virtual Assistants & Reception",
+        "description": "Scale operations with vetted assistants for admin, client support, billing, and scheduling.",
+        "features": [
+          "Phone answering & call routing",
+          "Inbox & calendar management",
+          "Billing & collections support",
+          "CRM & data entry",
+          "Bilingual client support",
+          "Custom SOPs & reporting"
+        ],
+        "ctaPrimary": "Hire Assistant",
+        "ctaSecondary": "Discuss Scope"
+      },
+      "training": {
+        "title": "Training & Seminar Rooms",
+        "description": "Host trainings, classes, and team events with turnkey A/V and seating layouts.",
+        "features": [
+          "Projector/TV & sound system",
+          "Flexible seating (10–40)",
+          "Livestream/recording ready",
+          "Catering & parking guidance",
+          "On‑site support staff",
+          "Whiteboard & breakout tables"
+        ],
+        "ctaPrimary": "Book Room",
+        "ctaSecondary": "View Layouts"
+      }
+    },
+    "process": {
+      "title": "How It Works",
+      "description": "A fast, frictionless path from inquiry to fully supported operations.",
+      "steps": {
+        "1": {"title": "Discover", "description": "Tell us your workspace, staffing, and event needs.", "bullets": ["Goals & timeline", "Team size & usage", "Budget range"]},
+        "2": {"title": "Design", "description": "We tailor a package of space, assistants, and amenities.", "bullets": ["Floor plan & layout", "Staffing scope", "Service levels"]},
+        "3": {"title": "Deploy", "description": "Access your space and meet your virtual/on‑site team.", "bullets": ["Access & onboarding", "A/V & IT setup", "SOP alignment"]},
+        "4": {"title": "Deliver", "description": "Operate with ongoing support and quarterly optimization.", "bullets": ["Usage & outcomes", "Staffing KPIs", "Scaling options"]}
+      },
+      "why": {
+        "title": "Why Teams Choose Our Executive Services",
+        "items": [
+          {"title": "Enterprise Experience", "text": "Reception, assistants, and facilities aligned to corporate standards."},
+          {"title": "Flexible Terms", "text": "Scale rooms and assistants up or down as your needs evolve."},
+          {"title": "Cost Efficient", "text": "Only pay for what you need—no long leases or full‑time salaries."}
+        ]
+      },
+      "packages": {
+        "title": "Popular Packages",
+        "items": [
+          {"title": "Starter Office (Monthly)", "price": "$699"},
+          {"title": "Assistant Bundle (40 hrs)", "price": "$1,200"},
+          {"title": "Training Day (Full A/V)", "price": "$899"}
+        ],
+        "cta": "Request Proposal"
+      }
+    },
+    "faq": {
+      "title": "Executive Services FAQ",
+      "description": "Answers to common questions about rooms, assistants, and events.",
+      "items": [
+        {"q": "Can I book rooms by the hour?", "a": "Yes. Choose hourly, daily, or monthly terms for all spaces."},
+        {"q": "Do you provide bilingual assistants?", "a": "Yes. English and Spanish support is available for reception and client services."},
+        {"q": "Can assistants work in my systems?", "a": "We support popular CRMs, calendars, billing, and collaboration tools with NDAs as needed."},
+        {"q": "Is equipment included for trainings?", "a": "Rooms include displays or projector, audio, whiteboards, and basic adapters. Advanced setups available on request."}
+      ]
+    }
+  },
+ "solutions_financial": {
     "breadcrumb": {
       "home": "Home",
       "individuals": "Solutions for Individuals",
-      "current": "Financial & Investment Planning"
+      "current": "Financial & Insurance Planning"
     },
     "hero": {
-      "badge": "Financial & Investment Planning",
+      "badge": "Financial & Insurance Planning",
       "title": "Making &",
       "highlight": "Obtaining Goals",
       "description": "As your financial consultant, I start by documenting your goals and then compare them to your current portfolio. I use proven investment strategies designed to meet your risk tolerance and stand up against market volatility.",
       "ctaAnalysis": "Free Portfolio Analysis",
-      "ctaAdvisor": "Speak with Advisor",
+      "ctaAdvisor": "Speak with an Advisor",
       "cardTitle": "Start Your Journey",
-      "cardStat0": { "value": "$0", "label": "Minimum Investment" },
-      "cardStat1": { "value": "24/7", "label": "Portfolio Access" }
+      "cardStat0": {
+        "value": "$0",
+        "label": "Minimum Investment"
+      },
+      "cardStat1": {
+        "value": "17+",
+        "label": "Years Experience"
+      }
     },
     "services": {
-      "title": "Comprehensive Investment Solutions",
-      "description": "From retirement planning to portfolio management, we offer a full spectrum of investment services to help you achieve your financial goals.",
+      "title": "Financial Planning & Insurance Solutions",
+      "description": "From safeguarding your assets with comprehensive insurance to building wealth with proven investment strategies, we cover all aspects of your financial life.",
       "retirement": {
-        "title": "Financial Services",
-        "description": "Comprehensive planning for your future, including retirement and estate planning.",
-        "value": "17+",
-        "valueLabel": "Years of Experience"
-      },
-      "portfolio": {
-        "title": "Portfolio Management",
-        "description": "Diversified investment portfolios tailored to your risk profile and goals.",
+        "title": "Financial & Investment Planning",
+        "description": "We use proven strategies for diversifying portfolios, managing assets, and reducing financial risk.",
         "value": "Proven",
         "valueLabel": "Strategies"
       },
+      "portfolio": {
+        "title": "Life, Health & Accident",
+        "description": "Protect your family and income with policies from our licensed agents and partners at Tiffany & Associates LLC.",
+        "value": "Licensed",
+        "valueLabel": "Agents"
+      },
       "education": {
-        "title": "Loans",
-        "description": "Access to personal and business loans to finance your goals.",
-        "value": "Personal",
-        "valueLabel": "& Business Loans"
+        "title": "Property & Asset Protection",
+        "description": "Comprehensive Property, Casualty, Homeowners, and Auto insurance to safeguard your valuable assets.",
+        "value": "Total",
+        "valueLabel": "Asset Protection"
       },
       "risk": {
-        "title": "Investments",
-        "description": "Strategic investment opportunities to grow your wealth.",
-        "value": "Risk",
-        "valueLabel": "Managed"
+        "title": "Retirement & Estate Planning",
+        "description": "Secure your legacy with annuities, retirement planning, and trust set-up services.",
+        "value": "Legacy",
+        "valueLabel": "Secured"
       }
     },
     "philosophy": {
@@ -1716,42 +1967,37 @@
       ],
       "chart": {
         "title": "Sample Portfolio Allocation",
-        "labels": ["Stocks", "Bonds", "Real Estate", "Cash"],
+        "labels": [
+          "Stocks",
+          "Bonds",
+          "Real Estate",
+          "Cash"
+        ],
         "summaryGrowth": "Growth Assets",
         "summaryConservative": "Conservative Assets"
       }
     },
-    "performance": {
-      "title": "Investment Performance Overview",
-      "description": "Track your investment performance with our comprehensive dashboard showing historical returns, asset allocation, and goal progress.",
-      "chartTitle": "Portfolio Performance (5 Years)",
-      "series": {
-        "portfolio": "Your Portfolio",
-        "sp500": "S&P 500",
-        "benchmark": "Benchmark"
-      },
-      "metrics": {
-        "title": "Key Metrics",
-        "items": [
-          { "value": "+12.4%", "label": "Total Return (YTD)" },
-          { "value": "+8.7%", "label": "5-Year Average" },
-          { "value": "Moderate", "label": "Risk Score" },
-          { "value": "1.24", "label": "Sharpe Ratio" }
-        ]
-      },
-      "nextReview": {
-        "title": "Next Review Date",
-        "subtitle": "Your quarterly portfolio review is scheduled for:",
-        "date": "March 15, 2024"
-      },
-      "highlights": {
-        "items": [
-          { "value": "Top 15%", "label": "Performance Ranking" },
-          { "value": "0.75%", "label": "Management Fee" },
-          { "value": "15+ Years", "label": "Average Holding Period" },
-          { "value": "2,500+", "label": "Satisfied Clients" }
-        ]
-      }
+    "insurance_partner": {
+      "title": "Our Licensed Insurance Partner: Tiffany & Associates LLC",
+      "description": "Through our partnership with Tiffany & Associates LLC, our licensed agents provide access to a complete suite of insurance products to protect every part of your life and business.",
+      "servicesTitle": "Available Insurance Solutions",
+      "servicesList": [
+        "Business Insurance",
+        "Work Comp Insurance",
+        "Casualty and Property Insurance",
+        "Homeowners/Renters Insurance",
+        "Health Insurance",
+        "Accident/Sickness Insurance",
+        "Life Insurance",
+        "Auto Insurance",
+        "Pet Insurance"
+      ],
+      "planningTitle": "Financial & Estate Planning",
+      "planningList": [
+        "Annuities & Retirement Planning",
+        "Trust Set up & Estate Planning"
+      ],
+      "cta": "Get a Free Insurance Quote"
     },
     "calculator": {
       "title": "Retirement Planning Calculator",
@@ -1776,7 +2022,10 @@
     "options": {
       "title": "Investment Options & Strategies",
       "description": "Choose from a wide range of investment vehicles and strategies designed to meet different risk tolerances and financial objectives.",
-      "labels": { "targetReturn": "Target Return", "horizon": "Time Horizon" },
+      "labels": {
+        "targetReturn": "Target Return",
+        "horizon": "Time Horizon"
+      },
       "mostPopular": "Most Popular",
       "learnMore": "Learn More",
       "composition": "Portfolio Composition:",
@@ -1799,21 +2048,38 @@
         "risk": "Risk Level: Low",
         "return": "4-6%",
         "horizon": "3-5 years",
-        "comp": ["40%", "30%", "25%", "5%"]
+        "comp": [
+          "40%",
+          "30%",
+          "25%",
+          "5%"
+        ]
       },
       "balanced": {
         "title": "Balanced Growth",
         "risk": "Risk Level: Moderate",
         "return": "7-9%",
         "horizon": "5-10 years",
-        "comp": ["35%", "20%", "30%", "10%", "5%"]
+        "comp": [
+          "35%",
+          "20%",
+          "30%",
+          "10%",
+          "5%"
+        ]
       },
       "aggressive": {
         "title": "Aggressive Growth",
         "risk": "Risk Level: High",
         "return": "10-12%",
         "horizon": "10+ years",
-        "comp": ["50%", "20%", "15%", "10%", "5%"]
+        "comp": [
+          "50%",
+          "20%",
+          "15%",
+          "10%",
+          "5%"
+        ]
       },
       "accounts": {
         "title": "Specialized Investment Accounts",
@@ -1860,17 +2126,29 @@
         {
           "name": "Robert Johnson",
           "role": "Military Veteran, Age 55",
-          "quote": "The military discount was nice, but their expertise in transitioning my TSP and maximizing my pension was invaluable.",
+          "quote": "The VIP Military service was a great benefit, but their expertise in transitioning my TSP and maximizing my pension was invaluable for my retirement.",
           "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg"
         }
       ],
       "aggregate": {
         "title": "Aggregate Client Results",
         "items": [
-          { "value": "$2.8B+", "label": "Assets Under Management" },
-          { "value": "8.7%", "label": "Average Annual Return" },
-          { "value": "95%", "label": "Client Retention Rate" },
-          { "value": "2,500+", "label": "Satisfied Clients" }
+          {
+            "value": "$2.8B+",
+            "label": "Assets Under Management"
+          },
+          {
+            "value": "8.7%",
+            "label": "Average Annual Return"
+          },
+          {
+            "value": "95%",
+            "label": "Client Retention Rate"
+          },
+          {
+            "value": "2,500+",
+            "label": "Satisfied Clients"
+          }
         ]
       }
     }
@@ -2551,415 +2829,61 @@
       ]
     }
   },
-  "solutions_franchise": {
-    "breadcrumb": {
-      "home": "Home",
-      "business": "Solutions for Businesses",
-      "current": "Franchise Opportunities"
-    },
-    "hero": {
-      "badge": "Limited Franchise Opportunities Available",
-      "title": "Own Your",
-      "highlight": "Financial Future",
-      "description": "Join the JB Networking Systems LLC franchise family and build a thriving financial services business with our proven 17-year track record, comprehensive training, and ongoing support.",
-      "ctaKit": "Download Franchise Kit",
-      "ctaVideo": "Watch Overview Video",
-      "stats": [
-        { "value": "$150K+", "label": "Avg Annual Revenue" },
-        { "value": "95%", "label": "Franchisee Satisfaction" },
-        { "value": "6", "label": "Months to Profitability" }
-      ],
-      "form": {
-        "title": "Start Your Franchise",
-        "text": "Complete the form below to receive your franchise information package and schedule a discovery call.",
-        "name": "Full Name",
-        "email": "Email Address",
-        "phone": "Phone Number",
-        "range": "Investment Range",
-        "ranges": ["$50K - $100K", "$100K - $200K", "$200K+"],
-        "submit": "Get Franchise Information"
-      }
-    },
-    "overview": {
-      "title": "Why Choose JB Networking Systems Franchise?",
-      "description": "With over 17 years of proven success, our franchise model offers you the opportunity to own a profitable financial services business with comprehensive support and training.",
-      "features": [
-        {
-          "title": "Proven Success",
-          "text": "17+ years of industry experience with a track record of helping thousands of clients achieve financial success."
-        },
-        {
-          "title": "Complete Training",
-          "text": "Comprehensive 8-week training program covering all aspects of financial services and business operations."
-        },
-        {
-          "title": "Ongoing Support",
-          "text": "24/7 support system with dedicated franchise coaches, marketing assistance, and operational guidance."
-        },
-        {
-          "title": "High ROI",
-          "text": "Multiple revenue streams with high-margin services ensuring strong return on investment and scalable growth."
-        }
-      ],
-      "streams": {
-        "title": "Multiple Revenue Streams",
-        "text": "Our franchise model provides diverse income opportunities across five core service verticals, ensuring year-round revenue stability.",
-        "items": [
-          {
-            "title": "Tax & Accounting Services",
-            "text": "Seasonal tax preparation, year-round bookkeeping, payroll services, and business accounting."
-          },
-          {
-            "title": "Financial Planning",
-            "text": "Investment advisory, retirement planning, insurance services, and wealth management."
-          },
-          {
-            "title": "Credit & Debt Resolution",
-            "text": "High-margin credit repair services with money-back guarantee and ongoing monitoring."
-          },
-          {
-            "title": "Business Services",
-            "text": "Corporate formation, business credit building, and ongoing corporate compliance services."
-          },
-          {
-            "title": "Real Estate & Insurance",
-            "text": "Real estate consulting, property investment guidance, and comprehensive insurance solutions."
-          }
-        ]
-      },
-      "revenue": {
-        "title": "Revenue Potential",
-        "year1": "Year 1 Revenue",
-        "year2": "Year 2 Revenue",
-        "year3": "Year 3+ Revenue",
-        "margin": "Net Profit Margin"
-      },
-      "investment": {
-        "title": "Investment Breakdown",
-        "items": [
-          { "label": "Franchise Fee", "value": "$45,000" },
-          { "label": "Equipment & Setup", "value": "$15,000" },
-          { "label": "Initial Marketing", "value": "$10,000" },
-          { "label": "Working Capital", "value": "$25,000" },
-          { "label": "Total Investment", "value": "$95,000" }
-        ]
-      }
-    },
-    "training": {
-      "title": "Comprehensive Training & Support Program",
-      "description": "We don't just give you a franchise - we give you a complete business system with ongoing support to ensure your success.",
-      "initial": {
-        "title": "Initial Training",
-        "text": "8-week comprehensive training program covering all aspects of financial services, business operations, and franchise systems.",
-        "weeks": [
-          {
-            "title": "Week 1-2: Foundations",
-            "items": [
-              "Financial Services Overview",
-              "Franchise System Training",
-              "Legal & Compliance",
-              "Software & Technology"
-            ]
-          },
-          {
-            "title": "Week 3-4: Core Services",
-            "items": [
-              "Tax Preparation Mastery",
-              "Credit Repair Certification",
-              "Investment Planning",
-              "Business Formation"
-            ]
-          },
-          {
-            "title": "Week 5-6: Advanced Skills",
-            "items": [
-              "Client Consultation",
-              "Sales & Marketing",
-              "Customer Retention",
-              "Quality Assurance"
-            ]
-          },
-          {
-            "title": "Week 7-8: Launch Prep",
-            "items": [
-              "Grand Opening Strategy",
-              "Local Marketing Campaign",
-              "Operations Management",
-              "Final Certification"
-            ]
-          }
-        ]
-      },
-      "support": {
-        "title": "Ongoing Support",
-        "text": "Continuous support system with dedicated franchise coaches, regular check-ins, and resource updates.",
-        "features": [
-          "Dedicated Franchise Coach",
-          "24/7 Helpdesk",
-          "Franchise Network",
-          "Performance Analytics",
-          "Marketing Support",
-          "System Updates"
-        ]
-      },
-      "launch": {
-        "title": "Launch Support",
-        "text": "Comprehensive grand opening support to ensure a successful launch and immediate market presence.",
-        "package": {
-          "title": "Grand Opening Package",
-          "items": [
-            "$5,000 Marketing Budget",
-            "Local Media Campaign",
-            "Digital Marketing Setup",
-            "Community Outreach Events",
-            "On-Site Launch Support",
-            "First 100 Client Campaign"
-          ]
-        },
-        "timeline": {
-          "title": "Launch Timeline",
-          "phases": [
-            {
-              "title": "Week 1-2",
-              "text": "Location setup and equipment installation"
-            },
-            {
-              "title": "Week 3-4",
-              "text": "Marketing campaign launch and community outreach"
-            },
-            {
-              "title": "Week 5-6",
-              "text": "Grand opening event and first client acquisitions"
-            }
-          ]
-        }
-      }
-    },
-    "success": {
-      "title": "Franchisee Success Stories",
-      "description": "Hear from our successful franchise owners who have built thriving businesses with JB Networking Systems LLC.",
-      "items": [
-        {
-          "name": "David Martinez",
-          "role": "Franchise Owner - Houston, TX",
-          "note": "Opened: January 2022",
-          "quote": "The training program was incredibly comprehensive, and the ongoing support has been exceptional.",
-          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg",
-          "stats": [
-            { "value": "$285K", "label": "Year 2 Revenue" },
-            { "value": "42%", "label": "Profit Margin" }
-          ]
-        },
-        {
-          "name": "Angela Thompson",
-          "role": "Franchise Owner - Birmingham, AL",
-          "note": "Opened: March 2021",
-          "quote": "Proven systems with multiple revenue streams. Credit services have been particularly profitable.",
-          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg",
-          "stats": [
-            { "value": "$320K", "label": "Year 3 Revenue" },
-            { "value": "38%", "label": "Profit Margin" }
-          ]
-        }
-      ],
-      "aggregate": [
-        { "value": "95%", "label": "Franchisee Satisfaction Rate" },
-        { "value": "$235K", "label": "Average Annual Revenue" },
-        { "value": "18", "label": "Months Average ROI" }
-      ]
-    },
-    "territory": {
-      "title": "Territory Availability & Requirements",
-      "description": "We're selectively expanding our franchise network in key markets. See if your area is available and learn about our franchisee requirements.",
-      "priority": {
-        "title": "Priority Markets",
-        "badge": "Limited Availability",
-        "ga": [
-          "Savannah Metro",
-          "Augusta Metro",
-          "Columbus Metro",
-          "Macon Metro"
-        ],
-        "al": [
-          "Mobile Metro",
-          "Montgomery Metro",
-          "Huntsville Metro",
-          "Tuscaloosa Metro"
-        ]
-      },
-      "secondary": {
-        "title": "Secondary Markets",
-        "badge": "Available",
-        "tx": [
-          "San Antonio Metro",
-          "Fort Worth Metro",
-          "El Paso Metro",
-          "Corpus Christi Metro"
-        ],
-        "fl": [
-          "Jacksonville Metro",
-          "Tampa Metro",
-          "Orlando Metro",
-          "Tallahassee Metro"
-        ]
-      },
-      "protection": {
-        "title": "Territory Protection",
-        "items": [
-          "Exclusive territory rights with population-based boundaries",
-          "Minimum 50,000 population territory guarantee",
-          "No competing franchises within your territory",
-          "Right of first refusal for adjacent territories"
-        ]
-      },
-      "financial": {
-        "title": "Financial Requirements",
-        "items": [
-          { "label": "Liquid Capital", "value": "$150,000" },
-          { "label": "Net Worth", "value": "$300,000" },
-          { "label": "Total Investment", "value": "$95,000" },
-          { "label": "Financing Available", "value": "Up to 70%" }
-        ]
-      },
-      "candidate": {
-        "title": "Ideal Candidate Profile",
-        "items": [
-          "Education: Bachelor's preferred",
-          "Experience: 5+ years management or customer service",
-          "People Skills: Strong communication",
-          "Business Acumen: Growth-oriented",
-          "Language Skills: Bilingual preferred"
-        ]
-      },
-      "timeline": {
-        "title": "Franchise Process Timeline",
-        "steps": [
-          "Initial Application & Review (1-2 weeks)",
-          "Discovery Day & Interviews (1 week)",
-          "Financial Verification & Approval (2 weeks)",
-          "Franchise Agreement & Training (8 weeks)",
-          "Grand Opening & Launch Support (2 weeks)"
-        ]
-      }
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "description": "Get answers to the most common questions about our franchise opportunity.",
-      "items": [
-        {
-          "q": "What is the total investment required?",
-          "a": "The total investment is $95,000 including fees, setup, marketing, and working capital. Financing available up to 70%."
-        },
-        {
-          "q": "How long does it take to become profitable?",
-          "a": "Most franchisees reach profitability within 6-9 months with our training and launch support."
-        },
-        {
-          "q": "Do I need prior experience in financial services?",
-          "a": "Not required. Our 8-week training covers everything you need."
-        },
-        {
-          "q": "What ongoing fees are required?",
-          "a": "6% royalty and 2% marketing fee support training, tech, and franchise services."
-        },
-        {
-          "q": "Can I operate from home initially?",
-          "a": "Yes. Many start from home and later transition to a commercial location with our guidance."
-        },
-        {
-          "q": "What support do I receive after opening?",
-          "a": "Dedicated coach, 24/7 helpdesk, reviews, ongoing training, marketing, and peer network."
-        },
-        {
-          "q": "How large is my protected territory?",
-          "a": "Minimum 50,000 people; typical 75,000–150,000."
-        },
-        {
-          "q": "Can I own multiple territories?",
-          "a": "Yes. Right of first refusal on adjacent territories and support for multi-unit development."
-        }
-      ]
-    },
-    "cta": {
-      "title": "Ready to Start Your Franchise Journey?",
-      "description": "Join the JB Networking Systems LLC family and build a profitable financial services business with our proven system, comprehensive training, and ongoing support.",
-      "features": [
-        {
-          "title": "Download Franchise Kit",
-          "text": "Complete franchise information package with all the details you need"
-        },
-        {
-          "title": "Schedule Discovery Call",
-          "text": "One-on-one discussion about the opportunity and your goals"
-        },
-        {
-          "title": "Start Your Business",
-          "text": "Complete training and launch your franchise with full support"
-        }
-      ],
-      "buttons": {
-        "kit": "Download Franchise Kit",
-        "call": "Call (555) 123-4567"
-      },
-      "incentives": [
-        "Reduced franchise fee for qualified veterans",
-        "Financing available up to 70%",
-        "Fast-track approval for qualified candidates",
-        "Premium territories still available"
-      ]
-    }
-  },
 
-  "solutions_business_tax": {
+"solutions_business_tax": {
     "breadcrumb": {
       "home": "Home",
       "business": "Solutions for Businesses",
-      "current": "Business Tax & Accounting"
+      "current": "Business & Accountant Services"
     },
     "hero": {
       "title": "Professional Business",
-      "highlight": "Tax & Accounting",
-      "subtitle": "Services",
-      "description": "Expert tax preparation (Fed & All States), quarterly tax filing, CPA services, and accounting solutions to help your business thrive and stay compliant.",
-      "ctaQuote": "Get Free Quote",
-      "ctaChecklist": "Tax Checklist",
+      "highlight": "Accountant Services",
+      "description": "Comprehensive accounting, payroll, business loans, and funding solutions. We are your partner for business management, startup services, and corporate compliance.",
+      "ctaQuote": "Get Accounting Quote",
+      "ctaChecklist": "Startup Checklist",
       "card": {
-        "title": "Tax Season Ready?",
-        "text": "Let us handle your business taxes while you focus on growing your company.",
-        "tiles": ["Tax Prep", "Bookkeeping", "Payroll", "Compliance"]
+        "title": "Your Business Partner",
+        "text": "Let us handle your accounting, funding, and payroll so you can grow.",
+        "tiles": [
+          "Accounting",
+          "Business Loans",
+          "Payroll",
+          "Startups"
+        ]
       }
     },
     "overview": {
-      "title": "Complete Business Financial Management",
-      "description": "From startup to established enterprise, we provide comprehensive tax and accounting solutions tailored to your business needs.",
+      "title": "Complete Business Management & Accounting",
+      "description": "From startup services and document preparation to full-service accounting and business loans, we provide the solutions you need.",
       "items": [
         {
-          "title": "Tax Agent/Prep (Fed & All States)",
-          "text": "Expert preparation of federal and all state returns, plus quarterly tax prep & filing."
+          "title": "Accountant/CPA (Indiv/Biz)",
+          "text": "Full-service accounting, CPA services, and financial reporting for individuals and businesses."
         },
         {
-          "title": "Accounting & CPA Services",
-          "text": "Accurate record-keeping, financial statements, and full CPA services for individuals and businesses."
+          "title": "Business Funding & Loans",
+          "text": "Access to business loans and funding solutions to finance your growth, operations, or investments."
         },
         {
-          "title": "Payroll Services",
-          "text": "Complete payroll processing, tax withholdings, and compliance."
+          "title": "Payroll & Notary Services",
+          "text": "Complete payroll processing, tax withholdings, and on-site notary services."
         },
         {
-          "title": "IRS/State Debt Resolution",
-          "text": "Fast-tracked debt resolution and document preparation for tax issues."
+          "title": "Business Management & Startups",
+          "text": "Expert guidance for startups, corporate filing, document preparation, and business branding."
         }
       ],
       "why": {
-        "title": "Why Choose Our Business Tax Services?",
+        "title": "Why Businesses Choose Us",
         "items": [
           {
             "title": "Year-Round Support",
             "text": "Not just tax season - we're here all year"
           },
           {
-            "title": "Maximum Deductions",
-            "text": "We find every legal deduction available"
+            "title": "Expert Guidance",
+            "text": "Certified CPAs and business consultants"
           },
           {
             "title": "Bilingual Service",
@@ -2972,34 +2896,34 @@
       "title": "Comprehensive Service Portfolio",
       "description": "Every service designed to streamline your business operations and maximize your financial efficiency.",
       "tax": {
-        "title": "Tax Preparation & Planning",
-        "subtitle": "Strategic tax solutions for every business structure",
+        "title": "Startup & Corporate Services",
+        "subtitle": "Your foundation for a successful business",
         "items": [
           {
+            "title": "Start Up Business Formation",
+            "text": "Complete formation for LLCs, S-Corps, C-Corps, and partnerships."
+          },
+          {
             "title": "Corporate Filing",
-            "text": "Complete preparation and filing for C-Corps and S-Corps"
+            "text": "Annual reports, compliance, and all state corporate filings."
           },
           {
-            "title": "Accountant/CPA (Indiv/Biz)",
-            "text": "Partnership tax filings, K-1 preparation, and full CPA services"
+            "title": "Business Management",
+            "text": "Strategic consulting for new and existing corporations."
           },
           {
-            "title": "Tax Agent/Prep (All States)",
-            "text": "Optimal tax election strategies and filings for LLCs and all states"
-          },
-          {
-            "title": "Quarterly Taxes Prep & File",
-            "text": "Calculation and payment scheduling for quarterly taxes"
+            "title": "Business Branding",
+            "text": "Guidance on branding and market positioning for startups."
           },
           {
             "title": "Document Preparation",
-            "text": "Professional preparation for all tax-related documents"
+            "text": "Expert preparation of all business, financial, and legal documents."
           }
         ]
       },
       "books": {
-        "title": "Bookkeeping & Financial Records",
-        "subtitle": "Accurate financial management and reporting",
+        "title": "Accounting & CPA Services",
+        "subtitle": "The financial backbone of your business",
         "items": [
           {
             "title": "Monthly Financial Statements",
@@ -3014,8 +2938,8 @@
             "text": "Monthly reconciliation of all accounts"
           },
           {
-            "title": "QuickBooks Setup & Training",
-            "text": "Software implementation and staff training"
+            "title": "CPA Services (Indiv/Biz)",
+            "text": "Full CPA services for tax planning, audits, and financial reviews"
           },
           {
             "title": "Financial Analysis",
@@ -3050,47 +2974,47 @@
         ]
       },
       "advisory": {
-        "title": "Compliance & Advisory",
-        "subtitle": "Stay compliant and make informed decisions",
+        "title": "Business Funding & Loans",
+        "subtitle": "Access the capital you need to grow",
         "items": [
           {
-            "title": "IRS & State Debt Resolution",
-            "text": "Fast-tracked debt resolution with the IRS and State tax authorities."
+            "title": "Business Loans",
+            "text": "Facilitating access to term loans, lines of credit, and SBA loans."
           },
           {
-            "title": "Sales Tax Management",
-            "text": "Multi-state sales tax filing and compliance"
+            "title": "Investment Strategy",
+            "text": "Consulting on investment opportunities and capital allocation."
           },
           {
-            "title": "Business License Renewals",
-            "text": "Track and manage license renewal deadlines"
+            "title": "Funding Document Prep",
+            "text": "Preparing business plans and financial docs for lenders."
           },
           {
             "title": "Financial Consulting",
-            "text": "Strategic advice for business growth and efficiency"
+            "text": "Strategic advice for cash flow management and growth."
           },
           {
             "title": "Notary",
-            "text": "Official notary services available for your business documents."
+            "text": "Official notary services available for all loan and legal documents."
           }
         ]
       }
     },
     "pricing": {
-      "title": "Transparent Business Tax & Accounting Pricing",
-      "description": "Choose the service level that fits your business needs. All plans include our personal touch and bilingual support.",
+      "title": "Transparent Business & Accounting Pricing",
+      "description": "Choose the service level that fits your business needs. All plans include our personal touch and VIP military service.",
       "mostPopular": "Most Popular",
       "startup": {
         "title": "Startup Package",
-        "subtitle": "Perfect for new businesses and sole proprietors",
+        "subtitle": "Perfect for new businesses needing basic accounting",
         "price": "$299",
         "period": "",
-        "note": "Starting price for basic business return",
+        "note": "Starting price for basic setup & filing",
         "features": [
-          "Basic Business Tax Return",
+          "Basic Accounting Setup",
           "Schedule C (Sole Proprietorship)",
           "Basic Bookkeeping Review",
-          "Tax Planning Consultation",
+          "Quarterly Consultations",
           "Electronic Filing",
           "Bilingual Support"
         ],
@@ -3098,16 +3022,16 @@
       },
       "growth": {
         "title": "Growth Package",
-        "subtitle": "Ideal for established small to medium businesses",
+        "subtitle": "Ideal for established businesses needing full-service accounting",
         "price": "$799",
         "period": "",
         "note": "Starting price for comprehensive services",
         "features": [
-          "Corporate/Partnership Tax Returns",
+          "Full-Service Accounting (CPA)",
           "Monthly Bookkeeping Services",
           "Quarterly Financial Statements",
           "Basic Payroll Processing",
-          "Sales Tax Filings",
+          "Business Loan Support",
           "Year-Round Support",
           "Priority Scheduling"
         ],
@@ -3115,15 +3039,15 @@
       },
       "enterprise": {
         "title": "Enterprise Package",
-        "subtitle": "Comprehensive solutions for larger businesses",
+        "subtitle": "Comprehensive solutions including virtual CFO & funding strategy",
         "price": "$1,499",
         "period": "",
         "note": "Starting price for full-service package",
         "features": [
-          "Complex Business Tax Returns",
-          "Full Bookkeeping & CFO Services",
+          "Virtual CFO Services",
+          "Full Bookkeeping & Financials",
           "Complete Payroll Management",
-          "Multi-State Tax Compliance",
+          "Business Funding Strategy",
           "Financial Planning & Analysis",
           "Dedicated Account Manager",
           "24/7 Support Access"
@@ -3138,12 +3062,12 @@
             "text": "Active Duty, Retired, & Reservists will always receive VIP service."
           },
           {
-            "title": "Tax Referral Bonus",
-            "text": "UP T0 $70 Instant payout for each tax referral!"
+            "title": "Accounting Contract Discount",
+            "text": "Accounting contracts 40% off all services (excluding app fee)."
           },
           {
-            "title": "Accounting Discount",
-            "text": "Accounting contracts 40% off all services (excluding app fee)."
+            "title": "Tax Referral Bonus",
+            "text": "UP TO $70 Instant payout for each tax referral!"
           }
         ]
       }
@@ -3252,57 +3176,57 @@
     },
     "faq": {
       "title": "Frequently Asked Questions",
-      "description": "Get answers to common questions about our business tax and accounting services.",
+      "description": "Get answers to common questions about our business and accounting services.",
       "items": [
         {
           "q": "What business structures do you handle?",
           "a": "We are accountants/CPAs for both Individuals and Businesses, including sole proprietorships, partnerships, LLCs, S-Corps, and C-Corps."
         },
         {
-          "q": "Do you provide year-round support?",
-          "a": "Yes, we provide year-round support, including quarterly tax prep and filing and ongoing accounting services."
+          "q": "Do you offer business loans?",
+          "a": "Yes, we specialize in helping businesses access funding, including Business Loans and strategic investment consulting."
         },
         {
-          "q": "Can you help with multi-state tax issues?",
-          "a": "Yes, we are Tax Agents and Preparers for Federal and all states, handling all multi-state compliance."
+          "q": "What is included in 'Business Management'?",
+          "a": "This includes corporate filing, start-up consulting, business branding, and strategic planning for your corporation."
         },
         {
           "q": "What accounting software do you support?",
           "a": "We support all major accounting software and can provide setup and training as part of our Accounting Services."
         },
         {
-          "q": "How do you handle payroll tax compliance?",
+          "q": "How do you handle payroll?",
           "a": "Our Payroll Services include withholdings, deposits, quarterly filings, annual reports, and unemployment taxes."
         },
         {
-          "q": "What if I get audited by the IRS?",
-          "a": "We provide full audit representation and specialize in fast-tracked debt resolution with the IRS and State authorities."
+          "q": "Do your accounting services include tax filing?",
+          "a": "Yes, our CPA and accounting services include corporate tax filing, quarterly taxes, and tax agent prep for all states."
         },
         {
           "q": "Do you offer bilingual services?",
           "a": "Sí, (Hablamos Español) full services are available in Spanish."
         },
         {
-          "q": "What are your fees for business tax preparation?",
-          "a": "Our fees are transparent. We offer 40% off accounting contracts (excluding app fee) and $70 for tax referrals. Contact us for a free quote."
+          "q": "What are your accounting fees?",
+          "a": "Our fees are transparent. We offer 40% off new accounting contracts (excluding app fee). Contact us for a free quote."
         }
       ]
     },
     "cta": {
-      "title": "Ready to Streamline Your Business Finances?",
-      "description": "Let us handle your tax and accounting needs while you focus on growing your business.",
+      "title": "Ready to Grow Your Business?",
+      "description": "Let us handle your accounting, funding, and payroll while you focus on what you do best.",
       "features": [
         {
-          "title": "Free Tax Assessment",
-          "text": "Comprehensive review of your current tax situation"
+          "title": "Free Consultation",
+          "text": "Comprehensive review of your business's financial health"
         },
         {
-          "title": "Year-Round Support",
-          "text": "Ongoing assistance beyond tax season"
+          "title": "40% Off Contracts",
+          "text": "New accounting contracts receive 40% off services"
         },
         {
-          "title": "Maximize Deductions",
-          "text": "Find every legal deduction to minimize your tax liability"
+          "title": "Expert Funding",
+          "text": "Unlock business loans and funding for your growth"
         }
       ],
       "buttons": {
@@ -3311,7 +3235,7 @@
       },
       "badges": [
         "Hablamos Español",
-        "Military Discounts Available",
+        "VIP Military Service",
         "Licensed & Insured"
       ]
     }

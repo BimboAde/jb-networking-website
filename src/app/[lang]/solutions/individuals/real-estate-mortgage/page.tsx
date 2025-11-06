@@ -44,7 +44,7 @@ export default async function RealEstateInsurancePage({ params }: PageParams) {
       <main>
         <RealEstateHero dict={dict} />
         <DualServicesOverview dict={dict} />
-        <SpecializedServicesGrid dict={dict} />
+        {/* <SpecializedServicesGrid dict={dict} /> */}
         <RealEstateProcess dict={dict} />
         {/* <InsuranceComparison dict={dict} /> */}
         {/* <RealEstateSuccessStories dict={dict} /> */}

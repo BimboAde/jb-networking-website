@@ -31,12 +31,12 @@ export default async function AboutPage({ params }: PageParams) {
       <main>
         <AboutHero dict={dict} />
         <CompanyHistory dict={dict} />
-        <AboutTimeline dict={dict} />
+        {/* <AboutTimeline dict={dict} /> */}
         <MissionValues dict={dict} />
         <LeadershipTeam dict={dict} />
         <CertificationsPartners dict={dict} />
         <CommunityImpact dict={dict} />
-        <AboutPersonalCTA dict={dict} />
+        <AboutPersonalCTA dict={dict} lang={lang} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

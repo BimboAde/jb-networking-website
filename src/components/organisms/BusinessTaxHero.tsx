@@ -10,7 +10,7 @@ export const BusinessTaxHero = ({ dict }: { dict: Dict }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <div className="space-y-4">
-              <Heading level={1} className="leading-tight text-white">{t('title')} <span className="text-brand-gold">{t('highlight')}</span> {t('subtitle')}</Heading>
+              <Heading level={1} className="leading-tight text-white">{t('title')} <span className="text-brand-gold">{t('highlight')}</span></Heading>
               <p className="text-xl text-green-100 leading-relaxed">{t('description')}</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">

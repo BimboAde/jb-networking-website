@@ -13,6 +13,21 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      // // Individuals → new slugs
+      // { source: '/:lang/solutions/individuals/tax-accounting', destination: '/:lang/solutions/individuals/tax-client-intake', permanent: true },
+      // { source: '/:lang/solutions/individuals/financial-planning', destination: '/:lang/solutions/individuals/financial-insurance-planning', permanent: true },
+      // { source: '/:lang/solutions/individuals/credit-debt-resolution', destination: '/:lang/solutions/individuals/credit-debt-resolutions', permanent: true },
+      // { source: '/:lang/solutions/individuals/real-estate-insurance', destination: '/:lang/solutions/individuals/real-estate-mortgage', permanent: true },
+
+      // // Businesses → new slugs
+      // { source: '/:lang/solutions/businesses/business-tax', destination: '/:lang/solutions/businesses/business-accountant-services', permanent: true },
+      // { source: '/:lang/solutions/businesses/credit-building', destination: '/:lang/solutions/businesses/executive-services', permanent: true },
+      // { source: '/:lang/solutions/businesses/corporate-services', destination: '/:lang/solutions/businesses/real-estate-mortgage', permanent: true },
+      // { source: '/:lang/solutions/businesses/franchise-opportunities', destination: '/:lang/solutions/individuals/credit-debt-resolutions', permanent: true },
+    ];
+  },
 };
 
 export default nextConfig;

@@ -41,7 +41,7 @@ export default async function HomePage({ params }: PageParams) {
         <HeroSection dict={dict} />
         <VideoSection dict={dict} />
         {/* <YouTubeTeaser dict={dict} /> */}
-        <ServicesOverview dict={dict} />
+        <ServicesOverview dict={dict} lang={lang} />
         <WhyChooseUsSection dict={dict} />
         <LocationsSection dict={dict} consultationHref={`/${lang}/consultation`} />
         {/* <TestimonialsSection dict={dict} /> */}

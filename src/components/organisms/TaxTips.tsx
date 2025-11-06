@@ -3,8 +3,9 @@ import { Heading } from '../atoms/Heading';
 import { TaxTipCard } from '../molecules/TaxTipCard';
 import { Receipt, PiggyBank, Home, GraduationCap, LineChart, Calendar } from 'lucide-react';
 
-export const TaxTips = ({ dict }: { dict: Dict }) => {
+export const TaxTips = ({ dict, lang }: { dict: Dict; lang: string }) => {
   const t = getT(dict, 'solutions_tax.tips');
+  const withLang = (path: string) => `/${lang}${path.startsWith('/') ? path : '/' + path}`.replace(/\/+$/, '/');
   const tips = [
     { key: 'recordKeeping', Icon: Receipt },
     { key: 'retirement', Icon: PiggyBank },
@@ -29,6 +30,7 @@ export const TaxTips = ({ dict }: { dict: Dict }) => {
               title={t(`${key}.title`)}
               description={t(`${key}.description`)}
               readMoreLabel={t('readMore')}
+              href={withLang('/consultation')}
             />
           ))}
         </div>
