@@ -1,6 +1,8 @@
 import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import { Button } from '../atoms/Button';
+import Link from 'next/link';
+import { downloads, jotformUrls } from '@/data/images';
 
 export const TaxServiceHero = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'solutions_tax.hero');
@@ -18,8 +20,8 @@ export const TaxServiceHero = ({ dict }: { dict: Dict }) => {
               <p className="text-xl text-green-100 leading-relaxed">{t('description')}</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="secondary" className="px-8 py-3 font-semibold">{tc('scheduleConsultation')}</Button>
-              <Button variant="outline" className="px-8 py-3 font-semibold">{tc('downloadChecklist')}</Button>
+              <Button variant="secondary" className="px-8 py-3 font-semibold"> <Link href={jotformUrls.individualTaxJotformUrl} target="_blank">{tc('scheduleConsultation')}</Link></Button>
+              <Button variant="outline" className="px-8 py-3 font-semibold"> <Link href={downloads.taxChecklistDownloadUrl} target="_blank">{tc('downloadChecklist')}</Link></Button>
             </div>
           </div>
 

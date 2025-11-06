@@ -208,7 +208,7 @@
         "supportAvailable": "Support Available",
         "confidentialService": "Confidential Service",
         "stateCoverage": "State Coverage",
-        "solutionsAvailable": "Solutions Available"
+        "solutionsAvailable": "Services Available"
       }
     },
     "cta": {
@@ -454,7 +454,7 @@
       "included": {
         "title": "What's Included",
         "items": [
-          "Free initial consultation and financial assessment",
+          "Initial consultation at applicable rates; discounts may apply.",
           "Personalized financial strategy development",
           "Regular progress reports and updates",
           "Access to exclusive financial tools and resources",
@@ -645,7 +645,7 @@
       "steps": {
         "1": {
           "title": "Expert Tax Consultation",
-          "description": "A free, expert consultation to understand your unique tax situation and identify savings opportunities.",
+          "description": "An expert consultation at applicable rates to understand your unique tax situation and identify savings opportunities. Discounts may apply.",
           "bullets": [
             "Personalized review",
             "Savings opportunities",
@@ -1176,7 +1176,7 @@
       "current": "Real Estate & Mortgage"
     },
     "common": {
-      "ctaConsultation": "Speak to our Realtor",
+      "ctaConsultation": "Schedule Consultation with our Realtor",
       "ctaCall": "Get Pre-qualified"
     },
     "hero": {
@@ -1248,6 +1248,16 @@
           "Investment Property Loans",
           "Refinancing Options",
           "Document Preparation for Lenders"
+        ]
+      },
+      "insurance": {
+        "title": "Insurance Coverage",
+        "subtitle": "Protect your property and assets",
+        "bullets": [
+          "Homeowners & Renters Insurance",
+          "Umbrella Liability Coverage",
+          "Property Risk Assessment",
+          "Claims & Documentation Support"
         ]
       }
     },
@@ -1596,7 +1606,7 @@
       "steps": {
         "1": {
           "title": "Initial Consultation",
-          "description": "Free comprehensive business assessment to understand your goals and challenges.",
+      "description": "Comprehensive business assessment (rates apply). Discounts may apply.",
           "bullets": [
             "Goals & Challenges",
             "Opportunity Mapping",
@@ -2758,7 +2768,7 @@
             "text": "Plan for future expansion and opportunities"
           }
         ],
-        "cta": "Schedule Free State Consultation"
+        "cta": "Schedule State Consultation"
       }
     },
     "faq": {
@@ -3217,8 +3227,8 @@
       "description": "Let us handle your accounting, funding, and payroll while you focus on what you do best.",
       "features": [
         {
-          "title": "Free Consultation",
-          "text": "Comprehensive review of your business's financial health"
+          "title": "Expert Consultation",
+          "text": "Comprehensive review of your business's financial health (rates apply; discounts may vary)"
         },
         {
           "title": "40% Off Contracts",
@@ -3481,7 +3491,7 @@
       "stats": [
         { "value": "2007", "label": "Founded" },
         { "value": "17+", "label": "Years of Excellence" },
-        { "value": "3", "label": "States Served" }
+        { "value": "50", "label": "States Served" }
       ]
     },
     "history": {
@@ -3497,7 +3507,7 @@
         "Honor our military community with VIP service and recognition"
       ],
       "stats": [
-        { "value": "10,000+", "label": "Clients Served" },
+        { "value": "2,000+", "label": "Clients Served" },
         { "value": "98%", "label": "Satisfaction Rate" },
         { "value": "$50M+", "label": "Assets Protected" },
         { "value": "24/7", "label": "Support Available" }
@@ -3796,7 +3806,7 @@
       "about": "Tell us about your financial goals and needs",
       "military": "Active Duty, Retired, & Reservists will always receive VIP service. (Check to apply)",
       "marketingConsent": "I agree to receive communications regarding my consultation and services.",
-      "freeConsent": "I acknowledge that this consultation is free and there is no obligation to purchase services.",
+      "freeConsent": "I acknowledge this consultation is billed at applicable rates; discounts may apply.",
       "submit": "Schedule My Expert Consultation",
       "requiredError": "Please fill in all required fields.",
       "serverError": "Something went wrong. Please try again later.",
@@ -3854,11 +3864,11 @@
         },
         "1": {
           "q": "Do I need to pay for an appointment?",
-          "a": "We offer 'OFFICE APPT' and 'ZOOM APPT' options. Your initial consultation is free."
+          "a": "Consultations are billed at applicable rates. We offer 'OFFICE APPT' and 'ZOOM APPT' options. Discounts may apply on a case-by-case basis."
         },
         "2": {
           "q": "Is there really no obligation?",
-          "a": "Absolutely. The consultation is completely free with no pressure to purchase any services."
+          "a": "Absolutely—there's no obligation to purchase services after your consultation."
         },
         "3": {
           "q": "Can I do a virtual consultation?",
@@ -3873,7 +3883,7 @@
         "title": "Why Thousands Trust Us",
         "items": {
           "0": { "value": "17+", "label": "Years Experience" },
-          "1": { "value": "3", "label": "State Locations" },
+          "1": { "value": "6", "label": "State Locations" },
           "2": { "value": "100%", "label": "Satisfaction Rate" },
           "3": { "value": "VIP", "label": "Military Service" }
         }

@@ -4,6 +4,7 @@ import { Shield, Languages, Medal, DollarSign } from 'lucide-react';
 import { Heading } from '../atoms/Heading';
 import { Button } from '../atoms/Button';
 import { fadeInUp, slideInLeft, slideInRight } from '@/lib/animations';
+import Link from 'next/link';
 
 export const WhyChooseUsSection = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'whyChooseUs');
@@ -101,13 +102,13 @@ export const WhyChooseUsSection = ({ dict }: { dict: Dict }) => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-brand-green mb-2">3</div>
+                  <div className="text-3xl font-bold text-brand-green mb-2">50</div>
                   <div className="text-sm text-gray-600">
                     {t('commitment.stats.stateCoverage')}
                   </div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-brand-green mb-2">∞</div>
+                  <div className="text-3xl font-bold text-brand-green mb-2">50+</div>
                   <div className="text-sm text-gray-600">
                     {t('commitment.stats.solutionsAvailable')}
                   </div>
@@ -119,7 +120,7 @@ export const WhyChooseUsSection = ({ dict }: { dict: Dict }) => {
               <h4 className="text-xl font-bold mb-4">{t('cta.title')}</h4>
               <p className="mb-6">{t('cta.description')}</p>
               <Button variant="secondary" className="bg-white text-brand-green hover:bg-gray-50">
-                {t('cta.button')}
+              <Link href="/en/consultation"> {t('cta.button')}</Link>
               </Button>
             </div>
           </MotionDiv>

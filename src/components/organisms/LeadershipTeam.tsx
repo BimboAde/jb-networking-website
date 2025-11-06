@@ -39,11 +39,11 @@ export const LeadershipTeam = ({ dict }: { dict: Dict }) => {
             );
           })}
         </div>
-        <div className="bg-gradient-to-r from-brand-green to-brand-light-green rounded-2xl p-8 text-white text-center">
+        {/* <div className="bg-gradient-to-r from-brand-green to-brand-light-green rounded-2xl p-8 text-white text-center">
           <h3 className="text-2xl font-bold mb-4 font-poppins">{t('cta.title')}</h3>
           <p className="text-lg text-green-100 mb-6 max-w-3xl mx-auto">{t('cta.text')}</p>
           <button className="bg-white text-brand-green px-8 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors">{t('cta.button')}</button>
-        </div>
+        </div> */}
       </div>
     </section>
   );

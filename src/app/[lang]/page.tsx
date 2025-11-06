@@ -5,7 +5,7 @@ import { VideoSection } from '@/components/organisms/VideoSection';
 import { ServicesOverview } from '@/components/organisms/ServicesOverview';
 import { WhyChooseUsSection } from '@/components/organisms/WhyChooseUsSection';
 import { LocationsSection } from '@/components/organisms/LocationsSection';
-// import { TestimonialsSection } from '@/components/organisms/TestimonialsSection';
+import { TestimonialsSection } from '@/components/organisms/TestimonialsSection';
 import { CTASection } from '@/components/organisms/CTASection';
 import { Footer } from '@/components/organisms/Footer';
 import { getDictionary, SupportedLocale } from './dictionaries';
@@ -44,7 +44,7 @@ export default async function HomePage({ params }: PageParams) {
         <ServicesOverview dict={dict} lang={lang} />
         <WhyChooseUsSection dict={dict} />
         <LocationsSection dict={dict} consultationHref={`/${lang}/consultation`} />
-        {/* <TestimonialsSection dict={dict} /> */}
+        <TestimonialsSection dict={dict} />
         <CTASection dict={dict} lang={lang} />
       </main>
       <Footer dict={dict} lang={lang} />

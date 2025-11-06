@@ -1,6 +1,8 @@
 import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import { Button } from '../atoms/Button';
+import Link from 'next/link';
+import { jotformUrls } from '@/data/images';
 
 export const RealEstateHero = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'solutions_real_estate.hero');
@@ -18,8 +20,8 @@ export const RealEstateHero = ({ dict }: { dict: Dict }) => {
               <p className="text-xl text-green-100 leading-relaxed">{t('description')}</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="secondary" className="px-8 py-3 text-lg font-semibold">{tc('ctaConsultation')}</Button>
-              <Button variant="outline" className="px-8 py-3 text-lg font-semibold">{tc('ctaCall')}</Button>
+              <Button variant="secondary" className="px-8 py-3 text-lg font-semibold"> <Link href={jotformUrls.realEstateJotformUrl} target="_blank">{tc('ctaConsultation')}</Link></Button>
+              {/* <Button variant="outline" className="px-8 py-3 text-lg font-semibold">{tc('ctaCall')}</Button> */}
             </div>
           </div>
           <div className="relative">

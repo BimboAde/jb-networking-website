@@ -1,6 +1,7 @@
 import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import { Button } from '../atoms/Button';
+import Link from 'next/link';
 
 export const BusinessHero = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'solutions_business.hero');
@@ -17,7 +18,7 @@ export const BusinessHero = ({ dict }: { dict: Dict }) => {
               <p className="text-xl text-green-100 leading-relaxed">{t('description')}</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="secondary" className="px-8 py-3 font-semibold">{t('ctaStart')}</Button>
+              <Button variant="secondary" className="px-8 py-3 font-semibold"> <Link href="/en/consultation">{t('ctaStart')}</Link></Button>
               <Button variant="outline" className="px-8 py-3 font-semibold">{t('ctaTax')}</Button>
             </div>
           </div>

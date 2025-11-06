@@ -6,6 +6,8 @@ import { Button } from '../atoms/Button';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
 import Image from 'next/image';
 import { images } from '@/data/images';
+import Link from 'next/link';
+import { COMPANY } from '@/data/constants';
 
 export const HeroSection = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'hero');
@@ -37,14 +39,14 @@ export const HeroSection = ({ dict }: { dict: Dict }) => {
                 className="px-8 py-4 text-lg font-semibold"
                 icon={<CalendarCheck className="w-5 h-5" />}
               >
-                {tCommon('scheduleFreeConsultation')}
+              <Link href="/en/consultation"> {tCommon('scheduleFreeConsultation')}</Link>
               </Button>
               <Button
                 variant="outline"
                 className="px-8 py-4 text-lg font-semibold"
                 icon={<Phone className="w-5 h-5" />}
               >
-                {tCommon('callNow')}
+              <Link href={`tel:${COMPANY.contact.phone}`}> {tCommon('callNow')}</Link>
               </Button>
             </MotionDiv>
 
