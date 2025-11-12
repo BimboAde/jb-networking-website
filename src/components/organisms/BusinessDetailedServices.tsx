@@ -1,11 +1,25 @@
 import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
+import { FaFileInvoiceDollar, FaBook, FaMoneyBillWave, FaLightbulb } from 'react-icons/fa';
 
-function ServiceBlock({ title, subtitle, items }: { title: string; subtitle: string; items: { title: string; text: string }[] }) {
+function ServiceBlock({
+  title,
+  subtitle,
+  items,
+  Icon,
+}: {
+  title: string;
+  subtitle: string;
+  items: { title: string; text: string }[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  Icon: any;
+}) {
   return (
     <div className="bg-white rounded-2xl p-8 shadow-lg">
       <div className="flex items-center mb-6">
-        <div className="w-16 h-16 bg-brand-green rounded-xl mr-4" />
+        <div className="w-16 h-16 bg-brand-green rounded-xl mr-4 flex items-center justify-center text-white shadow-md">
+          <Icon className="text-3xl" />
+        </div>
         <div>
           <h3 className="text-2xl font-bold text-brand-green font-poppins">{title}</h3>
           <p className="text-gray-600">{subtitle}</p>
@@ -40,21 +54,25 @@ export const BusinessDetailedServices = ({ dict }: { dict: Dict }) => {
             title={t('tax.title')}
             subtitle={t('tax.subtitle')}
             items={[0,1,2,3,4].map((i) => ({ title: t(`tax.items.${i}.title`), text: t(`tax.items.${i}.text`) }))}
+            Icon={FaFileInvoiceDollar}
           />
           <ServiceBlock
             title={t('books.title')}
             subtitle={t('books.subtitle')}
             items={[0,1,2,3,4].map((i) => ({ title: t(`books.items.${i}.title`), text: t(`books.items.${i}.text`) }))}
+            Icon={FaBook}
           />
           <ServiceBlock
             title={t('payroll.title')}
             subtitle={t('payroll.subtitle')}
             items={[0,1,2,3,4].map((i) => ({ title: t(`payroll.items.${i}.title`), text: t(`payroll.items.${i}.text`) }))}
+            Icon={FaMoneyBillWave}
           />
           <ServiceBlock
             title={t('advisory.title')}
             subtitle={t('advisory.subtitle')}
             items={[0,1,2,3,4].map((i) => ({ title: t(`advisory.items.${i}.title`), text: t(`advisory.items.${i}.text`) }))}
+            Icon={FaLightbulb}
           />
         </div>
       </div>

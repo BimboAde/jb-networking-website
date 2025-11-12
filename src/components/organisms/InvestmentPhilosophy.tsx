@@ -1,15 +1,10 @@
 import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
-import { PortfolioPieChart } from '../charts/PortfolioPieChart';
+import Image from 'next/image';
+import { images } from '@/data/images';
 
 export const InvestmentPhilosophy = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'solutions_financial.philosophy');
-  const chartData = [
-    { name: t('chart.labels.0'), value: 60 },
-    { name: t('chart.labels.1'), value: 25 },
-    { name: t('chart.labels.2'), value: 10 },
-    { name: t('chart.labels.3'), value: 5 },
-  ];
 
   return (
     <section className="py-20 bg-white">
@@ -30,18 +25,16 @@ export const InvestmentPhilosophy = ({ dict }: { dict: Dict }) => {
               ))}
             </div>
           </div>
-          <div className="bg-brand-gray rounded-2xl p-8">
-            <Heading level={3} className="mb-6 text-brand-green text-center">{t('chart.title')}</Heading>
-            <PortfolioPieChart data={chartData} />
-            <div className="grid grid-cols-2 gap-4 text-center mt-6">
-              <div className="bg-white p-4 rounded-lg">
-                <div className="text-2xl font-bold text-brand-green">65%</div>
-                <div className="text-sm text-gray-600">{t('chart.summaryGrowth')}</div>
-              </div>
-              <div className="bg-white p-4 rounded-lg">
-                <div className="text-2xl font-bold text-brand-green">35%</div>
-                <div className="text-sm text-gray-600">{t('chart.summaryConservative')}</div>
-              </div>
+          <div className="bg-brand-gray rounded-2xl p-4 sm:p-6 lg:p-8">
+            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-xl">
+              <Image
+                src={images.solutions.financialPlanning.investmentPhilosophyImage.src}
+                alt={images.solutions.financialPlanning.investmentPhilosophyImage.alt}
+                fill
+                sizes="(min-width: 1024px) 560px, 100vw"
+                className="object-cover"
+                priority={false}
+              />
             </div>
           </div>
         </div>

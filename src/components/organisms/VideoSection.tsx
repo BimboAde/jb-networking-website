@@ -47,11 +47,11 @@ export const VideoSection = ({ dict }: { dict: Dict }) => {
               <div className="text-gray-600">{t('stats.satisfiedClients')}</div>
             </div>
             <div className="text-center bg-brand-gray rounded-lg p-6">
-              <div className="text-3xl font-bold text-brand-green mb-2">3</div>
+              <div className="text-3xl font-bold text-brand-green mb-2">6</div>
               <div className="text-gray-600">{t('stats.stateLocations')}</div>
             </div>
             <div className="text-center bg-brand-gray rounded-lg p-6">
-              <div className="text-3xl font-bold text-brand-green mb-2">100%</div>
+              <div className="text-3xl font-bold text-brand-green mb-2">50</div>
               <div className="text-gray-600">{t('stats.moneyBackGuarantee')}</div>
             </div>
           </div>

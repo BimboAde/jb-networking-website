@@ -2,6 +2,7 @@ import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import { COMPANY } from '@/data/constants';
 import Link from 'next/link';
+import { FaUserFriends, FaAward, FaHeart } from 'react-icons/fa';
 
 export const AboutPersonalCTA = ({ dict, lang }: { dict: Dict; lang: string }) => {
   const t = getT(dict, 'about_page.cta');
@@ -15,7 +16,9 @@ export const AboutPersonalCTA = ({ dict, lang }: { dict: Dict; lang: string }) =
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {[0,1,2].map((i) => (
               <div key={i} className="text-center">
-                <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full mx-auto mb-4" />
+                <div className="w-16 h-16 bg-white bg-opacity-20 rounded-full mx-auto mb-4 flex items-center justify-center text-brand-green">
+                  {[FaUserFriends, FaAward, FaHeart][i]?.({ className: 'text-2xl' })}
+                </div>
                 <h3 className="text-xl font-semibold mb-2">{t(`features.${i}.title`)}</h3>
                 <p className="text-green-100">{t(`features.${i}.text`)}</p>
               </div>

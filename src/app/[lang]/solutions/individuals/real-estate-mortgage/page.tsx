@@ -12,6 +12,8 @@ import { RealEstateProcess } from '@/components/organisms/RealEstateProcess';
 import { RealEstateFAQ } from '@/components/organisms/RealEstateFAQ';
 import { CTASection } from '@/components/organisms/CTASection';
 import { getT, type Dict } from '@/lib/i18n-server';
+import { FullWidthBanner } from '@/components/organisms/FullWidthBanner';
+import { images, jotformUrls } from '@/data/images';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -48,8 +50,12 @@ export default async function RealEstateInsurancePage({ params }: PageParams) {
         <RealEstateProcess dict={dict} />
         {/* <InsuranceComparison dict={dict} /> */}
         {/* <RealEstateSuccessStories dict={dict} /> */}
+        <FullWidthBanner
+          src={images.solutions.realEstate.fullWidthBannerImage.src}
+          alt={images.solutions.realEstate.fullWidthBannerImage.alt}
+        />
         <RealEstateFAQ dict={dict} />
-        <CTASection dict={dict} lang={lang} />
+        <CTASection dict={dict} lang={lang} bookLink={jotformUrls.realEstateJotformUrl} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

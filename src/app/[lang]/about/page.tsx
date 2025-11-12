@@ -4,7 +4,7 @@ import { getDictionary, SupportedLocale } from '../dictionaries';
 import { getPageSEO } from '@/lib/seo.config';
 import { AboutHero } from '@/components/organisms/AboutHero';
 import { CompanyHistory } from '@/components/organisms/CompanyHistory';
-import { AboutTimeline } from '@/components/organisms/AboutTimeline';
+// import { AboutTimeline } from '@/components/organisms/AboutTimeline';
 import { MissionValues } from '@/components/organisms/MissionValues';
 import { LeadershipTeam } from '@/components/organisms/LeadershipTeam';
 import { CertificationsPartners } from '@/components/organisms/CertificationsPartners';

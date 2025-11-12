@@ -2,11 +2,12 @@ import { getT, type Dict } from '@/lib/i18n-server';
 import Link from 'next/link';
 import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
 import { Logo } from '../atoms/Logo';
-import { images } from '@/data/images';
+import { getImageByLabel } from '@/lib/media';
 
-export const Footer = ({ dict, lang }: { dict: Dict; lang?: string }) => {
+export const Footer = async ({ dict, lang }: { dict: Dict; lang?: string }) => {
   const t = getT(dict, 'footer');
   const tHeader = getT(dict, 'header');
+  const logo = await getImageByLabel('logo');
 
   const withLang = (path: string) => {
     const cleaned = path.startsWith('/') ? path : `/${path}`;
@@ -38,7 +39,7 @@ export const Footer = ({ dict, lang }: { dict: Dict; lang?: string }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-6">
-            <Logo companyName={t('companyName')} tagline={t('companyTagline')} src={images.logo.src} alt={images.logo.alt} />
+            <Logo companyName={t('companyName')} tagline={t('companyTagline')} src={logo?.src || '/jblogo.png'} alt={logo?.alt || 'JB Networking Systems Logo'} type="dark" />
             <p className="text-gray-300">{t('description')}</p>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
@@ -126,16 +127,27 @@ export const Footer = ({ dict, lang }: { dict: Dict; lang?: string }) => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-wrap items-center space-x-6 mb-4 md:mb-0">
-              <p className="text-gray-300">{t('copyright')}</p>
+              <p className="text-gray-300">
+                © {new Date().getFullYear()} JB Networking Systems LLC. All rights reserved. <br/> Website designed and developed by{' '}
+                <a
+                  href="https://salitastech.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:text-white"
+                >
+                  Salitas Technology Solutions
+                </a>
+                .
+              </p>
               <Link href={withLang('/cookies')} className="text-gray-400 hover:text-white text-sm">
                 {t('links.privacyPolicy')}
               </Link>
               <Link href={withLang('/terms')} className="text-gray-400 hover:text-white text-sm">
                 {t('links.termsOfService')}
               </Link>
-              <Link href="#" className="text-gray-400 hover:text-white text-sm">
+              {/* <Link href="#" className="text-gray-400 hover:text-white text-sm">
                 {t('links.accessibility')}
-              </Link>
+              </Link> */}
             </div>
             <div className="flex items-center space-x-4">
               <span className="bg-brand-gold text-white px-3 py-1 rounded-full text-sm font-medium">

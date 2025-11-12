@@ -4,7 +4,7 @@ import { Heading } from '../atoms/Heading';
 export const AboutHero = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'about_page.hero');
   return (
-    <section className="bg-gradient-to-br from-brand-green to-brand-light-green text-white pt-24 lg:pt-0 min-h-[520px] lg:h-[500px] flex items-center">
+    <section className="bg-gradient-to-br from-brand-green to-brand-light-green text-white pt-24 lg:pt-0 pb-12 lg:pb-16 min-h-[520px] lg:h-[500px] flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="text-center space-y-8">
           <div className="space-y-4">

@@ -4,12 +4,13 @@ import { Logo } from '../atoms/Logo';
 import { Button } from '../atoms/Button';
 import { NavigationDropdown } from '../molecules/NavigationDropdown';
 import { LanguageSwitcher } from '../molecules/LanguageSwitcher';
-import { images } from '@/data/images';
 import { HeaderMobileMenu } from './HeaderMobileMenu';
+import { getImageByLabel } from '@/lib/media';
 
-export const Header = ({ dict, lang }: { dict: Dict; lang: string }) => {
+export const Header = async ({ dict, lang }: { dict: Dict; lang: string }) => {
   const t = getT(dict, 'header');
   const tCommon = getT(dict, 'common');
+  const logo = await getImageByLabel('logo');
 
   const withLang = (path: string) => {
     const cleaned = path.startsWith('/') ? path : `/${path}`;
@@ -34,7 +35,7 @@ export const Header = ({ dict, lang }: { dict: Dict; lang: string }) => {
     <header className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Logo companyName={t('companyName')} tagline={t('companyTagline')} src={images.logo.src} alt={images.logo.alt} />
+          <Logo companyName={t('companyName')} tagline={t('companyTagline')} src={logo?.src || '/jblogo.png'} alt={logo?.alt || 'JB Networking Systems Logo'} />
 
           <nav className="hidden lg:flex items-center space-x-8">
             <NavigationDropdown

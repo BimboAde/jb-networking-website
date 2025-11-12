@@ -1,10 +1,15 @@
 import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import Image from 'next/image';
+import { getImageByLabel } from '@/lib/media';
+import { FaCheckCircle, FaStar } from 'react-icons/fa';
 import { images } from '@/data/images';
+import { Button } from '../atoms/Button';
 
-export const CommunityImpact = ({ dict }: { dict: Dict }) => {
+export const CommunityImpact = async ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'about_page.community');
+  const img = await getImageByLabel('aboutPageImage2');
+  const programs = [0,1,2,3,4].map((i) => t(`programs.${i}`)).filter((v) => typeof v === 'string') as string[];
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,15 +20,15 @@ export const CommunityImpact = ({ dict }: { dict: Dict }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
           <div className="space-y-8">
             <div className="h-80 overflow-hidden rounded-2xl relative">
-              <Image src={images.aboutPageImage2.src} alt={images.aboutPageImage2.alt} fill className="object-cover" />
+              <Image src={images.aboutPageImage2.src || '/jblogo.png'} alt={images.aboutPageImage2.alt || 'Community'} fill className="object-cover" />
             </div>
             <div className="bg-brand-gray rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-brand-green mb-6 font-poppins">{t('programsTitle')}</h3>
               <div className="space-y-4">
-                {[0,1,2,3,4].map((i) => (
+                {programs.map((label, i) => (
                   <div key={i} className="flex items-center space-x-3">
-                    <span className="text-brand-green">●</span>
-                    <span className="text-gray-700">{t(`programs.${i}`)}</span>
+                    <FaCheckCircle className="text-brand-green" />
+                    <span className="text-gray-700">{label}</span>
                   </div>
                 ))}
               </div>
@@ -44,9 +49,9 @@ export const CommunityImpact = ({ dict }: { dict: Dict }) => {
             <div className="bg-white rounded-xl p-8 shadow-lg">
               <h3 className="text-xl font-bold text-brand-green mb-4 font-poppins">{t('charityTitle')}</h3>
               <div className="space-y-4">
-                {[0,1,2,3].map((i) => (
+                {[0,1,2].map((i) => (
                   <div key={i} className="flex items-start space-x-3">
-                    <span className="text-brand-gold">★</span>
+                    <FaStar className="text-brand-gold mt-1" />
                     <div>
                       <h4 className="font-semibold text-brand-green">{t(`charities.${i}.title`)}</h4>
                       <p className="text-sm text-gray-600">{t(`charities.${i}.text`)}</p>
@@ -55,13 +60,15 @@ export const CommunityImpact = ({ dict }: { dict: Dict }) => {
                 ))}
               </div>
             </div>
-            <div className="bg-brand-navy rounded-xl p-6 text-white text-center">
+           
+          </div>
+         
+        </div>
+        <div className="bg-brand-navy rounded-xl p-6 text-white text-center flex flex-col items-center justify-center">
               <h4 className="text-lg font-bold mb-3">{t('involved.title')}</h4>
               <p className="text-blue-100 mb-4">{t('involved.text')}</p>
-              <button className="bg-white text-brand-navy px-6 py-2 rounded-lg font-semibold hover:bg-gray-50 transition-colors">{t('involved.button')}</button>
+              <Button className="bg-white text-brand-green px-6 py-2 rounded-lg font-semibold hover:bg-gray-50 transition-colors" href='/en/consultation'>{t('involved.button')}</Button>
             </div>
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -12,6 +12,7 @@ import { IndustryExpertise } from '@/components/organisms/IndustryExpertise';
 // import { BusinessProcessTimeline } from '@/components/organisms/BusinessProcessTimeline';
 import { BusinessTaxFAQ } from '@/components/organisms/BusinessTaxFAQ';
 import { CTASection } from '@/components/organisms/CTASection';
+import { jotformUrls } from '@/data/images';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -51,7 +52,7 @@ export default async function BusinessTaxPage({ params }: PageParams) {
         <IndustryExpertise dict={dict} />
         {/* <BusinessProcessTimeline dict={dict} /> */}
         <BusinessTaxFAQ dict={dict} />
-        <CTASection dict={dict} lang={lang} />
+        <CTASection dict={dict} lang={lang} bookLink={jotformUrls.businessAccountingJotformUrl} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

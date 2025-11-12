@@ -8,9 +8,10 @@ type LogoProps = {
   tagline: string;
   src?: string;
   alt?: string;
+  type?: 'light' | 'dark';
 };
 
-export const Logo = ({ companyName, tagline, src, alt }: LogoProps) => {
+export const Logo = ({ companyName, tagline, src, alt, type = 'light' }: LogoProps) => {
   const imageSrc = src || images?.logo?.src || '';
   const imageAlt = alt || images?.logo?.alt || companyName;
 
@@ -28,8 +29,8 @@ export const Logo = ({ companyName, tagline, src, alt }: LogoProps) => {
         )}
       </div>
       <div>
-        <h1 className="text-xl font-bold text-brand-green font-poppins">{companyName}</h1>
-        <p className="text-sm text-gray-600">{tagline}</p>
+        <h1 className={`text-xl font-bold ${type === 'dark' ? 'text-white' : 'text-brand-green'} font-poppins`}>{companyName}</h1>
+        <p className={`text-sm ${type === 'dark' ? 'text-brand-gold' : 'text-brand-gold'}`}>{tagline}</p>
       </div>
     </div>
   );

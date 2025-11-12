@@ -16,7 +16,7 @@ export const TaxTipCard = ({ icon, title, description, readMoreLabel, href }: Ta
       </div>
       <h3 className="text-lg font-bold text-brand-green mb-3 font-poppins">{title}</h3>
       <p className="text-gray-600 text-sm mb-4">{description}</p>
-      <Link href={href} className="text-brand-green font-semibold text-sm hover:text-brand-light-green">{readMoreLabel} →</Link>
+      {/* <Link href={href} className="text-brand-green font-semibold text-sm hover:text-brand-light-green">{readMoreLabel} →</Link> */}
     </div>
   );
 };

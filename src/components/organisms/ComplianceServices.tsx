@@ -1,6 +1,7 @@
 import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import { ComplianceCard } from '../molecules/ComplianceCard';
+import { FaFileAlt, FaBook, FaSearch } from 'react-icons/fa';
 
 export const ComplianceServices = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'solutions_corporate.compliance');
@@ -17,15 +18,20 @@ export const ComplianceServices = ({ dict }: { dict: Dict }) => {
             <Heading level={3} className="text-brand-green mb-6">{t('left.title')}</Heading>
             <p className="text-lg text-gray-600 mb-8">{t('left.text')}</p>
             <div className="space-y-6">
-              {[0,1,2].map((i) => (
-                <div key={i} className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-green rounded-lg flex-shrink-0" />
-                  <div>
-                    <h4 className="text-lg font-semibold text-brand-green mb-2">{t(`left.items.${i}.title`)}</h4>
-                    <p className="text-gray-600">{t(`left.items.${i}.text`)}</p>
+              {[0,1,2].map((i) => {
+                const Icon = [FaFileAlt, FaBook, FaSearch][i] || FaFileAlt;
+                return (
+                  <div key={i} className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-brand-green rounded-lg flex-shrink-0 text-white flex items-center justify-center">
+                      <Icon className="text-xl" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-brand-green mb-2">{t(`left.items.${i}.title`)}</h4>
+                      <p className="text-gray-600">{t(`left.items.${i}.text`)}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
           <div className="bg-white rounded-2xl p-8 shadow-xl">

@@ -40,7 +40,7 @@
     "stats": {
       "yearsServing": "Years Serving",
       "stateLocations": "State Locations",
-      "moneyBackGuarantee": "on Credit Services"
+      "moneyBackGuarantee": "US States Licensed"
     },
     "trustExpertise": {
       "title": "Trust & Expertise",
@@ -57,8 +57,8 @@
     "stats": {
       "yearsOfExcellence": "Years of Excellence",
       "satisfiedClients": "Satisfied Clients",
-      "stateLocations": "State Locations",
-      "moneyBackGuarantee": "Money Back Guarantee"
+      "stateLocations": "Physical Locations",
+      "moneyBackGuarantee": "US States Licensed"
     }
   },
   "youtube_teaser": {
@@ -553,10 +553,11 @@
   "solutions_tax": {
     "common": {
       "scheduleConsultation": "Schedule Tax Consultation",
-      "downloadChecklist": "Download Free Tax Checklist"
+      "downloadChecklist": "Download Free Tax Checklist",
+      "callUs": "Call Us"
     },
     "hero": {
-      "title": "Expert Tax Preparation &",
+      "title": "Expert Tax Preparation & IRS Resolution",
       "highlight": "IRS Resolution",
       "description": "Maximize your tax savings with our expert tax preparation for all states. We also specialize in fast-tracked debt resolution with the IRS and State authorities. Bilingual support available (Hablamos Español).",
       "card": {
@@ -845,17 +846,17 @@
   },
   "footer": {
     "companyName": "JB Networking Systems LLC",
-    "companyTagline": "Full-Service Financial Network",
-    "description": "Since 2007, safeguarding assets with a personal touch. Your trusted partner for comprehensive financial solutions across Georgia, Alabama, and Texas.",
+    "companyTagline": "Full-Service Financial Solutions Expert",
+  "description": "Since 2007, safeguarding assets with a personal touch. Your trusted partner for comprehensive financial solutions, licensed in all 50 states with 6 physical office locations.",
     "sections": {
       "individualServices": "Individual Services",
       "businessServices": "Business Services",
       "contactInfo": "Contact Info"
     },
     "contact": {
-      "locations": "Multiple Locations:",
+      "locations": "Licensed in all 50 states with 6 physical office locations:",
       "locationsList": "Georgia | Alabama | Texas",
-      "phone": "(555) 123-4567",
+      "phone": "(470) 288-3365",
       "email": "info@jbnetworking.com",
       "hours": "Mon-Fri: 9AM-6PM",
       "weekends": "Weekends by Appointment"
@@ -873,12 +874,12 @@
   },
   "solutions_credit": {
     "common": {
-      "ctaAnalysis": "Free Credit Analysis",
+      "ctaAnalysis": "Book Consultation",
       "ctaCall": "Call (470) 288-3365"
     },
     "hero": {
       "badge": "100% MONEY BACK GUARANTEE",
-      "title": "Credit & Debt Resolution",
+      "title": "Effective Credit & Debt Resolution Solutions",
       "highlight": "Solutions That Work",
       "description": "Transform your financial future with our proven credit repair and debt resolution services. We offer fast-tracked debt resolution for IRS, State, and student loans. We guarantee results or your money back.",
       "card": {
@@ -911,7 +912,7 @@
       "cta": {
         "title": "Ready to Start Your Credit Transformation?",
         "description": "Join thousands who improved their credit with our program.",
-        "button": "Get Your Free Credit Analysis Now"
+        "button": "Book Consultation"
       }
     },
     "services": {
@@ -1180,7 +1181,7 @@
       "ctaCall": "Get Pre-qualified"
     },
     "hero": {
-      "title": "Personal Real Estate &",
+      "title": "Personal Real Estate & Mortgage Solutions",
       "highlight": "Mortgage Solutions",
       "description": "Comprehensive real estate consulting, property management, and mortgage financing in partnership with our expert realtor team.",
       "tiles": [
@@ -1806,8 +1807,10 @@
   },
   "solutions_executive": {
     "hero": {
-      "title": "Executive Workspaces &",
+      "title": "Executive Workspaces & On‑Demand Staffing",
       "highlight": "On‑Demand Staffing",
+      "ctaStart": "Book a Consultation",
+      "ctaGuide": "Speak with an Advisor",
       "description": "Operate like an enterprise—without the overhead. Rent private offices and meeting rooms, add virtual assistants, and host trainings with turnkey technology and support.",
       "card": {
         "title": "What You Get",
@@ -1889,7 +1892,7 @@
           {"title": "Assistant Bundle (40 hrs)", "price": "$1,200"},
           {"title": "Training Day (Full A/V)", "price": "$899"}
         ],
-        "cta": "Request Proposal"
+        "cta": "Book a Consultation"
       }
     },
     "faq": {
@@ -1903,7 +1906,7 @@
       ]
     }
   },
- "solutions_financial": {
+"solutions_financial": {
     "breadcrumb": {
       "home": "Home",
       "individuals": "Solutions for Individuals",
@@ -1911,19 +1914,19 @@
     },
     "hero": {
       "badge": "Financial & Insurance Planning",
-      "title": "Making &",
-      "highlight": "Obtaining Goals",
+      "title": "We Help You Plan a Brighter Future",
+      "highlight": "Making & Obtaining Goals",
       "description": "As your financial consultant, I start by documenting your goals and then compare them to your current portfolio. I use proven investment strategies designed to meet your risk tolerance and stand up against market volatility.",
-      "ctaAnalysis": "Free Portfolio Analysis",
+      "ctaAnalysis": "Book Consultation",
       "ctaAdvisor": "Speak with an Advisor",
       "cardTitle": "Start Your Journey",
       "cardStat0": {
-        "value": "$0",
-        "label": "Minimum Investment"
-      },
-      "cardStat1": {
         "value": "17+",
         "label": "Years Experience"
+      },
+      "cardStat1": {
+        "value": "Proven",
+        "label": "Strategies"
       }
     },
     "services": {
@@ -1931,7 +1934,7 @@
       "description": "From safeguarding your assets with comprehensive insurance to building wealth with proven investment strategies, we cover all aspects of your financial life.",
       "retirement": {
         "title": "Financial & Investment Planning",
-        "description": "We use proven strategies for diversifying portfolios, managing assets, and reducing financial risk.",
+        "description": "We use proven strategies for diversifying portfolios, managing assets, and reducing financial risk, tailored to your goals.",
         "value": "Proven",
         "valueLabel": "Strategies"
       },
@@ -1949,7 +1952,7 @@
       },
       "risk": {
         "title": "Retirement & Estate Planning",
-        "description": "Secure your legacy with annuities, retirement planning, and trust set-up services.",
+        "description": "Secure your legacy with our expert guidance on annuities, retirement planning, and trust set-up services.",
         "value": "Legacy",
         "valueLabel": "Secured"
       }
@@ -2007,7 +2010,7 @@
         "Annuities & Retirement Planning",
         "Trust Set up & Estate Planning"
       ],
-      "cta": "Get a Free Insurance Quote"
+      "cta": "Get an Insurance Quote"
     },
     "calculator": {
       "title": "Retirement Planning Calculator",
@@ -2141,23 +2144,23 @@
         }
       ],
       "aggregate": {
-        "title": "Aggregate Client Results",
+        "title": "Our Commitment to You",
         "items": [
           {
-            "value": "$2.8B+",
-            "label": "Assets Under Management"
+            "value": "17+",
+            "label": "Years of Expertise"
           },
           {
-            "value": "8.7%",
-            "label": "Average Annual Return"
+            "value": "Proven",
+            "label": "Investment Strategies"
           },
           {
-            "value": "95%",
-            "label": "Client Retention Rate"
+            "value": "VIP",
+            "label": "Military Service"
           },
           {
-            "value": "2,500+",
-            "label": "Satisfied Clients"
+            "value": "Bilingual",
+            "label": "Advisors"
           }
         ]
       }
@@ -2171,7 +2174,7 @@
     },
     "hero": {
       "badge": "Business Solutions",
-      "title": "Build Strong",
+      "title": "Build Strong Business Credit",
       "highlight": "Business Credit",
       "description": "Establish and strengthen your business credit profile with our comprehensive credit building services and trade lines. Access better financing, lower interest rates, and enhanced business opportunities.",
       "ctaAssess": "Start Credit Assessment",
@@ -2462,7 +2465,7 @@
     },
     "hero": {
       "badge": "Corporate Services",
-      "title": "Business Formation &",
+      "title": "Business Formation & Corporate Compliance",
       "highlight": "Corporate Compliance",
       "description": "Founded in 2007, we have years of experience in accounting, financial services, and tax preparation for individuals and businesses. Let us help you start and manage your business.",
       "ctaStart": "Start Your Business",
@@ -2841,415 +2844,415 @@
   },
 
 "solutions_business_tax": {
-    "breadcrumb": {
-      "home": "Home",
-      "business": "Solutions for Businesses",
-      "current": "Business & Accountant Services"
-    },
-    "hero": {
-      "title": "Professional Business",
-      "highlight": "Accountant Services",
-      "description": "Comprehensive accounting, payroll, business loans, and funding solutions. We are your partner for business management, startup services, and corporate compliance.",
-      "ctaQuote": "Get Accounting Quote",
-      "ctaChecklist": "Startup Checklist",
-      "card": {
-        "title": "Your Business Partner",
-        "text": "Let us handle your accounting, funding, and payroll so you can grow.",
-        "tiles": [
-          "Accounting",
-          "Business Loans",
-          "Payroll",
-          "Startups"
-        ]
-      }
-    },
-    "overview": {
-      "title": "Complete Business Management & Accounting",
-      "description": "From startup services and document preparation to full-service accounting and business loans, we provide the solutions you need.",
-      "items": [
-        {
-          "title": "Accountant/CPA (Indiv/Biz)",
-          "text": "Full-service accounting, CPA services, and financial reporting for individuals and businesses."
-        },
-        {
-          "title": "Business Funding & Loans",
-          "text": "Access to business loans and funding solutions to finance your growth, operations, or investments."
-        },
-        {
-          "title": "Payroll & Notary Services",
-          "text": "Complete payroll processing, tax withholdings, and on-site notary services."
-        },
-        {
-          "title": "Business Management & Startups",
-          "text": "Expert guidance for startups, corporate filing, document preparation, and business branding."
-        }
-      ],
-      "why": {
-        "title": "Why Businesses Choose Us",
-        "items": [
-          {
-            "title": "Year-Round Support",
-            "text": "Not just tax season - we're here all year"
-          },
-          {
-            "title": "Expert Guidance",
-            "text": "Certified CPAs and business consultants"
-          },
-          {
-            "title": "Bilingual Service",
-            "text": "Hablamos Español for your convenience"
-          }
-        ]
-      }
-    },
-    "services": {
-      "title": "Comprehensive Service Portfolio",
-      "description": "Every service designed to streamline your business operations and maximize your financial efficiency.",
-      "tax": {
-        "title": "Startup & Corporate Services",
-        "subtitle": "Your foundation for a successful business",
-        "items": [
-          {
-            "title": "Start Up Business Formation",
-            "text": "Complete formation for LLCs, S-Corps, C-Corps, and partnerships."
-          },
-          {
-            "title": "Corporate Filing",
-            "text": "Annual reports, compliance, and all state corporate filings."
-          },
-          {
-            "title": "Business Management",
-            "text": "Strategic consulting for new and existing corporations."
-          },
-          {
-            "title": "Business Branding",
-            "text": "Guidance on branding and market positioning for startups."
-          },
-          {
-            "title": "Document Preparation",
-            "text": "Expert preparation of all business, financial, and legal documents."
-          }
-        ]
-      },
-      "books": {
-        "title": "Accounting & CPA Services",
-        "subtitle": "The financial backbone of your business",
-        "items": [
-          {
-            "title": "Monthly Financial Statements",
-            "text": "P&L, Balance Sheet, and Cash Flow reports"
-          },
-          {
-            "title": "Accounts Payable/Receivable",
-            "text": "Complete AP/AR management and tracking"
-          },
-          {
-            "title": "Bank Reconciliations",
-            "text": "Monthly reconciliation of all accounts"
-          },
-          {
-            "title": "CPA Services (Indiv/Biz)",
-            "text": "Full CPA services for tax planning, audits, and financial reviews"
-          },
-          {
-            "title": "Financial Analysis",
-            "text": "Business performance insights and recommendations"
-          }
-        ]
-      },
-      "payroll": {
-        "title": "Payroll Services",
-        "subtitle": "Complete payroll management and compliance",
-        "items": [
-          {
-            "title": "Payroll Processing",
-            "text": "Bi-weekly, semi-monthly, or monthly payroll runs"
-          },
-          {
-            "title": "Tax Withholdings & Deposits",
-            "text": "Federal, state, and local tax compliance"
-          },
-          {
-            "title": "W-2 & 1099 Preparation",
-            "text": "Year-end forms and electronic filing"
-          },
-          {
-            "title": "Unemployment & Workers' Comp",
-            "text": "State unemployment and workers' compensation filings"
-          },
-          {
-            "title": "Direct Deposit Setup",
-            "text": "Electronic payment processing for employees"
-          }
-        ]
-      },
-      "advisory": {
-        "title": "Business Funding & Loans",
-        "subtitle": "Access the capital you need to grow",
-        "items": [
-          {
-            "title": "Business Loans",
-            "text": "Facilitating access to term loans, lines of credit, and SBA loans."
-          },
-          {
-            "title": "Investment Strategy",
-            "text": "Consulting on investment opportunities and capital allocation."
-          },
-          {
-            "title": "Funding Document Prep",
-            "text": "Preparing business plans and financial docs for lenders."
-          },
-          {
-            "title": "Financial Consulting",
-            "text": "Strategic advice for cash flow management and growth."
-          },
-          {
-            "title": "Notary",
-            "text": "Official notary services available for all loan and legal documents."
-          }
-        ]
-      }
-    },
-    "pricing": {
-      "title": "Transparent Business & Accounting Pricing",
-      "description": "Choose the service level that fits your business needs. All plans include our personal touch and VIP military service.",
-      "mostPopular": "Most Popular",
-      "startup": {
-        "title": "Startup Package",
-        "subtitle": "Perfect for new businesses needing basic accounting",
-        "price": "$299",
-        "period": "",
-        "note": "Starting price for basic setup & filing",
-        "features": [
-          "Basic Accounting Setup",
-          "Schedule C (Sole Proprietorship)",
-          "Basic Bookkeeping Review",
-          "Quarterly Consultations",
-          "Electronic Filing",
-          "Bilingual Support"
-        ],
-        "button": "Get Started"
-      },
-      "growth": {
-        "title": "Growth Package",
-        "subtitle": "Ideal for established businesses needing full-service accounting",
-        "price": "$799",
-        "period": "",
-        "note": "Starting price for comprehensive services",
-        "features": [
-          "Full-Service Accounting (CPA)",
-          "Monthly Bookkeeping Services",
-          "Quarterly Financial Statements",
-          "Basic Payroll Processing",
-          "Business Loan Support",
-          "Year-Round Support",
-          "Priority Scheduling"
-        ],
-        "button": "Choose Growth"
-      },
-      "enterprise": {
-        "title": "Enterprise Package",
-        "subtitle": "Comprehensive solutions including virtual CFO & funding strategy",
-        "price": "$1,499",
-        "period": "",
-        "note": "Starting price for full-service package",
-        "features": [
-          "Virtual CFO Services",
-          "Full Bookkeeping & Financials",
-          "Complete Payroll Management",
-          "Business Funding Strategy",
-          "Financial Planning & Analysis",
-          "Dedicated Account Manager",
-          "24/7 Support Access"
-        ],
-        "button": "Contact Us"
-      },
-      "discounts": {
-        "title": "Special Discounts Available",
-        "items": [
-          {
-            "title": "VIP Military Service",
-            "text": "Active Duty, Retired, & Reservists will always receive VIP service."
-          },
-          {
-            "title": "Accounting Contract Discount",
-            "text": "Accounting contracts 40% off all services (excluding app fee)."
-          },
-          {
-            "title": "Tax Referral Bonus",
-            "text": "UP TO $70 Instant payout for each tax referral!"
-          }
-        ]
-      }
-    },
-    "industries": {
-      "title": "Industry-Specific Expertise",
-      "description": "We understand the unique tax and accounting challenges across different industries and provide specialized solutions.",
-      "items": [
-        {
-          "title": "Retail & E-commerce",
-          "text": "Inventory management, sales tax compliance, multi-state nexus issues, and marketplace seller requirements.",
-          "bullets": [
-            "Multi-state sales tax compliance",
-            "Inventory valuation methods",
-            "Marketplace seller tax issues"
-          ]
-        },
-        {
-          "title": "Real Estate",
-          "text": "1031 exchanges, depreciation strategies, rental property management, and real estate professional status.",
-          "bullets": [
-            "Like-kind exchanges (1031)",
-            "Depreciation optimization",
-            "Rental property accounting"
-          ]
-        },
-        {
-          "title": "Restaurants & Food Service",
-          "text": "Tip reporting, labor cost management, food cost accounting, and franchise compliance requirements.",
-          "bullets": [
-            "Tip allocation and reporting",
-            "Food cost optimization",
-            "Franchise tax compliance"
-          ]
-        },
-        {
-          "title": "Transportation & Logistics",
-          "text": "Heavy vehicle use tax, fuel tax credits, per-mile deductions, and DOT compliance requirements.",
-          "bullets": [
-            "HVUT and IFTA reporting",
-            "Mileage deduction optimization",
-            "Equipment depreciation"
-          ]
-        },
-        {
-          "title": "Healthcare & Professional Services",
-          "text": "Medical practice management, professional liability, equipment financing, and healthcare-specific deductions.",
-          "bullets": [
-            "Medical equipment depreciation",
-            "Professional liability expenses",
-            "Healthcare compliance"
-          ]
-        },
-        {
-          "title": "Construction & Contracting",
-          "text": "Job costing, percentage-of-completion accounting, equipment depreciation, and prevailing wage compliance.",
-          "bullets": [
-            "Job cost accounting",
-            "Equipment depreciation strategies",
-            "Prevailing wage compliance"
-          ]
-        }
-      ]
-    },
-    "process": {
-      "title": "Our Streamlined Process",
-      "description": "From initial consultation to ongoing support, we make business tax and accounting simple and stress-free.",
-      "steps": [
-        {
-          "title": "Initial Consultation",
-          "text": "Comprehensive review of your business structure, current processes, and goals.",
-          "bullets": [
-            "Business structure analysis",
-            "Current process evaluation",
-            "Goal identification"
-          ]
-        },
-        {
-          "title": "Custom Solution Design",
-          "text": "Tailored service package, timeline, and budget planning.",
-          "bullets": [
-            "Service package customization",
-            "Timeline establishment",
-            "Budget planning"
-          ]
-        },
-        {
-          "title": "Implementation & Setup",
-          "text": "Systems integration, staff training, and documentation.",
-          "bullets": [
-            "System setup and integration",
-            "Staff training",
-            "Process documentation"
-          ]
-        },
-        {
-          "title": "Ongoing Support & Monitoring",
-          "text": "Regular reviews, proactive planning, and 24/7 support.",
-          "bullets": [
-            "Regular performance reviews",
-            "Proactive tax planning",
-            "24/7 support access"
-          ]
-        }
-      ]
-    },
-    "faq": {
-      "title": "Frequently Asked Questions",
-      "description": "Get answers to common questions about our business and accounting services.",
-      "items": [
-        {
-          "q": "What business structures do you handle?",
-          "a": "We are accountants/CPAs for both Individuals and Businesses, including sole proprietorships, partnerships, LLCs, S-Corps, and C-Corps."
-        },
-        {
-          "q": "Do you offer business loans?",
-          "a": "Yes, we specialize in helping businesses access funding, including Business Loans and strategic investment consulting."
-        },
-        {
-          "q": "What is included in 'Business Management'?",
-          "a": "This includes corporate filing, start-up consulting, business branding, and strategic planning for your corporation."
-        },
-        {
-          "q": "What accounting software do you support?",
-          "a": "We support all major accounting software and can provide setup and training as part of our Accounting Services."
-        },
-        {
-          "q": "How do you handle payroll?",
-          "a": "Our Payroll Services include withholdings, deposits, quarterly filings, annual reports, and unemployment taxes."
-        },
-        {
-          "q": "Do your accounting services include tax filing?",
-          "a": "Yes, our CPA and accounting services include corporate tax filing, quarterly taxes, and tax agent prep for all states."
-        },
-        {
-          "q": "Do you offer bilingual services?",
-          "a": "Sí, (Hablamos Español) full services are available in Spanish."
-        },
-        {
-          "q": "What are your accounting fees?",
-          "a": "Our fees are transparent. We offer 40% off new accounting contracts (excluding app fee). Contact us for a free quote."
-        }
-      ]
-    },
-    "cta": {
-      "title": "Ready to Grow Your Business?",
-      "description": "Let us handle your accounting, funding, and payroll while you focus on what you do best.",
-      "features": [
-        {
-          "title": "Expert Consultation",
-          "text": "Comprehensive review of your business's financial health (rates apply; discounts may vary)"
-        },
-        {
-          "title": "40% Off Contracts",
-          "text": "New accounting contracts receive 40% off services"
-        },
-        {
-          "title": "Expert Funding",
-          "text": "Unlock business loans and funding for your growth"
-        }
-      ],
-      "buttons": {
-        "primary": "Schedule Expert Consultation",
-        "secondary": "Call (470) 288-3365"
-      },
-      "badges": [
-        "Hablamos Español",
-        "VIP Military Service",
-        "Licensed & Insured"
+  "breadcrumb": {
+    "home": "Home",
+    "business": "Solutions for Businesses",
+    "current": "Business & Accountant Services"
+  },
+  "hero": {
+    "title": "Professional Business & Accountant Services",
+    "highlight": "Accountant Services",
+    "description": "Scale your business with our comprehensive support. From full-service accounting and payroll to strategic business loans and startup management, we are your complete financial partner.",
+    "ctaQuote": "Book Consultation",
+    "ctaChecklist": "Call Us Now",
+    "card": {
+      "title": "Your Business Partner",
+      "text": "Focus on your vision. We'll handle the accounting, funding, and payroll to fuel your growth.",
+      "tiles": [
+        "Accounting",
+        "Business Loans",
+        "Payroll",
+        "Startups"
       ]
     }
   },
+  "overview": {
+    "title": "Full-Service Business Management & Accounting",
+    "description": "From startup services and document preparation to full-service accounting and business loans, we provide the solutions you need.",
+    "items": [
+      {
+        "title": "Accountant/CPA (Indiv/Biz)",
+        "text": "Full-service accounting, CPA services, and financial reporting for individuals and businesses."
+      },
+      {
+        "title": "Business Funding & Loans",
+        "text": "Access to business loans and funding solutions to finance your growth, operations, or investments."
+      },
+      {
+        "title": "Payroll & Notary Services",
+        "text": "Complete payroll processing, tax withholdings, and on-site notary services."
+      },
+      {
+        "title": "Business Management & Startups",
+        "text": "Expert guidance for startups, corporate filing, document preparation, and business branding."
+      }
+    ],
+    "why": {
+      "title": "Why Businesses Choose Us",
+      "items": [
+        {
+          "title": "Year-Round Support",
+          "text": "Not just tax season - we're here all year"
+        },
+        {
+          "title": "Expert Guidance",
+          "text": "Certified CPAs and business consultants"
+        },
+        {
+          "title": "Bilingual Service",
+          "text": "Hablamos Español for your convenience"
+        }
+      ]
+    }
+  },
+  "services": {
+    "title": "Comprehensive Service Portfolio",
+    "description": "Every service designed to streamline your business operations and maximize your financial efficiency.",
+    "tax": {
+      "title": "Startup & Corporate Services",
+      "subtitle": "Your foundation for a successful business",
+      "items": [
+        {
+          "title": "Start Up Business Formation",
+          "text": "Complete formation for LLCs, S-Corps, C-Corps, and partnerships."
+        },
+        {
+          "title": "Corporate Filing",
+          "text": "Annual reports, compliance, and all state corporate filings."
+        },
+        {
+          "title": "Business Management",
+          "text": "Strategic consulting for new and existing corporations."
+        },
+        {
+          "title": "Business Branding",
+          "text": "Guidance on branding and market positioning for startups."
+        },
+        {
+          "title": "Document Preparation",
+          "text": "Expert preparation of all business, financial, and legal documents."
+        }
+      ]
+    },
+    "books": {
+      "title": "Accounting & CPA Services",
+      "subtitle": "The financial backbone of your business",
+      "items": [
+        {
+          "title": "Monthly Financial Statements",
+          "text": "P&L, Balance Sheet, and Cash Flow reports"
+        },
+        {
+          "title": "Accounts Payable/Receivable",
+          "text": "Complete AP/AR management and tracking"
+        },
+        {
+          "title": "Bank Reconciliations",
+          "text": "Monthly reconciliation of all accounts"
+        },
+        {
+          "title": "CPA Services (Indiv/Biz)",
+          "text": "Full CPA services for tax planning, audits, and financial reviews"
+        },
+        {
+          "title": "Financial Analysis",
+          "text": "Business performance insights and recommendations"
+        }
+      ]
+    },
+    "payroll": {
+      "title": "Payroll Services",
+      "subtitle": "Complete payroll management and compliance",
+      "items": [
+        {
+          "title": "Payroll Processing",
+          "text": "Bi-weekly, semi-monthly, or monthly payroll runs"
+        },
+        {
+          "title": "Tax Withholdings & Deposits",
+          "text": "Federal, state, and local tax compliance"
+        },
+        {
+          "title": "W-2 & 1099 Preparation",
+          "text": "Year-end forms and electronic filing"
+        },
+        {
+          "title": "Unemployment & Workers' Comp",
+          "text": "State unemployment and workers' compensation filings"
+        },
+        {
+          "title": "Direct Deposit Setup",
+          "text": "Electronic payment processing for employees"
+        }
+      ]
+    },
+    "advisory": {
+      "title": "Business Funding & Loans",
+      "subtitle": "Access the capital you need to grow",
+      "items": [
+        {
+          "title": "Business Loans",
+          "text": "Facilitating access to term loans, lines of credit, and SBA loans."
+        },
+        {
+          "title": "Investment Strategy",
+          "text": "Consulting on investment opportunities and capital allocation."
+        },
+        {
+          "title": "Funding Document Prep",
+          "text": "Preparing business plans and financial docs for lenders."
+        },
+        {
+          "title": "Financial Consulting",
+          "text": "Strategic advice for cash flow management and growth."
+        },
+        {
+          "title": "Notary",
+          "text": "Official notary services available for all loan and legal documents."
+        }
+      ]
+    }
+  },
+  "pricing": {
+    "title": "Professional Accounting Services, Clear Pricing",
+    "description": "Choose the service level that fits your business needs. All plans include our personal touch and VIP military service.",
+    "mostPopular": "Most Popular",
+    "startup": {
+      "title": "Startup Package",
+      "subtitle": "Perfect for new businesses needing basic accounting",
+      "price": "$299",
+      "period": "",
+      "note": "Starting price for basic setup & filing",
+      "features": [
+        "Basic Accounting Setup",
+        "Schedule C (Sole Proprietorship)",
+        "Basic Bookkeeping Review",
+        "Quarterly Consultations",
+        "Electronic Filing",
+        "Bilingual Support"
+      ],
+      "button": "Get Started"
+    },
+    "growth": {
+      "title": "Growth Package",
+      "subtitle": "Ideal for established businesses needing full-service accounting",
+      "price": "$799",
+      "period": "",
+      "note": "Starting price for comprehensive services",
+      "features": [
+        "Full-Service Accounting (CPA)",
+        "Monthly Bookkeeping Services",
+        "Quarterly Financial Statements",
+        "Basic Payroll Processing",
+        "Business Loan Support",
+        "Year-Round Support",
+        "Priority Scheduling"
+      ],
+      "button": "Choose Growth"
+    },
+    "enterprise": {
+      "title": "Enterprise Package",
+      "subtitle": "Comprehensive solutions including virtual CFO & funding strategy",
+      "price": "$1,499",
+      "period": "",
+      "note": "Starting price for full-service package",
+      "features": [
+        "Virtual CFO Services",
+        "Full Bookkeeping & Financials",
+        "Complete Payroll Management",
+        "Business Funding Strategy",
+        "Financial Planning & Analysis",
+        "Dedicated Account Manager",
+        "24/7 Support Access"
+      ],
+      "button": "Contact Us"
+    },
+    "discounts": {
+      "title": "Special Discounts Available",
+      "items": [
+        {
+          "title": "VIP Military Service",
+          "text": "VIP service and preferred rates for all Active Duty, Retired, & Reservists."
+        },
+        {
+          "title": "Accounting Contract Discount",
+          "text": "New clients receive 40% OFF accounting contracts (excluding app fee)."
+        },
+        {
+          "title": "Tax Referral Bonus",
+          "text": "Get up to $70 instant payout for every new tax client you refer."
+        }
+      ]
+    }
+  },
+  "industries": {
+    "title": "Industry-Specific Expertise",
+    "description": "We understand the unique tax and accounting challenges across different industries and provide specialized solutions.",
+    "items": [
+      {
+        "title": "Retail & E-commerce",
+        "text": "Inventory management, sales tax compliance, multi-state nexus issues, and marketplace seller requirements.",
+        "bullets": [
+          "Multi-state sales tax compliance",
+          "Inventory valuation methods",
+          "Marketplace seller tax issues"
+        ]
+      },
+      {
+        "title": "Real Estate",
+        "text": "1031 exchanges, depreciation strategies, rental property management, and real estate professional status.",
+        "bullets": [
+          "Like-kind exchanges (1031)",
+          "Depreciation optimization",
+          "Rental property accounting"
+        ]
+      },
+      {
+        "title": "Restaurants & Food Service",
+        "text": "Tip reporting, labor cost management, food cost accounting, and franchise compliance requirements.",
+        "bullets": [
+          "Tip allocation and reporting",
+          "Food cost optimization",
+          "Franchise tax compliance"
+        ]
+      },
+      {
+        "title": "Transportation & Logistics",
+        "text": "Heavy vehicle use tax, fuel tax credits, per-mile deductions, and DOT compliance requirements.",
+        "bullets": [
+          "HVUT and IFTA reporting",
+          "Mileage deduction optimization",
+          "Equipment depreciation"
+        ]
+      },
+      {
+        "title": "Healthcare & Professional Services",
+        "text": "Medical practice management, professional liability, equipment financing, and healthcare-specific deductions.",
+        "bullets": [
+          "Medical equipment depreciation",
+          "Professional liability expenses",
+          "Healthcare compliance"
+        ]
+      },
+      {
+        "title": "Construction & Contracting",
+        "text": "Job costing, percentage-of-completion accounting, equipment depreciation, and prevailing wage compliance.",
+        "bullets": [
+          "Job cost accounting",
+          "Equipment depreciation strategies",
+          "Prevailing wage compliance"
+        ]
+      }
+    ]
+  },
+  "process": {
+    "title": "Our Business Accounting & Onboarding Process",
+    "description": "From initial consultation to ongoing support, we make managing your business finances simple and stress-free.",
+    "steps": [
+      {
+        "title": "Initial Consultation",
+        "text": "Comprehensive review of your business structure, current processes, and goals.",
+        "bullets": [
+          "Business structure analysis",
+          "Current process evaluation",
+          "Goal identification"
+        ]
+      },
+      {
+        "title": "Custom Solution Design",
+        "text": "Tailored service package, timeline, and budget planning.",
+        "bullets": [
+          "Service package customization",
+          "Timeline establishment",
+          "Budget planning"
+        ]
+      },
+      {
+        "title": "Implementation & Setup",
+        "text": "Systems integration, staff training, and documentation.",
+        "bullets": [
+          "System setup and integration",
+          "Staff training",
+          "Process documentation"
+        ]
+      },
+      {
+        "title": "Ongoing Support & Monitoring",
+        "text": "Regular reviews, proactive planning, and 24/7 support.",
+        "bullets": [
+          "Regular performance reviews",
+          "Proactive tax planning",
+          "24/7 support access"
+        ]
+      }
+    ]
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "description": "Get answers to common questions about our business and accounting services.",
+    "items": [
+      {
+        "q": "What business structures do you handle?",
+        "a": "We are accountants/CPAs for both Individuals and Businesses, including sole proprietorships, partnerships, LLCs, S-Corps, and C-Corps."
+      },
+      {
+        "q": "Do you offer business loans?",
+        "a": "Yes, we specialize in helping businesses access funding, including Business Loans and strategic investment consulting."
+      },
+      {
+        "q": "What is included in 'Business Management'?",
+        "a": "This includes corporate filing, start-up consulting, business branding, and strategic planning for your corporation."
+      },
+      {
+        "q": "What accounting software do you support?",
+        "a": "We support all major accounting software and can provide setup and training as part of our Accounting Services."
+      },
+      {
+        "q": "How do you handle payroll?",
+        "a": "Our Payroll Services include withholdings, deposits, quarterly filings, annual reports, and unemployment taxes."
+      },
+      {
+        "q": "Do your accounting services include tax filing?",
+        "a": "Yes, our CPA and accounting services include corporate tax filing, quarterly taxes, and tax agent prep for all states."
+      },
+      {
+        "q": "Do you offer bilingual services?",
+        "a": "Sí, (Hablamos Español) full services are available in Spanish."
+      },
+      {
+        "q": "What are your accounting fees?",
+        "a": "Our fees are transparent. We offer 40% off new accounting contracts (excluding app fee). Contact us for a free quote."
+      }
+    ]
+  },
+  "cta": {
+    "title": "Ready to Grow Your Business?",
+    "description": "Let us handle your accounting, funding, and payroll while you focus on what you do best.",
+    "features": [
+      {
+        "title": "Expert Consultation",
+        "text": "An expert review of your business's financial health to identify opportunities."
+      },
+      {
+        "title": "40% Off Contracts",
+        "text": "New accounting contracts receive 40% off services."
+      },
+      {
+        "title": "Expert Funding",
+        "text": "Access to Business Loans & funding strategies to fuel your growth."
+      }
+    ],
+    "buttons": {
+      "primary": "Book Consultation",
+      "secondary": "Call Now: (470) 288-3365"
+    },
+    "badges": [
+      "Hablamos Español",
+      "VIP Military Service",
+      "Licensed & Insured"
+    ]
+  }
+},
  "locations_page": {
     "breadcrumb": { "home": "Home", "current": "Locations" },
     "hero": {
@@ -3257,8 +3260,8 @@
       "highlight": "Locations",
       "description": "Serving clients across Georgia, Alabama, and Texas with convenient office locations and comprehensive financial services.",
       "stats": [
-        { "value": "3", "label": "States" },
-        { "value": "3", "label": "Main Offices" },
+        { "value": "50", "label": "States" },
+        { "value": "6", "label": "Main Offices" },
         { "value": "17+", "label": "Years Serving" }
       ]
     },
@@ -3704,9 +3707,8 @@
       "programs": [
         "UP TO $70 Instant payout for each tax referral!",
         "Accounting contracts 40% off all services (excluding app fee)",
-        "Active Duty, Retired, & Reservists will always receive VIP service",
-        "Placeholder Program",
-        "Another Placeholder Program"
+        "Active Duty, Retired, & Reservists will always receive VIP service"
+        
       ],
       "reportTitle": "Our Commitment",
       "reportStats": [
@@ -3728,11 +3730,8 @@
         {
           "title": "Military VIP Service",
           "text": "Present your military ID (Active, Retired, Reservist) to receive VIP service."
-        },
-        {
-          "title": "Placeholder Charity",
-          "text": "Placeholder text for an additional community item."
         }
+      
       ],
       "involved": {
         "title": "Ask About Our Discounts",

@@ -1,6 +1,9 @@
 import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import { ProcessStep } from '../molecules/ProcessStep';
+import { FaShieldAlt, FaUserTie, FaChartLine } from 'react-icons/fa';
+import { Button } from '../atoms/Button';
+import { jotformUrls } from '@/data/images';
 
 export const ExecutiveProcess = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'solutions_executive.process');
@@ -21,15 +24,20 @@ export const ExecutiveProcess = ({ dict }: { dict: Dict }) => {
             <div>
               <Heading level={3} className="text-brand-green mb-6">{t('why.title')}</Heading>
               <div className="space-y-6">
-                {[0,1,2].map((i) => (
-                  <div key={i} className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-brand-green rounded-lg flex items-center justify-center flex-shrink-0" />
-                    <div>
-                      <h4 className="text-lg font-semibold text-brand-green mb-2">{t(`why.items.${i}.title`)}</h4>
-                      <p className="text-gray-600">{t(`why.items.${i}.text`)}</p>
+                {[0,1,2].map((i) => {
+                  const Icon = [FaShieldAlt, FaUserTie, FaChartLine][i] || FaShieldAlt;
+                  return (
+                    <div key={i} className="flex items-start space-x-4">
+                      <div className="w-12 h-12 bg-brand-green rounded-lg flex items-center justify-center flex-shrink-0 text-white">
+                        <Icon className="text-xl" />
+                      </div>
+                      <div>
+                        <h4 className="text-lg font-semibold text-brand-green mb-2">{t(`why.items.${i}.title`)}</h4>
+                        <p className="text-gray-600">{t(`why.items.${i}.text`)}</p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
             </div>
             <div className="space-y-6">
@@ -43,9 +51,10 @@ export const ExecutiveProcess = ({ dict }: { dict: Dict }) => {
                     </div>
                   ))}
                 </div>
-                <button className="w-full mt-6 bg-brand-green text-white py-3 rounded-lg hover:bg-brand-light-green transition-colors">
+                <Button variant="primary" className="w-full mt-6 bg-brand-green text-white py-3 rounded-lg hover:bg-brand-light-green transition-colors" href={jotformUrls.businessExecutiveServicesJotformUrl}>
                   {t('packages.cta')}
-                </button>
+                </Button>
+             
               </div>
             </div>
           </div>

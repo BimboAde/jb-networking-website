@@ -11,6 +11,7 @@ type ButtonProps = {
   type?: 'button' | 'submit' | 'reset';
   className?: string;
   icon?: ReactNode;
+  target?: string;
 };
 
 const variantStyles: Record<ButtonVariant, string> = {
@@ -27,6 +28,7 @@ export const Button = ({
   type = 'button',
   className = '',
   icon,
+  target = '_blank',
 }: ButtonProps) => {
   const baseClasses =
     'px-6 py-2 rounded-lg font-medium transition-colors flex items-center justify-center';
@@ -35,7 +37,7 @@ export const Button = ({
 
   if (href) {
     return (
-      <Link href={href} className={combinedClasses}>
+      <Link href={href} className={combinedClasses} target={target}>
         {icon && <span className="mr-3">{icon}</span>}
         {children}
       </Link>

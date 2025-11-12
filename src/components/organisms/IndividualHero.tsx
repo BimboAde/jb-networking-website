@@ -7,7 +7,7 @@ export const IndividualHero = ({ dict }: { dict: Dict }) => {
   const tc = getT(dict, 'solutions_individual.common');
 
   return (
-    <section className="bg-gradient-to-br from-brand-green to-brand-light-green text-white h-[500px] flex items-center">
+    <section className="bg-gradient-to-br from-brand-green to-brand-light-green text-white h-[500px] flex items-center pb-12 lg:pb-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">

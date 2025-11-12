@@ -12,6 +12,8 @@ import { RetirementCalculator } from '@/components/organisms/RetirementCalculato
 import { InvestmentOptions } from '@/components/organisms/InvestmentOptions';
 import { CTASection } from '@/components/organisms/CTASection';
 import { getT, type Dict } from '@/lib/i18n-server';
+import { FullWidthBanner } from '@/components/organisms/FullWidthBanner';
+import { images, jotformUrls } from '@/data/images';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -65,12 +67,16 @@ export default async function FinancialPlanningPage({ params }: PageParams) {
       <main>
         <FinancialHero dict={dict} />
         <InvestmentServicesGrid dict={dict} />
+        <FullWidthBanner
+          src={images.solutions.financialPlanning.fullWidthBannerImage.src}
+          alt={images.solutions.financialPlanning.fullWidthBannerImage.alt}
+        />
         <InvestmentPhilosophy dict={dict} />
         <OurProcess dict={dict} />
         {/* <PerformanceDashboard dict={dict} /> */}
         {/* <RetirementCalculator strings={calculatorStrings} /> */}
         {/* <InvestmentOptions dict={dict} /> */}
-        <CTASection dict={dict} lang={lang} />
+        <CTASection dict={dict} lang={lang} bookLink={jotformUrls.financialPlanningJotformUrl} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

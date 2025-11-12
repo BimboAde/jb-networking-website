@@ -5,7 +5,7 @@ import { Button } from '../atoms/Button';
 export const FranchiseHero = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'solutions_franchise.hero');
   return (
-    <section className="bg-gradient-to-br from-brand-green to-brand-light-green text-white pt-24 lg:pt-0 min-h-[560px] lg:h-[600px] flex items-center">
+    <section className="bg-gradient-to-br from-brand-green to-brand-light-green text-white pt-24 lg:pt-0 pb-12 lg:pb-16 min-h-[560px] lg:h-[600px] flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">

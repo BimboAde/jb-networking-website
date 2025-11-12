@@ -1,15 +1,16 @@
 import { getT, type Dict } from '@/lib/i18n-server';
 import Image from 'next/image';
-import { images } from '@/data/images';
 import { MotionDiv } from '../atoms/Motion';
+import { getImageByLabel } from '@/lib/media';
 
-export const ConsultationHero = ({ dict }: { dict: Dict }) => {
+export const ConsultationHero = async ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'consultation.hero');
-  const heroImg = images.consultationPageImage?.src || images.homePageImage?.src || '';
-  const heroAlt = images.consultationPageImage?.alt || 'Consultation';
+  const img = await getImageByLabel('consultationPageImage');
+  const heroImg = img?.src;
+  const heroAlt = img?.alt || 'Consultation';
 
   return (
-    <section className="relative overflow-hidden pt-24 lg:pt-0 bg-gradient-to-br from-brand-green via-brand-green to-brand-light-green">
+    <section className="relative overflow-hidden pt-24 lg:pt-0 pb-12 lg:pb-16 bg-gradient-to-br from-brand-green via-brand-green to-brand-light-green">
       {/* decorative background blob */}
       <div className="pointer-events-none absolute -top-24 -right-24 w-[420px] h-[420px] rounded-full bg-white/10 blur-3xl" />
 
@@ -62,10 +63,10 @@ export const ConsultationHero = ({ dict }: { dict: Dict }) => {
               <div className="w-8 h-8 rounded-lg bg-brand-green/10 flex items-center justify-center">
                 <span className="w-2.5 h-2.5 rounded-full bg-brand-green" />
               </div>
-              <div>
+              {/* <div>
                 <p className="text-sm font-semibold">24–48hr Turnaround</p>
                 <p className="text-xs text-gray-600">Fast, secure e‑file & refund tracking</p>
-              </div>
+              </div> */}
             </div>
           </MotionDiv>
         </div>

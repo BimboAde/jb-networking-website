@@ -8,6 +8,8 @@ import { ExecutiveServicesGrid } from '@/components/organisms/ExecutiveServicesG
 import { ExecutiveProcess } from '@/components/organisms/ExecutiveProcess';
 import { Breadcrumb } from '@/components/molecules/Breadcrumb';
 import { getT, type Dict } from '@/lib/i18n-server';
+import { VideoSection } from '@/components/organisms/VideoSection';
+import { jotformUrls } from '@/data/images';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -40,8 +42,9 @@ export default async function ExecutiveServicesPage({ params }: PageParams) {
       <main>
         <ExecutiveHero dict={dict} />
         <ExecutiveServicesGrid dict={dict} />
+        <VideoSection dict={dict} />
         <ExecutiveProcess dict={dict} />
-        <CTASection dict={dict} lang={lang} />
+        <CTASection dict={dict} lang={lang} bookLink={jotformUrls.businessExecutiveServicesJotformUrl} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

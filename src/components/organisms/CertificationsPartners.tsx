@@ -1,5 +1,19 @@
 import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
+import {
+  FaCalculator,
+  FaFileInvoiceDollar,
+  FaCalendarCheck,
+  FaBook,
+  FaWrench,
+  FaChartLine,
+  FaRandom,
+  FaMoneyBillWave,
+  FaChartPie,
+  FaUserShield,
+  FaHome,
+  FaFileAlt,
+} from 'react-icons/fa';
 
 export const CertificationsPartners = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'about_page.certifications');
@@ -16,7 +30,9 @@ export const CertificationsPartners = ({ dict }: { dict: Dict }) => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {[0,1,2,3].map((i) => (
                 <div key={i} className="bg-white rounded-xl p-6 shadow-lg text-center">
-                  <div className="w-16 h-16 bg-brand-green rounded-lg mx-auto mb-4" />
+                  <div className="w-16 h-16 bg-brand-green rounded-lg mx-auto mb-4 text-white flex items-center justify-center">
+                    {[FaCalculator, FaFileInvoiceDollar, FaCalendarCheck, FaBook][i]?.({ className: 'text-2xl' })}
+                  </div>
                   <h4 className="font-semibold text-brand-green mb-2">{t(`certs.${i}.title`)}</h4>
                   <p className="text-sm text-gray-600">{t(`certs.${i}.text`)}</p>
                 </div>
@@ -28,7 +44,9 @@ export const CertificationsPartners = ({ dict }: { dict: Dict }) => {
             <div className="space-y-4">
               {[0,1,2,3,4].map((i) => (
                 <div key={i} className="bg-white rounded-xl p-4 shadow-lg flex items-center space-x-4">
-                  <div className="w-12 h-12 bg-brand-green rounded-lg" />
+                  <div className="w-12 h-12 bg-brand-green rounded-lg text-white flex items-center justify-center">
+                    {[FaWrench, FaChartLine, FaRandom, FaMoneyBillWave, FaChartPie][i]?.({ className: 'text-xl' })}
+                  </div>
                   <div>
                     <h4 className="font-semibold text-brand-green">{t(`memberships.${i}.title`)}</h4>
                     <p className="text-sm text-gray-600">{t(`memberships.${i}.text`)}</p>
@@ -43,7 +61,9 @@ export const CertificationsPartners = ({ dict }: { dict: Dict }) => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[0,1,2].map((i) => (
               <div key={i} className="text-center">
-                <div className="w-20 h-20 bg-brand-gray rounded-full mx-auto mb-4" />
+                <div className="w-20 h-20 bg-brand-gray rounded-full mx-auto mb-4 text-brand-green flex items-center justify-center">
+                  {[FaUserShield, FaHome, FaFileAlt][i]?.({ className: 'text-3xl' })}
+                </div>
                 <h4 className="font-semibold text-brand-green mb-2">{t(`partners.${i}.title`)}</h4>
                 <p className="text-sm text-gray-600">{t(`partners.${i}.text`)}</p>
               </div>

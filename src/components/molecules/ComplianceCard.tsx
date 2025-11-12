@@ -1,5 +1,7 @@
+import { jotformUrls } from '@/data/images';
 import { type Dict, getT } from '@/lib/i18n-server';
 import Link from 'next/link';
+import { FaUserShield, FaFileAlt, FaBook, FaClipboardCheck } from 'react-icons/fa';
 
 type ComplianceCardProps = {
   dict: Dict;
@@ -10,11 +12,16 @@ type ComplianceCardProps = {
   ctaKey?: string;
 };
 
-export const ComplianceCard = ({ dict, titleKey, textKey, price, period, ctaKey }: ComplianceCardProps) => {
+export const ComplianceCard = ({ dict, titleKey, textKey, ctaKey }: ComplianceCardProps) => {
   const t = getT(dict);
+  const idxMatch = titleKey.match(/tiles\.(\d+)\.title$/);
+  const idx = idxMatch ? parseInt(idxMatch[1], 10) : 0;
+  const Icon = [FaUserShield, FaFileAlt, FaBook, FaClipboardCheck][idx] || FaUserShield;
   return (
     <div className="bg-white rounded-xl p-6 shadow-lg text-center">
-      <div className="w-16 h-16 bg-brand-green rounded-full mx-auto mb-4" />
+      <div className="w-16 h-16 bg-brand-green rounded-full mx-auto mb-4 text-white flex items-center justify-center">
+        <Icon className="text-2xl" />
+      </div>
       <h4 className="text-lg font-semibold text-brand-green mb-3">{t(titleKey)}</h4>
       <p className="text-gray-600 text-sm mb-4">{t(textKey)}</p>
       {/* {price && (
@@ -25,7 +32,7 @@ export const ComplianceCard = ({ dict, titleKey, textKey, price, period, ctaKey 
       )} */}
       {ctaKey && (
         <button className="w-full bg-brand-green text-white py-2 rounded-lg text-sm hover:bg-brand-light-green transition-colors">
-         <Link href="/en/book-consultation"> {t(ctaKey)}</Link>
+         <Link href={jotformUrls.businessCorporateServicesJotformUrl }>{t(ctaKey)}</Link>
         </button>
       )}
     </div>

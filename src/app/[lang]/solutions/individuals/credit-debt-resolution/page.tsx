@@ -11,6 +11,8 @@ import { CreditSuccessStories } from '@/components/organisms/CreditSuccessStorie
 import { CreditFAQ } from '@/components/organisms/CreditFAQ';
 import { CTASection } from '@/components/organisms/CTASection';
 import { getDictionary, SupportedLocale } from '../../../dictionaries';
+import { images, jotformUrls } from '@/data/images';
+import { FullWidthBanner } from '@/components/organisms/FullWidthBanner';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -39,11 +41,15 @@ export default async function CreditDebtPage({ params }: PageParams) {
         <CreditHero dict={dict} />
         <GuaranteeDetails dict={dict} />
         <CreditServicesGrid dict={dict} />
+        <FullWidthBanner
+          src={images.solutions.creditDebt.fullWidthBannerImage.src}
+          alt={images.solutions.creditDebt.fullWidthBannerImage.alt}
+        />
         <CreditProcess dict={dict} />
         {/* <CreditPricing dict={dict} /> */}
         {/* <CreditSuccessStories dict={dict} /> */}
         <CreditFAQ dict={dict} />
-        <CTASection dict={dict} lang={lang} />
+        <CTASection dict={dict} lang={lang} bookLink={jotformUrls.individualCreditDebtJotformUrl} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

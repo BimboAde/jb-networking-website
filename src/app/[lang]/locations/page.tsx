@@ -31,10 +31,10 @@ export default async function LocationsPage({ params }: PageParams) {
       {/* <Breadcrumb items={crumbs} /> */}
       <main>
         <LocationsHero dict={dict} />
-        <LocationsMap dict={dict} />
+        {/* <LocationsMap dict={dict} /> */}
         <OfficesGrid dict={dict} />
         <AdditionalLocations dict={dict} />
-        <ServiceAreas dict={dict} />
+        {/* <ServiceAreas dict={dict} /> */}
         <CTASection dict={dict} lang={lang} />
       </main>
       <Footer dict={dict} lang={lang} />

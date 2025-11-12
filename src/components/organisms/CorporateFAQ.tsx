@@ -1,6 +1,8 @@
 import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import { FaqItem } from '../molecules/FaqItem';
+import { Button } from '../atoms/Button';
+import { jotformUrls } from '@/data/images';
 
 export const CorporateFAQ = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'solutions_corporate.faq');
@@ -22,9 +24,10 @@ export const CorporateFAQ = ({ dict }: { dict: Dict }) => {
           <div className="bg-brand-green rounded-2xl p-8 text-white">
             <Heading level={3} className="mb-4 text-white">{tStill('title')}</Heading>
             <p className="text-xl text-green-100 mb-6">{tStill('text')}</p>
-            <button className="bg-white text-brand-green px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">
-              {tStill('button')}
-            </button>
+            <div className="flex justify-center text-brand-green">
+            <Button variant="secondary" className="bg-white text-brand-green px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors" href={jotformUrls.businessCorporateServicesJotformUrl }>{tStill('button')}</Button>
+
+            </div>
           </div>
         </div>
       </div>

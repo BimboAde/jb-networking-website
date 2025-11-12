@@ -13,7 +13,7 @@ export const CreditFAQ = ({ dict }: { dict: Dict }) => {
     <section className="py-20 bg-brand-gray">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <Heading level={2} className="mb-6">{t('title')}</Heading>
+          <Heading level={2} className="mb-6 text-brand-green">{t('title')}</Heading>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto">{t('description')}</p>
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

@@ -5,12 +5,14 @@ import { TaxServiceHero } from '@/components/organisms/TaxServiceHero';
 import { TaxServicesGrid } from '@/components/organisms/TaxServicesGrid';
 import { TaxProcess } from '@/components/organisms/TaxProcess';
 // import { TaxPricing } from '@/components/organisms/TaxPricing';
-import { TaxChecklist } from '@/components/organisms/TaxChecklist';
+// import { TaxChecklist } from '@/components/organisms/TaxChecklist';
 import { TaxTips } from '@/components/organisms/TaxTips';
 // import { TaxTestimonials } from '@/components/organisms/TaxTestimonials';
 import { CTASection } from '@/components/organisms/CTASection';
 import { Breadcrumb } from '@/components/molecules/Breadcrumb';
 import { getDictionary, SupportedLocale } from '../../../dictionaries';
+import { FullWidthBanner } from '@/components/organisms/FullWidthBanner';
+import { images, jotformUrls } from '@/data/images';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -42,12 +44,16 @@ export default async function TaxAccountingPage({ params }: PageParams) {
       <main>
         <TaxServiceHero dict={dict} />
         <TaxServicesGrid dict={dict} />
+        <FullWidthBanner
+          src={images.solutions.taxServices.fullWidthBannerImage.src}
+          alt={images.solutions.taxServices.fullWidthBannerImage.alt}
+        />
         <TaxProcess dict={dict} />
         {/* <TaxPricing dict={dict} /> */}
         {/* <TaxChecklist dict={dict} /> */}
           <TaxTips dict={dict} lang={lang} />
           {/* <TaxTestimonials dict={dict} />  */}
-        <CTASection dict={dict} lang={lang} />
+        <CTASection dict={dict} lang={lang} bookLink={jotformUrls.individualTaxJotformUrl} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

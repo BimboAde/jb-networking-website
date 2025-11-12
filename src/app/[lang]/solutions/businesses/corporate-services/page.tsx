@@ -12,6 +12,7 @@ import { StateRequirements } from '@/components/organisms/StateRequirements';
 import { CorporateFAQ } from '@/components/organisms/CorporateFAQ';
 import { CorporateSuccessStories } from '@/components/organisms/CorporateSuccessStories';
 import { CTASection } from '@/components/organisms/CTASection';
+import { jotformUrls } from '@/data/images';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -47,9 +48,9 @@ export default async function CorporateServicesPage({ params }: PageParams) {
         <ComplianceServices dict={dict} />
         <CorporateProcessTimeline dict={dict} />
         {/* <StateRequirements dict={dict} /> */}
-        <CorporateSuccessStories dict={dict} />
+        {/* <CorporateSuccessStories dict={dict} /> */}
         <CorporateFAQ dict={dict} />
-        <CTASection dict={dict} lang={lang} />
+        <CTASection dict={dict} lang={lang} bookLink={jotformUrls.businessCorporateServicesJotformUrl} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

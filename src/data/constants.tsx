@@ -2,7 +2,7 @@ export const COMPANY = {
   name: 'JB Networking Systems LLC',
   tagline: 'Full-Service Financial Network',
   contact: {
-    phone: '(555) 123-4567',
+    phone: '+14702883365',
     email: 'info@jbnetworking.com',
     consultationEmail: 'consultations@jbnetworking.com',
     hoursWeekdays: 'Mon-Fri: 9AM-6PM',
