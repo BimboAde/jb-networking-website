@@ -65,6 +65,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
             <Link className="hover:underline" href="/admin/images">Images</Link>
             <Link className="hover:underline" href="/admin/testimonials">Testimonials</Link>
             <Link className="hover:underline" href="/admin/website">Website Info</Link>
+            <Link className="hover:underline" href="/admin/consultations">Consultation Requests</Link>
           </nav>
         </aside>
 
@@ -106,6 +107,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
             <Link className="hover:underline" href="/admin/images" onClick={() => setMenuOpen(false)}>Images</Link>
             <Link className="hover:underline" href="/admin/testimonials" onClick={() => setMenuOpen(false)}>Testimonials</Link>
             <Link className="hover:underline" href="/admin/website" onClick={() => setMenuOpen(false)}>Website Info</Link>
+            <Link className="hover:underline" href="/admin/consultations" onClick={() => setMenuOpen(false)}>Consultation Requests</Link>
           </nav>
         </aside>
       </div>

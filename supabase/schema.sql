@@ -196,6 +196,40 @@ $$;
 create or replace view api.testimonials as select * from public.testimonials;
 alter view api.testimonials set (security_invoker = on);
 
+-- Consultation Requests
+create table if not exists public.consultation_requests (
+  id uuid primary key default gen_random_uuid(),
+  first_name text not null,
+  last_name text not null,
+  email text not null,
+  phone text not null,
+  preferred_location text,
+  preferred_language text,
+  services jsonb default '[]'::jsonb,
+  preferred_date text,
+  preferred_time text,
+  about text,
+  is_military boolean default false,
+  marketing_consent boolean default false,
+  free_consent boolean default false,
+  created_at timestamptz not null default now()
+);
+create index if not exists consultation_requests_created_idx on public.consultation_requests(created_at desc);
+
+alter table public.consultation_requests enable row level security;
+do $$
+begin
+  -- Allow public inserts for form submissions
+  if not exists (select 1 from pg_policies where schemaname='public' and tablename='consultation_requests' and policyname='Allow insert to anon') then
+    create policy "Allow insert to anon" on public.consultation_requests for insert to anon with check (true);
+  end if;
+  -- Disallow reads/updates/deletes to anon by default (no policy)
+end
+$$;
+
+create or replace view api.consultation_requests as select * from public.consultation_requests;
+alter view api.consultation_requests set (security_invoker = on);
+
 -- Grants for API schema (PostgREST)
 do $$
 begin

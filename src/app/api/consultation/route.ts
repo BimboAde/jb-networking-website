@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { createClient } from '@supabase/supabase-js';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -12,6 +13,32 @@ export async function POST(req: NextRequest) {
       if (!body?.[key]) {
         return NextResponse.json({ error: `Missing field: ${key}` }, { status: 400 });
       }
+    }
+
+    // Persist to consultation_requests
+    try {
+      const supabase = createClient(
+        process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || '',
+        process.env.SUPABASE_SERVICE_ROLE_KEY || '',
+        { db: { schema: 'api' } }
+      );
+      await supabase.from('consultation_requests').insert({
+        first_name: body.firstName,
+        last_name: body.lastName,
+        email: body.email,
+        phone: body.phone,
+        preferred_location: body.location,
+        preferred_language: body.language || null,
+        services: Array.isArray(body.services) ? body.services : [],
+        preferred_date: body.date || null,
+        preferred_time: body.time || null,
+        about: body.about || null,
+        is_military: !!body.isMilitary,
+        marketing_consent: !!body.marketing,
+        free_consent: !!body.freeConsent,
+      });
+    } catch {
+      // non-fatal
     }
 
     const adminEmail = process.env.ADMIN_EMAIL || 'admin@example.com';

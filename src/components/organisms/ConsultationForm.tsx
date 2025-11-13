@@ -48,12 +48,19 @@ export function ConsultationForm({ strings, options }: { strings: Strings; optio
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState<string | null>(null);
+  const [toast, setToast] = useState<{ message: string; type: 'success' | 'error' } | null>(null);
 
   const today = useMemo(() => new Date().toISOString().split('T')[0], []);
 
   useEffect(() => {
     setDate(today);
   }, [today]);
+
+  useEffect(() => {
+    if (!toast) return;
+    const t = setTimeout(() => setToast(null), 4000);
+    return () => clearTimeout(t);
+  }, [toast]);
 
   function toggleService(value: string) {
     setServices((prev) => (prev.includes(value) ? prev.filter((v) => v !== value) : [...prev, value]));
@@ -74,6 +81,7 @@ export function ConsultationForm({ strings, options }: { strings: Strings; optio
 
     if (!firstName || !lastName || !email || !phone || !location || !freeConsent) {
       setError(strings.requiredError);
+      setToast({ message: strings.requiredError, type: 'error' });
       return;
     }
 
@@ -100,6 +108,7 @@ export function ConsultationForm({ strings, options }: { strings: Strings; optio
       });
       if (!res.ok) throw new Error('Request failed');
       setSuccess(strings.success);
+      setToast({ message: strings.success, type: 'success' });
       setFirstName('');
       setLastName('');
       setEmail('');
@@ -113,15 +122,27 @@ export function ConsultationForm({ strings, options }: { strings: Strings; optio
       setIsMilitary(false);
       setMarketing(false);
       setFreeConsent(false);
-    } catch (e) {
+    } catch {
       setError(strings.serverError);
+      setToast({ message: strings.serverError, type: 'error' });
     } finally {
       setSubmitting(false);
     }
   }
 
   return (
-    <div className="bg-brand-gray rounded-2xl p-8">
+    <div className="bg-brand-gray rounded-2xl p-8 relative">
+      {toast && (
+        <div
+          className={`fixed top-4 right-4 z-50 min-w-[260px] max-w-[90vw] px-4 py-3 rounded-lg text-white shadow-lg ${
+            toast.type === 'success' ? 'bg-green-600' : 'bg-red-600'
+          }`}
+          role="status"
+          aria-live="polite"
+        >
+          {toast.message}
+        </div>
+      )}
       <div className="mb-8">
         <h2 className="text-3xl font-bold text-brand-green font-poppins mb-4">{strings.title}</h2>
         <p className="text-gray-600">{strings.description}</p>
