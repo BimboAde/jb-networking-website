@@ -2,7 +2,6 @@ import { type Dict, getT } from '@/lib/i18n-server';
 import type { LucideIcon } from 'lucide-react';
 import { Check } from 'lucide-react';
 import { Button } from '../atoms/Button';
-import { jotformUrls } from '@/data/images';
 
 type BusinessServiceCardProps = {
   dict: Dict;
@@ -14,6 +13,7 @@ type BusinessServiceCardProps = {
   ctaSecondaryKey: string;
   badgeText?: string;
   accent?: 'default' | 'gold';
+  bookLink?: string | undefined;
 };
 
 export const BusinessServiceCard = ({
@@ -25,6 +25,7 @@ export const BusinessServiceCard = ({
   ctaPrimaryKey,
   badgeText,
   accent = 'default',
+  bookLink,
 }: BusinessServiceCardProps) => {
   const t = getT(dict);
   const isGold = accent === 'gold';
@@ -68,7 +69,7 @@ export const BusinessServiceCard = ({
         </div>
 
         <div className="mt-8 sm:mt-10 pt-2 flex items-center justify-center mt-auto">
-          <Button variant="primary" className="px-8 py-3" href={jotformUrls.businessExecutiveServicesJotformUrl}>{t(ctaPrimaryKey)}</Button>
+          <Button variant="primary" className="px-8 py-3" href={bookLink || ''}>{t(ctaPrimaryKey)}</Button>
         </div>
       </div>
     </div>

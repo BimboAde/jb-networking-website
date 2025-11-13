@@ -2,12 +2,13 @@ import { type Dict, getT } from "@/lib/i18n-server";
 import { Heading } from "../atoms/Heading";
 import { Button } from "../atoms/Button";
 import { COMPANY } from "@/data/constants";
-import { jotformUrls } from "@/data/images";
 import Image from "next/image";
 import { images } from "@/data/images";
+import { getImageByLocation } from "@/lib/media";
 
-export const FinancialHero = ({ dict }: { dict: Dict }) => {
+export const FinancialHero = async ({ dict, bookLink }: { dict: Dict; bookLink: string | undefined }) => {
   const t = getT(dict, "solutions_financial.hero");
+  const hero = await getImageByLocation("financial-insurance-planning", "hero");
 
   return (
     <section className="bg-gradient-to-br from-brand-green to-brand-light-green text-white pt-24 lg:pt-0 pb-12 lg:pb-16 min-h-[520px] lg:h-[500px] flex items-center">
@@ -26,7 +27,7 @@ export const FinancialHero = ({ dict }: { dict: Dict }) => {
               <Button
                 variant="secondary"
                 className="px-8 py-4 text-lg font-semibold"
-                href={jotformUrls.financialPlanningJotformUrl}
+                href={bookLink || ''}
               >
                 {t("ctaAnalysis")}
               </Button>
@@ -42,8 +43,8 @@ export const FinancialHero = ({ dict }: { dict: Dict }) => {
           <div className="relative">
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src={images.solutions.financialPlanning.heroImage.src}
-              alt={images.solutions.financialPlanning.heroImage.alt}
+              src={hero?.image_url || images.solutions.financialPlanning.heroImage.src}
+              alt={hero?.image_alt || images.solutions.financialPlanning.heroImage.alt}
               fill
               sizes="(min-width: 1024px) 560px, 100vw"
               className="object-cover"

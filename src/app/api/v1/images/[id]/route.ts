@@ -33,4 +33,3 @@ export async function DELETE(_req: NextRequest, { params }: RouteParams) {
   return NextResponse.json({ ok: true });
 }
 
-

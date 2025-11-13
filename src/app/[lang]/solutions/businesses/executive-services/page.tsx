@@ -9,7 +9,7 @@ import { ExecutiveProcess } from '@/components/organisms/ExecutiveProcess';
 import { Breadcrumb } from '@/components/molecules/Breadcrumb';
 import { getT, type Dict } from '@/lib/i18n-server';
 import { VideoSection } from '@/components/organisms/VideoSection';
-import { jotformUrls } from '@/data/images';
+import { getWebsiteInfoServer } from '@/lib/website-info-server';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -33,6 +33,11 @@ export default async function ExecutiveServicesPage({ params }: PageParams) {
   const { jsonLd } = getPageSEO('solutions-business', lang);
   const dict = await getDictionary((lang as SupportedLocale) || 'en');
   const crumbs = buildBreadcrumb(dict, lang);
+  const websiteInfo = await getWebsiteInfoServer();
+  const bookLink =
+    websiteInfo?.service_booking_links?.find((b) =>
+      /executive\s*services/i.test(b.service || '')
+    )?.url || undefined;
 
   return (
     <>
@@ -40,11 +45,11 @@ export default async function ExecutiveServicesPage({ params }: PageParams) {
       <Header dict={dict} lang={lang} />
       <Breadcrumb items={crumbs} />
       <main>
-        <ExecutiveHero dict={dict} />
-        <ExecutiveServicesGrid dict={dict} />
+        <ExecutiveHero dict={dict} bookLink={bookLink} />
+        <ExecutiveServicesGrid dict={dict} bookLink={bookLink} />
         <VideoSection dict={dict} />
         <ExecutiveProcess dict={dict} />
-        <CTASection dict={dict} lang={lang} bookLink={jotformUrls.businessExecutiveServicesJotformUrl} />
+        <CTASection dict={dict} lang={lang} bookLink={bookLink} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

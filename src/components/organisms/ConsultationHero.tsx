@@ -1,13 +1,15 @@
 import { getT, type Dict } from '@/lib/i18n-server';
 import Image from 'next/image';
 import { MotionDiv } from '../atoms/Motion';
-import { getImageByLabel } from '@/lib/media';
+import { getImageByLocation } from '@/lib/media';
+import { FaComments } from 'react-icons/fa';
+import { images } from '@/data/images';
 
 export const ConsultationHero = async ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'consultation.hero');
-  const img = await getImageByLabel('consultationPageImage');
-  const heroImg = img?.src;
-  const heroAlt = img?.alt || 'Consultation';
+  const img = await getImageByLocation('consultation', 'hero');
+  const heroImg = img?.image_url || images.consultationPageImage.src;
+  const heroAlt = img?.image_alt || images.consultationPageImage.alt || 'Consultation';
 
   return (
     <section className="relative overflow-hidden pt-24 lg:pt-0 pb-12 lg:pb-16 bg-gradient-to-br from-brand-green via-brand-green to-brand-light-green">
@@ -25,7 +27,7 @@ export const ConsultationHero = async ({ dict }: { dict: Dict }) => {
             className="text-white"
           >
             <div className="inline-flex items-center bg-white/15 backdrop-blur px-4 py-2 rounded-full text-sm mb-6">
-              <span className="w-2 h-2 rounded-full bg-brand-gold mr-2" />
+              <FaComments className="text-brand-gold mr-2" />
               <span>Hablamos Español • Expert Financial Consultation</span>
             </div>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-poppins leading-tight">

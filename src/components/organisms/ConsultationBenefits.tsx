@@ -1,5 +1,6 @@
 import { getT, type Dict } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
+import { FaClipboardCheck, FaLightbulb, FaShieldAlt } from 'react-icons/fa';
 
 export const ConsultationBenefits = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'consultation.benefits');
@@ -20,7 +21,9 @@ export const ConsultationBenefits = ({ dict }: { dict: Dict }) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {items.map((item, idx) => (
             <div key={idx} className="bg-white rounded-xl p-8 shadow-lg text-center">
-              <div className="w-16 h-16 bg-brand-green rounded-full mx-auto mb-6" />
+              <div className="w-16 h-16 bg-brand-green rounded-full mx-auto mb-6 flex items-center justify-center text-white">
+                {[FaClipboardCheck, FaLightbulb, FaShieldAlt][idx]?.({ className: 'text-2xl' })}
+              </div>
               <h3 className="text-xl font-bold text-brand-green mb-4 font-poppins">{item.title}</h3>
               <p className="text-gray-600">{item.description}</p>
             </div>

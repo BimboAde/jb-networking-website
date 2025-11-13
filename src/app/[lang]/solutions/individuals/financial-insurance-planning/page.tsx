@@ -7,13 +7,15 @@ import { FinancialHero } from '@/components/organisms/FinancialHero';
 import { InvestmentServicesGrid } from '@/components/organisms/InvestmentServicesGrid';
 import { InvestmentPhilosophy } from '@/components/organisms/InvestmentPhilosophy';
 import { OurProcess } from '@/components/organisms/OurProcess';
-import { PerformanceDashboard } from '@/components/organisms/PerformanceDashboard';
-import { RetirementCalculator } from '@/components/organisms/RetirementCalculator';
-import { InvestmentOptions } from '@/components/organisms/InvestmentOptions';
+// import { PerformanceDashboard } from '@/components/organisms/PerformanceDashboard';
+// import { RetirementCalculator } from '@/components/organisms/RetirementCalculator';
+// import { InvestmentOptions } from '@/components/organisms/InvestmentOptions';
 import { CTASection } from '@/components/organisms/CTASection';
 import { getT, type Dict } from '@/lib/i18n-server';
 import { FullWidthBanner } from '@/components/organisms/FullWidthBanner';
-import { images, jotformUrls } from '@/data/images';
+import { images } from '@/data/images';
+import { getImageByLocation } from '@/lib/media';
+import { getWebsiteInfoServer } from '@/lib/website-info-server';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -37,6 +39,12 @@ export default async function FinancialPlanningPage({ params }: PageParams) {
   const { jsonLd } = getPageSEO('solutions-financial', lang);
   const dict = await getDictionary((lang as SupportedLocale) || 'en');
   const crumbs = buildBreadcrumb(dict, lang);
+  const banner = await getImageByLocation('financial-insurance-planning', 'fullwidth');
+  const websiteInfo = await getWebsiteInfoServer();
+  const bookLink =
+    websiteInfo?.service_booking_links?.find((b) =>
+      /financial\s*planning/i.test(b.service || '')
+    )?.url || undefined;
   const tCalc = getT(dict, 'solutions_financial.calculator');
   const calculatorStrings = {
     title: tCalc('title'),
@@ -65,18 +73,18 @@ export default async function FinancialPlanningPage({ params }: PageParams) {
       <Header dict={dict} lang={lang} />
       <Breadcrumb items={crumbs} />
       <main>
-        <FinancialHero dict={dict} />
+        <FinancialHero dict={dict} bookLink={bookLink}/>
         <InvestmentServicesGrid dict={dict} />
         <FullWidthBanner
-          src={images.solutions.financialPlanning.fullWidthBannerImage.src}
-          alt={images.solutions.financialPlanning.fullWidthBannerImage.alt}
+          src={banner?.image_url || images.solutions.financialPlanning.fullWidthBannerImage.src}
+          alt={banner?.image_alt || images.solutions.financialPlanning.fullWidthBannerImage.alt}
         />
         <InvestmentPhilosophy dict={dict} />
         <OurProcess dict={dict} />
         {/* <PerformanceDashboard dict={dict} /> */}
         {/* <RetirementCalculator strings={calculatorStrings} /> */}
         {/* <InvestmentOptions dict={dict} /> */}
-        <CTASection dict={dict} lang={lang} bookLink={jotformUrls.financialPlanningJotformUrl} />
+        <CTASection dict={dict} lang={lang} bookLink={bookLink} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

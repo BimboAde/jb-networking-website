@@ -13,7 +13,9 @@ import { RealEstateFAQ } from '@/components/organisms/RealEstateFAQ';
 import { CTASection } from '@/components/organisms/CTASection';
 import { getT, type Dict } from '@/lib/i18n-server';
 import { FullWidthBanner } from '@/components/organisms/FullWidthBanner';
-import { images, jotformUrls } from '@/data/images';
+import { images } from '@/data/images';
+import { getImageByLocation } from '@/lib/media';
+import { getWebsiteInfoServer } from '@/lib/website-info-server';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -37,6 +39,12 @@ export default async function RealEstateInsurancePage({ params }: PageParams) {
   const { jsonLd } = getPageSEO('solutions-real-estate', lang);
   const dict = await getDictionary((lang as SupportedLocale) || 'en');
   const crumbs = buildBreadcrumb(dict, lang);
+  const banner = await getImageByLocation('real-estate-mortgage', 'fullwidth');
+  const websiteInfo = await getWebsiteInfoServer();
+  const bookLink =
+    websiteInfo?.service_booking_links?.find((b) =>
+      /real\s*estate/i.test(b.service || '')
+    )?.url || undefined;
 
   return (
     <>
@@ -44,18 +52,18 @@ export default async function RealEstateInsurancePage({ params }: PageParams) {
       <Header dict={dict} lang={lang} />
       <Breadcrumb items={crumbs} />
       <main>
-        <RealEstateHero dict={dict} />
+        <RealEstateHero dict={dict} bookLink={bookLink}/>
         <DualServicesOverview dict={dict} />
         {/* <SpecializedServicesGrid dict={dict} /> */}
         <RealEstateProcess dict={dict} />
         {/* <InsuranceComparison dict={dict} /> */}
         {/* <RealEstateSuccessStories dict={dict} /> */}
         <FullWidthBanner
-          src={images.solutions.realEstate.fullWidthBannerImage.src}
-          alt={images.solutions.realEstate.fullWidthBannerImage.alt}
+          src={banner?.image_url || images.solutions.realEstate.fullWidthBannerImage.src}
+          alt={banner?.image_alt || images.solutions.realEstate.fullWidthBannerImage.alt}
         />
         <RealEstateFAQ dict={dict} />
-        <CTASection dict={dict} lang={lang} bookLink={jotformUrls.realEstateJotformUrl} />
+        <CTASection dict={dict} lang={lang} bookLink={bookLink} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

@@ -3,7 +3,7 @@ import { Heading } from '../atoms/Heading';
 import { BusinessServiceCard } from '../molecules/BusinessServiceCard';
 import { Building2, Users, Presentation } from 'lucide-react';
 
-export const ExecutiveServicesGrid = ({ dict }: { dict: Dict }) => {
+export const ExecutiveServicesGrid = ({ dict, bookLink }: { dict: Dict; bookLink: string | undefined }) => {
   const t = getT(dict, 'solutions_executive.services');
   return (
     <section className="py-20 bg-white">
@@ -14,6 +14,7 @@ export const ExecutiveServicesGrid = ({ dict }: { dict: Dict }) => {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
           <BusinessServiceCard
+            bookLink={bookLink}
             dict={dict}
             icon={Building2}
             titleKey={'solutions_executive.services.office.title'}
@@ -30,6 +31,7 @@ export const ExecutiveServicesGrid = ({ dict }: { dict: Dict }) => {
             ctaSecondaryKey={'solutions_executive.services.office.ctaSecondary'}
           />
           <BusinessServiceCard
+            bookLink={bookLink}
             dict={dict}
             icon={Users}
             titleKey={'solutions_executive.services.virtual.title'}
@@ -46,6 +48,7 @@ export const ExecutiveServicesGrid = ({ dict }: { dict: Dict }) => {
             ctaSecondaryKey={'solutions_executive.services.virtual.ctaSecondary'}
           />
           <BusinessServiceCard
+            bookLink={bookLink}
             dict={dict}
             icon={Presentation}
             titleKey={'solutions_executive.services.training.title'}

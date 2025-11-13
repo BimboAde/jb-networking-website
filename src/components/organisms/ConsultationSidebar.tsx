@@ -1,5 +1,6 @@
 import { getT, type Dict } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
+import { FaPhoneAlt, FaEnvelope, FaGlobeAmericas } from 'react-icons/fa';
 
 export const ConsultationSidebar = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'consultation.sidebar');
@@ -14,7 +15,9 @@ export const ConsultationSidebar = ({ dict }: { dict: Dict }) => {
         <h3 className="text-2xl font-bold text-brand-green font-poppins mb-6">{t('quickContact.title')}</h3>
         <div className="space-y-6">
           <div className="flex items-center space-x-4 p-4 bg-brand-gray rounded-lg">
-            <div className="w-12 h-12 bg-brand-green rounded-full" />
+            <div className="w-12 h-12 bg-brand-green rounded-full text-white flex items-center justify-center">
+              <FaPhoneAlt className="text-xl" />
+            </div>
             <div>
               <h4 className="font-semibold text-brand-green">{t('quickContact.callTitle')}</h4>
               <p className="text-lg font-bold text-gray-900">{t('quickContact.phone')}</p>
@@ -22,7 +25,9 @@ export const ConsultationSidebar = ({ dict }: { dict: Dict }) => {
             </div>
           </div>
           <div className="flex items-center space-x-4 p-4 bg-brand-gray rounded-lg">
-            <div className="w-12 h-12 bg-brand-green rounded-full" />
+            <div className="w-12 h-12 bg-brand-green rounded-full text-white flex items-center justify-center">
+              <FaEnvelope className="text-xl" />
+            </div>
             <div>
               <h4 className="font-semibold text-brand-green">{t('quickContact.emailTitle')}</h4>
               <p className="text-lg font-bold text-gray-900">{t('quickContact.email')}</p>
@@ -30,7 +35,9 @@ export const ConsultationSidebar = ({ dict }: { dict: Dict }) => {
             </div>
           </div>
           <div className="flex items-center space-x-4 p-4 bg-brand-gray rounded-lg">
-            <div className="w-12 h-12 bg-brand-gold rounded-full" />
+            <div className="w-12 h-12 bg-brand-gold rounded-full text-white flex items-center justify-center">
+              <FaGlobeAmericas className="text-xl" />
+            </div>
             <div>
               <h4 className="font-semibold text-brand-green">{t('quickContact.bilingualTitle')}</h4>
               <p className="text-lg font-bold text-gray-900">{t('quickContact.bilingual')}</p>

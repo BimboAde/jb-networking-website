@@ -1,14 +1,15 @@
 import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import Image from 'next/image';
-import { getImageByLabel } from '@/lib/media';
+import { getImageByLocation } from '@/lib/media';
 import { FaCheckCircle, FaStar } from 'react-icons/fa';
 import { images } from '@/data/images';
 import { Button } from '../atoms/Button';
 
 export const CommunityImpact = async ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'about_page.community');
-  const img = await getImageByLabel('aboutPageImage2');
+  const aboutImg = await getImageByLocation('about', 'about-section');
+  const discountImg = await getImageByLocation('about', 'discount-section');
   const programs = [0,1,2,3,4].map((i) => t(`programs.${i}`)).filter((v) => typeof v === 'string') as string[];
   return (
     <section className="py-20 bg-white">
@@ -20,7 +21,7 @@ export const CommunityImpact = async ({ dict }: { dict: Dict }) => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
           <div className="space-y-8">
             <div className="h-80 overflow-hidden rounded-2xl relative">
-              <Image src={images.aboutPageImage2.src || '/jblogo.png'} alt={images.aboutPageImage2.alt || 'Community'} fill className="object-cover" />
+              <Image src={aboutImg?.image_url || images.aboutPageImage2.src || '/jblogo.png'} alt={aboutImg?.image_alt || images.aboutPageImage2.alt || 'Community'} fill className="object-cover" />
             </div>
             <div className="bg-brand-gray rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-brand-green mb-6 font-poppins">{t('programsTitle')}</h3>
@@ -46,20 +47,11 @@ export const CommunityImpact = async ({ dict }: { dict: Dict }) => {
                 ))}
               </div>
             </div>
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <h3 className="text-xl font-bold text-brand-green mb-4 font-poppins">{t('charityTitle')}</h3>
-              <div className="space-y-4">
-                {[0,1,2].map((i) => (
-                  <div key={i} className="flex items-start space-x-3">
-                    <FaStar className="text-brand-gold mt-1" />
-                    <div>
-                      <h4 className="font-semibold text-brand-green">{t(`charities.${i}.title`)}</h4>
-                      <p className="text-sm text-gray-600">{t(`charities.${i}.text`)}</p>
-                    </div>
-                  </div>
-                ))}
+            {discountImg?.image_url && (
+              <div className="h-48 overflow-hidden rounded-xl relative">
+                <Image src={discountImg.image_url} alt={discountImg.image_alt || images.aboutPageImage2.alt || 'Community'} fill className="object-cover" />
               </div>
-            </div>
+            )}
            
           </div>
          
@@ -67,7 +59,7 @@ export const CommunityImpact = async ({ dict }: { dict: Dict }) => {
         <div className="bg-brand-navy rounded-xl p-6 text-white text-center flex flex-col items-center justify-center">
               <h4 className="text-lg font-bold mb-3">{t('involved.title')}</h4>
               <p className="text-blue-100 mb-4">{t('involved.text')}</p>
-              <Button className="bg-white text-brand-green px-6 py-2 rounded-lg font-semibold hover:bg-gray-50 transition-colors" href='/en/consultation'>{t('involved.button')}</Button>
+              <Button variant="secondary" className="bg-white text-brand-green px-6 py-2 rounded-lg font-semibold hover:bg-gray-50 transition-colors" href='/en/consultation'>{t('involved.button')}</Button>
             </div>
       </div>
     </section>

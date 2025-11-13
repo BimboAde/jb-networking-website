@@ -35,7 +35,7 @@ export const Header = async ({ dict, lang }: { dict: Dict; lang: string }) => {
     <header className="bg-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          <Logo companyName={t('companyName')} tagline={t('companyTagline')} src={logo?.src || '/jblogo.png'} alt={logo?.alt || 'JB Networking Systems Logo'} />
+          <Logo companyName={t('companyName')} tagline={t('companyTagline')} src={logo?.image_url || '/jblogo.png'} alt={logo?.image_alt || 'JB Networking Systems Logo'} />
 
           <nav className="hidden lg:flex items-center space-x-8">
             <NavigationDropdown

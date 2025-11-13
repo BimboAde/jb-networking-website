@@ -3,10 +3,12 @@ import { MotionDiv } from '../atoms/Motion';
 import { Heading } from '../atoms/Heading';
 import { VideoPlayer } from '../molecules/VideoPlayer';
 import { fadeInUp } from '@/lib/animations';
-import { videos } from '@/data/images';
+import { getImageByLocation } from '@/lib/media';
+import { images, videos } from '@/data/images';
 
-export const VideoSection = ({ dict }: { dict: Dict }) => {
+export const VideoSection = async ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'video');
+  const video = await getImageByLocation('home', 'video');
 
   return (
     <section className="py-20 bg-white">
@@ -31,8 +33,8 @@ export const VideoSection = ({ dict }: { dict: Dict }) => {
           variants={fadeInUp}
           className="max-w-5xl mx-auto"
         >
-          <VideoPlayer
-            videoSrc={videos.videoUrl}
+            <VideoPlayer
+              videoSrc={video?.image_url || videos.videoUrl}
             poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 675'%3E%3Crect width='1200' height='675' fill='%232D5016'/%3E%3Cg fill='white' opacity='0.1'%3E%3Ccircle cx='300' cy='200' r='50'/%3E%3Ccircle cx='900' cy='400' r='80'/%3E%3C/g%3E%3Ctext x='600' y='350' text-anchor='middle' fill='white' font-size='48' font-family='Inter'%3EJB Networking Systems LLC%3C/text%3E%3C/svg%3E"
             // overlayLabel={t('watchOurStory')}
           />

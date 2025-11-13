@@ -12,7 +12,7 @@ import { IndustryExpertise } from '@/components/organisms/IndustryExpertise';
 // import { BusinessProcessTimeline } from '@/components/organisms/BusinessProcessTimeline';
 import { BusinessTaxFAQ } from '@/components/organisms/BusinessTaxFAQ';
 import { CTASection } from '@/components/organisms/CTASection';
-import { jotformUrls } from '@/data/images';
+import { getWebsiteInfoServer } from '@/lib/website-info-server';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -36,6 +36,11 @@ export default async function BusinessTaxPage({ params }: PageParams) {
   const { jsonLd } = getPageSEO('solutions-business-tax', lang);
   const dict = await getDictionary((lang as SupportedLocale) || 'en');
   const crumbs = buildBreadcrumb(dict, lang);
+  const websiteInfo = await getWebsiteInfoServer();
+  const bookLink =
+    websiteInfo?.service_booking_links?.find((b) =>
+      /business\s*accounting|business\s*tax/i.test(b.service || '')
+    )?.url || undefined;
 
   // const ctaT = getT(dict, 'solutions_business_tax.cta');
 
@@ -45,14 +50,14 @@ export default async function BusinessTaxPage({ params }: PageParams) {
       <Header dict={dict} lang={lang} />
       <Breadcrumb items={crumbs} />
       <main>
-        <BusinessTaxHero dict={dict} />
+        <BusinessTaxHero dict={dict} bookLink={bookLink} />
         <BusinessServiceOverview dict={dict} />
         <BusinessDetailedServices dict={dict} />
         {/* <BusinessPricingPlans dict={dict} /> */}
         <IndustryExpertise dict={dict} />
         {/* <BusinessProcessTimeline dict={dict} /> */}
         <BusinessTaxFAQ dict={dict} />
-        <CTASection dict={dict} lang={lang} bookLink={jotformUrls.businessAccountingJotformUrl} />
+        <CTASection dict={dict} lang={lang} bookLink={bookLink} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

@@ -4,25 +4,21 @@ import { requireAdmin } from '@/lib/auth/requireAdmin';
 
 type ImageRecord = {
   id?: string;
-  label: string;
-  src: string;
-  alt: string;
+  page_slug: string;
+  image_location: string;
+  image_url: string;
+  image_alt: string;
   width?: number | null;
   height?: number | null;
-  category?: string | null;
 };
 
 export async function GET(req: NextRequest) {
-  const category = req.nextUrl.searchParams.get('category');
-  const label = req.nextUrl.searchParams.get('label');
+  const pageSlug = req.nextUrl.searchParams.get('page_slug');
+  const location = req.nextUrl.searchParams.get('image_location');
   const supabase = getServerSupabase();
   let query = supabase.from('images').select('*').order('created_at', { ascending: false });
-  if (category) {
-    query = query.eq('category', category);
-  }
-  if (label) {
-    query = query.eq('label', label);
-  }
+  if (pageSlug) query = query.eq('page_slug', pageSlug);
+  if (location) query = query.eq('image_location', location);
   const { data, error } = await query;
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
   return NextResponse.json({ data });
@@ -33,13 +29,12 @@ export async function POST(req: NextRequest) {
   if (admin instanceof NextResponse) return admin;
   const body = (await req.json()) as ImageRecord | ImageRecord[];
   const records = Array.isArray(body) ? body : [body];
-  if (!records.length || records.some((r) => !r.label || !r.src || !r.alt)) {
-    return NextResponse.json({ error: 'Invalid payload: label, src, alt are required' }, { status: 400 });
+  if (!records.length || records.some((r) => !r.page_slug || !r.image_location || !r.image_url || !r.image_alt)) {
+    return NextResponse.json({ error: 'Invalid payload: page_slug, image_location, image_url, image_alt are required' }, { status: 400 });
   }
   const supabase = getServerSupabase();
   const { data, error } = await supabase.from('images').upsert(records).select('*');
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
   return NextResponse.json({ data }, { status: 201 });
 }
-
 

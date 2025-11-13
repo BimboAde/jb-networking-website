@@ -12,7 +12,7 @@ import { StateRequirements } from '@/components/organisms/StateRequirements';
 import { CorporateFAQ } from '@/components/organisms/CorporateFAQ';
 import { CorporateSuccessStories } from '@/components/organisms/CorporateSuccessStories';
 import { CTASection } from '@/components/organisms/CTASection';
-import { jotformUrls } from '@/data/images';
+import { getWebsiteInfoServer } from '@/lib/website-info-server';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -36,6 +36,11 @@ export default async function CorporateServicesPage({ params }: PageParams) {
   const { jsonLd } = getPageSEO('solutions-corporate', lang);
   const dict = await getDictionary((lang as SupportedLocale) || 'en');
   const crumbs = buildBreadcrumb(dict, lang);
+  const websiteInfo = await getWebsiteInfoServer();
+  const bookLink =
+    websiteInfo?.service_booking_links?.find((b) =>
+      /corporate\s*services/i.test(b.service || '')
+    )?.url || undefined;
 
   return (
     <>
@@ -43,14 +48,14 @@ export default async function CorporateServicesPage({ params }: PageParams) {
       <Header dict={dict} lang={lang} />
       <Breadcrumb items={crumbs} />
       <main>
-        <CorporateHero dict={dict} />
+        <CorporateHero dict={dict} bookLink={bookLink} />
         <FormationServicesGrid dict={dict} />
         <ComplianceServices dict={dict} />
         <CorporateProcessTimeline dict={dict} />
         {/* <StateRequirements dict={dict} /> */}
         {/* <CorporateSuccessStories dict={dict} /> */}
         <CorporateFAQ dict={dict} />
-        <CTASection dict={dict} lang={lang} bookLink={jotformUrls.businessCorporateServicesJotformUrl} />
+        <CTASection dict={dict} lang={lang} bookLink={bookLink} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

@@ -15,15 +15,40 @@ create index if not exists team_members_order_idx on public.team_members(order_i
 -- Images (global image registry)
 create table if not exists public.images (
   id uuid primary key default gen_random_uuid(),
-  label text not null unique,
-  src text not null,
-  alt text not null,
+  -- legacy columns
+  label text,
+  src text,
+  alt text,
   width int,
   height int,
   category text,
+  -- new columns
+  page_slug text,
+  image_location text,
+  image_url text,
+  image_alt text,
   created_at timestamptz not null default now()
 );
 create index if not exists images_category_idx on public.images(category);
+
+-- Ensure columns exist if table was created before
+alter table public.images add column if not exists page_slug text;
+alter table public.images add column if not exists image_location text;
+alter table public.images add column if not exists image_url text;
+alter table public.images add column if not exists image_alt text;
+
+-- Migrate legacy values into new columns if empty (best-effort; no-op if nulls)
+do $$
+begin
+  update public.images
+    set image_url = coalesce(image_url, src),
+        image_alt = coalesce(image_alt, alt)
+  where (src is not null and (image_url is null or image_url = ''))
+     or (alt is not null and (image_alt is null or image_alt = ''));
+end
+$$;
+
+create index if not exists images_page_loc_idx on public.images(page_slug, image_location);
 
 -- Locations (Offices)
 create table if not exists public.locations (
@@ -75,6 +100,40 @@ begin
   end if;
 end
 $$;
+
+-- Website Info (singleton)
+create table if not exists public.website_info (
+  id uuid primary key default gen_random_uuid(),
+  main_phone text,
+  main_email text,
+  linkedin text,
+  x_url text,
+  facebook text,
+  instagram text,
+  pinterest text,
+  weekday_hours text,
+  weekend_hours text,
+  service_booking_links jsonb default '[]'::jsonb,
+  created_at timestamptz not null default now(),
+  updated_at timestamptz not null default now()
+);
+create index if not exists website_info_updated_idx on public.website_info(updated_at desc);
+
+alter table public.website_info enable row level security;
+do $$
+begin
+  if not exists (select 1 from pg_policies where schemaname='public' and tablename='website_info' and policyname='Allow read to anon') then
+    create policy "Allow read to anon" on public.website_info for select to anon using (true);
+  end if;
+  if not exists (select 1 from pg_policies where schemaname='public' and tablename='website_info' and policyname='Deny write to anon') then
+    create policy "Deny write to anon" on public.website_info for all to anon using (false) with check (false);
+  end if;
+end
+$$;
+
+-- API view
+create or replace view api.website_info as select * from public.website_info;
+alter view api.website_info set (security_invoker = on);
 
 -- Optional: prevent anon insert/update/delete (implicit deny with RLS, added for clarity)
 do $$

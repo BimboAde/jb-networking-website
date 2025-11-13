@@ -5,9 +5,11 @@ import { jotformUrls } from "@/data/images";
 import { COMPANY } from "@/data/constants";
 import Image from "next/image";
 import { images } from "@/data/images";
+import { getImageByLocation } from "@/lib/media";
 
-export const BusinessTaxHero = ({ dict }: { dict: Dict }) => {
+export const BusinessTaxHero = async ({ dict, bookLink }: { dict: Dict; bookLink: string | undefined }) => {
   const t = getT(dict, "solutions_business_tax.hero");
+  const hero = await getImageByLocation("business-accountant-services", "hero");
   return (
     <section className="bg-gradient-to-br from-brand-green to-brand-light-green text-white pt-24 lg:pt-0 pb-12 lg:pb-16 min-h-[520px] lg:h-[500px] flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
@@ -23,7 +25,7 @@ export const BusinessTaxHero = ({ dict }: { dict: Dict }) => {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="secondary" className="px-8 py-3 font-semibold" href={jotformUrls.businessAccountingJotformUrl} target="_blank">
+              <Button variant="secondary" className="px-8 py-3 font-semibold" href={bookLink || ''} target="_blank">
                 {t("ctaQuote")}
               </Button>
               <Button variant="outline" className="px-8 py-3 font-semibold" href={`tel:${COMPANY.contact.phone}`}>
@@ -33,8 +35,8 @@ export const BusinessTaxHero = ({ dict }: { dict: Dict }) => {
           </div>
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
             <Image
-              src={images.solutions.businessAccounting.heroImage.src}
-              alt={images.solutions.businessAccounting.heroImage.alt}
+              src={hero?.image_url || images.solutions.businessAccounting.heroImage.src}
+              alt={hero?.image_alt || images.solutions.businessAccounting.heroImage.alt}
               fill
               sizes="(min-width: 1024px) 560px, 100vw"
               className="object-cover"

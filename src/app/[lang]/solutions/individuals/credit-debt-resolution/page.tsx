@@ -11,8 +11,10 @@ import { CreditSuccessStories } from '@/components/organisms/CreditSuccessStorie
 import { CreditFAQ } from '@/components/organisms/CreditFAQ';
 import { CTASection } from '@/components/organisms/CTASection';
 import { getDictionary, SupportedLocale } from '../../../dictionaries';
-import { images, jotformUrls } from '@/data/images';
+import { images } from '@/data/images';
 import { FullWidthBanner } from '@/components/organisms/FullWidthBanner';
+import { getImageByLocation } from '@/lib/media';
+import { getWebsiteInfoServer } from '@/lib/website-info-server';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -31,6 +33,12 @@ export default async function CreditDebtPage({ params }: PageParams) {
     { label: 'Solutions for Individuals', href: `/${lang}/solutions/individuals` },
     { label: 'Credit & Debt Resolution' },
   ];
+  const banner = await getImageByLocation('credit-debt-resolution', 'fullwidth');
+  const websiteInfo = await getWebsiteInfoServer();
+  const bookLink =
+    websiteInfo?.service_booking_links?.find((b) =>
+      /credit\s*&?\s*debt/i.test(b.service || '')
+    )?.url || undefined;
 
   return (
     <>
@@ -38,18 +46,18 @@ export default async function CreditDebtPage({ params }: PageParams) {
       <Header dict={dict} lang={lang} />
       <Breadcrumb items={crumbs} />
       <main>
-        <CreditHero dict={dict} />
+        <CreditHero dict={dict} bookLink={bookLink}/>
         <GuaranteeDetails dict={dict} />
         <CreditServicesGrid dict={dict} />
         <FullWidthBanner
-          src={images.solutions.creditDebt.fullWidthBannerImage.src}
-          alt={images.solutions.creditDebt.fullWidthBannerImage.alt}
+          src={banner?.image_url || images.solutions.creditDebt.fullWidthBannerImage.src}
+          alt={banner?.image_alt || images.solutions.creditDebt.fullWidthBannerImage.alt}
         />
         <CreditProcess dict={dict} />
         {/* <CreditPricing dict={dict} /> */}
         {/* <CreditSuccessStories dict={dict} /> */}
         <CreditFAQ dict={dict} />
-        <CTASection dict={dict} lang={lang} bookLink={jotformUrls.individualCreditDebtJotformUrl} />
+        <CTASection dict={dict} lang={lang} bookLink={bookLink} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

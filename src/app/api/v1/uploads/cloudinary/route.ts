@@ -12,15 +12,24 @@ export async function POST(req: NextRequest) {
     if (!cloudName || !apiKey || !apiSecret) {
       return NextResponse.json({ error: 'Cloudinary env not configured' }, { status: 500 });
     }
-    const params = new URLSearchParams();
-    params.set('folder', folder);
-    params.set('timestamp', String(timestamp));
-    // Optional: public_id passthrough
+
+    // Compose params to sign. Must be sorted alphabetically by key.
+    const toSignParams: Record<string, string> = {
+      folder,
+      source: 'uw',
+      timestamp: String(timestamp),
+    };
     if (typeof body?.public_id === 'string' && body.public_id) {
-      params.set('public_id', body.public_id);
+      toSignParams.public_id = body.public_id;
     }
-    const toSign = params.toString() + apiSecret;
+
+    const toSign = Object.keys(toSignParams)
+      .sort()
+      .map((k) => `${k}=${toSignParams[k]}`)
+      .join('&') + apiSecret;
+
     const signature = crypto.createHash('sha1').update(toSign).digest('hex');
+
     return NextResponse.json({
       cloudName,
       apiKey,

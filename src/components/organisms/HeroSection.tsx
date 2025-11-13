@@ -7,13 +7,13 @@ import { fadeInUp, staggerContainer } from '@/lib/animations';
 import Image from 'next/image';
 import Link from 'next/link';
 import { COMPANY } from '@/data/constants';
-import { getImageByLabel } from '@/lib/media';
+import { getImageByLocation } from '@/lib/media';
 import { images } from '@/data/images';
 
 export const HeroSection = async ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'hero');
   const tCommon = getT(dict, 'common');
-  const homeImg = await getImageByLabel('homePageImage');
+  const homeImg = await getImageByLocation('home', 'hero');
 
   return (
     <section className="bg-gradient-to-br from-brand-green to-brand-light-green text-white pt-24 lg:pt-0 min-h-[560px] lg:h-[600px] flex items-center pb-6">
@@ -64,7 +64,7 @@ export const HeroSection = async ({ dict }: { dict: Dict }) => {
             <div className="bg-white rounded-2xl p-0 shadow-2xl overflow-hidden">
               <div className="relative w-full" style={{ aspectRatio: '4 / 3' }}>
                 <Image
-                  src={homeImg?.src || images.homePageImage.src}
+                  src={homeImg?.image_url || images.homePageImage.src}
                   alt={t('trustExpertise.title')}
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"

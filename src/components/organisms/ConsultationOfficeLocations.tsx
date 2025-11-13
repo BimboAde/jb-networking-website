@@ -1,5 +1,6 @@
 import { getT, type Dict } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
+import { FaMapMarkerAlt } from 'react-icons/fa';
 
 export const ConsultationOfficeLocations = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'consultation.offices');
@@ -23,7 +24,9 @@ export const ConsultationOfficeLocations = ({ dict }: { dict: Dict }) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {offices.map((o, idx) => (
             <div key={idx} className="bg-white rounded-xl p-6 shadow-lg text-center">
-              <div className="w-16 h-16 bg-brand-green rounded-full mx-auto mb-4" />
+              <div className="w-16 h-16 bg-brand-green rounded-full mx-auto mb-4 text-white flex items-center justify-center">
+                <FaMapMarkerAlt className="text-2xl" />
+              </div>
               <h3 className="text-xl font-bold text-brand-green mb-3 font-poppins">{o.title}</h3>
               <div className="space-y-2 text-gray-600 mb-4">
                 <p className="font-medium">{o.area}</p>
