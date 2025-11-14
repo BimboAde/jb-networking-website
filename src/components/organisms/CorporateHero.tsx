@@ -3,11 +3,10 @@ import { Heading } from "../atoms/Heading";
 import Image from "next/image";
 import { images } from "@/data/images";
 import { Button } from "../atoms/Button";
-import { COMPANY } from "@/data/constants";
 import { FaPhone } from "react-icons/fa";
 import { getImageByLocation } from "@/lib/media";
 
-export const CorporateHero = async ({ dict, bookLink }: { dict: Dict; bookLink: string | undefined }) => {
+export const CorporateHero = async ({ dict, bookLink, phoneNumber }: { dict: Dict; bookLink: string | undefined; phoneNumber?: string }) => {
   const t = getT(dict, "solutions_corporate.hero");
   const hero = await getImageByLocation("corporate-services", "hero");
   return (
@@ -33,7 +32,7 @@ export const CorporateHero = async ({ dict, bookLink }: { dict: Dict; bookLink: 
               <Button
                 variant="outline"
                 className="px-8 py-3 font-semibold"
-                href={`tel:${COMPANY.contact.phone}`}
+                href={`tel:${phoneNumber}`}
               >
                 <FaPhone className="mr-2" />
                 {t("ctaGuide")}

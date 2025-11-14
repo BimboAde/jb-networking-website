@@ -38,14 +38,14 @@ export default async function ExecutiveServicesPage({ params }: PageParams) {
     websiteInfo?.service_booking_links?.find((b) =>
       /executive\s*services/i.test(b.service || '')
     )?.url || undefined;
-
+  const phoneNumber = websiteInfo?.main_phone|| null;
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd.replace(/<script[^>]*>|<\/script>/g, '') }} />
       <Header dict={dict} lang={lang} />
       <Breadcrumb items={crumbs} />
       <main>
-        <ExecutiveHero dict={dict} bookLink={bookLink} />
+        <ExecutiveHero dict={dict} bookLink={bookLink} phoneNumber={phoneNumber || undefined} />
         <ExecutiveServicesGrid dict={dict} bookLink={bookLink} />
         <VideoSection dict={dict} />
         <ExecutiveProcess dict={dict} />

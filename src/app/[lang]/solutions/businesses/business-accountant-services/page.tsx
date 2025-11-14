@@ -41,7 +41,7 @@ export default async function BusinessTaxPage({ params }: PageParams) {
     websiteInfo?.service_booking_links?.find((b) =>
       /business\s*accounting|business\s*tax/i.test(b.service || '')
     )?.url || undefined;
-
+  const phoneNumber = websiteInfo?.main_phone|| null;
   // const ctaT = getT(dict, 'solutions_business_tax.cta');
 
   return (
@@ -50,7 +50,7 @@ export default async function BusinessTaxPage({ params }: PageParams) {
       <Header dict={dict} lang={lang} />
       <Breadcrumb items={crumbs} />
       <main>
-        <BusinessTaxHero dict={dict} bookLink={bookLink} />
+        <BusinessTaxHero dict={dict} bookLink={bookLink} phoneNumber={phoneNumber || undefined} />
         <BusinessServiceOverview dict={dict} />
         <BusinessDetailedServices dict={dict} />
         {/* <BusinessPricingPlans dict={dict} /> */}

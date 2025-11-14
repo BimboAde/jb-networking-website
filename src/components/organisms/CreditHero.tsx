@@ -1,13 +1,11 @@
 import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import { Button } from '../atoms/Button';
-import { jotformUrls } from '@/data/images';
-import { COMPANY } from '@/data/constants';
 import Image from 'next/image';
 import { images } from '@/data/images';
 import { getImageByLocation } from '@/lib/media';
 
-export const CreditHero = async ({ dict, bookLink }: { dict: Dict; bookLink: string | undefined }) => {
+export const CreditHero = async ({ dict, bookLink, phoneNumber }: { dict: Dict; bookLink: string | undefined; phoneNumber?: string }) => {
   const t = getT(dict, 'solutions_credit.hero');
   const tc = getT(dict, 'solutions_credit.common');
   const hero = await getImageByLocation('credit-debt-resolution', 'hero');
@@ -28,7 +26,7 @@ export const CreditHero = async ({ dict, bookLink }: { dict: Dict; bookLink: str
             <p className="text-xl text-green-100 leading-relaxed">{t('description')}</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="secondary" className="px-8 py-4 text-lg font-semibold" href={bookLink || ''} target="_blank">{tc('ctaAnalysis')}</Button>
-              <Button variant="outline" className="px-8 py-4 text-lg font-semibold" href={`tel:${COMPANY.contact.phone}`}>{tc('ctaCall')}</Button>
+              <Button variant="outline" className="px-8 py-4 text-lg font-semibold" href={`tel:${phoneNumber}`}>{tc('ctaCall')}</Button>
             </div>
           </div>
           <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">

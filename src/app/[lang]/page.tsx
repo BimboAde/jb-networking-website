@@ -31,7 +31,7 @@ export default async function HomePage({ params }: PageParams) {
   const websiteInfo = await getWebsiteInfoServer();
   const generalBooking =
     websiteInfo?.service_booking_links?.find((s) => /general/i.test(s.service))?.url || null;
-
+const phoneNumber = websiteInfo?.main_phone|| null;
   return (
     <>
       <script
@@ -42,7 +42,7 @@ export default async function HomePage({ params }: PageParams) {
       />
       <Header dict={dict} lang={lang} />
       <main>
-        <HeroSection dict={dict} lang={lang} bookLink={generalBooking || undefined} />
+        <HeroSection dict={dict} lang={lang} bookLink={generalBooking || undefined} phoneNumber={phoneNumber || undefined} />
         <VideoSection dict={dict} />
         {/* <YouTubeTeaser dict={dict} /> */}
         <ServicesOverview dict={dict} lang={lang} />

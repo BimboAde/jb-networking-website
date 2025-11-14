@@ -45,14 +45,14 @@ export default async function RealEstateInsurancePage({ params }: PageParams) {
     websiteInfo?.service_booking_links?.find((b) =>
       /real\s*estate/i.test(b.service || '')
     )?.url || undefined;
-
+  const phoneNumber = websiteInfo?.main_phone|| null;
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd.replace(/<script[^>]*>|<\/script>/g, '') }} />
       <Header dict={dict} lang={lang} />
       <Breadcrumb items={crumbs} />
       <main>
-        <RealEstateHero dict={dict} bookLink={bookLink}/>
+        <RealEstateHero dict={dict} bookLink={bookLink} phoneNumber={phoneNumber || undefined} />
         <DualServicesOverview dict={dict} />
         {/* <SpecializedServicesGrid dict={dict} /> */}
         <RealEstateProcess dict={dict} />

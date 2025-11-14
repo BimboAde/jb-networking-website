@@ -41,14 +41,14 @@ export default async function CorporateServicesPage({ params }: PageParams) {
     websiteInfo?.service_booking_links?.find((b) =>
       /corporate\s*services/i.test(b.service || '')
     )?.url || undefined;
-
+  const phoneNumber = websiteInfo?.main_phone|| null;
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd.replace(/<script[^>]*>|<\/script>/g, '') }} />
       <Header dict={dict} lang={lang} />
       <Breadcrumb items={crumbs} />
       <main>
-        <CorporateHero dict={dict} bookLink={bookLink} />
+        <CorporateHero dict={dict} bookLink={bookLink} phoneNumber={phoneNumber || undefined} />
         <FormationServicesGrid dict={dict} />
         <ComplianceServices dict={dict} />
         <CorporateProcessTimeline dict={dict} />

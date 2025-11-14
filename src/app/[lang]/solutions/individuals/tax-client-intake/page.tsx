@@ -34,7 +34,7 @@ export default async function TaxAccountingPage({ params }: PageParams) {
     websiteInfo?.service_booking_links?.find((b) =>
       /personal\s*tax|client\s*intake/i.test(b.service || "")
     )?.url || undefined;
-
+  const phoneNumber = websiteInfo?.main_phone|| null;
   const crumbs = [
     { label: "Home", href: `/${lang}` },
     {
@@ -55,7 +55,7 @@ export default async function TaxAccountingPage({ params }: PageParams) {
       <Header dict={dict} lang={lang} />
       <Breadcrumb items={crumbs} />
       <main>
-        <TaxServiceHero dict={dict} bookLink={bookLink}/>
+        <TaxServiceHero dict={dict} bookLink={bookLink} phoneNumber={phoneNumber || undefined} />
         <TaxServicesGrid dict={dict} />
         {banner && (
           <FullWidthBanner

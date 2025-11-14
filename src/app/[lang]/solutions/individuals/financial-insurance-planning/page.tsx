@@ -45,6 +45,7 @@ export default async function FinancialPlanningPage({ params }: PageParams) {
     websiteInfo?.service_booking_links?.find((b) =>
       /financial\s*planning/i.test(b.service || '')
     )?.url || undefined;
+  const phoneNumber = websiteInfo?.main_phone|| null;
   const tCalc = getT(dict, 'solutions_financial.calculator');
   const calculatorStrings = {
     title: tCalc('title'),
@@ -66,14 +67,14 @@ export default async function FinancialPlanningPage({ params }: PageParams) {
     growth: tCalc('growth'),
     ctaSchedule: tCalc('ctaSchedule'),
   };
-
+  
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd.replace(/<script[^>]*>|<\/script>/g, '') }} />
       <Header dict={dict} lang={lang} />
       <Breadcrumb items={crumbs} />
       <main>
-        <FinancialHero dict={dict} bookLink={bookLink}/>
+        <FinancialHero dict={dict} bookLink={bookLink} phoneNumber={phoneNumber || undefined} />
         <InvestmentServicesGrid dict={dict} />
         <FullWidthBanner
           src={banner?.image_url || images.solutions.financialPlanning.fullWidthBannerImage.src}

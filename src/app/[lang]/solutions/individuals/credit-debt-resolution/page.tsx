@@ -39,14 +39,14 @@ export default async function CreditDebtPage({ params }: PageParams) {
     websiteInfo?.service_booking_links?.find((b) =>
       /credit\s*&?\s*debt/i.test(b.service || '')
     )?.url || undefined;
-
+  const phoneNumber = websiteInfo?.main_phone|| null;
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd.replace(/<script[^>]*>|<\/script>/g, '') }} />
       <Header dict={dict} lang={lang} />
       <Breadcrumb items={crumbs} />
       <main>
-        <CreditHero dict={dict} bookLink={bookLink}/>
+        <CreditHero dict={dict} bookLink={bookLink} phoneNumber={phoneNumber || undefined} />
         <GuaranteeDetails dict={dict} />
         <CreditServicesGrid dict={dict} />
         <FullWidthBanner

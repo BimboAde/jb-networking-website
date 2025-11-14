@@ -1,13 +1,11 @@
 import { type Dict, getT } from "@/lib/i18n-server";
 import { Heading } from "../atoms/Heading";
 import { Button } from "../atoms/Button";
-import { jotformUrls } from "@/data/images";
-import { COMPANY } from "@/data/constants";
 import Image from "next/image";
 import { images } from "@/data/images";
 import { getImageByLocation } from "@/lib/media";
 
-export const BusinessTaxHero = async ({ dict, bookLink }: { dict: Dict; bookLink: string | undefined }) => {
+export const BusinessTaxHero = async ({ dict, bookLink, phoneNumber }: { dict: Dict; bookLink: string | undefined; phoneNumber?: string }) => {
   const t = getT(dict, "solutions_business_tax.hero");
   const hero = await getImageByLocation("business-accountant-services", "hero");
   return (
@@ -28,7 +26,7 @@ export const BusinessTaxHero = async ({ dict, bookLink }: { dict: Dict; bookLink
               <Button variant="secondary" className="px-8 py-3 font-semibold" href={bookLink || ''} target="_blank">
                 {t("ctaQuote")}
               </Button>
-              <Button variant="outline" className="px-8 py-3 font-semibold" href={`tel:${COMPANY.contact.phone}`}>
+              <Button variant="outline" className="px-8 py-3 font-semibold" href={`tel:${phoneNumber}`}>
                 {t("ctaChecklist")}
               </Button>
             </div>

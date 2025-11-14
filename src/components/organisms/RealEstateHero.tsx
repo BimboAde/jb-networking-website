@@ -2,13 +2,11 @@ import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import { Button } from '../atoms/Button';
 import Link from 'next/link';
-import { jotformUrls } from '@/data/images';
 import Image from 'next/image';
 import { images } from '@/data/images';
-import { COMPANY } from '@/data/constants';
 import { getImageByLocation } from '@/lib/media';
 
-export const RealEstateHero = async ({ dict, bookLink }: { dict: Dict; bookLink: string | undefined }) => {
+export const RealEstateHero = async ({ dict, bookLink, phoneNumber }: { dict: Dict; bookLink: string | undefined; phoneNumber?: string }) => {
   const t = getT(dict, 'solutions_real_estate.hero');
   const tc = getT(dict, 'solutions_real_estate.common');
   const hero = await getImageByLocation('real-estate-mortgage', 'hero');

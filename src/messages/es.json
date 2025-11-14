@@ -1,12 +1,15 @@
 {
   "common": {
     "bookConsultation": "Reservar Consulta",
+    "requestMeeting": "Solicitar Cita",
     "learnMore": "Saber Más",
     "getDirections": "Obtener Direcciones",
     "callNow": "Llamar Ahora",
     "scheduleFreeConsultation": "Programar Consulta Gratuita",
     "watchOurStory": "Ver Nuestra Historia",
-    "readMore": "Leer Más"
+    "readMore": "Leer Más",
+    "contactUs": "Contáctenos",
+    "addService": "Agregar Servicio"
   },
   "header": {
     "companyName": "JB Networking Systems LLC",
@@ -27,7 +30,7 @@
       "businessTaxAccounting": "Impuestos y Contabilidad Empresarial",
       "businessCreditBuilding": "Construcción de Crédito Empresarial",
       "corporateServices": "Servicios Corporativos",
-      "franchiseOpportunities": "Oportunidades de Franquicia"
+      "executiveServices": "Servicios Ejecutivos"
     }
   },
   "hero": {
@@ -49,6 +52,8 @@
   "video": {
     "title": "Conozca a Sus Socios Financieros",
     "description": "Descubra cómo JB Networking Systems LLC ha estado ayudando a familias y empresas a lograr el éxito financiero desde 2007.",
+    "watchOurStory": "Ver Nuestra Historia",
+    "publicId": "jbns/intro",
     "stats": {
       "yearsOfExcellence": "Años de Excelencia",
       "satisfiedClients": "Clientes Satisfechos",
@@ -56,9 +61,74 @@
       "moneyBackGuarantee": "Garantía de Devolución de Dinero"
     }
   },
+  "youtube_teaser": {
+    "title": "Suscríbase a Nuestro Canal de YouTube",
+    "description": "Obtenga consejos financieros, información fiscal y guía empresarial de nuestros expertos en nuestro canal oficial de YouTube.",
+    "buttonLabel": "Visitar el Canal"
+  },
   "services": {
     "title": "Soluciones Financieras Integrales",
     "description": "Desde la preparación de impuestos hasta la planificación de inversiones, la reparación de crédito hasta la formación de empresas: somos su socio financiero completo.",
+    "taxIntake": {
+      "title": "Impuestos y Registro de Cliente",
+      "description": "Comience aquí para un proceso de ingreso sencillo. Recopilamos sus datos y documentos para preparar y presentar sus impuestos con precisión y a tiempo.",
+      "features": {
+        "0": "Ingreso rápido y seguro",
+        "1": "Guía con lista de documentos",
+        "2": "Soporte para todos los estados y federal",
+        "3": "Registro bilingüe disponible"
+      }
+    },
+    "financialInsurance": {
+      "title": "Planificación Financiera y de Seguros",
+      "description": "Proteja y haga crecer su patrimonio con planificación a la medida y cobertura integral de seguros para familias y empresas.",
+      "features": {
+        "0": "Vida, Accidentes y Enfermedad",
+        "1": "Propiedad y Responsabilidad (P&C)",
+        "2": "Propietarios/Inquilinos",
+        "3": "Anualidades y Planificación de Retiro"
+      }
+    },
+    "creditDebt": {
+      "title": "Resolución de Crédito y Deuda",
+      "description": "Reconstruya su crédito y elimine deudas con nuestras estrategias comprobadas y cumplidas—respaldadas por nuestra garantía de devolución de dinero.",
+      "features": {
+        "0": "Reparación de crédito (garantía de devolución)",
+        "1": "Resolución de deudas con IRS/Estado",
+        "2": "Monitoreo y asesoría de crédito",
+        "3": "Disputas y gestión de moras"
+      }
+    },
+    "businessAccountant": {
+      "title": "Servicios Empresariales y Contables",
+      "description": "Servicios integrales de contabilidad, cumplimiento y financiamiento empresarial para mantener su empresa lista para auditorías y crecimiento.",
+      "features": {
+        "0": "Contabilidad y servicios de CPA",
+        "1": "Nómina y declaraciones",
+        "2": "Impuestos sobre ventas y cumplimiento",
+        "3": "Asesoría de financiamiento empresarial"
+      }
+    },
+    "realEstateMortgage": {
+      "title": "Servicios de Bienes Raíces e Hipotecas",
+      "description": "En alianza con agentes y prestamistas con licencia para compras, refinanciamientos y propiedades de inversión.",
+      "features": {
+        "0": "Consulta de financiamiento hipotecario",
+        "1": "Guía para propiedades de inversión",
+        "2": "Apoyo en compra/venta y arrendamiento",
+        "3": "Revisión de riesgo y cobertura"
+      }
+    },
+    "executive": {
+      "title": "Servicios Ejecutivos",
+      "description": "Espacios profesionales y soluciones de personal para operar como una empresa desde el primer día.",
+      "features": {
+        "0": "Alquiler de oficinas y salas corporativas",
+        "1": "Asistentes virtuales y recepción",
+        "2": "Alquiler de salas de capacitación",
+        "3": "Términos flexibles y concierge"
+      }
+    },
     "taxAccounting": {
       "title": "Impuestos y Contabilidad",
       "description": "Servicios profesionales de preparación de impuestos, contabilidad y servicios contables para individuos y empresas.",
@@ -213,29 +283,329 @@
     }
   },
   "cta": {
-    "title": "¿Listo para Proteger Su Futuro Financiero?",
-    "description": "Únase a miles de clientes satisfechos que confían en JB Networking Systems LLC con su éxito financiero. Programe su consulta gratuita hoy y descubra cómo nuestro toque personal puede marcar la diferencia.",
+    "title": "Contáctenos",
+    "description": "Envíenos un mensaje y cuéntenos sus metas y necesidades financieras. Le responderemos pronto para programar una consulta.",
     "features": {
       "freeConsultation": {
-        "title": "Consulta Gratuita",
-        "description": "Sin obligación, evaluación personalizada de sus necesidades financieras"
+        "title": "Programar una Consulta",
+        "description": "Cuéntenos sus objetivos y le contactaremos en breve."
       },
       "personalTouch": {
-        "title": "Toque Personal",
-        "description": "Profesionales dedicados que se preocupan por su éxito"
+        "title": "Contacto Directo",
+        "description": "Comuníquese por teléfono, correo electrónico o agende una cita."
       },
       "guaranteedResults": {
-        "title": "Resultados Garantizados",
-        "description": "Garantía de devolución de dinero en servicios de crédito: entregamos resultados"
+        "title": "Visítenos",
+        "description": "Citas disponibles. Atendemos de lunes a sábado."
       }
     },
     "buttons": {
-      "bookConsultation": "Reserve Su Consulta Gratuita",
+      "bookConsultation": "Reserve su Consulta con un Experto",
       "callNumber": "Llame al (555) 123-4567"
     },
     "badges": {
       "hablamosEspanol": "Hablamos Español",
       "militaryDiscounts": "Descuentos Militares Disponibles"
+    }
+  },
+  "solutions_tax": {
+    "common": {
+      "scheduleConsultation": "Programar consulta de impuestos",
+      "downloadChecklist": "Descargar Lista de Documentos",
+      "callUs": "Llámanos"
+    },
+    "hero": {
+      "title": "Preparación de impuestos y resolución con el IRS",
+      "highlight": "Resolución con el IRS",
+      "description": "Maximice sus ahorros con nuestra preparación de impuestos para todos los estados. También somos especialistas en la resolución rápida de deudas con el IRS y autoridades estatales. Soporte bilingüe disponible (Hablamos Español).",
+      "card": {
+        "title": "Listos para la temporada de impuestos",
+        "stat0": {
+          "value": "$2,500+",
+          "label": "Reembolso promedio"
+        },
+        "stat1": {
+          "value": "48hr",
+          "label": "Tiempo de entrega"
+        }
+      }
+    },
+    "services": {
+      "title": "Preparación de impuestos y resolución completas",
+      "description": "Desde declaraciones individuales simples hasta deudas complejas con el IRS, nuestros profesionales certificados garantizan el máximo ahorro y el cumplimiento total.",
+      "individual": {
+        "title": "Declaraciones de impuestos individuales",
+        "description": "Preparación profesional de declaraciones federales y estatales con identificación de deducciones al máximo.",
+        "features": [
+          "Preparación del Formulario 1040",
+          "Deducciones detalladas",
+          "Anexo C (trabajo por cuenta propia)",
+          "Presentación multies­tatal (todos los estados)"
+        ]
+      },
+      "realEstate": {
+        "title": "Planificación fiscal de bienes raíces",
+        "description": "Estrategias especializadas para propietarios, inversionistas y profesionales del sector.",
+        "features": [
+          "Ingresos por alquiler",
+          "Estrategias de depreciación",
+          "Intercambios 1031",
+          "Optimización de ganancias de capital"
+        ]
+      },
+      "investment": {
+        "title": "Impuestos sobre inversiones",
+        "description": "Gestión experta de ingresos de inversión, ganancias e instrumentos complejos.",
+        "features": [
+          "Transacciones de acciones y bonos",
+          "Declaración de criptomonedas",
+          "Ingresos por dividendos",
+          "K‑1 (sociedades/S‑Corps)"
+        ]
+      },
+      "education": {
+        "title": "Beneficios fiscales para educación",
+        "description": "Maximice créditos y deducciones para estudiantes y familias.",
+        "features": [
+          "Crédito American Opportunity",
+          "Crédito Lifetime Learning",
+          "Intereses de préstamos estudiantiles",
+          "Estrategias de planes 529"
+        ]
+      },
+      "irs": {
+        "title": "Resolución de deudas con el IRS y el estado",
+        "description": "Resolución profesional de problemas fiscales con agencias federales y estatales.",
+        "features": [
+          "Resolución acelerada de deudas",
+          "Defensa y representación en auditorías",
+          "Planes de pago y OIC",
+          "Reducción de multas"
+        ]
+      },
+      "quarterly": {
+        "title": "Declaración trimestral de impuestos",
+        "description": "Asegure el cumplimiento de su empresa con preparación y presentación trimestral.",
+        "features": [
+          "Cálculo de impuestos estimados",
+          "Presentación del 1040‑ES",
+          "Minimice sanciones por pago insuficiente",
+          "Planificación fiscal durante todo el año"
+        ]
+      },
+      "bookkeeping": {
+        "title": "Contabilidad personal",
+        "description": "Registros organizados y control de gastos para declaraciones precisas y mejor planificación.",
+        "features": [
+          "Conciliación mensual",
+          "Categorización de gastos",
+          "Gestión de recibos",
+          "Informes financieros"
+        ]
+      }
+    },
+    "process": {
+      "title": "Nuestro proceso simplificado de impuestos e ingreso de documentos",
+      "description": "Desde la consulta inicial hasta la presentación final, hacemos la preparación de impuestos simple, eficiente y sin estrés.",
+      "steps": {
+        "1": {
+          "title": "Consulta experta en impuestos",
+          "description": "Una consulta experta a las tarifas aplicables para entender su situación fiscal y oportunidades de ahorro. Pueden aplicar descuentos.",
+          "bullets": [
+            "Revisión personalizada",
+            "Oportunidades de ahorro",
+            "Plan de acción"
+          ]
+        },
+        "2": {
+          "title": "Secure Document Intake",
+          "description": "Nuestro portal seguro y la lista de verificación facilitan y protegen el envío de documentos.",
+          "bullets": [
+            "Acceso al portal seguro",
+            "Lista de verificación completa",
+            "Soporte guiado"
+          ]
+        },
+        "3": {
+          "title": "Expert Preparation",
+          "description": "Nuestros preparadores certificados elaboran su declaración buscando cada deducción y crédito posible.",
+          "bullets": [
+            "Preparadores certificados",
+            "Deducciones al máximo",
+            "Revisión de exactitud estricta"
+          ]
+        },
+        "4": {
+          "title": "Revisión y presentación electrónica",
+          "description": "Realizamos una revisión detallada con usted antes de presentar electrónicamente para el reembolso más rápido posible.",
+          "bullets": [
+            "Revisión con el cliente",
+            "Presentación electrónica segura",
+            "Seguimiento del reembolso"
+          ]
+        }
+      }
+    },
+    "pricing": {
+      "title": "Precios transparentes de servicios fiscales",
+      "description": "Sin cargos ocultos ni sorpresas. Precios claros y directos para servicios profesionales.",
+      "mostPopular": "Más Popular",
+      "basic": {
+        "title": "Declaración básica",
+        "price": "$149",
+        "period": "desde",
+        "features": [
+          "Preparación del Formulario 1040",
+          "Deducción estándar",
+          "Presentación electrónica",
+          "Revisión básica",
+          "Seguimiento del reembolso"
+        ],
+        "button": "Empezar"
+      },
+      "comprehensive": {
+        "title": "Declaración integral",
+        "price": "$299",
+        "period": "desde",
+        "features": [
+          "Todo lo del plan Básico",
+          "Deducciones detalladas",
+          "Anexo C (trabajo por cuenta propia)",
+          "Ingresos de inversión",
+          "Propiedad en alquiler",
+          "Presentación multies­tatal"
+        ],
+        "button": "Comenzar"
+      },
+      "premium": {
+        "title": "Premium (impuestos y deudas)",
+        "price": "$499",
+        "period": "desde",
+        "features": [
+          "Todo lo del plan Integral",
+          "Inversiones complejas",
+          "Resolución de deudas IRS/Estado",
+          "Planificación fiscal anual",
+          "Revisiones trimestrales",
+          "Protección en auditorías"
+        ],
+        "button": "Comenzar"
+      },
+      "discounts": {
+        "title": "Descuentos y bonos por referidos",
+        "items": [
+          {
+            "title": "Bono por referido de impuestos",
+            "text": "¡HASTA $70 de pago instantáneo por cada nuevo referido!"
+          },
+          {
+            "title": "Servicio VIP Militar",
+            "text": "Personal activo, retirado y reservistas siempre reciben servicio VIP."
+          }
+        ]
+      }
+    },
+    "checklist": {
+      "title": "Lista de documentos para impuestos",
+      "description": "Asegure un proceso fluido de preparación de impuestos con nuestra lista de documentos.",
+      "personal": {
+        "title": "Información personal",
+        "items": [
+          "Tarjetas del Seguro Social (todos los miembros de la familia)",
+          "Fechas de nacimiento de todos los dependientes",
+          "Información bancaria para depósito directo",
+          "Declaración del año anterior",
+          "Identificación válida del gobierno"
+        ]
+      },
+      "income": {
+        "title": "Documentos de ingresos",
+        "items": [
+          "Formularios W‑2 de todos los empleadores",
+          "Formularios 1099 (INT, DIV, MISC, NEC, etc.)",
+          "Registros de ingresos por cuenta propia",
+          "Compensación por desempleo (1099‑G)",
+          "Estados de Seguro Social/Jubilación (SSA‑1099)"
+        ]
+      },
+      "deductions": {
+        "title": "Documentos de deducciones",
+        "items": [
+          "Estados de intereses de hipoteca (1098)",
+          "Registros de impuesto a la propiedad",
+          "Recibos de donaciones",
+          "Gastos médicos y dentales",
+          "Gastos de cuidado infantil (datos del proveedor)"
+        ]
+      },
+      "investments": {
+        "title": "Inversiones y jubilación",
+        "items": [
+          "Estados de corredor (1099‑B)",
+          "Registros de aportes a IRA",
+          "Resúmenes de aportes 401(k)",
+          "Registros de HSA (aportes y retiros)",
+          "Estados de 529/ESA"
+        ]
+      },
+      "cta": {
+        "title": "¿Necesita ayuda organizando sus documentos?",
+        "description": "Nuestro equipo puede ayudarle a identificar y organizar todos los documentos necesarios.",
+        "button": "Descargar lista completa"
+      }
+    },
+    "tips": {
+      "title": "Consejos y recomendaciones esenciales de impuestos",
+      "description": "Manténgase informado con consejos y estrategias para maximizar sus ahorros durante todo el año.",
+      "readMore": "Reservar consulta",
+      "recordKeeping": {
+        "title": "Mejores prácticas de registros",
+        "description": "Mantenga registros organizados para maximizar deducciones y simplificar la preparación."
+      },
+      "retirement": {
+        "title": "Límites de aportes para jubilación",
+        "description": "Maximice ahorros reduciendo la carga fiscal del año en curso."
+      },
+      "homeOffice": {
+        "title": "Deducción por oficina en casa",
+        "description": "Comprenda los requisitos y maximice su deducción por oficina en casa."
+      },
+      "educationCredits": {
+        "title": "Créditos fiscales por educación",
+        "description": "Aproveche los beneficios educativos y elija los mejores créditos."
+      },
+      "investment": {
+        "title": "Estrategias fiscales para inversiones",
+        "description": "Optimice su portafolio con estrategias fiscalmente eficientes."
+      },
+      "yearEnd": {
+        "title": "Planificación fiscal de fin de año",
+        "description": "Acciones estratégicas antes del 31 de diciembre para minimizar obligaciones."
+      }
+    },
+    "testimonials": {
+      "title": "Lo que dicen nuestros clientes de impuestos",
+      "description": "Historias reales de clientes que confían en nosotros para su preparación y planificación fiscal.",
+      "items": [
+        {
+          "name": "Maria Rodriguez",
+          "role": "Propietaria de pequeña empresa",
+          "quote": "¡Encontraron deducciones que no sabía que existían! Mi reembolso fue mayor y el servicio bilingüe (Hablamos Español) lo hizo muy sencillo.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg"
+        },
+        {
+          "name": "Michael Chen",
+          "role": "Inversionista inmobiliario",
+          "quote": "Convirtieron impuestos complejos por propiedades de renta en algo simple. Su planificación me ahorró miles y fue muy rápida.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg"
+        },
+        {
+          "name": "James Thompson",
+          "role": "Veterano militar (Servicio VIP)",
+          "quote": "Como veterano, aprecio su servicio VIP. Detectaron un error de mi preparador anterior y lograron un reembolso enmendado.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
+        }
+      ]
     }
   },
   "footer": {
@@ -265,6 +635,3213 @@
       "hablamosEspanol": "Hablamos Español",
       "militaryDiscounts": "Descuentos Militares"
     }
+  },
+  "solutions_credit": {
+    "common": {
+      "ctaAnalysis": "Reservar Consulta",
+      "ctaCall": "Llamar (470) 288-3365"
+    },
+    "hero": {
+      "badge": "100% MONEY BACK GUARANTEE",
+      "title": "Effective Crédito & Deuda Resolution Solutions",
+      "highlight": "Solutions That Work",
+      "description": "Transform your Financiero future with our proven Crédito repair and Deuda resolution Servicios. We offer fast-tracked Deuda resolution for IRS, State, and student loans. We guarantee results or your money back.",
+      "card": {
+        "title": "Guaranteed Results",
+        "subtitle": "Expertise in Crédito repair and Deuda resolution since 2007.",
+        "stat0": {
+          "value": "Expert",
+          "label": "Resolution"
+        },
+        "stat1": {
+          "value": "Guaranteed",
+          "label": "Servicio"
+        }
+      }
+    },
+    "guarantee": {
+      "badge": "100% MONEY BACK GUARANTEE",
+      "title": "Our Iron-Clad Guarantee Promise",
+      "description": "We're so confident in our Crédito repair Servicios that we offer a complete money-back guarantee.",
+      "mostPopular": "Más Popular",
+      "noResults": {
+        "title": "No Results, No Payment",
+        "text": "If we don't improve your score, you don't pay.",
+        "footer": "100% Risk-Free"
+      },
+      "days": {
+        "title": "90-Day Guarantee",
+        "text": "See significant improvements within 90 days or full refund.",
+        "footer": "Fast Results Guaranteed"
+      },
+      "written": {
+        "title": "Written Guarantee",
+        "text": "Legally binding and transparent.",
+        "footer": "Legally Protected"
+      },
+      "cta": {
+        "title": "Ready to Start Your Crédito Transformation?",
+        "description": "Join thousands who improved their Crédito with our program.",
+        "button": "Reservar Consulta"
+      }
+    },
+    "services": {
+      "title": "Comprehensive Crédito & Deuda Solutions",
+      "description": "From Crédito repair to Negocios Crédito building and Impuestos Deuda resolution, we offer a complete suite to achieve Financiero freedom.",
+      "repair": {
+        "title": "Crédito Repair",
+        "description": "Remove negative items and rebuild Crédito with our guaranteed Servicios.",
+        "features": [
+          "Dispute Inaccurate Items",
+          "Remove Collections",
+          "Charge-off Removal",
+          "Late Payment Removal"
+        ]
+      },
+      "consolidation": {
+        "title": "Student Loan Resolution",
+        "description": "Fast-tracked resolution and default management for student loan Deudas.",
+        "features": [
+          "Default Management",
+          "Consolidation Options",
+          "Payment Plan Negotiation",
+          "Document Preparation"
+        ]
+      },
+      "education": {
+        "title": "Negocios Crédito Building",
+        "description": "Establish and grow your Negocios Crédito profile separate from your personal Crédito.",
+        "features": [
+          "Establish Negocios Profile",
+          "Vendor Crédito Lines",
+          "Financiero Tradelines",
+          "Separate Personal/Negocios"
+        ]
+      },
+      "monitoring": {
+        "title": "Crédito Trade Lines",
+        "description": "Personal & Negocios tradelines to boost your Crédito history and score.",
+        "features": [
+          "Authorized User Tradelines",
+          "Negocios Tradelines",
+          "Improve Crédito Mix",
+          "Increase Crédito Age"
+        ]
+      },
+      "settlement": {
+        "title": "Impuestos Deuda Resolution",
+        "description": "Fast-tracked Deuda resolution and settlement for IRS and State Impuestos Deudas.",
+        "features": [
+          "IRS Impuestos Deuda Resolution",
+          "State Impuestos Deuda Resolution",
+          "Offer in Compromise",
+          "Payment Plans"
+        ]
+      },
+      "counseling": {
+        "title": "Financiero Consulting",
+        "description": "Default management consulting and document preparation Servicios.",
+        "features": [
+          "Default Management",
+          "Document Preparation",
+          "Financiero Analysis",
+          "Personalized Action Plan"
+        ]
+      }
+    },
+    "process": {
+      "title": "Our Proven 4-Step Process",
+      "description": "Refined over 17 years to deliver maximum results in minimum time.",
+      "steps": {
+        "1": {
+          "title": "Expert Analysis",
+          "description": "Pull reports and identify negative items.",
+          "bullets": [
+            "All three bureaus",
+            "Every negative item",
+            "Opportunity mapping"
+          ]
+        },
+        "2": {
+          "title": "Custom Strategy",
+          "description": "Personalized plan targeting your issues.",
+          "bullets": [
+            "Personalized plan",
+            "Proven disputes",
+            "Prioritized actions"
+          ]
+        },
+        "3": {
+          "title": "Active Disputes",
+          "description": "We file disputes and handle follow-ups.",
+          "bullets": [
+            "Bureau disputes",
+            "Créditoor contacts",
+            "Follow-ups"
+          ]
+        },
+        "4": {
+          "title": "Results Delivered",
+          "description": "Score improves as negatives are removed.",
+          "bullets": [
+            "Removals tracked",
+            "Score gains",
+            "Next steps"
+          ]
+        }
+      },
+      "timeline": {
+        "title": "Timeline & Expectations",
+        "items": [
+          {
+            "title": "Days 1-30",
+            "text": "Initial disputes filed; first removals begin."
+          },
+          {
+            "title": "Days 31-60",
+            "text": "Improvements visible; additional disputes."
+          },
+          {
+            "title": "Days 61-90",
+            "text": "Maximum results; final optimizations."
+          }
+        ]
+      },
+      "results": {
+        "title": "Average Results",
+        "items": [
+          {
+            "value": "76",
+            "label": "Point Increase"
+          },
+          {
+            "value": "56%",
+            "label": "Items Removed"
+          },
+          {
+            "value": "45",
+            "label": "Days Average"
+          },
+          {
+            "value": "98%",
+            "label": "Success Rate"
+          }
+        ]
+      }
+    },
+    "success": {
+      "title": "Real Success Stories",
+      "description": "See how clients transformed their Crédito scores.",
+      "items": [
+        {
+          "name": "Marcus Johnson",
+          "role": "Houston, TX",
+          "quote": "Now I qualify for the best rates!",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg",
+          "before": "487",
+          "after": "742",
+          "days": "67"
+        },
+        {
+          "name": "Sofia Martinez",
+          "role": "Atlanta, GA",
+          "quote": "Approved for my dream home Hipoteca!",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg",
+          "before": "521",
+          "after": "789",
+          "days": "52"
+        },
+        {
+          "name": "David Thompson",
+          "role": "Birmingham, AL",
+          "quote": "My family can finally buy our first home!",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg",
+          "before": "456",
+          "after": "701",
+          "days": "81"
+        }
+      ],
+      "cta": {
+        "title": "Join Our Success Stories",
+        "button": "Start Your Success Story Today",
+        "stats": [
+          {
+            "value": "15,000+",
+            "label": "Clients Helped"
+          },
+          {
+            "value": "98%",
+            "label": "Success Rate"
+          },
+          {
+            "value": "156",
+            "label": "Avg Point Increase"
+          },
+          {
+            "value": "47",
+            "label": "Days Average"
+          }
+        ]
+      }
+    },
+    "pricing": {
+      "title": "Transparent Pricing Plans",
+      "description": "Choose the plan that fits your needs. All plans include our guarantee and unlimited disputes.",
+      "mostPopular": "MOST POPULAR",
+      "basic": {
+        "title": "Basic Plan",
+        "price": "$99",
+        "period": "/month",
+        "features": [
+          "Crédito report analysis",
+          "Dispute up to 5 items per month",
+          "Monthly progress reports",
+          "Basic Crédito education",
+          "90-day money back guarantee"
+        ],
+        "button": "Choose Basic"
+      },
+      "premium": {
+        "title": "Premium Plan",
+        "price": "$149",
+        "period": "/month",
+        "features": [
+          "Everything in Basic Plan",
+          "Unlimited disputes per month",
+          "Créditoor intervention Llamars",
+          "Score tracking & monitoring",
+          "Personal Crédito counselor",
+          "Priority customer Soporte"
+        ],
+        "button": "Choose Premium"
+      },
+      "elite": {
+        "title": "Elite Plan",
+        "price": "$249",
+        "period": "/month",
+        "features": [
+          "Everything in Premium Plan",
+          "Expedited processing",
+          "Deuda settlement assistance",
+          "Legal Consulta included",
+          "Identity theft protection",
+          "Dedicated account manager"
+        ],
+        "button": "Choose Elite"
+      },
+      "discounts": {
+        "title": "Special Discounts Available",
+        "items": [
+          {
+            "title": "VIP Military Servicios",
+            "text": "For Active Duty, Retired, & Reservists"
+          },
+          {
+            "title": "Family Plans",
+            "text": "Save 15% for couples"
+          },
+          {
+            "title": "Annual Payment",
+            "text": "Save 2 months free"
+          }
+        ]
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "description": "Get answers about our Servicios and guarantee.",
+      "items": [
+        {
+          "q": "How does your money-back guarantee work?",
+          "a": "Our Crédito Servicios comes with a money-back guarantee. If we don't deliver results, you get 100% back."
+        },
+        {
+          "q": "What kind of Deuda resolution do you handle?",
+          "a": "We specialize in fast-tracked Deuda resolution for the IRS, State, and student loan defaults."
+        },
+        {
+          "q": "Do you offer Negocios Crédito Servicios?",
+          "a": "Yes, we offer both Negocios Crédito building to establish your Negocios profile and Crédito tradelines for personal and Negocios use."
+        },
+        {
+          "q": "How long does Crédito repair typiLlamary take?",
+          "a": "Most clients see improvements within 30-45 days; significant results are common by 90 days."
+        },
+        {
+          "q": "Is Crédito repair legal?",
+          "a": "Absolutely. The Fair Crédito Reporting Act (FCRA) gives you the right to dispute inaccurate information on your Crédito reports. We exercise that right on your behalf."
+        },
+        {
+          "q": "Do you offer Servicios in Español?",
+          "a": "Sí. We have bilingual counselors and offer all Servicios in Español (Hablamos Español)."
+        }
+      ]
+    }
+  },
+  "solutions_real_estate": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "individuals": "Soluciones para Personas",
+      "current": "Bienes Raíces & Hipoteca"
+    },
+    "common": {
+      "ctaConsultation": "Programar consulta con nuestro asesor inmobiliario",
+      "ctaCall": "Obtener preaprobación"
+    },
+    "hero": {
+      "title": "Soluciones personales de bienes raíces y hipotecas",
+      "highlight": "Soluciones hipotecarias",
+      "description": "Asesoría integral en bienes raíces, administración de propiedades y financiamiento hipotecario en alianza con nuestro equipo experto.",
+      "tiles": [
+        {
+          "title": "Bienes Raíces",
+          "subtitle": "Servicios de agente"
+        },
+        {
+          "title": "Hipoteca",
+          "subtitle": "Financiamiento"
+        },
+        {
+          "title": "Administración",
+          "subtitle": "Servicio completo"
+        },
+        {
+          "title": "Arrendamiento",
+          "subtitle": "Comercial y residencial"
+        }
+      ]
+    },
+    "overview": {
+      "title": "Servicios completos de bienes raíces e hipotecas",
+      "description": "Desde la inversión inmobiliaria hasta la obtención de financiamiento, protegemos sus activos y le ayudamos a decidir con información.",
+      "realEstate": {
+        "title": "Servicios de bienes raíces",
+        "subtitle": "En alianza con nuestros socios nacionales",
+        "features": [
+          {
+            "title": "Administración de propiedades",
+            "subtitle": "Gestión integral"
+          },
+          {
+            "title": "Arrendamiento",
+            "subtitle": "Comercial y residencial"
+          },
+          {
+            "title": "Servicios de agente",
+            "subtitle": "con socios a nivel nacional"
+          },
+          {
+            "title": "Investment",
+            "subtitle": "Propiedades de inversión"
+          }
+        ],
+        "bullets": [
+          "Administración de propiedades",
+          "Arrendamiento comercial",
+          "Arrendamiento residencial",
+          "Agente inmobiliario: socios dedicados a nivel nacional",
+          "Propiedades de inversión"
+        ]
+      },
+      "mortgage": {
+        "title": "Hipoteca y financiamiento",
+        "subtitle": "Para su vivienda o inversión",
+        "features": [
+          {
+            "title": "Pre-qualification",
+            "subtitle": "Empiece su proceso"
+          },
+          {
+            "title": "Purchase Loans",
+            "subtitle": "Vivienda o inversión"
+          },
+          {
+            "title": "Refinancing",
+            "subtitle": "Mejore su tasa"
+          },
+          {
+            "title": "Document Prep",
+            "subtitle": "Para prestamistas"
+          }
+        ],
+        "bullets": [
+          "Alianza en financiamiento hipotecario",
+          "Préstamos para propiedades de inversión",
+          "Opciones de refinanciamiento",
+          "Preparación de documentos para prestamistas"
+        ]
+      },
+      "insurance": {
+        "title": "Hipoteca y financiamiento",
+        "subtitle": "Para su vivienda o inversión",
+        "bullets": [
+          "Alianza en financiamiento hipotecario",
+          "Préstamos para propiedades de inversión",
+          "Opciones de refinanciamiento",
+          "Preparación de documentos para prestamistas"
+        ]
+      }
+    },
+    "services": {
+      "title": "Áreas de servicio especializadas",
+      "description": "Nuestra experiencia cubre todos los aspectos de la planificación inmobiliaria e hipotecaria",
+      "propertyManagement": {
+        "title": "Administración de propiedades",
+        "description": "Gestión profesional e integral para sus activos inmobiliarios, asegurando tranquilidad y rendimientos óptimos.",
+        "features": [
+          "Selección y colocación de inquilinos",
+          "Cobro de rentas y contabilidad",
+          "Mantenimiento y reparaciones",
+          "Informes financieros"
+        ]
+      },
+      "leasing": {
+        "title": "Arrendamiento comercial y residencial",
+        "description": "Servicios expertos de arrendamiento para propiedades comerciales y residenciales, desde marketing hasta relación con inquilinos.",
+        "features": [
+          "Promoción de propiedades",
+          "Negociación de contratos",
+          "Relación con inquilinos",
+          "Análisis de mercado"
+        ]
+      },
+      "agentServices": {
+        "title": "Servicios de agente inmobiliario",
+        "description": "Agentes dedicados de nuestros socios a nivel nacional para todas sus necesidades de compra y venta.",
+        "features": [
+          "Representación de compradores",
+          "Representación de vendedores",
+          "Visitas a propiedades",
+          "Gestión de transacciones"
+        ]
+      },
+      "mortgageFinancing": {
+        "title": "Financiamiento hipotecario",
+        "description": "En alianza con nuestro equipo, ofrecemos financiamiento para vivienda principal y propiedades de inversión.",
+        "features": [
+          "Precalificación y preaprobación",
+          "Préstamos convencionales, FHA y VA",
+          "Programas para primer comprador",
+          "Soporte de documentación"
+        ]
+      },
+      "refinancing": {
+        "title": "Refinancing Solutions",
+        "description": "Explore opciones para bajar su tasa, reducir el pago mensual o aprovechar su patrimonio.",
+        "features": [
+          "Rate & Term Refinance",
+          "Cash-Out Refinance",
+          "Loan Modification Options",
+          "Portfolio Analysis"
+        ]
+      },
+      "investmentLoans": {
+        "title": "Investment Property Loans",
+        "description": "Financiamiento especializado para inversionistas y crecimiento de portafolios inmobiliarios.",
+        "features": [
+          "Fix & Flip Loans",
+          "Rental Property Loans (DSCR)",
+          "Portfolio Loans",
+          "Commercial Property Financing"
+        ]
+      }
+    },
+    "process": {
+      "title": "Nuestro proceso inmobiliario e hipotecario",
+      "description": "Desde la consulta inicial hasta el cierre, lo guiamos en cada paso de su camino inmobiliario y de financiamiento.",
+      "reasonsTitle": "Por qué nuestro proceso funciona",
+      "statsTitle": "Estadísticas de éxito",
+      "steps": {
+        "1": {
+          "title": "Consulta inicial",
+          "description": "We discuss your goals, assess your current situation, and understand your specific needs for property or financing.",
+          "bullets": [
+            "Alineación de objetivos",
+            "Evaluación financiera",
+            "Necesidades de propiedad"
+          ]
+        },
+        "2": {
+          "title": "Análisis e investigación",
+          "description": "Análisis de mercado, búsqueda de propiedades y precalificación hipotecaria con nuestros socios.",
+          "bullets": [
+            "Investigación de mercado",
+            "Búsqueda de propiedades",
+            "Precalificación hipotecaria"
+          ]
+        },
+        "3": {
+          "title": "Estrategia personalizada",
+          "description": "Desarrollo de una estrategia para comprar, vender o refinanciar según sus objetivos.",
+          "bullets": [
+            "Plan personalizado",
+            "Hoja de ruta",
+            "Lista corta de propiedades"
+          ]
+        },
+        "4": {
+          "title": "Financiamiento y cierre",
+          "description": "Coordinamos con prestamistas, agentes y compañías de títulos para un proceso sin fricciones.",
+          "bullets": [
+            "Coordinación hipotecaria",
+            "Preparación de documentos",
+            "Cierre y desembolso"
+          ]
+        }
+      },
+      "reasons": [
+        {
+          "title": "Enfoque personalizado:",
+          "text": "Cada cliente recibe soluciones a su medida según sus circunstancias y objetivos."
+        },
+        {
+          "title": "Conocimiento experto:",
+          "text": "Nuestro equipo y socios se mantienen al día con tendencias, regulaciones y mejores prácticas."
+        },
+        {
+          "title": "Soporte continuo:",
+          "text": "Mantenemos relaciones a largo plazo, brindando guía continua conforme cambian sus necesidades."
+        }
+      ],
+      "stats": {
+        "items": [
+          {
+            "value": "95%",
+            "label": "Satisfacción del cliente"
+          },
+          {
+            "value": "500+",
+            "label": "Propiedades gestionadas"
+          },
+          {
+            "value": "200+",
+            "label": "Préstamos cerrados"
+          },
+          {
+            "value": "30",
+            "label": "Días promedio de cierre"
+          }
+        ]
+      }
+    },
+    "comparison": {
+      "title": "Comparación de programas hipotecarios",
+      "description": "Compare distintas opciones de préstamo para encontrar la ideal para usted.",
+      "included": "Incluido",
+      "notIncluded": "No incluido",
+      "headers": {
+        "coverage": "Tipo de préstamo",
+        "basic": "Conventional",
+        "standard": "Préstamo FHA",
+        "premium": "Préstamo VA"
+      },
+      "rows": [
+        {
+          "label": "Pago inicial típico",
+          "values": [
+            "3-20%",
+            "3.5%",
+            "0%"
+          ]
+        },
+        {
+          "label": "Puntaje de crédito mínimo",
+          "values": [
+            "620+",
+            "580+",
+            "Varies"
+          ]
+        },
+        {
+          "label": "Ideal para",
+          "values": [
+            "Buen crédito",
+            "Compradores primerizos",
+            "Veteranos y militares"
+          ]
+        },
+        {
+          "label": "Seguro hipotecario (PMI)",
+          "values": [
+            "Varies",
+            "Required",
+            "No PMI"
+          ]
+        },
+        {
+          "label": "Límites de préstamo",
+          "values": [
+            "High",
+            "Varies by County",
+            "High"
+          ]
+        },
+        {
+          "label": "Más información",
+          "values": [
+            "Select Plan",
+            "Más Popular",
+            "Select Plan"
+          ],
+          "isCta": true
+        }
+      ]
+    },
+    "success": {
+      "title": "Historias de éxito de clientes",
+      "description": "Resultados reales de clientes que confiaron en nosotros para sus necesidades inmobiliarias e hipotecarias",
+      "items": [
+        {
+          "name": "Sarah Williams",
+          "role": "Bienes Raíces Investor",
+          "quote": "JB Networking Systems helped me build a Bienes Raíces portfolio worth over $2 million in just 3 years. Their market analysis and investment strategies were spot-on, and their Hipoteca partners helped me finance each property seamlessly.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg",
+          "stats": [
+            {
+              "value": "$2.1M",
+              "label": "Portfolio Value"
+            },
+            {
+              "value": "18%",
+              "label": "Annual ROI"
+            },
+            {
+              "value": "7",
+              "label": "Properties Financed"
+            }
+          ]
+        },
+        {
+          "name": "Michael Chen",
+          "role": "Homeowner",
+          "quote": "When I needed to purchase my first home, the dedicated nationwide partners team guided me through the entire process. They found me the perfect property below market value and handled the Hipoteca coordination, making it stress-free.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg",
+          "stats": [
+            {
+              "value": "$45K",
+              "label": "Below Market"
+            },
+            {
+              "value": "25",
+              "label": "Days to Close"
+            },
+            {
+              "value": "3.5%",
+              "label": "Interest Rate"
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "description": "Respuestas a preguntas comunes sobre nuestros servicios inmobiliarios e hipotecarios",
+      "items": [
+        {
+          "q": "¿Qué tipos de servicios inmobiliarios ofrecen?",
+          "a": "Ofrecemos servicios integrales que incluyen administración de propiedades, arrendamiento comercial y residencial, y servicios completos de agente con socios a nivel nacional."
+        },
+        {
+          "q": "¿Quién es su agente inmobiliario?",
+          "a": "Trabajamos con agentes dedicados de nuestros socios a nivel nacional para cubrir compra, venta e inversión."
+        },
+        {
+          "q": "¿Ofrecen financiamiento hipotecario?",
+          "a": "Sí, en alianza con agentes y prestamistas brindamos financiamiento para vivienda principal, propiedades de inversión y refinanciamiento."
+        },
+        {
+          "q": "¿Qué es la administración de propiedades?",
+          "a": "Es nuestro servicio integral para gestionar alquileres: arrendamiento, mantenimiento y cobro, permitiéndole invertir sin complicaciones."
+        },
+        {
+          "q": "¿Ofrecen servicios bilingües?",
+          "a": "¡Por supuesto! Brindamos servicios completos en inglés y español (Hablamos Español) para una comunicación clara en todo el proceso."
+        },
+        {
+          "q": "¿Ofrecen descuentos para militares?",
+          "a": "¡Sí! Orgullosamente ofrecemos servicio VIP y descuentos para personal activo, retirado y reservistas."
+        },
+        {
+          "q": "¿Pueden ayudarme a encontrar una propiedad de inversión?",
+          "a": "Claro. Somos expertos en encontrar y analizar propiedades de inversión, incluyendo flujo de caja, comparables de renta y escenarios de ROI."
+        },
+        {
+          "q": "¿Solo trabajan en GA, AL y TX?",
+          "a": "Nuestras oficinas están en esos estados, pero nuestra red inmobiliaria y de financiamiento puede asistirle en muchas otras áreas. Contáctenos para detalles."
+        }
+      ]
+    }
+  },
+  "solutions_executive": {
+    "hero": {
+      "title": "Espacios ejecutivos y personal bajo demanda",
+      "highlight": "Personal bajo demanda",
+      "ctaStart": "Reservar una consulta",
+      "ctaGuide": "Hablar con un asesor",
+      "description": "Opere como una empresa—sin costos fijos. Alquile oficinas y salas de reuniones, agregue asistentes virtuales y organice capacitaciones con tecnología y soporte integrales.",
+      "card": {
+        "title": "Lo que incluye",
+        "items": [
+          "Oficinas privadas y salas de reuniones",
+          "Recepción, correo y telefonía",
+          "Asistentes virtuales bajo demanda",
+          "Salas de capacitación con A/V"
+        ]
+      }
+    },
+    "services": {
+      "title": "Portafolio de servicios ejecutivos",
+      "description": "Espacios flexibles, personal profesional y amenidades de nivel empresarial para fundadores, consultores y equipos en crecimiento.",
+      "office": {
+        "title": "Alquiler de oficinas y salas corporativas",
+        "description": "Professional spaces for client meetings, interviews, workshops, and daily operations.",
+        "features": [
+          "Oficinas privadas y salas de conferencias",
+          "Hourly, daily, monthly options",
+          "High‑speed Wi‑Fi & printing",
+          "Whiteboards, displays & A/V",
+          "Recepción y manejo de correspondencia",
+          "Secure 24/7 access"
+        ],
+        "ctaPrimary": "Contáctenos",
+        "ctaSecondary": "Solicitar recorrido"
+      },
+      "virtual": {
+        "title": "Virtual Assistants & Reception",
+        "description": "Escale operaciones con asistentes para administración, atención al cliente, facturación y agenda.",
+        "features": [
+          "Atención telefónica y enrutamiento",
+          "Inbox & calendar management",
+          "Facturación y cobranzas",
+          "CRM & data entry",
+          "Atención bilingüe al cliente",
+          "Custom SOPs & reporting"
+        ],
+        "ctaPrimary": "Contáctenos",
+        "ctaSecondary": "Definir alcance"
+      },
+      "training": {
+        "title": "Training & Seminar Rooms",
+        "description": "Capacitaciones, clases y eventos de equipo con A/V integral y distintos montajes.",
+        "features": [
+          "Proyector/TV y sistema de audio",
+          "Flexible seating (10–40)",
+          "Livestream/recording ready",
+          "Coordinación de catering y estacionamiento",
+          "Personal de soporte en sitio",
+          "Pizarras y mesas para grupos"
+        ],
+        "ctaPrimary": "Contáctenos",
+        "ctaSecondary": "Ver distribuciones"
+      }
+    },
+    "process": {
+      "title": "Cómo funciona",
+      "description": "Un camino rápido y sin fricciones desde su consulta hasta la operación completamente asistida.",
+      "steps": {
+        "1": {
+          "title": "Discover",
+          "description": "Cuéntenos sus necesidades de espacio, personal y eventos.",
+          "bullets": [
+            "Objetivos y tiempos",
+            "Tamaño del equipo y uso",
+            "Rango de presupuesto"
+          ]
+        },
+        "2": {
+          "title": "Design",
+          "description": "Diseñamos un paquete de espacio, asistentes y amenidades.",
+          "bullets": [
+            "Plano y distribución",
+            "Alcance del personal",
+            "Niveles de servicio"
+          ]
+        },
+        "3": {
+          "title": "Deploy",
+          "description": "Acceda a su espacio y conozca a su equipo virtual/en sitio.",
+          "bullets": [
+            "Accesos y onboarding",
+            "Configuración A/V e IT",
+            "Alineación de SOPs"
+          ]
+        },
+        "4": {
+          "title": "Deliver",
+          "description": "Opere con soporte continuo y optimización trimestral.",
+          "bullets": [
+            "Uso y resultados",
+            "KPIs de personal",
+            "Opciones de escalamiento"
+          ]
+        }
+      },
+      "why": {
+        "title": "Por qué los equipos eligen nuestros servicios ejecutivos",
+        "items": [
+          {
+            "title": "Enterprise Experience",
+            "text": "Reception, assistants, and facilities aligned to corporate standards."
+          },
+          {
+            "title": "Flexible Terms",
+            "text": "Scale rooms and assistants up or down as your needs evolve."
+          },
+          {
+            "title": "Cost Efficient",
+            "text": "Only pay for what you need—no long leases or full‑time salaries."
+          },
+          {
+            "title": "Trusted Partnership",
+            "text": "We operate as an extension of your team—proactive, aligned, and accountable."
+          },
+          {
+            "title": "Rapid Response",
+            "text": "Quick turnaround and on‑Llamar Soporte to keep your operations moving."
+          },
+          {
+            "title": "Premium Soporte",
+            "text": "Bilingual assistance and a single point of contact for smooth coordination."
+          }
+        ]
+      },
+      "packages": {
+        "title": "Popular Packages",
+        "items": [
+          {
+            "title": "Oficina inicial (mensual)",
+            "price": "$699"
+          },
+          {
+            "title": "Assistant Bundle (40 hrs)",
+            "price": "$1,200"
+          },
+          {
+            "title": "Training Day (Full A/V)",
+            "price": "$899"
+          }
+        ],
+        "cta": "Reservar una consulta"
+      }
+    },
+    "faq": {
+      "title": "Preguntas frecuentes de servicios ejecutivos",
+      "description": "Respuestas a preguntas comunes sobre salas, asistentes y eventos.",
+      "items": [
+        {
+          "q": "¿Puedo reservar salas por hora?",
+          "a": "Sí. Elija términos por hora, día o mes para todos los espacios."
+        },
+        {
+          "q": "¿Ofrecen asistentes bilingües?",
+          "a": "Sí. Hay soporte en inglés y español para recepción y atención al cliente."
+        },
+        {
+          "q": "¿Los asistentes pueden trabajar en mis sistemas?",
+          "a": "Sí, trabajamos con CRMs, calendarios, facturación y herramientas de colaboración con NDA según sea necesario."
+        },
+        {
+          "q": "¿El equipo está incluido para capacitaciones?",
+          "a": "Las salas incluyen pantallas o proyector, audio, pizarras y adaptadores básicos. Configuraciones avanzadas disponibles a solicitud."
+        }
+      ]
+    }
+  },
+  "solutions_financial": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "individuals": "Soluciones para Personas",
+      "current": "Planificación financiera y de seguros"
+    },
+    "hero": {
+      "badge": "Planificación financiera y de seguros",
+      "title": "Le ayudamos a planificar un futuro más brillante",
+      "highlight": "Lograr y cumplir metas",
+      "description": "Como su consultor financiero, documento sus metas y las comparo con su portafolio actual. Uso estrategias probadas, alineadas a su tolerancia al riesgo y a la volatilidad del mercado.",
+      "ctaAnalysis": "Reservar consulta",
+      "ctaAdvisor": "Hablar con un asesor",
+      "cardTitle": "Comience su camino",
+      "cardStat0": {
+        "value": "17+",
+        "label": "Años de experiencia"
+      },
+      "cardStat1": {
+        "value": "Probadas",
+        "label": "Estrategias"
+      }
+    },
+    "services": {
+      "title": "Planificación financiera y soluciones de seguros",
+      "description": "Desde proteger sus activos con seguros integrales hasta crear riqueza con estrategias de inversión probadas, cubrimos todos los aspectos de su vida financiera.",
+      "retirement": {
+        "title": "Planificación financiera y de inversiones",
+        "description": "Usamos estrategias probadas para diversificar portafolios, gestionar activos y reducir el riesgo financiero, alineadas a sus metas.",
+        "value": "Probadas",
+        "valueLabel": "Estrategias"
+      },
+      "portfolio": {
+        "title": "Vida, salud y accidentes",
+        "description": "Proteja a su familia e ingresos con pólizas de nuestros agentes y socios licenciados.",
+        "value": "Licenciados",
+        "valueLabel": "Agentes"
+      },
+      "education": {
+        "title": "Protección de bienes y activos",
+        "description": "Seguros de propiedad, daños, vivienda y auto para proteger sus activos más valiosos.",
+        "value": "Total",
+        "valueLabel": "Protección de activos"
+      },
+      "risk": {
+        "title": "Planificación de retiro y patrimonio",
+        "description": "Asegure su legado con nuestra asesoría en anualidades, planificación de retiro y creación de fideicomisos.",
+        "value": "Legacy",
+        "valueLabel": "Asegurado"
+      }
+    },
+    "philosophy": {
+      "title": "Construyendo futuros sólidos y fuertes",
+      "description": "Nos apasiona ayudar a empresas y personas a diversificar portafolios, gestionar activos, analizar tendencias de mercado y reducir riesgos financieros y fiscales. ¿Nuestra meta? Proteger sus sueños y los activos por los que ha trabajado.",
+      "items": [
+        {
+          "title": "Planificación basada en metas",
+          "text": "Cada estrategia de inversión se adapta a sus metas, tiempos y tolerancia al riesgo."
+        },
+        {
+          "title": "Enfoque diversificado",
+          "text": "Distribuimos el riesgo entre clases de activos, sectores y regiones para optimizar rendimientos."
+        },
+        {
+          "title": "Rebalanceo periódico",
+          "text": "Revisiones y ajustes sistemáticos para mantener una asignación óptima de activos."
+        },
+        {
+          "title": "Guía imparcial",
+          "text": "Recomendaciones objetivas basadas en sus necesidades y metas."
+        }
+      ],
+      "chart": {
+        "title": "Ejemplo de asignación de cartera",
+        "labels": [
+          "Acciones",
+          "Bonos",
+          "Bienes raíces",
+          "Efectivo"
+        ],
+        "summaryGrowth": "Activos de crecimiento",
+        "summaryConservative": "Activos conservadores"
+      }
+    },
+    "insurance_partner": {
+      "title": "Nuestro socio licenciado de seguros: Tiffany & Associates LLC",
+      "description": "A través de nuestra alianza con Tiffany & Associates LLC, nuestros agentes licenciados ofrecen una suite completa de seguros para proteger cada aspecto de su vida y negocio.",
+      "servicesTitle": "Soluciones de seguros disponibles",
+      "servicesList": [
+        "Seguros para empresas",
+        "Compensación laboral",
+        "Seguros de propiedad y daños",
+        "Vivienda/Inquilinos",
+        "Seguro de salud",
+        "Accidente/Enfermedad",
+        "Seguro de vida",
+        "Seguro de auto",
+        "Seguro para mascotas"
+      ],
+      "planningTitle": "Planificación financiera y patrimonial",
+      "planningList": [
+        "Anualidades y planificación de retiro",
+        "Creación de fideicomisos y planificación patrimonial"
+      ],
+      "cta": "Obtener una cotización de seguros"
+    },
+    "calculator": {
+      "title": "Calculadora de planificación de retiro",
+      "description": "Use nuestra calculadora para estimar cuánto necesita ahorrar y cómo distintos escenarios impactan su futuro financiero.",
+      "inputsTitle": "Datos de entrada",
+      "resultsTitle": "Resultados de proyección",
+      "currentAge": "Edad actual",
+      "retirementAge": "Edad de retiro",
+      "currentSavings": "Ahorros actuales ($)",
+      "monthlyContribution": "Aporte mensual ($)",
+      "annualReturn": "Rendimiento anual esperado (%)",
+      "projectedSavings": "Ahorros proyectados para el retiro",
+      "yearsToRetirement": "Años para el retiro",
+      "totalContributions": "Aportes totales",
+      "monthlyIncomeTitle": "Ingreso mensual en retiro",
+      "withdrawalRule": "Basado en la regla del 4%",
+      "breakdownTitle": "Desglose de ahorros:",
+      "principal": "Aportes principales:",
+      "growth": "Crecimiento de inversión:",
+      "ctaSchedule": "Programar sesión de planificación"
+    },
+    "options": {
+      "title": "Opciones y estrategias de inversión",
+      "description": "Elija entre diversas estrategias diseñadas para distintos niveles de riesgo y objetivos financieros.",
+      "labels": {
+        "targetReturn": "Retorno objetivo",
+        "horizon": "Horizonte de tiempo"
+      },
+      "mostPopular": "Más Popular",
+      "learnMore": "Más información",
+      "composition": "Composición del portafolio:",
+      "assets": {
+        "govBonds": "Bonos del gobierno",
+        "corpBonds": "Bonos corporativos",
+        "dividend": "Acciones de dividendos",
+        "cash": "Efectivo/Money Market",
+        "largeCap": "Acciones de gran capitalización",
+        "international": "Acciones internacionales",
+        "bonds": "Bonos",
+        "reits": "REITs",
+        "growth": "Acciones de crecimiento",
+        "smallCap": "Acciones de pequeña capitalización",
+        "emerging": "Mercados emergentes",
+        "alternatives": "Inversiones alternativas"
+      },
+      "conservative": {
+        "title": "Crecimiento conservador",
+        "risk": "Nivel de riesgo: Bajo",
+        "return": "4-6%",
+        "horizon": "3-5 años",
+        "comp": [
+          "40%",
+          "30%",
+          "25%",
+          "5%"
+        ]
+      },
+      "balanced": {
+        "title": "Crecimiento balanceado",
+        "risk": "Nivel de riesgo: Moderado",
+        "return": "7-9%",
+        "horizon": "5-10 años",
+        "comp": [
+          "35%",
+          "20%",
+          "30%",
+          "10%",
+          "5%"
+        ]
+      },
+      "aggressive": {
+        "title": "Crecimiento agresivo",
+        "risk": "Nivel de riesgo: Alto",
+        "return": "10-12%",
+        "horizon": "10+ años",
+        "comp": [
+          "50%",
+          "20%",
+          "15%",
+          "10%",
+          "5%"
+        ]
+      },
+      "accounts": {
+        "title": "Cuentas de inversión especializadas",
+        "items": [
+          {
+            "title": "Traditional IRA",
+            "text": "Ahorros de retiro con impuestos diferidos y posibles deducciones",
+            "limit": "Límite $6,500"
+          },
+          {
+            "title": "Roth IRA",
+            "text": "Crecimiento y retiros libres de impuestos en el retiro",
+            "limit": "Límite $6,500"
+          },
+          {
+            "title": "401(k) Plans",
+            "text": "Planes de retiro patrocinados por el empleador con aportes pareados",
+            "limit": "Límite $22,500"
+          },
+          {
+            "title": "529 Plans",
+            "text": "Cuentas de ahorro educativo con ventajas fiscales",
+            "limit": "Sin límite federal"
+          }
+        ]
+      }
+    },
+    "success": {
+      "title": "Historias de éxito de clientes",
+      "description": "Resultados reales de clientes que confiaron en su futuro financiero con nosotros. Vea cómo nuestro enfoque personalizado les ayudó a lograr sus metas.",
+      "items": [
+        {
+          "name": "David Martinez",
+          "role": "Ingeniero de software, 42 años",
+          "quote": "Comencé con solo $25K a los 35. Con inversión constante y la guía de JB, ahora voy camino a retirarme a los 55.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
+        },
+        {
+          "name": "Jennifer Chen",
+          "role": "Maestra, 38 años",
+          "quote": "Gracias a su estrategia con planes 529, tengo ahorros para la universidad de mis hijos mientras construyo mi fondo de retiro.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg"
+        },
+        {
+          "name": "Robert Johnson",
+          "role": "Veterano militar, 55 años",
+          "quote": "El servicio VIP Militar fue un gran beneficio, pero su experiencia con mi TSP y pensión fue invaluable para mi retiro.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg"
+        }
+      ],
+      "aggregate": {
+        "title": "Nuestro compromiso con usted",
+        "items": [
+          {
+            "value": "17+",
+            "label": "Años de experiencia"
+          },
+          {
+            "value": "Probadas",
+            "label": "Estrategias de inversión"
+          },
+          {
+            "value": "VIP",
+            "label": "Servicio militar"
+          },
+          {
+            "value": "Bilingual",
+            "label": "Asesores"
+          }
+        ]
+      }
+    }
+  },
+  "solutions_business_credit": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "business": "Soluciones para Empresas",
+      "current": "Construcción de crédito empresarial"
+    },
+    "hero": {
+      "badge": "Soluciones para empresas",
+      "title": "Construya un crédito empresarial sólido",
+      "highlight": "Crédito empresarial",
+      "description": "Establezca y fortalezca el crédito de su empresa con nuestros servicios de construcción de crédito y tradelines. Acceda a mejor financiamiento, tasas más bajas y mayores oportunidades.",
+      "ctaAssess": "Iniciar evaluación de crédito",
+      "ctaGuide": "Guía de crédito gratuita",
+      "stats": [
+        {
+          "value": "90%",
+          "label": "Tasa de éxito"
+        },
+        {
+          "value": "30-90",
+          "label": "Días promedio"
+        },
+        {
+          "value": "$500K+",
+          "label": "Crédito obtenido"
+        }
+      ],
+      "card": {
+        "title": "Mejora de puntaje de crédito",
+        "startLabel": "Puntaje inicial",
+        "targetLabel": "Puntaje objetivo",
+        "timeline": "Línea de tiempo típica",
+        "timelineValue": "30-90 días"
+      }
+    },
+    "services": {
+      "title": "Complete Negocios Crédito Solutions",
+      "description": "Our comprehensive approach covers every aspect of Negocios Crédito building, from initial setup to trade lines and ongoing monitoring.",
+      "setup": {
+        "title": "Negocios Crédito Building",
+        "description": "Establish your Negocios Crédito foundation with proper entity formation and Crédito bureau registration.",
+        "features": [
+          "EIN Registration",
+          "D-U-N-S Number Setup",
+          "Negocios Bank Account",
+          "Crédito Bureau Registration"
+        ],
+        "price": "Starting at $497"
+      },
+      "program": {
+        "title": "Crédito Trade Lines",
+        "badge": "Más Popular",
+        "description": "Comprehensive Crédito building with personal and Negocios trade lines, vendor accounts, and strategic Crédito applications.",
+        "features": [
+          "Personal Trade Lines",
+          "Negocios Trade Lines",
+          "Vendor Net 30 Accounts",
+          "Negocios Crédito Cards",
+          "Crédito Monitoring"
+        ],
+        "price": "Starting at $997"
+      },
+      "protection": {
+        "title": "Crédito Protection",
+        "description": "Ongoing monitoring and protection Servicios to maintain and improve your Negocios Crédito profile.",
+        "features": [
+          "Monthly Monitoring",
+          "Dispute Resolution",
+          "Crédito Optimization",
+          "Ongoing Soporte"
+        ],
+        "price": "Starting at $297/month"
+      }
+    },
+    "process": {
+      "title": "Our Proven 5-Step Process",
+      "description": "We follow a systematic approach to ensure your Negocios Crédito is built efficiently and effectively.",
+      "steps": {
+        "1": {
+          "title": "Negocios Foundation Analysis",
+          "description": "Analyze your current structure and Crédito profile.",
+          "bullets": [
+            "Negocios Entity Review",
+            "Current Crédito Assessment",
+            "Documentation Audit",
+            "Compliance Check"
+          ]
+        },
+        "2": {
+          "title": "Crédito Foundation Setup",
+          "description": "Establish essential registrations and accounts.",
+          "bullets": [
+            "EIN & D-U-N-S Registration",
+            "Negocios Banking Setup",
+            "Crédito Bureau Registration",
+            "Negocios Address Verification"
+          ]
+        },
+        "3": {
+          "title": "Initial Crédito Building",
+          "description": "Start with starter tradelines and vendor accounts.",
+          "bullets": [
+            "Starter Trade Lines",
+            "Vendor Net 30 Accounts",
+            "Negocios Crédito Cards",
+            "Payment History Building"
+          ]
+        },
+        "4": {
+          "title": "Crédito Enhancement",
+          "description": "Improve limits, mix, and score with advanced trade lines.",
+          "bullets": [
+            "Higher Limit Accounts",
+            "Premium Trade Lines",
+            "Crédito Mix Optimization",
+            "Score Improvement Strategy"
+          ]
+        },
+        "5": {
+          "title": "Monitoring & Maintenance",
+          "description": "Ongoing monitoring and optimization.",
+          "bullets": [
+            "Monthly Crédito Monitoring",
+            "Dispute Management",
+            "Crédito Optimization",
+            "Ongoing Soporte & Consulta"
+          ]
+        }
+      }
+    },
+    "benefits": {
+      "title": "Benefits of Strong Negocios Crédito",
+      "description": "Building strong Negocios Crédito opens doors to better financing options, improved cash flow, and enhanced Negocios opportunities.",
+      "items": [
+        {
+          "title": "Lower Interest Rates",
+          "text": "Access better financing terms with rates as low as 0% APR on Negocios Crédito cards and loans."
+        },
+        {
+          "title": "Higher Crédito Limits",
+          "text": "Qualify for higher Crédito limits and larger loan amounts to fuel Negocios growth and expansion."
+        },
+        {
+          "title": "Personal Crédito Protection",
+          "text": "Separate Negocios and personal Crédito to protect your personal assets and Crédito score."
+        },
+        {
+          "title": "Negocios Growth",
+          "text": "Access capital for inventory, equipment, expansion, and other growth opportunities."
+        },
+        {
+          "title": "Better Vendor Terms",
+          "text": "Negotiate better payment terms with suppliers and vendors based on strong Crédito history."
+        },
+        {
+          "title": "Negocios Credibility",
+          "text": "Enhance your Negocios reputation and credibility with customers, vendors, and partners."
+        },
+        {
+          "title": "Cash Flow Improvement",
+          "text": "Improve cash flow with access to Negocios Crédito lines and flexible financing options."
+        },
+        {
+          "title": "Negocios Valuation",
+          "text": "Increase your Negocios valuation with established Crédito history and Financiero stability."
+        }
+      ]
+    },
+    "success": {
+      "title": "Success Stories",
+      "description": "See how our Negocios Crédito building Servicios have helped companies achieve their financing goals and grow their Negocioses.",
+      "items": [
+        {
+          "name": "Michael Rodriguez",
+          "role": "Construction Company Owner",
+          "quote": "JB Networking Systems helped us build our Negocios Crédito from scratch. Within 90 days, we went from having no Negocios Crédito to securing a $150,000 equipment loan at 4.5% interest.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg",
+          "stats": [
+            {
+              "value": "$150K",
+              "label": "Crédito Secured"
+            },
+            {
+              "value": "90",
+              "label": "Days Timeline"
+            }
+          ]
+        },
+        {
+          "name": "Sarah Thompson",
+          "role": "Restaurant Chain Owner",
+          "quote": "We established strong Negocios Crédito and secured $300,000 in funding across multiple Crédito lines.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg",
+          "stats": [
+            {
+              "value": "$300K",
+              "label": "Total Funding"
+            },
+            {
+              "value": "2",
+              "label": "New Ubicaciones"
+            }
+          ]
+        },
+        {
+          "name": "David Chen",
+          "role": "Tech Startup Founder",
+          "quote": "Established multiple Crédito lines totaling $75,000 with 0% intro APR used for product development and marketing.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg",
+          "stats": [
+            {
+              "value": "$75K",
+              "label": "Crédito Lines"
+            },
+            {
+              "value": "0%",
+              "label": "Intro APR"
+            }
+          ]
+        },
+        {
+          "name": "Maria Garcia",
+          "role": "E‑commerce Negocios Owner",
+          "quote": "$100,000 in revolving Crédito lines allowed us to stock up during peak seasons and maximize profits.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg",
+          "stats": [
+            {
+              "value": "$100K",
+              "label": "Revolving Crédito"
+            },
+            {
+              "value": "60",
+              "label": "Days Timeline"
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "description": "Get answers to common questions about Negocios Crédito building and our Servicios.",
+      "items": [
+        {
+          "q": "How long does it take to build Negocios Crédito?",
+          "a": "You can start seeing tradelines within 30-60 days; strong profiles typiLlamary in 3-6 months."
+        },
+        {
+          "q": "What's the difference between Negocios Crédito and personal Crédito?",
+          "a": "Negocios Crédito is tied to your EIN, not SSN; it doesn’t appear on personal reports and protects personal assets."
+        },
+        {
+          "q": "What are Crédito Trade Lines?",
+          "a": "We offer both Personal and Negocios tradelines. These are established lines of Crédito that can be added to your profile to boost your Crédito history, age, and mix, often resulting in a faster score increase."
+        },
+        {
+          "q": "How much Crédito can I qualify for?",
+          "a": "Depends on revenue, time in Negocios, and profile strength; clients often secure $25,000–$500,000+."
+        },
+        {
+          "q": "Do you offer Servicios in Español?",
+          "a": "Sí. We have bilingual counselors and offer all Servicios in Español (Hablamos Español)."
+        },
+        {
+          "q": "Do you offer military discounts?",
+          "a": "Yes! We're proud to offer VIP Servicios and exclusive discounts for Active Duty, Retired, & Reservists."
+        }
+      ]
+    },
+    "pricing": {
+      "title": "Investment in Your Negocios Future",
+      "description": "Choose the package that best fits your Negocios Crédito building needs. All packages include our money-back guarantee.",
+      "mostPopular": "Más Popular",
+      "starter": {
+        "title": "Starter Package",
+        "price": "$497",
+        "period": "One-time setup fee",
+        "features": [
+          "Negocios Crédito Profile Setup",
+          "EIN & D-U-N-S Registration",
+          "Crédito Bureau Registration",
+          "Initial Trade Line Setup",
+          "30-Day Soporte"
+        ],
+        "button": "Comenzar"
+      },
+      "professional": {
+        "title": "Professional Package",
+        "price": "$997",
+        "period": "Complete Crédito building",
+        "features": [
+          "Everything in Starter Package",
+          "10+ Vendor Trade Lines",
+          "Negocios Crédito Cards Setup",
+          "Net 30 Account Applications",
+          "Crédito Monitoring (3 months)",
+          "90-Day Soporte"
+        ],
+        "button": "Choose Professional"
+      },
+      "premium": {
+        "title": "Premium Package",
+        "price": "$1497",
+        "period": "Complete solution",
+        "features": [
+          "Everything in Professional Package",
+          "20+ Premium Trade Lines",
+          "High-Limit Crédito Applications",
+          "Crédito Optimization Strategy",
+          "12 Months Crédito Monitoring",
+          "Unlimited Soporte"
+        ],
+        "button": "Choose Premium"
+      },
+      "guarantee": {
+        "title": "100% Money-Back Guarantee",
+        "items": [
+          {
+            "title": "Protected Investment"
+          },
+          {
+            "title": "Timely Results"
+          },
+          {
+            "title": "Guaranteed Satisfaction"
+          }
+        ],
+        "text": "Our Crédito Servicios comes with a money-back guarantee. If we don't deliver the results we promise within the specified timeframe, you get your investment back."
+      }
+    }
+  },
+  "solutions_corporate": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "business": "Soluciones para Empresas",
+      "current": "Servicios corporativos"
+    },
+    "hero": {
+      "badge": "Servicios corporativos",
+      "title": "Constitución de empresas y cumplimiento corporativo",
+      "highlight": "Cumplimiento corporativo",
+      "description": "Fundados en 2007, contamos con años de experiencia en contabilidad, servicios financieros y preparación de impuestos para personas y empresas. Permítanos ayudarle a iniciar y gestionar su empresa.",
+      "ctaStart": "Iniciar su empresa",
+      "ctaGuide": "Guía gratuita",
+      "card": {
+        "title": "Constitución rápida de empresa",
+        "items": [
+          "LLC & Corporation Formation",
+          "Registro de EIN e ID fiscal",
+          "Document Preparation",
+          "Presentación de cumplimiento estatal"
+        ],
+        "cta": "Comenzar hoy"
+      }
+    },
+    "formation": {
+      "title": "Complete Negocios Formation Servicios",
+      "description": "Whether you're starting a new venture or restructuring an existing Negocios, we provide end-to-end formation Servicios with expert guidance at every step.",
+      "cards": [
+        {
+          "icon": "handshake",
+          "title": "LLC Formation",
+          "text": "Establish your Limited Liability Company with complete legal protection and Impuestos advantages.",
+          "features": [
+            "Articles of Organization",
+            "Operating Agreement",
+            "EIN Registration",
+            "State Filing & Compliance"
+          ],
+          "priceLabel": "Desde",
+          "price": "$299",
+          "button": "Comenzar",
+          "badge": ""
+        },
+        {
+          "icon": "building",
+          "title": "Corporation Setup",
+          "text": "Form a C-Corp or S-Corp with comprehensive incorporation Servicios and ongoing Soporte.",
+          "features": [
+            "Articles of Incorporation",
+            "Corporate Bylaws",
+            "Stock Certificates",
+            "Board Resolutions"
+          ],
+          "priceLabel": "Desde",
+          "price": "$499",
+          "button": "Comenzar",
+          "badge": "Más Popular"
+        },
+        {
+          "icon": "users",
+          "title": "Negocios Management",
+          "text": "Ongoing management Servicios for corporations and startups to ensure compliance and strategic growth.",
+          "features": [
+            "Corporate Oversight",
+            "Strategic Planning",
+            "Compliance Management",
+            "Document Preparation"
+          ],
+          "priceLabel": "Desde",
+          "price": "$399",
+          "button": "Comenzar",
+          "badge": ""
+        },
+        {
+          "icon": "shield",
+          "title": "Nonprofit Formation",
+          "text": "Establish 501(c)(3) organizations with full Impuestos-exempt status and compliance.",
+          "features": [
+            "Articles of Incorporation",
+            "501(c)(3) Application",
+            "Bylaws & Policies",
+            "Board Setup"
+          ],
+          "priceLabel": "Desde",
+          "price": "$799",
+          "button": "Comenzar",
+          "badge": ""
+        },
+        {
+          "icon": "pen",
+          "title": "Document Preparation",
+          "text": "Professional preparation of all necessary legal and Financiero documents for your Negocios.",
+          "features": [
+            "Contracts & Agreements",
+            "Filings & Applications",
+            "Compliance Documents",
+            "Immigration Paperwork"
+          ],
+          "priceLabel": "Desde",
+          "price": "$349",
+          "button": "Comenzar",
+          "badge": ""
+        },
+        {
+          "icon": "lightbulb",
+          "title": "Negocios Branding",
+          "text": "Establish your brand identity with our startup branding and Negocios management Servicios.",
+          "features": [
+            "Brand Strategy",
+            "Logo & Identity Design",
+            "Marketing Materials",
+            "Negocios Launch Plan"
+          ],
+          "priceLabel": "Desde",
+          "price": "$599",
+          "button": "Comenzar",
+          "badge": ""
+        }
+      ]
+    },
+    "compliance": {
+      "title": "Ongoing Compliance & Corporate Maintenance",
+      "description": "Keep your Negocios in good standing with comprehensive compliance Servicios, annual filings, and corporate maintenance to protect your legal status and avoid penalties.",
+      "left": {
+        "title": "Stay Compliant, Stay Protected",
+        "text": "Negocios compliance isn't a one-time task. Our ongoing Servicios ensure your Negocios maintains good standing with state authorities, meets all filing requirements, and stays protected from legal and Financiero risks.",
+        "items": [
+          {
+            "title": "Annual State Filings",
+            "text": "Automated annual report filing to maintain your Negocios registration and avoid dissolution."
+          },
+          {
+            "title": "Corporate Record Maintenance",
+            "text": "Keep corporate Reservars, meeting minutes, and resolutions current and legally compliant."
+          },
+          {
+            "title": "Compliance Monitoring",
+            "text": "Proactive monitoring of filing deadlines and regulatory changes affecting your Negocios."
+          }
+        ]
+      },
+      "checklist": {
+        "title": "Compliance Checklist",
+        "rows": [
+          {
+            "label": "Annual State Filing",
+            "status": "Due: March 1",
+            "variant": "ok"
+          },
+          {
+            "label": "Registered Agent Update",
+            "status": "Current",
+            "variant": "ok"
+          },
+          {
+            "label": "Corporate Minutes",
+            "status": "Update Needed",
+            "variant": "warn"
+          },
+          {
+            "label": "Impuestos ID Status",
+            "status": "Active",
+            "variant": "ok"
+          }
+        ],
+        "cta": "Programar Compliance Review"
+      },
+      "tiles": [
+        {
+          "title": "Registered Agent Servicios",
+          "text": "Professional registered agent Servicios in all states we serve.",
+          "price": "$99",
+          "period": "per year",
+          "button": "Add Servicios"
+        },
+        {
+          "title": "Annual Report Filing",
+          "text": "Automated annual state report filing and compliance tracking.",
+          "price": "$149",
+          "period": "per filing",
+          "button": "Add Servicios"
+        },
+        {
+          "title": "Corporate Kit",
+          "text": "Complete corporate record Reservar with seals, certificates, and forms.",
+          "price": "$199",
+          "period": "one-time",
+          "button": "Add Servicios"
+        },
+        {
+          "title": "Compliance Audit",
+          "text": "Comprehensive review of your Negocios compliance status.",
+          "price": "$299",
+          "period": "per audit",
+          "button": "Add Servicios"
+        }
+      ]
+    },
+    "timeline": {
+      "title": "Our Streamlined Process",
+      "description": "From initial Consulta to Negocios launch, we guide you through every step with expert Soporte and transparent communication.",
+      "total": {
+        "title": "Total Timeline: 5-10 Negocios Days",
+        "subtitle": "Most Negocios formations completed within one week",
+        "button": "Start Your Negocios Formation Today"
+      },
+      "steps": [
+        {
+          "icon": "handshake",
+          "title": "1. Initial Consulta",
+          "text": "Expert Consulta to understand your Negocios goals, structure needs, and compliance requirements.",
+          "time": "30 minutes"
+        },
+        {
+          "icon": "file",
+          "title": "2. Document Preparation",
+          "text": "We prepare all necessary formation documents, including articles, agreements, and state filings.",
+          "time": "1-2 Negocios days"
+        },
+        {
+          "icon": "building",
+          "title": "3. State Filing & Registration",
+          "text": "Submit all required documents to state authorities and handle the complete registration process.",
+          "time": "3-5 Negocios days"
+        },
+        {
+          "icon": "id",
+          "title": "4. EIN & Impuestos Setup",
+          "text": "Obtain your Federal Impuestos ID (EIN) and set up your Negocios for proper Impuestos reporting and compliance.",
+          "time": "1-2 Negocios days"
+        },
+        {
+          "icon": "check",
+          "title": "5. Final Delivery & Soporte",
+          "text": "Receive your complete Negocios package with ongoing Soporte for compliance and growth.",
+          "time": "Same day"
+        }
+      ]
+    },
+    "states": {
+      "title": "State-Specific Requirements",
+      "description": "Each state has unique requirements for Negocios formation and compliance. Our experts ensure your Negocios meets all local regulations and maintains good standing.",
+      "cards": [
+        {
+          "state": "Georgia (Corporate Oficina)",
+          "fees": [
+            {
+              "label": "Address:",
+              "value": "2245 Wisteria Dr. Suite 214, Snellville, GA 30078"
+            },
+            {
+              "label": "Phone:",
+              "value": "470.288.3365"
+            },
+            {
+              "label": "Manager:",
+              "value": "T BRANDY J."
+            },
+            {
+              "label": "Annual Report:",
+              "value": "$50"
+            }
+          ],
+          "requirements": [
+            "Registered Agent Required",
+            "Annual Registration Due March 1",
+            "Publication Not Required",
+            "Hablamos Español"
+          ],
+          "cta": "Form in Georgia"
+        },
+        {
+          "state": "Alabama (Regional Oficina)",
+          "fees": [
+            {
+              "label": "Address:",
+              "value": "11 WATER STREET SUITE 10290, MOBILE, AL 36602"
+            },
+            {
+              "label": "Phone:",
+              "value": "251.220.7795"
+            },
+            {
+              "label": "Manager:",
+              "value": "T Brandy Johnson"
+            },
+            {
+              "label": "Annual Report:",
+              "value": "$100"
+            }
+          ],
+          "requirements": [
+            "Registered Agent Required",
+            "Annual Report Due by March 15",
+            "Negocios Privilege Impuestos Required",
+            "Certificate of Formation"
+          ],
+          "cta": "Form in Alabama"
+        },
+        {
+          "state": "Texas (District Oficina)",
+          "fees": [
+            {
+              "label": "Address:",
+              "value": "600 W 6TH STREET SUITE 400, FORT WORTH, TX 76102"
+            },
+            {
+              "label": "Phone:",
+              "value": "469.450.0511"
+            },
+            {
+              "label": "Manager:",
+              "value": "David Sutton"
+            },
+            {
+              "label": "Franchise Impuestos:",
+              "value": "Varies"
+            }
+          ],
+          "requirements": [
+            "Registered Agent Required",
+            "No Annual Report Required",
+            "Franchise Impuestos Filing Required",
+            "Certificate of Formation"
+          ],
+          "cta": "Form in Texas"
+        }
+      ],
+      "notSure": {
+        "title": "Not Sure Which State to Choose?",
+        "text": "Our experts can help you determine the best state for your Negocios based on your specific needs, Impuestos implications, and Negocios activities.",
+        "tiles": [
+          {
+            "title": "Impuestos Analysis",
+            "text": "Compare Impuestos implications across states"
+          },
+          {
+            "title": "Legal Benefits",
+            "text": "Understand legal protections and requirements"
+          },
+          {
+            "title": "Negocios Growth",
+            "text": "Plan for future expansion and opportunities"
+          }
+        ],
+        "cta": "Programar State Consulta"
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "description": "Get answers to common questions about Negocios formation, compliance, and our corporate Servicios.",
+      "items": [
+        {
+          "q": "What's the difference between an LLC and Corporation?",
+          "a": "LLCs offer flexibility in management and Impuestos treatment with simpler compliance requirements. Corporations provide stronger liability protection and easier access to investment capital but have more complex Impuestos and compliance obligations."
+        },
+        {
+          "q": "How long does Negocios formation take?",
+          "a": "Most Negocios formations are completed within 5-10 Negocios days including document preparation, state filing, and EIN registration. Expedited Servicios available."
+        },
+        {
+          "q": "Do I need a registered agent?",
+          "a": "Yes, all Negocioses formed in GA, AL, and TX must have a registered agent with a physical address in the state. We provide professional registered agent Servicios."
+        },
+        {
+          "q": "What ongoing compliance is required?",
+          "a": "Requirements vary by state and entity type but typiLlamary include annual filings, maintaining corporate records, and paying required fees. Our compliance Servicios handle all ongoing requirements."
+        },
+        {
+          "q": "Do you handle document preparation?",
+          "a": "Yes, we specialize in document preparation for Negocios, Financiero, and immigration needs."
+        },
+        {
+          "q": "What documents will I receive after formation?",
+          "a": "Certificate of Formation/Articles of Incorporation, EIN confirmation, Operating Agreement or Bylaws, and other corporate documents. Corporate kit on request."
+        },
+        {
+          "q": "Do you offer bilingual Servicios?",
+          "a": "Sí. Full bilingual Soporte in Inglés and Español (Hablamos Español) for all corporate Servicios."
+        },
+        {
+          "q": "Do you offer military discounts?",
+          "a": "Yes! Active Duty, Retired, & Reservists will always receive VIP Servicios and discounts."
+        }
+      ],
+      "stillQuestions": {
+        "title": "Still Have Questions?",
+        "text": "Our Negocios formation experts are ready to help you make the right decisions for your Negocios.",
+        "button": "Programar Consulta con un Experto"
+      }
+    },
+    "success": {
+      "title": "Negocios Success Stories",
+      "description": "Real results from clients who trusted us with formation and compliance.",
+      "items": [
+        {
+          "name": "Alicia Brown",
+          "role": "Ecommerce Founder",
+          "quote": "Formed our LLC in 48 hours and set up our EIN the next day. We were selling within a week.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-1.jpg"
+        },
+        {
+          "name": "Thomas Lee",
+          "role": "Consulting Agency Owner",
+          "quote": "They handled our S‑Corp election, bylaws, and annual filings seamlessly. Compliance is on autopilot now.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg"
+        },
+        {
+          "name": "Priya Patel",
+          "role": "Nonprofit Director",
+          "quote": "Our 501(c)(3) was approved quickly. Their guidance on governance and records was invaluable.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg"
+        }
+      ]
+    }
+  },
+  "solutions_business_tax": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "business": "Soluciones para Empresas",
+      "current": "Servicios para empresas y contabilidad"
+    },
+    "hero": {
+      "title": "Servicios profesionales para empresas y contabilidad",
+      "highlight": "Servicios contables",
+      "description": "Escale su empresa con nuestro soporte integral. Desde contabilidad y nómina hasta préstamos empresariales y gestión de startups, somos su socio financiero completo.",
+      "ctaQuote": "Reservar consulta",
+      "ctaChecklist": "Llámanos ahora",
+      "card": {
+        "title": "Su socio empresarial",
+        "text": "Enfóquese en su visión. Nosotros nos encargamos de la contabilidad, el financiamiento y la nómina para impulsar su crecimiento.",
+        "tiles": [
+          "Contabilidad",
+          "Préstamos",
+          "Nómina",
+          "Startups"
+        ]
+      }
+    },
+    "overview": {
+      "title": "Full-Servicios Negocios Management & Contabilidad",
+      "description": "From startup Servicios and document preparation to full-Servicios Contabilidad and Negocios loans, we provide the solutions you need.",
+      "items": [
+        {
+          "title": "Accountant/CPA (Indiv/Biz)",
+          "text": "Full-Servicios Contabilidad, CPA Servicios, and Financiero reporting for individuals and Negocioses."
+        },
+        {
+          "title": "Negocios Funding & Loans",
+          "text": "Access to Negocios loans and funding solutions to finance your growth, operations, or investments."
+        },
+        {
+          "title": "Payroll & Notary Servicios",
+          "text": "Complete payroll processing, Impuestos withholdings, and on-site notary Servicios."
+        },
+        {
+          "title": "Negocios Management & Startups",
+          "text": "Expert guidance for startups, corporate filing, document preparation, and Negocios branding."
+        }
+      ],
+      "why": {
+        "title": "Why Negocioses Choose Us",
+        "items": [
+          {
+            "title": "Year-Round Soporte",
+            "text": "Not just Impuestos season - we're here all year"
+          },
+          {
+            "title": "Expert Guidance",
+            "text": "Certified CPAs and Negocios consultants"
+          },
+          {
+            "title": "Bilingual Servicios",
+            "text": "Hablamos Español for your convenience"
+          }
+        ]
+      }
+    },
+    "services": {
+      "title": "Comprehensive Servicios Portfolio",
+      "description": "Every Servicios designed to streamline your Negocios operations and maximize your Financiero efficiency.",
+      "tax": {
+        "title": "Startup & Corporate Servicios",
+        "subtitle": "Your foundation for a successful Negocios",
+        "items": [
+          {
+            "title": "Start Up Negocios Formation",
+            "text": "Complete formation for LLCs, S-Corps, C-Corps, and partnerships."
+          },
+          {
+            "title": "Corporate Filing",
+            "text": "Annual reports, compliance, and all state corporate filings."
+          },
+          {
+            "title": "Negocios Management",
+            "text": "Strategic consulting for new and existing corporations."
+          },
+          {
+            "title": "Negocios Branding",
+            "text": "Guidance on branding and market positioning for startups."
+          },
+          {
+            "title": "Document Preparation",
+            "text": "Expert preparation of all Negocios, Financiero, and legal documents."
+          }
+        ]
+      },
+      "books": {
+        "title": "Contabilidad & CPA Servicios",
+        "subtitle": "The Financiero backbone of your Negocios",
+        "items": [
+          {
+            "title": "Monthly Financiero Statements",
+            "text": "P&L, Balance Sheet, and Cash Flow reports"
+          },
+          {
+            "title": "Accounts Payable/Receivable",
+            "text": "Complete AP/AR management and tracking"
+          },
+          {
+            "title": "Bank Reconciliations",
+            "text": "Monthly reconciliation of all accounts"
+          },
+          {
+            "title": "CPA Servicios (Indiv/Biz)",
+            "text": "Full CPA Servicios for Impuestos planning, audits, and Financiero reviews"
+          },
+          {
+            "title": "Financiero Analysis",
+            "text": "Negocios performance insights and recommendations"
+          }
+        ]
+      },
+      "payroll": {
+        "title": "Payroll Servicios",
+        "subtitle": "Complete payroll management and compliance",
+        "items": [
+          {
+            "title": "Payroll Processing",
+            "text": "Bi-weekly, semi-monthly, or monthly payroll runs"
+          },
+          {
+            "title": "Impuestos Withholdings & Deposits",
+            "text": "Federal, state, and local Impuestos compliance"
+          },
+          {
+            "title": "W-2 & 1099 Preparation",
+            "text": "Year-end forms and electronic filing"
+          },
+          {
+            "title": "Unemployment & Workers' Comp",
+            "text": "State unemployment and workers' compensation filings"
+          },
+          {
+            "title": "Direct Deposit Setup",
+            "text": "Electronic payment processing for employees"
+          }
+        ]
+      },
+      "advisory": {
+        "title": "Negocios Funding & Loans",
+        "subtitle": "Access the capital you need to grow",
+        "items": [
+          {
+            "title": "Negocios Loans",
+            "text": "Facilitating access to term loans, lines of Crédito, and SBA loans."
+          },
+          {
+            "title": "Investment Strategy",
+            "text": "Consulting on investment opportunities and capital alUbicaciones."
+          },
+          {
+            "title": "Funding Document Prep",
+            "text": "Preparing Negocios plans and Financiero docs for lenders."
+          },
+          {
+            "title": "Financiero Consulting",
+            "text": "Strategic advice for cash flow management and growth."
+          },
+          {
+            "title": "Notary",
+            "text": "Official notary Servicios available for all loan and legal documents."
+          }
+        ]
+      }
+    },
+    "pricing": {
+      "title": "Professional Contabilidad Servicios, Clear Pricing",
+      "description": "Choose the Servicios level that fits your Negocios needs. All plans include our personal touch and VIP military Servicios.",
+      "mostPopular": "Más Popular",
+      "startup": {
+        "title": "Startup Package",
+        "subtitle": "Perfect for new Negocioses needing basic Contabilidad",
+        "price": "$299",
+        "period": "",
+        "note": "Starting price for basic setup & filing",
+        "features": [
+          "Basic Contabilidad Setup",
+          "Programar C (Sole Proprietorship)",
+          "Basic Reservarkeeping Review",
+          "Quarterly Consultas",
+          "Electronic Filing",
+          "Bilingual Soporte"
+        ],
+        "button": "Comenzar"
+      },
+      "growth": {
+        "title": "Growth Package",
+        "subtitle": "Ideal for established Negocioses needing full-Servicios Contabilidad",
+        "price": "$799",
+        "period": "",
+        "note": "Starting price for comprehensive Servicios",
+        "features": [
+          "Full-Servicios Contabilidad (CPA)",
+          "Monthly Reservarkeeping Servicios",
+          "Quarterly Financiero Statements",
+          "Basic Payroll Processing",
+          "Negocios Loan Soporte",
+          "Year-Round Soporte",
+          "Priority Scheduling"
+        ],
+        "button": "Choose Growth"
+      },
+      "enterprise": {
+        "title": "Enterprise Package",
+        "subtitle": "Comprehensive solutions including virtual CFO & funding strategy",
+        "price": "$1,499",
+        "period": "",
+        "note": "Starting price for full-Servicios package",
+        "features": [
+          "Virtual CFO Servicios",
+          "Full Reservarkeeping & Financieros",
+          "Complete Payroll Management",
+          "Negocios Funding Strategy",
+          "Financiero Planning & Analysis",
+          "Dedicated Account Manager",
+          "24/7 Soporte Access"
+        ],
+        "button": "Contáctenos"
+      },
+      "discounts": {
+        "title": "Special Discounts Available",
+        "items": [
+          {
+            "title": "VIP Military Servicios",
+            "text": "VIP Servicios and preferred rates for all Active Duty, Retired, & Reservists."
+          },
+          {
+            "title": "Contabilidad Contract Discount",
+            "text": "New clients receive 40% OFF Contabilidad contracts (excluding app fee)."
+          },
+          {
+            "title": "Impuestos Referral Bonus",
+            "text": "Get up to $70 instant payout for every new Impuestos client you refer."
+          }
+        ]
+      }
+    },
+    "industries": {
+      "title": "Industry-Specific Expertise",
+      "description": "We understand the unique Impuestos and Contabilidad challenges across different industries and provide specialized solutions.",
+      "items": [
+        {
+          "title": "Retail & E-commerce",
+          "text": "Inventory management, sales Impuestos compliance, multi-state nexus issues, and marketplace seller requirements.",
+          "bullets": [
+            "Multi-state sales Impuestos compliance",
+            "Inventory valuation methods",
+            "Marketplace seller Impuestos issues"
+          ]
+        },
+        {
+          "title": "Bienes Raíces",
+          "text": "1031 exchanges, depreciation strategies, rental property management, and Bienes Raíces professional status.",
+          "bullets": [
+            "Like-kind exchanges (1031)",
+            "Depreciation optimization",
+            "Rental property Contabilidad"
+          ]
+        },
+        {
+          "title": "Restaurants & Food Servicios",
+          "text": "Tip reporting, labor cost management, food cost Contabilidad, and franchise compliance requirements.",
+          "bullets": [
+            "Tip alUbicaciones and reporting",
+            "Food cost optimization",
+            "Franchise Impuestos compliance"
+          ]
+        },
+        {
+          "title": "Transportation & Logistics",
+          "text": "Heavy vehicle use Impuestos, fuel Impuestos Créditos, per-mile deductions, and DOT compliance requirements.",
+          "bullets": [
+            "HVUT and IFTA reporting",
+            "Mileage deduction optimization",
+            "Equipment depreciation"
+          ]
+        },
+        {
+          "title": "Healthcare & Professional Servicios",
+          "text": "Medical practice management, professional liability, equipment financing, and healthcare-specific deductions.",
+          "bullets": [
+            "Medical equipment depreciation",
+            "Professional liability expenses",
+            "Healthcare compliance"
+          ]
+        },
+        {
+          "title": "Construction & Contracting",
+          "text": "Job costing, percentage-of-completion Contabilidad, equipment depreciation, and prevailing wage compliance.",
+          "bullets": [
+            "Job cost Contabilidad",
+            "Equipment depreciation strategies",
+            "Prevailing wage compliance"
+          ]
+        }
+      ]
+    },
+    "process": {
+      "title": "Our Negocios Contabilidad & Onboarding Process",
+      "description": "From initial Consulta to ongoing Soporte, we make managing your Negocios finances simple and stress-free.",
+      "steps": [
+        {
+          "title": "Initial Consulta",
+          "text": "Comprehensive review of your Negocios structure, current processes, and goals.",
+          "bullets": [
+            "Negocios structure analysis",
+            "Current process evaluation",
+            "Goal identification"
+          ]
+        },
+        {
+          "title": "Custom Solution Design",
+          "text": "Tailored Servicios package, timeline, and budget planning.",
+          "bullets": [
+            "Servicios package customization",
+            "Timeline establishment",
+            "Budget planning"
+          ]
+        },
+        {
+          "title": "Implementation & Setup",
+          "text": "Systems integration, staff training, and documentation.",
+          "bullets": [
+            "System setup and integration",
+            "Staff training",
+            "Process documentation"
+          ]
+        },
+        {
+          "title": "Ongoing Soporte & Monitoring",
+          "text": "Regular reviews, proactive planning, and 24/7 Soporte.",
+          "bullets": [
+            "Regular performance reviews",
+            "Proactive Impuestos planning",
+            "24/7 Soporte access"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "description": "Get answers to common questions about our Negocios and Contabilidad Servicios.",
+      "items": [
+        {
+          "q": "What Negocios structures do you handle?",
+          "a": "We are accountants/CPAs for both Individuals and Negocioses, including sole proprietorships, partnerships, LLCs, S-Corps, and C-Corps."
+        },
+        {
+          "q": "Do you offer Negocios loans?",
+          "a": "Yes, we specialize in helping Negocioses access funding, including Negocios Loans and strategic investment consulting."
+        },
+        {
+          "q": "What is included in 'Negocios Management'?",
+          "a": "This includes corporate filing, start-up consulting, Negocios branding, and strategic planning for your corporation."
+        },
+        {
+          "q": "What Contabilidad software do you Soporte?",
+          "a": "We Soporte all major Contabilidad software and can provide setup and training as part of our Contabilidad Servicios."
+        },
+        {
+          "q": "How do you handle payroll?",
+          "a": "Our Payroll Servicios include withholdings, deposits, quarterly filings, annual reports, and unemployment Impuestoses."
+        },
+        {
+          "q": "Do your Contabilidad Servicios include Impuestos filing?",
+          "a": "Yes, our CPA and Contabilidad Servicios include corporate Impuestos filing, quarterly Impuestoses, and Impuestos agent prep for all states."
+        },
+        {
+          "q": "Do you offer bilingual Servicios?",
+          "a": "Sí, (Hablamos Español) full Servicios are available in Español."
+        },
+        {
+          "q": "What are your Contabilidad fees?",
+          "a": "Our fees are transparent. We offer 40% off new Contabilidad contracts (excluding app fee). Contact us for a free quote."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Ready to Grow Your Negocios?",
+      "description": "Let us handle your Contabilidad, funding, and payroll while you focus on what you do best.",
+      "features": [
+        {
+          "title": "Expert Consulta",
+          "text": "An expert review of your Negocios's Financiero health to identify opportunities."
+        },
+        {
+          "title": "40% Off Contracts",
+          "text": "New Contabilidad contracts receive 40% off Servicios."
+        },
+        {
+          "title": "Expert Funding",
+          "text": "Access to Negocios Loans & funding strategies to fuel your growth."
+        }
+      ],
+      "buttons": {
+        "primary": "Reservar Consulta",
+        "secondary": "Llamar Now: (470) 288-3365"
+      },
+      "badges": [
+        "Hablamos Español",
+        "VIP Military Servicios",
+        "Licensed & Insured"
+      ]
+    }
+  },
+  "locations_page": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "current": "Ubicaciones"
+    },
+    "hero": {
+      "title": "Nuestras",
+      "highlight": "Ubicaciones",
+      "description": "Atendemos a clientes en Georgia, Alabama y Texas con oficinas convenientes y servicios financieros integrales.",
+      "stats": [
+        {
+          "value": "50",
+          "label": "Estados"
+        },
+        {
+          "value": "6",
+          "label": "Oficinas principales"
+        },
+        {
+          "value": "17+",
+          "label": "Años de servicio"
+        }
+      ]
+    },
+    "map": {
+      "title": "Encuentre su oficina más cercana",
+      "description": "Haga clic en cualquier marcador para ver información detallada de la oficina, datos de contacto y cómo llegar.",
+      "filters": [
+        "Oficinas en Georgia",
+        "Oficinas en Alabama",
+        "Oficinas en Texas"
+      ],
+      "legend": {
+        "title": "Leyenda",
+        "main": "Oficinas principales",
+        "partners": "Ubicaciones de socios"
+      },
+      "overlayTitle": "Mapa interactivo",
+      "overlayText": "Haga clic en los marcadores para ver detalles de la oficina, horarios, servicios y obtener indicaciones.",
+      "markers": [
+        "Snellville, GA",
+        "Mobile, AL",
+        "Fort Worth, TX"
+      ]
+    },
+    "offices": {
+      "title": "Ubicaciones de oficinas y detalles",
+      "description": "Cada una de nuestras oficinas ofrece una gama completa de servicios con experiencia local y atención personalizada.",
+      "items": [
+        {
+          "name": "Snellville, GA (Oficina corporativa)",
+          "area": "Gerente de Operaciones: T BRANDY J.",
+          "address": [
+            "2245 Wisteria Dr. Suite 214",
+            "Snellville, GA 30078"
+          ],
+          "phone": "470.288.3365 (Oficina corporativa)",
+          "email": "tbrandy@jbnetworkingsystems.com",
+          "hours": [
+            "Lunes - Jueves: 8:00am - 5:00pm",
+            "Viernes: 8:00am - 4:00pm",
+            "Sábado: 8:00am - 2:00pm (Solo con cita)",
+            "Domingo: Cerrado"
+          ],
+          "specialties": [
+            "Sede corporativa",
+            "Agente/Preparación de impuestos",
+            "Contabilidad/CPA",
+            "Hablamos Español"
+          ]
+        },
+        {
+          "name": "Mobile, AL (Oficina regional)",
+          "area": "Gerente Ejecutivo: T Brandy Johnson",
+          "address": [
+            "11 WATER STREET SUITE 10290",
+            "MOBILE, AL 36602"
+          ],
+          "phone": "251.220.7795 (Oficina)",
+          "email": "info@jbnetworkingsystems.com",
+          "hours": [
+            "Lunes - Jueves: 8:00am - 5:00pm",
+            "Viernes: 8:00am - 4:00pm",
+            "Sábado: 8:00am - 2:00pm (Solo con cita)",
+            "Domingo: Cerrado"
+          ],
+          "specialties": [
+            "Gestión regional",
+            "Servicios financieros",
+            "Reparación de crédito",
+            "Servicios empresariales"
+          ]
+        },
+        {
+          "name": "Fort Worth, TX (Oficina distrital)",
+          "area": "Gerente de Operaciones: David Sutton",
+          "address": [
+            "600 W 6TH STREET SUITE 400",
+            "FORT WORTH, TX 76102"
+          ],
+          "phone": "469.450.0511 (Oficina)",
+          "email": "info@jbnetworkingsystems.com",
+          "hours": [
+            "Lunes - Jueves: 8:00am - 5:00pm",
+            "Viernes: 8:00am - 4:00pm",
+            "Sábado: 8:00am - 2:00pm (Solo con cita)",
+            "Domingo: Cerrado"
+          ],
+          "specialties": [
+            "Operaciones de distrito",
+            "Crédito empresarial",
+            "Oportunidades de franquicia",
+            "Administración de propiedades"
+          ]
+        }
+      ],
+      "buttons": {
+        "directions": "Cómo llegar",
+        "book": "Reservar visita"
+      }
+    },
+    "additional": {
+      "title": "Empresas asociadas y oficinas satélite",
+      "description": "Además de nuestras oficinas principales, trabajamos con socios de confianza para ofrecer una red completa de servicios.",
+      "items": [
+        {
+          "title": "Si'van Impuestos LLC",
+          "subtitle": "Empresa asociada",
+          "text": "Servicios especializados de preparación de impuestos."
+        },
+        {
+          "title": "Money Magnet JB LLC",
+          "subtitle": "Empresa asociada",
+          "text": "Oportunidades de franquicia y desarrollo de marca."
+        },
+        {
+          "title": "On Sole Inventory LLP",
+          "subtitle": "Empresa asociada",
+          "text": "Oportunidades de franquicia y gestión de inventario."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Visítenos hoy",
+      "description": "¿Listo para experimentar la diferencia? Visite cualquiera de nuestras ubicaciones o programe una consulta en su oficina preferida.",
+      "features": [
+        {
+          "title": "Programar cita",
+          "text": "Reserve su consulta con un experto en cualquier oficina. Agenda en línea 24/7."
+        },
+        {
+          "title": "Events",
+          "text": "Ofrecemos citas en oficina y por Zoom para su comodidad."
+        },
+        {
+          "title": "Accessibility",
+          "text": "Todas las oficinas son accesibles y cumplen con ADA."
+        },
+        {
+          "title": "Servicios bilingües",
+          "text": "Hablamos Español: servicios completos en inglés y español."
+        }
+      ],
+      "form": {
+        "title": "Formulario de contacto rápido",
+        "firstName": "Nombre",
+        "lastName": "Apellido",
+        "email": "Correo electrónico",
+        "phone": "Número de teléfono",
+        "preferredOffice": "Oficina preferida",
+        "officeOptions": [
+          "Seleccione una oficina",
+          "Snellville, GA (Corporate)",
+          "Mobile, AL (Regional)",
+          "Fort Worth, TX (District)",
+          "Consulta virtual (Zoom)"
+        ],
+        "services": "Servicios de interés",
+        "serviceOptions": [
+          "Agente/Preparación de impuestos",
+          "Contabilidad/CPA",
+          "Reparación de crédito",
+          "Crédito empresarial",
+          "Servicios financieros / Préstamos",
+          "Seguros",
+          "Administración de propiedades",
+          "Constitución de empresas",
+          "Preparación de documentos",
+          "Oportunidades de franquicia"
+        ],
+        "message": "Mensaje",
+        "messagePlaceholder": "Cuéntenos cómo podemos ayudarle...",
+        "submit": "Enviar mensaje y programar consulta"
+      }
+    },
+    "areas": {
+      "title": "Áreas de servicio y cobertura",
+      "description": "Aunque nuestras oficinas principales están estratégicamente ubicadas, atendemos a clientes en regiones aledañas y más allá.",
+      "states": [
+        {
+          "title": "Cobertura en Georgia",
+          "areasTitle": "Áreas de servicio principales:",
+          "items": [
+            "Snellville",
+            "Gwinnett County",
+            "Área metropolitana de Atlanta",
+            "Zonas aledañas",
+            "Servicios virtuales en todo el estado",
+            "Y más..."
+          ]
+        },
+        {
+          "title": "Cobertura en Alabama",
+          "areasTitle": "Áreas de servicio principales:",
+          "items": [
+            "Mobile",
+            "Mobile County",
+            "Baldwin County",
+            "Zonas aledañas",
+            "Servicios virtuales en todo el estado",
+            "Y más..."
+          ]
+        },
+        {
+          "title": "Cobertura en Texas",
+          "areasTitle": "Áreas de servicio principales:",
+          "items": [
+            "Fort Worth",
+            "Tarrant County",
+            "Área metropolitana de Dallas-Fort Worth",
+            "Zonas aledañas",
+            "Servicios virtuales en todo el estado",
+            "Y más..."
+          ]
+        }
+      ],
+      "remote": {
+        "title": "Servicios remotos disponibles",
+        "text": "Ofrecemos servicios remotos integrales, incluidas consultas virtuales (Zoom), intercambio seguro de archivos y reuniones en línea.",
+        "items": [
+          "Cita por Zoom",
+          "Uso compartido seguro de archivos",
+          "Soporte móvil"
+        ]
+      }
+    },
+    "cta": {
+      "title": "¿Listo para visitar nuestra oficina?",
+      "description": "Experimente el toque personal que nos distingue. Programe su consulta con un experto en la oficina más conveniente.",
+      "buttons": {
+        "primary": "Programar visita a la oficina",
+        "secondary": "Llamar (470) 288-3365"
+      },
+      "badges": [
+        "Hablamos Español",
+        "Servicio VIP Militar",
+        "Garantía de devolución (servicio de crédito)"
+      ]
+    }
+  },
+  "about_page": {
+    "hero": {
+      "title": "Servicios Financieros y de Impuestos Profesionales,",
+      "highlight": "¡Con un Toque Personal!",
+      "description": "Fundada en 2007, JB Networking Systems LLC ofrece soluciones financieras integrales y expertas. Descubra cómo nos convertimos en una red financiera de servicio completo de confianza en tres estados.",
+      "stats": [
+        {
+          "value": "2007",
+          "label": "Fundación"
+        },
+        {
+          "value": "17+",
+          "label": "Años de Excelencia"
+        },
+        {
+          "value": "50",
+          "label": "Estados Atendidos"
+        }
+      ]
+    },
+    "history": {
+      "title": "Acerca de JBNS",
+      "p1": "JB Networking Systems LLC y todas las empresas asociadas fueron fundadas en 2007. Contamos con años de experiencia en inmigración, contabilidad, servicios financieros y preparación de impuestos, tanto para individuos como para negocios.",
+      "p2": "Nuestros servicios de crédito son otra de nuestras especialidades, con garantía de devolución de dinero. Aceleramos la resolución de deudas con el IRS, estados y préstamos estudiantiles como consultores de gestión de incumplimientos y preparación de documentos.",
+      "p3": "Lo que comenzó como un servicio local de preparación de impuestos en Georgia se ha convertido en una red financiera de servicio completo en tres estados, atendiendo a miles de individuos y empresas.",
+      "principlesTitle": "Nuestros Principios Fundacionales",
+      "principles": [
+        "Proteger los activos de cada cliente con dedicación inquebrantable",
+        "Mantener relaciones personales en un mundo cada vez más digital",
+        "Servir a comunidades diversas con experiencia bilingüe (Hablamos Español)",
+        "Honrar a nuestra comunidad militar con servicio VIP y reconocimiento"
+      ],
+      "stats": [
+        {
+          "value": "2,000+",
+          "label": "Clientes Atendidos"
+        },
+        {
+          "value": "98%",
+          "label": "Índice de Satisfacción"
+        },
+        {
+          "value": "$50M+",
+          "label": "Activos Protegidos"
+        },
+        {
+          "value": "24/7",
+          "label": "Soporte Disponible"
+        }
+      ]
+    },
+    "timeline": {
+      "title": "Nuestra Trayectoria a lo Largo de los Años",
+      "description": "De una sola oficina en Georgia a una red financiera en varios estados, así hemos crecido manteniendo nuestros valores.",
+      "items": [
+        {
+          "year": "2007",
+          "title": "Fundación de la Empresa",
+          "text": "Establecida en Georgia con enfoque en preparación de impuestos personales, contabilidad y servicios de inmigración."
+        },
+        {
+          "year": "2010",
+          "title": "Lanzamiento de Servicios Bilingües",
+          "text": "Introdujimos servicios completos en español (Hablamos Español) para nuestra comunidad."
+        },
+        {
+          "year": "2013",
+          "title": "Expansión a Alabama",
+          "text": "Abrimos nuestra primera oficina regional en Mobile, Alabama."
+        },
+        {
+          "year": "2016",
+          "title": "Evolución a Servicio Completo",
+          "text": "Ampliamos a planificación financiera, reparación de crédito (con garantía de devolución) y resolución de deudas."
+        },
+        {
+          "year": "2019",
+          "title": "Entrada al Mercado de Texas",
+          "text": "Establecimos nuestra oficina distrital en Fort Worth, Texas."
+        },
+        {
+          "year": "2022",
+          "title": "Lanzamiento del Programa VIP Militar",
+          "text": "Introdujimos descuentos VIP para militares en servicio activo, retirados y reservistas."
+        },
+        {
+          "year": "2024",
+          "title": "17 Años de Excelencia",
+          "text": "Seguimos creciendo mientras protegemos activos con un toque personal."
+        }
+      ]
+    },
+    "mission": {
+      "title": "Nuestra Misión y Valores",
+      "subtitle": "Todo lo que hacemos está guiado por nuestro compromiso de proteger sus activos mientras brindamos el toque personal que nos distingue.",
+      "mission": {
+        "title": "Alcanzar Metas",
+        "text": "Como su consultor financiero, comienzo documentando sus objetivos y comparándolos con su portafolio actual. Utilizo estrategias probadas para ajustarse a su tolerancia al riesgo y resistir la volatilidad del mercado. Puede contar con recomendaciones imparciales y guía objetiva, basadas en sus necesidades y metas."
+      },
+      "vision": {
+        "title": "Construyendo Futuros Fuertes y Sólidos",
+        "text": "Nos apasiona ayudar a empresas e individuos a diversificar portafolios, gestionar activos, analizar tendencias del mercado y reducir riesgos financieros y fiscales. ¿Nuestro objetivo? Proteger los sueños por los que trabaja y los activos que ha acumulado con esfuerzo."
+      },
+      "valuesTitle": "Nuestros Valores",
+      "values": [
+        {
+          "title": "Confianza e Integridad",
+          "text": "Operamos con total transparencia y honestidad."
+        },
+        {
+          "title": "Toque Personal",
+          "text": "Cada cliente recibe atención personalizada y soluciones a la medida."
+        },
+        {
+          "title": "Excelencia y Experiencia",
+          "text": "Mantenemos los estándares más altos e invertimos en educación."
+        },
+        {
+          "title": "Comunidad y Diversidad",
+          "text": "Celebramos la diversidad y servimos con comprensión cultural (Hablamos Español)."
+        },
+        {
+          "title": "Servicio y Patriotismo",
+          "text": "Honramos a nuestra comunidad militar con reconocimiento y beneficios VIP."
+        }
+      ]
+    },
+    "leadership": {
+      "title": "Conozca a Nuestro Equipo de Liderazgo",
+      "description": "Nuestro experimentado equipo directivo combina décadas de experiencia financiera con un compromiso compartido con el éxito del cliente y el servicio a la comunidad.",
+      "members": [
+        {
+          "name": "T BRANDY J.",
+          "role": "Operation Manager (Snellville, GA)",
+          "bio": "Oversees corporate Oficina operations and client Servicios in Georgia.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg"
+        },
+        {
+          "name": "T Brandy Johnson",
+          "role": "Ejecutivo Manager (Mobile, AL)",
+          "bio": "Manages regional operations and Financiero Servicios for Alabama.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-7.jpg"
+        },
+        {
+          "name": "David Sutton",
+          "role": "Operations Manager (Fort Worth, TX)",
+          "bio": "Leads the district Oficina and client relations in Texas.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-2.jpg"
+        },
+        {
+          "name": "Placeholder Manager 1",
+          "role": "Director of Finance",
+          "bio": "Placeholder bio for additional team member.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg"
+        },
+        {
+          "name": "Placeholder Manager 2",
+          "role": "Director of Servicios",
+          "bio": "Placeholder bio for additional team member.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg"
+        },
+        {
+          "name": "Placeholder Manager 3",
+          "role": "Director of Compliance",
+          "bio": "Placeholder bio for additional team member.",
+          "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-8.jpg"
+        }
+      ],
+      "cta": {
+        "title": "Join Our Growing Team",
+        "text": "We're always looking for passionate Financiero professionals.",
+        "button": "View Career Opportunities"
+      }
+    },
+    "certifications": {
+      "title": "Our Servicios & Expertise",
+      "description": "Our commitment to excellence is reflected in our comprehensive Servicios offerings.",
+      "certsTitle": "Impuestos & Contabilidad",
+      "certs": [
+        {
+          "title": "Accountant/CPA (Indiv/Biz)",
+          "text": "Licensed CPAs for all Negocios and personal needs"
+        },
+        {
+          "title": "Impuestos Agent/Prep (Fed & All States)",
+          "text": "Expert Impuestos preparation for all 50 states and federal returns"
+        },
+        {
+          "title": "Quarterly Impuestoses Prep & File",
+          "text": "Timely filing of all quarterly Impuestos documents"
+        },
+        {
+          "title": "Contabilidad Servicios",
+          "text": "Full-Servicios Contabilidad and Reservarkeeping"
+        }
+      ],
+      "membershipsTitle": "Financiero & Crédito Servicios",
+      "memberships": [
+        {
+          "title": "Crédito Repair (Money-Back Guarantee)",
+          "text": "Proven Crédito repair Servicios with guaranteed results"
+        },
+        {
+          "title": "Negocios Crédito Building",
+          "text": "Establish and grow your Negocios Crédito profile"
+        },
+        {
+          "title": "Crédito Trade Lines (Personal & Negocios)",
+          "text": "Boost your Crédito profile with our tradeline Servicios"
+        },
+        {
+          "title": "Financiero Servicios & Loans",
+          "text": "Access to personal and Negocios loans and Financiero planning"
+        },
+        {
+          "title": "Investments",
+          "text": "Investment strategies and portfolio management"
+        }
+      ],
+      "partnersTitle": "Property & Documentation",
+      "partners": [
+        {
+          "title": "Licensed Seguros Agent",
+          "text": "Life, Accident, Sickness, Casualty, & Property Seguros"
+        },
+        {
+          "title": "Real Property Management",
+          "text": "Full-Servicios management for residential and commercial properties"
+        },
+        {
+          "title": "Document Preparation",
+          "text": "Expert preparation for Financiero, legal, and immigration documents"
+        }
+      ]
+    },
+    "community": {
+      "title": "Discounts, Referrals & VIPs",
+      "description": "We believe in rewarding our clients and honoring those who serve.",
+      "programsTitle": "Referral & Discount Programs",
+      "programs": [
+        "UP TO $70 Instant payout for each Impuestos referral!",
+        "Contabilidad contracts 40% off all Servicios (excluding app fee)",
+        "Active Duty, Retired, & Reservists will always receive VIP Servicios",
+        "Bilingual Soporte: Full Servicios available in Español (Hablamos Español)",
+        "Year-round Soporte: Not just Impuestos season—we’re here when you need us"
+      ],
+      "reportTitle": "Our Commitment",
+      "reportStats": [
+        {
+          "value": "$70",
+          "label": "Per Impuestos Referral"
+        },
+        {
+          "value": "40%",
+          "label": "Contabilidad Discount"
+        },
+        {
+          "value": "VIP",
+          "label": "Military Servicios"
+        },
+        {
+          "value": "100%",
+          "label": "Satisfaction"
+        }
+      ],
+      "charityTitle": "How to Qualify",
+      "charities": [
+        {
+          "title": "Impuestos Referrals",
+          "text": "Refer a new Impuestos client and receive an instant payout up to $70."
+        },
+        {
+          "title": "Contabilidad Contracts",
+          "text": "Sign a new Contabilidad contract to receive 40% off your Servicios."
+        },
+        {
+          "title": "Military VIP Servicios",
+          "text": "Present your military ID (Active, Retired, Reservist) to receive VIP Servicios."
+        }
+      ],
+      "involved": {
+        "title": "Ask About Our Discounts",
+        "text": "Contact us today to Saber Más about our referral programs and VIP discounts.",
+        "button": "Contact Us Now"
+      }
+    },
+    "cta": {
+      "title": "Experience the Personal Touch Difference",
+      "description": "For over 17 years, we've built our reputation on relationships, trust, and genuine care for each client's success.",
+      "features": [
+        {
+          "title": "Personal Relationships",
+          "text": "We know our clients by name, not number"
+        },
+        {
+          "title": "Proven Expertise",
+          "text": "17+ years of safeguarding client assets"
+        },
+        {
+          "title": "Genuine Care",
+          "text": "Your Financiero success is our personal mission"
+        }
+      ],
+      "buttons": {
+        "primary": "Meet with Our Team",
+        "secondary": "Llamar (470) 288-3365"
+      },
+      "badges": [
+        "Hablamos Español",
+        "VIP Military Servicios",
+        "Garantía de Devolución de Dinero"
+      ]
+    }
+  },
+  "consultation": {
+    "hero": {
+      "title": "Contáctenos para una consulta",
+      "subtitle": "Envíenos un mensaje y cuéntenos más sobre sus metas y necesidades financieras. Nos pondremos en contacto pronto para programar su consulta."
+    },
+    "benefits": {
+      "title": "Su primer paso hacia un futuro financiero sólido",
+      "description": "Nuestro proceso de consulta garantiza que entendamos sus necesidades y ofrezcamos las mejores soluciones para su éxito financiero.",
+      "items": {
+        "0": {
+          "title": "Evaluación integral",
+          "text": "Revisaremos su situación financiera actual, metas y retos para crear un plan de acción personalizado."
+        },
+        "1": {
+          "title": "Recomendaciones de expertos",
+          "text": "Reciba asesoría personalizada de nuestros profesionales certificados con más de 17 años de experiencia."
+        },
+        "2": {
+          "title": "Plan de acción claro",
+          "text": "Saldrá con una hoja de ruta paso a paso para lograr sus objetivos y un cronograma de implementación."
+        }
+      }
+    },
+    "form": {
+      "title": "Reserve su consulta",
+      "description": "Complete el formulario y le contactaremos en 24 horas para programar su consulta con un experto en su ubicación preferida.",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo electrónico",
+      "phone": "Número de teléfono",
+      "preferredLocation": "Ubicación preferida",
+      "preferredLanguage": "Idioma preferido",
+      "servicesOfInterest": "Servicios de interés",
+      "preferredDate": "Fecha preferida",
+      "preferredTime": "Hora preferida",
+      "about": "Cuéntenos sus metas y necesidades financieras",
+      "military": "Personal activo, retirado y reservistas siempre reciben servicio VIP. (Marque para aplicar)",
+      "marketingConsent": "Acepto recibir comunicaciones sobre mi consulta y servicios.",
+      "freeConsent": "Reconozco que esta consulta se factura a las tarifas aplicables; pueden aplicar descuentos.",
+      "submit": "Programar mi consulta con un experto",
+      "requiredError": "Complete todos los campos obligatorios.",
+      "serverError": "Algo salió mal. Inténtelo de nuevo más tarde.",
+      "success": "¡Gracias! Su solicitud de consulta ha sido enviada. Nos comunicaremos en 24 horas para confirmar su cita.",
+      "locations": {
+        "0": "Snellville, GA (Corporativa)",
+        "1": "Mobile, AL (Regional)",
+        "2": "Fort Worth, TX (Distrito)",
+        "3": "Consulta virtual (Zoom)"
+      },
+      "languages": {
+        "0": "Inglés",
+        "1": "Español",
+        "2": "Inglés y Español"
+      },
+      "timeSlots": {
+        "0": "Mañana (8:00 AM - 12:00 PM)",
+        "1": "Tarde (12:00 PM - 5:00 PM)",
+        "2": "Sábado (8:00 AM - 2:00 PM) (Solo con cita)"
+      },
+      "services": {
+        "0": "Agente/Preparación de impuestos (Personal o Empresa)",
+        "1": "Servicios de Contabilidad/CPA",
+        "2": "Servicios de nómina",
+        "3": "Reparación de crédito (Garantía de devolución)",
+        "4": "Crédito empresarial / Tradelines",
+        "5": "Servicios financieros / Préstamos",
+        "6": "Seguros de vida / Accidentes / Propiedad",
+        "7": "Administración de propiedades / Arrendamiento",
+        "8": "Constitución de empresas / Gestión",
+        "9": "Preparación de documentos",
+        "10": "Oportunidades de franquicia"
+      }
+    },
+    "sidebar": {
+      "quickContact": {
+        "title": "¿Prefiere llamar o enviar correo?",
+        "callTitle": "Llamar ahora (Oficina)",
+        "phone": "470.288.3365",
+        "callTitleDirect": "Llamar ahora (Directo)",
+        "phoneDirect": "469.450.0511",
+        "hours": "Lun-Jue: 8am-5pm | Vie: 8am-4pm | Sáb: 8am-2pm (Solo con cita)",
+        "emailTitle": "Envíenos un correo",
+        "email": "info@jbnetworkingsystems.com",
+        "sla": "Respondemos dentro de 24 horas",
+        "bilingualTitle": "Soporte bilingüe",
+        "bilingual": "Hablamos Español",
+        "bilingualNote": "Servicios completos disponibles en español"
+      },
+      "faqTitle": "Preguntas frecuentes sobre la consulta",
+      "faq": {
+        "0": {
+          "q": "¿Cuánto dura la consulta?",
+          "a": "Generalmente 45-60 minutos, permitiendo una evaluación completa de sus necesidades."
+        },
+        "1": {
+          "q": "¿Debo pagar por la cita?",
+          "a": "Las consultas se facturan a tarifas aplicables. Ofrecemos opciones de cita en oficina y por Zoom. Pueden aplicar descuentos según cada caso."
+        },
+        "2": {
+          "q": "¿Realmente no hay obligación?",
+          "a": "Así es: no hay obligación de contratar servicios después de su consulta."
+        },
+        "3": {
+          "q": "¿Puedo realizar una consulta virtual?",
+          "a": "¡Sí! Ofrecemos citas por Zoom para su comodidad. Seleccione 'Consulta virtual' en el formulario."
+        },
+        "4": {
+          "q": "¿Cómo funciona la garantía de devolución?",
+          "a": "Nuestra garantía del 100% aplica específicamente a nuestro servicio de crédito."
+        }
+      },
+      "trust": {
+        "title": "Por qué miles confían en nosotros",
+        "items": {
+          "0": {
+            "value": "17+",
+            "label": "Años de experiencia"
+          },
+          "1": {
+            "value": "6",
+            "label": "Sucursales"
+          },
+          "2": {
+            "value": "100%",
+            "label": "Índice de satisfacción"
+          },
+          "3": {
+            "value": "VIP",
+            "label": "Servicio militar"
+          }
+        }
+      }
+    },
+    "offices": {
+      "title": "Elija su ubicación preferida",
+      "description": "Visítenos en cualquiera de nuestras ubicaciones en Georgia, Alabama y Texas.",
+      "items": {
+        "0": {
+          "title": "Snellville, GA (Oficina corporativa)",
+          "area": "Gerente de Operaciones: T BRANDY J.",
+          "address": "2245 Wisteria Dr. Suite 214, Snellville, GA 30078",
+          "phone": "470.288.3365 (Oficina corporativa)",
+          "email": "tbrandy@jbnetworkingsystems.com",
+          "hours": "Lun-Jue: 8am-5pm, Vie: 8am-4pm"
+        },
+        "1": {
+          "title": "Mobile, AL (Oficina regional)",
+          "area": "Gerente Ejecutivo: T Brandy Johnson",
+          "address": "11 WATER STREET SUITE 10290, MOBILE, AL 36602",
+          "phone": "251.220.7795 (Oficina)",
+          "email": "info@jbnetworkingsystems.com",
+          "hours": "Lun-Vie: 9AM-6PM"
+        },
+        "2": {
+          "title": "Fort Worth, TX (Oficina distrital)",
+          "area": "Gerente de Operaciones: David Sutton",
+          "address": "600 W 6TH STREET SUITE 400, FORT WORTH, TX 76102",
+          "phone": "469.450.0511 (Oficina)",
+          "email": "info@jbnetworkingsystems.com",
+          "hours": "Lun-Vie: 9AM-6PM"
+        }
+      }
+    },
+    "services": {
+      "title": "Servicios que trataremos",
+      "description": "Durante su consulta, podemos abordar cualquiera de estos servicios financieros integrales.",
+      "items": {
+        "0": {
+          "title": "Impuestos y contabilidad",
+          "highlight": "",
+          "points": {
+            "0": "Contabilidad/CPA (Personal/Empresas)",
+            "1": "Agente/Preparación de impuestos (Todos los estados)",
+            "2": "Servicios de nómina",
+            "3": "Preparación y presentación trimestral"
+          }
+        },
+        "1": {
+          "title": "Finanzas e inversiones",
+          "highlight": "",
+          "points": {
+            "0": "Servicios financieros",
+            "1": "Planificación de inversiones",
+            "2": "Préstamos personales y empresariales",
+            "3": "Evaluación de riesgo"
+          }
+        },
+        "2": {
+          "title": "Crédito y resolución de deudas",
+          "highlight": "Guaranteed",
+          "points": {
+            "0": "Reparación de crédito (Garantía de devolución)",
+            "2": "Tradelines de crédito",
+            "3": "Resolución de deudas con IRS/Estado",
+            "1_": "Construcción de crédito empresarial"
+          }
+        },
+        "3": {
+          "title": "Servicios para empresas",
+          "highlight": "",
+          "points": {
+            "0": "Constitución de empresas",
+            "1": "Presentaciones corporativas",
+            "2": "Gestión empresarial",
+            "3": "Desarrollo de marca"
+          }
+        },
+        "4": {
+          "title": "Bienes raíces y seguros",
+          "highlight": "",
+          "points": {
+            "0": "Administración de propiedades",
+            "1": "Arrendamiento comercial y residencial",
+            "2": "Agente inmobiliario (socios a nivel nacional)",
+            "3": "Agente de seguros licenciado"
+          }
+        },
+        "5": {
+          "title": "Otros servicios",
+          "highlight": "",
+          "points": {
+            "0": "Preparación de documentos",
+            "1": "Oportunidades de franquicia",
+            "2": "Servicios de notaría",
+            "3": "Servicios de inmigración"
+          }
+        }
+      }
+    }
+  },
+  "legal": {
+    "terms": {
+      "title": "Terms of Servicios",
+      "lastUpdated": "Last updated: Jan 1, 2025",
+      "sections": [
+        {
+          "title": "Introduction",
+          "text": "These Terms govern your use of our website and Servicios."
+        },
+        {
+          "title": "Use of Servicios",
+          "text": "You agree to use our Servicios in compliance with applicable laws."
+        },
+        {
+          "title": "Privacy",
+          "text": "Your use is also governed by our Cookie Policy and privacy practices."
+        },
+        {
+          "title": "Disclaimers",
+          "text": "Content is provided for informational purposes only."
+        },
+        {
+          "title": "Contact",
+          "text": "Questions? Contact us using the details on our site."
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "intro": "This policy explains how we use cookies and how you can manage your preferences.",
+      "essential": {
+        "title": "Essential Cookies",
+        "text": "Strictly necessary for core functionality and security."
+      },
+      "functional": {
+        "title": "Functional Cookies",
+        "text": "Enable additional features and personalization."
+      },
+      "analytics": {
+        "title": "Analytics Cookies",
+        "text": "Help us understand website traffic and usage."
+      },
+      "marketing": {
+        "title": "Marketing Cookies",
+        "text": "Used to deliver personalized ads and measure effectiveness."
+      }
+    }
+  },
+  "cookie_consent": {
+    "title": "Your privacy matters",
+    "message": "We use cookies to enhance your experience, analyze usage, and for marketing. Manage your preferences below.",
+    "policyLabel": "Cookie Policy",
+    "buttons": {
+      "acceptAll": "Accept all",
+      "reject": "Reject non-essential",
+      "manage": "Manage preferences",
+      "save": "Save preferences"
+    },
+    "categories": {
+      "essential": {
+        "title": "Essential",
+        "text": "Required for the website to function."
+      },
+      "functional": {
+        "title": "Functional",
+        "text": "Enhances functionality and personalization."
+      },
+      "analytics": {
+        "title": "Analytics",
+        "text": "Helps us understand site usage and improve."
+      },
+      "marketing": {
+        "title": "Marketing / Sale/Share",
+        "text": "Used for ads and may be considered sale/share under US state privacy laws."
+      }
+    }
   }
 }
-

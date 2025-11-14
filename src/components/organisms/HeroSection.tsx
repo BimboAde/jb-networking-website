@@ -6,11 +6,10 @@ import { Button } from '../atoms/Button';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
 import Image from 'next/image';
 import Link from 'next/link';
-import { COMPANY } from '@/data/constants';
 import { getImageByLocation } from '@/lib/media';
 import { images } from '@/data/images';
 
-export const HeroSection = async ({ dict, lang, bookLink }: { dict: Dict; lang: string; bookLink?: string }) => {
+export const HeroSection = async ({ dict, lang, bookLink, phoneNumber }: { dict: Dict; lang: string; bookLink?: string; phoneNumber?: string }) => {
   const t = getT(dict, 'hero');
   const tCommon = getT(dict, 'common');
   const homeImg = await getImageByLocation('home', 'hero');
@@ -49,7 +48,7 @@ export const HeroSection = async ({ dict, lang, bookLink }: { dict: Dict; lang: 
                 className="px-8 py-4 text-lg font-semibold"
                 icon={<Phone className="w-5 h-5" />}
               >
-              <Link href={`tel:${COMPANY.contact.phone}`}> {tCommon('callNow')}</Link>
+              <Link href={`tel:${phoneNumber}`}> {tCommon('callNow')}</Link>
               </Button>
             </MotionDiv>
 

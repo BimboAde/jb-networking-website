@@ -1,12 +1,11 @@
 import { type Dict, getT } from "@/lib/i18n-server";
 import { Heading } from "../atoms/Heading";
 import { Button } from "../atoms/Button";
-import { COMPANY } from "@/data/constants";
 import Image from "next/image";
 import { images } from "@/data/images";
 import { getImageByLocation } from "@/lib/media";
 
-export const FinancialHero = async ({ dict, bookLink }: { dict: Dict; bookLink: string | undefined }) => {
+export const FinancialHero = async ({ dict, bookLink, phoneNumber }: { dict: Dict; bookLink: string | undefined; phoneNumber?: string }) => {
   const t = getT(dict, "solutions_financial.hero");
   const hero = await getImageByLocation("financial-insurance-planning", "hero");
 
@@ -34,7 +33,7 @@ export const FinancialHero = async ({ dict, bookLink }: { dict: Dict; bookLink: 
               <Button
                 variant="outline"
                 className="px-8 py-4 text-lg font-semibold"
-                href={`tel:${COMPANY.contact.phone}`}
+                href={`tel:${phoneNumber}`}
               >
                 {t("ctaAdvisor")}
               </Button>

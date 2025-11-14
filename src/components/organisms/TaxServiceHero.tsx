@@ -2,13 +2,11 @@ import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import { Button } from '../atoms/Button';
 import Link from 'next/link';
-import { downloads, images } from '@/data/images';
-import { jotformUrls } from '@/data/images';
 import Image from 'next/image';
-import { COMPANY } from '@/data/constants';
+import { images } from '@/data/images';
 import { getImageByLocation } from '@/lib/media';
 
-export const TaxServiceHero = async ({ dict, bookLink }: { dict: Dict; bookLink: string | undefined }) => {
+export const TaxServiceHero = async ({ dict, bookLink, phoneNumber }: { dict: Dict; bookLink: string | undefined; phoneNumber?: string }) => {
   const t = getT(dict, 'solutions_tax.hero');
   const tc = getT(dict, 'solutions_tax.common');
   const hero = await getImageByLocation('tax-client-intake', 'hero');
@@ -28,7 +26,7 @@ export const TaxServiceHero = async ({ dict, bookLink }: { dict: Dict; bookLink:
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="secondary" className="px-8 py-3 font-semibold"> <Link href={bookLink || ''} target="_blank">{tc('scheduleConsultation')}</Link></Button>
               {/* <Button variant="outline" className="px-8 py-3 font-semibold"> <Link href={downloads.taxChecklistDownloadUrl} target="_blank">{tc('callUs')}</Link></Button> */}
-              <Button variant="outline" className="px-8 py-3 font-semibold"> <Link href={`tel:${COMPANY.contact.phone}`}>{tc('callUs')}</Link></Button>
+              <Button variant="outline" className="px-8 py-3 font-semibold"> <Link href={`tel:${phoneNumber}`}>{tc('callUs')}</Link></Button>
             </div>
           </div>
 
