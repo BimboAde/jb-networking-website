@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { supabaseBrowser } from '@/lib/supabase/client';
 import { useConfirm } from '@/components/molecules/ConfirmDialog';
 import { CloudinaryUpload } from '@/components/molecules/CloudinaryUpload';
+import { broadcastCacheBust } from '@/lib/website-info-client';
 
 declare global {
   interface Window {
@@ -45,6 +46,7 @@ export default function ImagesAdminPage() {
       const list = await fetch('/api/v1/images').then((r) => r.json());
       setItems(list.data || []);
       setForm({ page_slug: '', image_location: '', image_url: '', image_alt: '', width: null, height: null });
+      try { broadcastCacheBust(); } catch {}
     } else {
       alert('Save failed');
     }
@@ -57,6 +59,7 @@ export default function ImagesAdminPage() {
     await fetch(`/api/v1/images/${id}`, { method: 'DELETE', headers: { authorization: `Bearer ${token}` } });
     const list = await fetch('/api/v1/images').then((r) => r.json());
     setItems(list.data || []);
+    try { broadcastCacheBust(); } catch {}
   }
 
   return (

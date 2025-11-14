@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getServerSupabase } from '@/lib/supabase/server';
 import { requireAdmin } from '@/lib/auth/requireAdmin';
+import { revalidateTag } from 'next/cache';
 
 type RouteParams = { params: Promise<{ id: string }> };
 
@@ -20,7 +21,8 @@ export async function PATCH(req: NextRequest, { params }: RouteParams) {
   const supabase = getServerSupabase();
   const { data, error } = await supabase.from('images').update(updates).eq('id', id).select('*').single();
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-  return NextResponse.json({ data });
+  try { revalidateTag('images', { expire: 0 }); } catch {}
+  return NextResponse.json({ data, revalidated: true });
 }
 
 export async function DELETE(_req: NextRequest, { params }: RouteParams) {
@@ -30,6 +32,7 @@ export async function DELETE(_req: NextRequest, { params }: RouteParams) {
   const supabase = getServerSupabase();
   const { error } = await supabase.from('images').delete().eq('id', id);
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-  return NextResponse.json({ ok: true });
+  try { revalidateTag('images', { expire: 0 }); } catch {}
+  return NextResponse.json({ ok: true, revalidated: true });
 }
 

@@ -4,10 +4,12 @@ import { useEffect, useState } from 'react';
 import { useConfirm } from '@/components/molecules/ConfirmDialog';
 import { supabaseBrowser } from '@/lib/supabase/client';
 import { useToast } from '@/components/molecules/ToastProvider';
+import { broadcastCacheBust, clearWebsiteInfoCache } from '@/lib/website-info-client';
 
 type WebsiteInfo = {
   id?: string;
   main_phone?: string;
+  fax?: string;
   main_email?: string;
   linkedin?: string;
   x_url?: string;
@@ -51,6 +53,10 @@ export default function WebsiteInfoAdminPage() {
     const j2 = await r2.json();
     setInfo(j2.data || {});
     showToast('Website info saved');
+    try {
+      clearWebsiteInfoCache();
+      broadcastCacheBust();
+    } catch {}
   }
 
   function updateBooking(index: number, field: 'service' | 'url', value: string) {
@@ -78,6 +84,7 @@ export default function WebsiteInfoAdminPage() {
         <h2 className="text-xl font-bold text-brand-green">Website Information</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input className="border rounded p-3" placeholder="Main Phone" value={info.main_phone || ''} onChange={(e) => setInfo({ ...info, main_phone: e.target.value })} />
+          <input className="border rounded p-3" placeholder="Fax Number" value={info.fax || ''} onChange={(e) => setInfo({ ...info, fax: e.target.value })} />
           <input className="border rounded p-3" placeholder="Main Email" value={info.main_email || ''} onChange={(e) => setInfo({ ...info, main_email: e.target.value })} />
           <input className="border rounded p-3" placeholder="LinkedIn URL" value={info.linkedin || ''} onChange={(e) => setInfo({ ...info, linkedin: e.target.value })} />
           <input className="border rounded p-3" placeholder="X (Twitter) URL" value={info.x_url || ''} onChange={(e) => setInfo({ ...info, x_url: e.target.value })} />

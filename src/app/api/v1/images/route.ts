@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getServerSupabase } from '@/lib/supabase/server';
 import { requireAdmin } from '@/lib/auth/requireAdmin';
+import { revalidateTag } from 'next/cache';
 
 type ImageRecord = {
   id?: string;
@@ -35,6 +36,7 @@ export async function POST(req: NextRequest) {
   const supabase = getServerSupabase();
   const { data, error } = await supabase.from('images').upsert(records).select('*');
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-  return NextResponse.json({ data }, { status: 201 });
+  try { revalidateTag('images', { expire: 0 }); } catch {}
+  return NextResponse.json({ data, revalidated: true }, { status: 201 });
 }
 

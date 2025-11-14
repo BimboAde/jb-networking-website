@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { supabaseBrowser } from '@/lib/supabase/client';
 import { useToast } from '@/components/molecules/ToastProvider';
+import { broadcastCacheBust } from '@/lib/website-info-client';
 
 type Location = {
   id?: string;
@@ -41,6 +42,7 @@ export default function LocationsAdminPage() {
       setItems(list.data || []);
       setForm({ slug: '', name: '' } as Location);
       showToast(form.id ? 'Location updated' : 'Location added');
+      try { broadcastCacheBust(); } catch {}
     } else {
       alert('Save failed');
     }
@@ -55,6 +57,7 @@ export default function LocationsAdminPage() {
     const list = await fetch('/api/v1/locations').then((r) => r.json());
     setItems(list.data || []);
     showToast('Location deleted');
+    try { broadcastCacheBust(); } catch {}
   }
 
   return (

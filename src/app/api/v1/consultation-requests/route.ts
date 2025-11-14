@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { requireAdmin } from '@/lib/auth/requireAdmin';
 import { createClient } from '@supabase/supabase-js';
+import { revalidateTag } from 'next/cache';
 
 const SUPABASE_URL = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL || '';
 const SERVICE_ROLE = process.env.SUPABASE_SERVICE_ROLE_KEY || '';
@@ -43,7 +44,8 @@ export async function POST(req: NextRequest) {
       free_consent: !!body.freeConsent,
     });
     if (error) return NextResponse.json({ error: 'Failed to save' }, { status: 500 });
-    return NextResponse.json({ ok: true });
+    try { revalidateTag('consultation-requests', { expire: 0 }); } catch {}
+    return NextResponse.json({ ok: true, revalidated: true });
   } catch {
     return NextResponse.json({ error: 'Server error' }, { status: 500 });
   }

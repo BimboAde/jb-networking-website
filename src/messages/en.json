@@ -3312,6 +3312,7 @@
         "title": "Prefer to Call or Email?",
         "callTitle": "Call Now (Office)",
         "phone": "470.288.3365",
+        "faxTitle": "Fax",
         "callTitleDirect": "Call Now (Direct)",
         "phoneDirect": "469.450.0511",
         "hours": "Mon-Thu: 8am-5pm | Fri: 8am-4pm | Sat: 8am-2pm (Appt Only)",

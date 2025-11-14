@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { getWebsiteInfoFromCache, ensureWebsiteInfoCached, WebsiteInfo } from '@/lib/website-info-client';
-import { Phone, Mail, Clock, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import { Phone, Mail, Clock, Facebook, Twitter, Linkedin, Instagram, Printer } from 'lucide-react';
 
 export function FooterDynamicInfo() {
   const [info, setInfo] = useState<WebsiteInfo | null>(() => {
@@ -30,6 +30,12 @@ export function FooterDynamicInfo() {
           <div className="flex items-center space-x-3">
             <Phone className="text-brand-green w-5 h-5" />
             <a className="text-gray-300 hover:text-white" href={`tel:${String(info.main_phone).replace(/[^\d]/g, '')}`}>{info.main_phone}</a>
+          </div>
+        )}
+        {info.fax && (
+          <div className="flex items-center space-x-3">
+            <Printer className="text-brand-green w-5 h-5" />
+            <span className="text-gray-300">{info.fax}</span>
           </div>
         )}
         {info.main_email && (

@@ -22,7 +22,7 @@ export const ConsultationOfficeLocations = async ({ dict }: { dict: Dict }) => {
     process.env.NEXT_PUBLIC_BASE_URL ||
     (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined);
   const baseUrl = envBase || (host ? `${proto}://${host}` : '');
-  const res = await fetch(`${baseUrl}/api/v1/locations`, { cache: 'no-store' });
+  const res = await fetch(`${baseUrl}/api/v1/locations`, { next: { tags: ['locations'] } });
   const json = await res.json().catch(() => ({ data: [] as ApiLocation[] }));
   const apiLocations: ApiLocation[] = Array.isArray(json?.data) ? json.data : [];
   const offices = apiLocations.slice(0, 6).map((l) => ({

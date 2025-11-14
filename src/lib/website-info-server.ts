@@ -1,8 +1,10 @@
 import 'server-only';
 import { getServerSupabase } from '@/lib/supabase/server';
+import { unstable_cache } from 'next/cache';
 
 export type WebsiteInfoRecord = {
   main_phone?: string | null;
+  fax?: string | null;
   main_email?: string | null;
   linkedin?: string | null;
   x_url?: string | null;
@@ -14,8 +16,8 @@ export type WebsiteInfoRecord = {
   service_booking_links?: Array<{ service: string; url: string }>;
 };
 
-export async function getWebsiteInfoServer(): Promise<WebsiteInfoRecord | null> {
-  try {
+const getWebsiteInfoCached = unstable_cache(
+  async () => {
     const supabase = getServerSupabase();
     const { data, error } = await supabase
       .from('website_info')
@@ -25,6 +27,14 @@ export async function getWebsiteInfoServer(): Promise<WebsiteInfoRecord | null> 
       .single();
     if (error) return null;
     return (data as unknown) as WebsiteInfoRecord;
+  },
+  ['website-info-singleton'],
+  { tags: ['website-info'], revalidate: false }
+);
+
+export async function getWebsiteInfoServer(): Promise<WebsiteInfoRecord | null> {
+  try {
+    return await getWebsiteInfoCached();
   } catch {
     return null;
   }

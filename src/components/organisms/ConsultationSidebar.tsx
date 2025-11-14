@@ -1,13 +1,14 @@
 import { getT, type Dict } from '@/lib/i18n-server';
-import { Heading } from '../atoms/Heading';
-import { FaPhoneAlt, FaEnvelope, FaGlobeAmericas } from 'react-icons/fa';
+import { FaPhoneAlt, FaEnvelope, FaGlobeAmericas, FaFax } from 'react-icons/fa';
+import { getWebsiteInfoServer } from '@/lib/website-info-server';
 
-export const ConsultationSidebar = ({ dict }: { dict: Dict }) => {
+export const ConsultationSidebar = async ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'consultation.sidebar');
   const faq = [0, 1, 2, 3, 4].map((i) => ({
     q: t(`faq.${i}.q`),
     a: t(`faq.${i}.a`),
   }));
+  const info = await getWebsiteInfoServer();
 
   return (
     <div className="space-y-8">
@@ -20,17 +21,28 @@ export const ConsultationSidebar = ({ dict }: { dict: Dict }) => {
             </div>
             <div>
               <h4 className="font-semibold text-brand-green">{t('quickContact.callTitle')}</h4>
-              <p className="text-lg font-bold text-gray-900">{t('quickContact.phone')}</p>
+              <p className="text-lg font-bold text-gray-900">{info?.main_phone || t('quickContact.phone')}</p>
               <p className="text-sm text-gray-600">{t('quickContact.hours')}</p>
             </div>
           </div>
+          {info?.fax && (
+            <div className="flex items-center space-x-4 p-4 bg-brand-gray rounded-lg">
+              <div className="w-12 h-12 bg-brand-green rounded-full text-white flex items-center justify-center">
+                <FaFax className="text-xl" />
+              </div>
+              <div>
+                <h4 className="font-semibold text-brand-green">{t('quickContact.faxTitle')}</h4>
+                <p className="text-lg font-bold text-gray-900">{info.fax}</p>
+              </div>
+            </div>
+          )}
           <div className="flex items-center space-x-4 p-4 bg-brand-gray rounded-lg">
             <div className="w-12 h-12 bg-brand-green rounded-full text-white flex items-center justify-center">
               <FaEnvelope className="text-xl" />
             </div>
             <div>
               <h4 className="font-semibold text-brand-green">{t('quickContact.emailTitle')}</h4>
-              <p className="text-lg font-bold text-gray-900">{t('quickContact.email')}</p>
+              <p className="text-lg font-bold text-gray-900">{info?.main_email || t('quickContact.email')}</p>
               <p className="text-sm text-gray-600">{t('quickContact.sla')}</p>
             </div>
           </div>

@@ -5,6 +5,7 @@ import { supabaseBrowser } from '@/lib/supabase/client';
 import { useConfirm } from '@/components/molecules/ConfirmDialog';
 import { CloudinaryUpload } from '@/components/molecules/CloudinaryUpload';
 import { useToast } from '@/components/molecules/ToastProvider';
+import { broadcastCacheBust } from '@/lib/website-info-client';
 
 type Testimonial = {
   id?: string;
@@ -56,6 +57,7 @@ export default function TestimonialsAdminPage() {
     setForm({ name: '', role: '', text: '', avatar_url: '', order_index: 0 });
     refresh();
     showToast(form.id ? 'Testimonial updated' : 'Testimonial added');
+    try { broadcastCacheBust(); } catch {}
   }
 
   async function remove(id?: string) {
@@ -67,6 +69,7 @@ export default function TestimonialsAdminPage() {
     await fetch(`/api/v1/testimonials/${id}`, { method: 'DELETE', headers: { authorization: `Bearer ${token}` } });
     refresh();
     showToast('Testimonial deleted');
+    try { broadcastCacheBust(); } catch {}
   }
 
   return (

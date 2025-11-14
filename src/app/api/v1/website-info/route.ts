@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getServerSupabase } from '@/lib/supabase/server';
 import { requireAdmin } from '@/lib/auth/requireAdmin';
+import { revalidateTag } from 'next/cache';
 
 export async function GET() {
   const supabase = getServerSupabase();
@@ -21,7 +22,9 @@ export async function PUT(req: NextRequest) {
   const updates = existing?.id ? { ...payload, id: existing.id, updated_at: new Date().toISOString() } : { ...payload };
   const { data, error } = await supabase.from('website_info').upsert(updates).select('*').single();
   if (error) return NextResponse.json({ error: error.message }, { status: 500 });
-  return NextResponse.json({ data });
+  // Invalidate caches tagged for website-info
+  try { revalidateTag('website-info', { expire: 0 }); } catch {}
+  return NextResponse.json({ data, revalidated: true });
 }
 
 

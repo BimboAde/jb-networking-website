@@ -105,6 +105,7 @@ $$;
 create table if not exists public.website_info (
   id uuid primary key default gen_random_uuid(),
   main_phone text,
+  fax text,
   main_email text,
   linkedin text,
   x_url text,

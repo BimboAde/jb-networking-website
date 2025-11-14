@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { supabaseBrowser } from '@/lib/supabase/client';
 import { CloudinaryUpload } from '@/components/molecules/CloudinaryUpload';
 import { useToast } from '@/components/molecules/ToastProvider';
+import { broadcastCacheBust } from '@/lib/website-info-client';
 
 type Member = {
   id?: string;
@@ -44,6 +45,7 @@ export default function TeamAdminPage() {
       setMembers(list.data || []);
       setForm({ name: '', role: '', bio: '', avatar_url: '', order_index: 0 });
       showToast(form.id ? 'Member updated' : 'Member added');
+      try { broadcastCacheBust(); } catch {}
     } else {
       alert('Save failed');
     }
@@ -58,6 +60,7 @@ export default function TeamAdminPage() {
     const list = await fetch('/api/v1/team-members').then((r) => r.json());
     setMembers(list.data || []);
     showToast('Member deleted');
+    try { broadcastCacheBust(); } catch {}
   }
 
   return (
