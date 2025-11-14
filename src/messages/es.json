@@ -3844,5 +3844,49 @@
         "text": "Used for ads and may be considered sale/share under US state privacy laws."
       }
     }
+  },
+  "solutions_individual": {
+    "process": {
+      "title": "Nuestro Proceso en 4 Pasos",
+      "description": "Un camino claro desde la consulta hasta los resultados.",
+      "steps": {
+        "1": {
+          "title": "Consulta Personalizada",
+          "description": "Conocemos sus objetivos y revisamos su situación actual.",
+          "bullets": [
+            "Definir objetivos",
+            "Evaluar documentos",
+            "Trazar próximos pasos"
+          ]
+        },
+        "2": {
+          "title": "Plan y Recepción de Documentos",
+          "description": "Diseñamos su plan y recopilamos documentación de forma segura.",
+          "bullets": [
+            "Plan de acción a medida",
+            "Portal de carga seguro",
+            "Lista de verificación"
+          ]
+        },
+        "3": {
+          "title": "Implementación",
+          "description": "Ejecutamos la estrategia y le mantenemos informado.",
+          "bullets": [
+            "Ejecución directa",
+            "Comunicación proactiva",
+            "Seguimiento del progreso"
+          ]
+        },
+        "4": {
+          "title": "Revisión y Soporte Continuo",
+          "description": "Revisamos resultados y brindamos acompañamiento permanente.",
+          "bullets": [
+            "Reunión de revisión final",
+            "Ajustes cuando sea necesario",
+            "Guía continua"
+          ]
+        }
+      }
+    }
   }
 }

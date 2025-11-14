@@ -1488,8 +1488,8 @@
       }
     },
     "insurance_partner": {
-      "title": "Our Licensed Insurance Partner: Tiffany & Associates LLC",
-      "description": "Through our partnership with Tiffany & Associates LLC, our licensed agents provide access to a complete suite of insurance products to protect every part of your life and business.",
+    "title": "Comprehensive Insurance Solutions From Licensed Agents",
+    "description": "As licensed agents, we provide access to a complete suite of insurance products to protect every part of your life and business.",
       "servicesTitle": "Available Insurance Solutions",
       "servicesList": [
         "Business Insurance",
@@ -3527,6 +3527,50 @@
       "marketing": {
         "title": "Marketing / Sale/Share",
         "text": "Used for ads and may be considered sale/share under US state privacy laws."
+      }
+    }
+  },
+  "solutions_individual": {
+    "process": {
+      "title": "Our Proven 4-Step Process",
+      "description": "A clear path from consultation to results.",
+      "steps": {
+        "1": {
+          "title": "Personalized Consultation",
+          "description": "We learn your goals and review your current situation.",
+          "bullets": [
+            "Understand objectives",
+            "Assess documents",
+            "Outline next steps"
+          ]
+        },
+        "2": {
+          "title": "Plan & Document Intake",
+          "description": "We craft your plan and securely collect required documents.",
+          "bullets": [
+            "Tailored action plan",
+            "Secure upload portal",
+            "Checklist guidance"
+          ]
+        },
+        "3": {
+          "title": "Implementation",
+          "description": "We execute the strategy and keep you updated.",
+          "bullets": [
+            "Hands-on execution",
+            "Proactive communication",
+            "Progress tracking"
+          ]
+        },
+        "4": {
+          "title": "Review & Ongoing Support",
+          "description": "We review outcomes with you and provide continuous support.",
+          "bullets": [
+            "Final review meeting",
+            "Adjustments as needed",
+            "Continued guidance"
+          ]
+        }
       }
     }
   }
