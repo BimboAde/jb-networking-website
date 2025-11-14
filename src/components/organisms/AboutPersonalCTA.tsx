@@ -3,11 +3,16 @@ import { Heading } from '../atoms/Heading';
 import { COMPANY } from '@/data/constants';
 import Link from 'next/link';
 import { FaUserFriends, FaAward, FaHeart } from 'react-icons/fa';
+import { getWebsiteInfoServer } from '@/lib/website-info-server';
 
-export const AboutPersonalCTA = ({ dict, lang, bookLink }: { dict: Dict; lang: string; bookLink?: string }) => {
+export const AboutPersonalCTA = async ({ dict, lang, bookLink }: { dict: Dict; lang: string; bookLink?: string }) => {
   const t = getT(dict, 'about_page.cta');
   const withLang = (path: string) => `/${lang}${path.startsWith('/') ? path : '/' + path}`.replace(/\/+$/, '/');
   const bookHref = bookLink || withLang('/consultation');
+  const websiteInfo = await getWebsiteInfoServer();
+  const phoneNumber = websiteInfo?.main_phone || COMPANY.contact.phone || undefined;
+  const cleaned = phoneNumber ? String(phoneNumber).replace(/[^\d]/g, '') : '';
+  const telHref = phoneNumber ? `tel:${cleaned}` : '#';
   return (
     <section className="py-20 bg-gradient-to-r from-brand-green to-brand-light-green text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -27,7 +32,7 @@ export const AboutPersonalCTA = ({ dict, lang, bookLink }: { dict: Dict; lang: s
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Link href={bookHref} className="bg-white text-brand-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">{t('buttons.primary')}</Link>
-            <Link href={`tel:${String(COMPANY.contact.phone).replace(/[^\d]/g, '')}`} className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-brand-green transition-colors">{`Call ${COMPANY.contact.phone}`}</Link>
+            <Link href={telHref} className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-brand-green transition-colors">{`Call ${phoneNumber ?? ''}`}</Link>
           </div>
           <div className="mt-8 text-center">
             <p className="text-green-100">{t('badges.0')} | {t('badges.1')} | {t('badges.2')}</p>

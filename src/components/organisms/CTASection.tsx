@@ -5,11 +5,15 @@ import { Heading } from '../atoms/Heading';
 import { Button } from '../atoms/Button';
 import { fadeInUp } from '@/lib/animations';
 import { COMPANY } from '@/data/constants';
+import { getWebsiteInfoServer } from '@/lib/website-info-server';
 
-export const CTASection = ({ dict, lang, bookLink }: { dict: Dict; lang: string; bookLink?: string }) => {
+export const CTASection = async ({ dict, lang, bookLink }: { dict: Dict; lang: string; bookLink?: string }) => {
   const t = getT(dict, 'cta');
   const withLang = (path: string) => `/${lang}${path.startsWith('/') ? path : '/' + path}`.replace(/\/+$/, '/');
-  const tel = `tel:${(String(''+COMPANY.contact.phone).replace(/[^\d]/g, ''))}`;
+	const websiteInfo = await getWebsiteInfoServer();
+	const phoneNumber = websiteInfo?.main_phone || COMPANY.contact.phone || undefined;
+	const cleanedPhone = phoneNumber ? String(phoneNumber).replace(/[^\d]/g, '') : '';
+	const tel = phoneNumber ? `tel:${cleanedPhone}` : undefined;
   const bookHref = bookLink || withLang('/consultation');
 
   const features = [
@@ -89,7 +93,7 @@ export const CTASection = ({ dict, lang, bookLink }: { dict: Dict; lang: string;
                 href={tel}
                 icon={<Phone className="w-5 h-5" />}
               >
-                {`Call ${COMPANY.contact.phone}`}
+                {`Call ${phoneNumber}`}
               </Button>
             </MotionDiv>
           </div>
