@@ -54,7 +54,7 @@ export default async function CorporateServicesPage({ params }: PageParams) {
         <CorporateProcessTimeline dict={dict} />
         {/* <StateRequirements dict={dict} /> */}
         {/* <CorporateSuccessStories dict={dict} /> */}
-        <CorporateFAQ dict={dict} />
+        <CorporateFAQ dict={dict} bookingLink={bookLink} />
         <CTASection dict={dict} lang={lang} bookLink={bookLink} />
       </main>
       <Footer dict={dict} lang={lang} />

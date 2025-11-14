@@ -4,7 +4,7 @@ import { FaqItem } from '../molecules/FaqItem';
 import { Button } from '../atoms/Button';
 import { jotformUrls } from '@/data/images';
 
-export const CorporateFAQ = ({ dict }: { dict: Dict }) => {
+export const CorporateFAQ = ({ dict, bookingLink }: { dict: Dict, bookingLink: string | undefined }) => {
   const t = getT(dict, 'solutions_corporate.faq');
   const items = [0,1,2,3,4,5,6,7].map((i) => ({ q: t(`items.${i}.q`), a: t(`items.${i}.a`) }));
   const tStill = getT(dict, 'solutions_corporate.faq.stillQuestions');
@@ -25,7 +25,7 @@ export const CorporateFAQ = ({ dict }: { dict: Dict }) => {
             <Heading level={3} className="mb-4 text-white">{tStill('title')}</Heading>
             <p className="text-xl text-green-100 mb-6">{tStill('text')}</p>
             <div className="flex justify-center text-brand-green">
-            <Button variant="secondary" className="bg-white text-brand-green px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors" href={jotformUrls.businessCorporateServicesJotformUrl }>{tStill('button')}</Button>
+            <Button variant="secondary" className="bg-white text-brand-green px-8 py-3 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors" href={bookingLink || jotformUrls.businessCorporateServicesJotformUrl}>{tStill('button')}</Button>
 
             </div>
           </div>
