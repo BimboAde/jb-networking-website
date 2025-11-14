@@ -1658,7 +1658,7 @@
       "highlight": "Business Credit",
       "description": "Establish and strengthen your business credit profile with our comprehensive credit building services and trade lines. Access better financing, lower interest rates, and enhanced business opportunities.",
       "ctaAssess": "Start Credit Assessment",
-      "ctaGuide": "Free Credit Guide",
+      "ctaGuide": "expert credit guide",
       "stats": [
         { "value": "90%", "label": "Success Rate" },
         { "value": "30-90", "label": "Days Average" },
@@ -1949,7 +1949,7 @@
       "highlight": "Corporate Compliance",
       "description": "Founded in 2007, we have years of experience in accounting, financial services, and tax preparation for individuals and businesses. Let us help you start and manage your business.",
       "ctaStart": "Start Your Business",
-      "ctaGuide": "Free Guide",
+      "ctaGuide": "Call us",
       "card": {
         "title": "Quick Business Setup",
         "items": [
@@ -2696,7 +2696,7 @@
         },
         {
           "q": "What are your accounting fees?",
-          "a": "Our fees are transparent. We offer 40% off new accounting contracts (excluding app fee). Contact us for a free quote."
+          "a": "Our fees are transparent. We offer 40% off new accounting contracts (excluding app fee). Contact us for a quote."
         }
       ]
     },
