@@ -301,7 +301,7 @@
     },
     "buttons": {
       "bookConsultation": "Book Your Expert Consultation",
-      "callNumber": "Call: 470.288.3365"
+      "callNumber": "Call Us "
     },
     "badges": {
       "hablamosEspanol": "Hablamos Español",
@@ -634,7 +634,7 @@
   "solutions_credit": {
     "common": {
       "ctaAnalysis": "Book Consultation",
-      "ctaCall": "Call (470) 288-3365"
+      "ctaCall": "Call Us"
     },
     "hero": {
       "badge": "100% MONEY BACK GUARANTEE",
@@ -2719,7 +2719,7 @@
       ],
       "buttons": {
         "primary": "Book Consultation",
-        "secondary": "Call Now: (470) 288-3365"
+        "secondary": "Call Us"
       },
       "badges": [
         "Hablamos Español",
@@ -2944,7 +2944,7 @@
       "description": "Experience the personal touch that sets us apart. Schedule your Expert Consultation at the office most convenient for you.",
       "buttons": {
         "primary": "Schedule Office Visit",
-        "secondary": "Call (470) 288-3365"
+        "secondary": "Call Us"
       },
       "badges": [
         "Hablamos Español",
@@ -3225,7 +3225,7 @@
       ],
       "buttons": {
         "primary": "Meet with Our Team",
-        "secondary": "Call (470) 288-3365"
+        "secondary": "Call Us"
       },
       "badges": [
         "Hablamos Español",
