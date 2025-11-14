@@ -15,6 +15,12 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Redirect category roots to homepage (language-aware)
+      { source: '/:lang/solutions/individuals', destination: '/:lang', permanent: true },
+      { source: '/:lang/solutions/businesses', destination: '/:lang', permanent: true },
+      // Fallback without language prefix
+      { source: '/solutions/individuals', destination: '/', permanent: true },
+      { source: '/solutions/businesses', destination: '/', permanent: true },
       // // Individuals → new slugs
       // { source: '/:lang/solutions/individuals/tax-accounting', destination: '/:lang/solutions/individuals/tax-client-intake', permanent: true },
       // { source: '/:lang/solutions/individuals/financial-planning', destination: '/:lang/solutions/individuals/financial-insurance-planning', permanent: true },

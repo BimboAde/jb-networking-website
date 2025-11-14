@@ -6,12 +6,15 @@ import { NavigationDropdown } from '../molecules/NavigationDropdown';
 import { LanguageSwitcher } from '../molecules/LanguageSwitcher';
 import { HeaderMobileMenu } from './HeaderMobileMenu';
 import { getImageByLabel } from '@/lib/media';
+import { getWebsiteInfoServer } from '@/lib/website-info-server';
 
 export const Header = async ({ dict, lang }: { dict: Dict; lang: string }) => {
   const t = getT(dict, 'header');
   const tCommon = getT(dict, 'common');
   const logo = await getImageByLabel('logo');
-
+  const websiteInfo = await getWebsiteInfoServer();
+  const generalBooking =
+    websiteInfo?.service_booking_links?.find((s: { service: string; }) => /general/i.test(s.service))?.url || null;
   const withLang = (path: string) => {
     const cleaned = path.startsWith('/') ? path : `/${path}`;
     return `/${lang}${cleaned}`.replace(/\/+$/, '/');
@@ -64,7 +67,7 @@ export const Header = async ({ dict, lang }: { dict: Dict; lang: string }) => {
             <div className="hidden lg:block">
               <LanguageSwitcher />
             </div>
-            <Button variant="primary" href={withLang('/consultation')} className="hidden lg:inline-flex">{tCommon('bookConsultation')}</Button>
+            <Button variant="primary" href={generalBooking || withLang('/consultation')} className="hidden lg:inline-flex">{tCommon('bookConsultation')}</Button>
             <HeaderMobileMenu
               companyName={t('companyName')}
               tagline={t('companyTagline')}

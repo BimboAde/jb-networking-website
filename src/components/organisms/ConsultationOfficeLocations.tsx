@@ -1,6 +1,7 @@
 import { getT, type Dict } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import { FaMapMarkerAlt } from 'react-icons/fa';
+import { headers } from 'next/headers';
 
 type ApiLocation = {
   id?: string;
@@ -14,7 +15,14 @@ type ApiLocation = {
 
 export const ConsultationOfficeLocations = async ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'consultation.offices');
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/api/v1/locations`, { cache: 'no-store' });
+  const hdrs = await headers();
+  const host = hdrs.get('x-forwarded-host') || hdrs.get('host') || '';
+  const proto = hdrs.get('x-forwarded-proto') || (process.env.NODE_ENV === 'production' ? 'https' : 'http');
+  const envBase =
+    process.env.NEXT_PUBLIC_BASE_URL ||
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined);
+  const baseUrl = envBase || (host ? `${proto}://${host}` : '');
+  const res = await fetch(`${baseUrl}/api/v1/locations`, { cache: 'no-store' });
   const json = await res.json().catch(() => ({ data: [] as ApiLocation[] }));
   const apiLocations: ApiLocation[] = Array.isArray(json?.data) ? json.data : [];
   const offices = apiLocations.slice(0, 6).map((l) => ({

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { ReactNode, useEffect, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { supabaseBrowser } from '@/lib/supabase/client';
+import { ToastProvider } from '@/components/molecules/ToastProvider';
 
 export default function AdminLayout({ children }: { children: ReactNode }) {
   const router = useRouter();
@@ -40,7 +41,8 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
   if (!ready && pathname !== '/admin/login') return null;
 
   return (
-    <div className="min-h-screen bg-brand-gray">
+    <ToastProvider>
+      <div className="min-h-screen bg-brand-gray">
       {/* Topbar (mobile) */}
       <header className="lg:hidden sticky top-0 z-40 bg-white border-b">
         <div className="h-14 px-4 flex items-center justify-between">
@@ -130,7 +132,8 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
           </nav>
         </aside>
       </div>
-    </div>
+      </div>
+    </ToastProvider>
   );
 }
 

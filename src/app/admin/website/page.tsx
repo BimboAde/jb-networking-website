@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useConfirm } from '@/components/molecules/ConfirmDialog';
 import { supabaseBrowser } from '@/lib/supabase/client';
+import { useToast } from '@/components/molecules/ToastProvider';
 
 type WebsiteInfo = {
   id?: string;
@@ -21,6 +22,7 @@ type WebsiteInfo = {
 export default function WebsiteInfoAdminPage() {
   const [info, setInfo] = useState<WebsiteInfo>({});
   const { confirm, ConfirmDialog } = useConfirm();
+  const { showToast } = useToast();
 
   useEffect(() => {
     let active = true;
@@ -48,6 +50,7 @@ export default function WebsiteInfoAdminPage() {
     const r2 = await fetch('/api/v1/website-info', { cache: 'no-store' });
     const j2 = await r2.json();
     setInfo(j2.data || {});
+    showToast('Website info saved');
   }
 
   function updateBooking(index: number, field: 'service' | 'url', value: string) {
@@ -59,11 +62,13 @@ export default function WebsiteInfoAdminPage() {
     const arr = Array.isArray(info.service_booking_links) ? [...info.service_booking_links] : [];
     arr.push({ service: '', url: '' });
     setInfo({ ...info, service_booking_links: arr });
+    showToast('Added booking link');
   }
   function removeBooking(index: number) {
     const arr = Array.isArray(info.service_booking_links) ? [...info.service_booking_links] : [];
     arr.splice(index, 1);
     setInfo({ ...info, service_booking_links: arr });
+    showToast('Removed booking link');
   }
 
   return (

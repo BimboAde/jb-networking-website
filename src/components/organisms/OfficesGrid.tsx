@@ -13,6 +13,7 @@ function OfficeCard({
   hours,
   specialties: _specialties,
   buttons,
+  bookLink,
 }: {
   id: string;
   name: string;
@@ -23,6 +24,7 @@ function OfficeCard({
   hours: string[];
   specialties: string[];
   buttons: { directions: string; book: string };
+  bookLink?: string;
 }) {
   return (
     <div
@@ -65,36 +67,13 @@ function OfficeCard({
               <p className="text-gray-600">{email}</p>
             </div>
           </div>
-          <div className="flex items-start space-x-4">
-            <div className="w-10 h-10 bg-brand-green rounded-lg flex items-center justify-center flex-shrink-0 text-white">
-              ⏰
-            </div>
-            <div>
-              <h4 className="font-semibold text-brand-green mb-1">Hours</h4>
-              <div className="text-gray-600 text-sm space-y-1">
-                {hours.map((h, i) => (
-                  <p key={i}>{h}</p>
-                ))}
-              </div>
-            </div>
-          </div>
-          <div className="border-t pt-6">
-            {/* <h4 className="font-semibold text-brand-green mb-3">Specialties</h4> */}
-            {/* <div className="grid grid-cols-2 gap-2 text-sm text-gray-600">
-              {specialties.map((s, i) => (
-                <div key={i} className="flex items-center">
-                  <span className="text-brand-green mr-2">✓</span>
-                  <span>{s}</span>
-                </div>
-              ))}
-            </div> */}
-          </div>
+         
           <div className="flex space-x-3">
             {/* <button className="flex-1 bg-brand-green text-white py-3 rounded-lg font-semibold hover:bg-brand-light-green transition-colors">
               {buttons.directions}
             </button> */}
             <button className="flex-1 border-2 border-brand-green text-brand-green py-3 rounded-lg font-semibold hover:bg-brand-green hover:text-white transition-colors">
-            <Link href="/en/consultation" target="_blank"> {buttons.book} </Link>
+            <Link href={bookLink || '/en/consultation'} target="_blank"> {buttons.book} </Link>
             </button>
           </div>
         </div>
@@ -116,7 +95,7 @@ type ApiLocation = {
   specialties?: string[] | null;
 };
 
-export const OfficesGrid = async ({ dict }: { dict: Dict }) => {
+export const OfficesGrid = async ({ dict, bookLink }: { dict: Dict; bookLink?: string }) => {
   const t = getT(dict, "locations_page.offices");
   let items: Array<{
     id: string;
@@ -185,6 +164,7 @@ export const OfficesGrid = async ({ dict }: { dict: Dict }) => {
                 directions: t("buttons.directions"),
                 book: t("buttons.book"),
               }}
+              bookLink={bookLink}
             />
           ))}
         </div>

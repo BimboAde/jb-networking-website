@@ -10,8 +10,8 @@ export const AdditionalLocations = ({ dict }: { dict: Dict }) => {
           <Heading level={2} className="mb-4 text-brand-green">{t('title')}</Heading>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">{t('description')}</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {[0,1,2,3].map((i) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[0,1,2].map((i) => (
             <div key={i} className="bg-brand-gray rounded-xl p-6 text-center">
               <div className={`w-16 h-16 ${i===0 ? 'bg-brand-gold' : 'bg-brand-gold'} rounded-full mx-auto mb-4`} />
               <h3 className="text-lg font-semibold text-brand-green mb-2 font-poppins">{t(`items.${i}.title`)}</h3>

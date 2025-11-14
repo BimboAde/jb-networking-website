@@ -6,7 +6,7 @@ import { Button } from '../atoms/Button';
 import { fadeInUp, slideInLeft, slideInRight } from '@/lib/animations';
 import Link from 'next/link';
 
-export const WhyChooseUsSection = ({ dict }: { dict: Dict }) => {
+export const WhyChooseUsSection = ({ dict, bookLink }: { dict: Dict; bookLink?: string }) => {
   const t = getT(dict, 'whyChooseUs');
 
   const features = [
@@ -120,7 +120,7 @@ export const WhyChooseUsSection = ({ dict }: { dict: Dict }) => {
               <h4 className="text-xl font-bold mb-4">{t('cta.title')}</h4>
               <p className="mb-6">{t('cta.description')}</p>
               <Button variant="secondary" className="bg-white text-brand-green hover:bg-gray-50">
-              <Link href="/en/consultation"> {t('cta.button')}</Link>
+              <Link href={bookLink || '/en/consultation'}> {t('cta.button')}</Link>
               </Button>
             </div>
           </MotionDiv>

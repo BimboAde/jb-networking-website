@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { supabaseBrowser } from '@/lib/supabase/client';
+import { useToast } from '@/components/molecules/ToastProvider';
 
 type Location = {
   id?: string;
@@ -20,6 +21,7 @@ export default function LocationsAdminPage() {
   const [items, setItems] = useState<Location[]>([]);
   const [form, setForm] = useState<Location>({ slug: '', name: '', area: '', address_line1: '', address_line2: '', phone: '', email: '' });
   const [token, setToken] = useState<string>('');
+  const { showToast } = useToast();
 
   useEffect(() => {
     supabaseBrowser.auth.getSession().then(({ data }) => setToken(data.session?.access_token || ''));
@@ -32,12 +34,13 @@ export default function LocationsAdminPage() {
     const res = await fetch('/api/v1/locations', {
       method: 'POST',
       headers: { 'content-type': 'application/json', authorization: `Bearer ${freshToken}` },
-      body: JSON.stringify({ ...form, hours: [], specialties: [] }),
+      body: JSON.stringify({ ...form, hours: form.hours || [], specialties: form.specialties || [] }),
     });
     if (res.ok) {
       const list = await fetch('/api/v1/locations').then((r) => r.json());
       setItems(list.data || []);
       setForm({ slug: '', name: '' } as Location);
+      showToast(form.id ? 'Location updated' : 'Location added');
     } else {
       alert('Save failed');
     }
@@ -51,6 +54,7 @@ export default function LocationsAdminPage() {
     await fetch(`/api/v1/locations/${id}`, { method: 'DELETE', headers: { authorization: `Bearer ${freshToken}` } });
     const list = await fetch('/api/v1/locations').then((r) => r.json());
     setItems(list.data || []);
+    showToast('Location deleted');
   }
 
   return (
@@ -65,7 +69,18 @@ export default function LocationsAdminPage() {
           <input className="border rounded p-3" placeholder="Address Line 2" value={form.address_line2 || ''} onChange={(e) => setForm({ ...form, address_line2: e.target.value })} />
           <input className="border rounded p-3" placeholder="Phone" value={form.phone || ''} onChange={(e) => setForm({ ...form, phone: e.target.value })} />
           <input className="border rounded p-3" placeholder="Email" value={form.email || ''} onChange={(e) => setForm({ ...form, email: e.target.value })} />
-          <button onClick={save} className="bg-brand-green text-white px-4 py-2 rounded hover:bg-brand-light-green">Save Location</button>
+          <div className="flex gap-3">
+            <button onClick={save} className="bg-brand-green text-white px-4 py-2 rounded hover:bg-brand-light-green">{form.id ? 'Update Location' : 'Save Location'}</button>
+            {form.id ? (
+              <button
+                type="button"
+                onClick={() => setForm({ slug: '', name: '' } as Location)}
+                className="px-4 py-2 rounded border border-gray-300 text-gray-700 hover:bg-gray-50"
+              >
+                Cancel
+              </button>
+            ) : null}
+          </div>
         </div>
       </div>
 
@@ -90,7 +105,15 @@ export default function LocationsAdminPage() {
                   <td className="py-2">{m.phone}</td>
                   <td className="py-2">{m.email}</td>
                   <td className="py-2">
-                    <button onClick={() => remove(m.id)} className="text-red-600 hover:underline">Delete</button>
+                    <div className="flex items-center gap-3">
+                      <button
+                        onClick={() => setForm({ ...m })}
+                        className="text-brand-green hover:underline"
+                      >
+                        Edit
+                      </button>
+                      <button onClick={() => remove(m.id)} className="text-red-600 hover:underline">Delete</button>
+                    </div>
                   </td>
                 </tr>
               ))}

@@ -8,6 +8,7 @@ import { OfficesGrid } from '@/components/organisms/OfficesGrid';
 import { AdditionalLocations } from '@/components/organisms/AdditionalLocations';
 import { ServiceAreas } from '@/components/organisms/ServiceAreas';
 import { CTASection } from '@/components/organisms/CTASection';
+import { getWebsiteInfoServer } from '@/lib/website-info-server';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -23,7 +24,9 @@ export default async function LocationsPage({ params }: PageParams) {
   const { lang } = await params;
   const { jsonLd } = getPageSEO('locations', lang);
   const dict = await getDictionary((lang as SupportedLocale) || 'en');
-
+  const websiteInfo = await getWebsiteInfoServer();
+  const generalBooking =
+    websiteInfo?.service_booking_links?.find((s: { service: string; }) => /general/i.test(s.service))?.url || null;
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd.replace(/<script[^>]*>|<\/script>/g, '') }} />
@@ -32,10 +35,10 @@ export default async function LocationsPage({ params }: PageParams) {
       <main>
         <LocationsHero dict={dict} />
         {/* <LocationsMap dict={dict} /> */}
-        <OfficesGrid dict={dict} />
+        <OfficesGrid dict={dict} bookLink={generalBooking || undefined} />
         <AdditionalLocations dict={dict} />
         {/* <ServiceAreas dict={dict} /> */}
-        <CTASection dict={dict} lang={lang} />
+        <CTASection dict={dict} lang={lang} bookLink={generalBooking || undefined} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>
