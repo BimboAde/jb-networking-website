@@ -10,9 +10,10 @@ type ComplianceCardProps = {
   price?: string;
   period?: string;
   ctaKey?: string;
+  bookingLink?: string | undefined;
 };
 
-export const ComplianceCard = ({ dict, titleKey, textKey, ctaKey }: ComplianceCardProps) => {
+export const ComplianceCard = ({ dict, titleKey, textKey, ctaKey, bookingLink }: ComplianceCardProps) => {
   const t = getT(dict);
   const idxMatch = titleKey.match(/tiles\.(\d+)\.title$/);
   const idx = idxMatch ? parseInt(idxMatch[1], 10) : 0;
@@ -32,7 +33,7 @@ export const ComplianceCard = ({ dict, titleKey, textKey, ctaKey }: ComplianceCa
       )} */}
       {ctaKey && (
         <button className="w-full bg-brand-green text-white py-2 rounded-lg text-sm hover:bg-brand-light-green transition-colors">
-         <Link href={jotformUrls.businessCorporateServicesJotformUrl }>{t(ctaKey)}</Link>
+         <Link href={bookingLink || jotformUrls.businessCorporateServicesJotformUrl}>{t(ctaKey)}</Link>
         </button>
       )}
     </div>

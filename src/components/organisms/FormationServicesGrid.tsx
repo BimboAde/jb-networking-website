@@ -2,7 +2,7 @@ import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import { FormationServiceCard } from '../molecules/FormationServiceCard';
 
-export const FormationServicesGrid = ({ dict }: { dict: Dict }) => {
+export const FormationServicesGrid = ({ dict, bookingLink }: { dict: Dict, bookingLink: string | undefined }) => {
   const t = getT(dict, 'solutions_corporate.formation');
   return (
     <section className="py-20 bg-white">
@@ -13,7 +13,7 @@ export const FormationServicesGrid = ({ dict }: { dict: Dict }) => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[0,1,2,3,4,5].map((i) => (
-            <FormationServiceCard key={i} dict={dict} baseIndex={i} />
+            <FormationServiceCard key={i} dict={dict} baseIndex={i} bookingLink={bookingLink} />
           ))}
         </div>
       </div>

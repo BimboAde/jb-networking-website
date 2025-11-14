@@ -5,7 +5,7 @@ import { FaFileAlt, FaBook, FaSearch } from 'react-icons/fa';
 import Image from 'next/image';
 import { images } from '@/data/images';
 
-export const ComplianceServices = ({ dict }: { dict: Dict }) => {
+export const ComplianceServices = ({ dict, bookingLink }: { dict: Dict, bookingLink: string | undefined }) => {
   const t = getT(dict, 'solutions_corporate.compliance');
   return (
     <section className="py-20 bg-brand-gray">
@@ -51,10 +51,10 @@ export const ComplianceServices = ({ dict }: { dict: Dict }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.0.title'} textKey={'solutions_corporate.compliance.tiles.0.text'} price={t('tiles.0.price')} period={t('tiles.0.period')} ctaKey={'common.contactUs'} />
-          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.1.title'} textKey={'solutions_corporate.compliance.tiles.1.text'} price={t('tiles.1.price')} period={t('tiles.1.period')} ctaKey={'common.contactUs'} />
-          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.2.title'} textKey={'solutions_corporate.compliance.tiles.2.text'} price={t('tiles.2.price')} period={t('tiles.2.period')} ctaKey={'common.contactUs'} />
-          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.3.title'} textKey={'solutions_corporate.compliance.tiles.3.text'} price={t('tiles.3.price')} period={t('tiles.3.period')} ctaKey={'common.contactUs'} />
+          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.0.title'} textKey={'solutions_corporate.compliance.tiles.0.text'} price={t('tiles.0.price')} period={t('tiles.0.period')} ctaKey={'common.contactUs'} bookingLink={bookingLink} />
+          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.1.title'} textKey={'solutions_corporate.compliance.tiles.1.text'} price={t('tiles.1.price')} period={t('tiles.1.period')} ctaKey={'common.contactUs'} bookingLink={bookingLink} />
+          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.2.title'} textKey={'solutions_corporate.compliance.tiles.2.text'} price={t('tiles.2.price')} period={t('tiles.2.period')} ctaKey={'common.contactUs'} bookingLink={bookingLink} />
+          <ComplianceCard dict={dict} titleKey={'solutions_corporate.compliance.tiles.3.title'} textKey={'solutions_corporate.compliance.tiles.3.text'} price={t('tiles.3.price')} period={t('tiles.3.period')} ctaKey={'common.contactUs'} bookingLink={bookingLink} />
         </div>
       </div>
     </section>

@@ -47,7 +47,7 @@ export default async function CreditDebtPage({ params }: PageParams) {
       <Breadcrumb items={crumbs} />
       <main>
         <CreditHero dict={dict} bookLink={bookLink} phoneNumber={phoneNumber || undefined} />
-        <GuaranteeDetails dict={dict} />
+        <GuaranteeDetails dict={dict} bookingLink={bookLink} />
         <CreditServicesGrid dict={dict} />
         <FullWidthBanner
           src={banner?.image_url || images.solutions.creditDebt.fullWidthBannerImage.src}

@@ -6,9 +6,10 @@ import { Button } from '../atoms/Button';
 type FormationServiceCardProps = {
   dict: Dict;
   baseIndex: number; // index in solutions_corporate.formation.cards
+  bookingLink?: string | undefined;
 };
 
-export const FormationServiceCard = ({ dict, baseIndex }: FormationServiceCardProps) => {
+export const FormationServiceCard = ({ dict, baseIndex, bookingLink }: FormationServiceCardProps) => {
   const t = getT(dict);
   const base = `solutions_corporate.formation.cards.${baseIndex}`;
   const iconKey = t(`${base}.icon`) as string;
@@ -45,7 +46,7 @@ export const FormationServiceCard = ({ dict, baseIndex }: FormationServiceCardPr
           <span className="text-sm text-gray-500">{priceLabel}</span>
           <span className="text-2xl font-bold text-brand-green">{price}</span>
         </div> */}
-        <Button variant="primary" className="w-full bg-brand-green text-white py-2 rounded-lg font-medium hover:bg-brand-light-green transition-colors" href={jotformUrls.businessCorporateServicesJotformUrl }>{button}</Button>
+        <Button variant="primary" className="w-full bg-brand-green text-white py-2 rounded-lg font-medium hover:bg-brand-light-green transition-colors" href={bookingLink || jotformUrls.businessCorporateServicesJotformUrl}>{button}</Button>
       </div>
     </div>
   );

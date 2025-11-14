@@ -1,10 +1,9 @@
 import { type Dict, getT } from "@/lib/i18n-server";
 import { Heading } from "../atoms/Heading";
 import { Button } from "../atoms/Button";
-import { jotformUrls } from "@/data/images";
 import { SearchX, CalendarDays, FileCheck2 } from "lucide-react";
 
-export const GuaranteeDetails = ({ dict }: { dict: Dict }) => {
+export const GuaranteeDetails = ({ dict, bookingLink }: { dict: Dict, bookingLink: string | undefined }) => {
   const t = getT(dict, "solutions_credit.guarantee");
   const items = ["noResults", "days", "written"] as const;
   const icons = {
@@ -69,7 +68,7 @@ export const GuaranteeDetails = ({ dict }: { dict: Dict }) => {
             <Button
               variant="secondary"
               className="px-8 py-4 text-lg font-semibold"
-              href={jotformUrls.individualCreditDebtJotformUrl}
+              href={bookingLink}
               target="_blank"
             >
               {t("cta.button")}

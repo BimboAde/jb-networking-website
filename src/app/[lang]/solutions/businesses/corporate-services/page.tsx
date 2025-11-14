@@ -49,8 +49,8 @@ export default async function CorporateServicesPage({ params }: PageParams) {
       <Breadcrumb items={crumbs} />
       <main>
         <CorporateHero dict={dict} bookLink={bookLink} phoneNumber={phoneNumber || undefined} />
-        <FormationServicesGrid dict={dict} />
-        <ComplianceServices dict={dict} />
+        <FormationServicesGrid dict={dict} bookingLink={bookLink} />
+        <ComplianceServices dict={dict} bookingLink={bookLink} />
         <CorporateProcessTimeline dict={dict} />
         {/* <StateRequirements dict={dict} /> */}
         {/* <CorporateSuccessStories dict={dict} /> */}
