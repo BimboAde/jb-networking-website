@@ -5,33 +5,31 @@ import { Heading } from '../atoms/Heading';
 import { LocationCard } from '../molecules/LocationCard';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
 
-export const LocationsSection = ({ dict, consultationHref }: { dict: Dict; consultationHref?: string }) => {
+type ApiLocation = {
+  id?: string;
+  slug: string;
+  name: string;
+  area?: string | null;
+  address_line1?: string | null;
+  address_line2?: string | null;
+  phone?: string | null;
+  email?: string | null;
+};
+
+export const LocationsSection = async ({ dict, consultationHref }: { dict: Dict; consultationHref?: string }) => {
   const t = getT(dict, 'locations');
   const tCommon = getT(dict, 'common');
 
-  const locations = [
-    {
-      title: t('georgia.title'),
-      area: t('georgia.area'),
-      address: t('georgia.address'),
-      phone: t('georgia.phone'),
-      email: t('georgia.email'),
-    },
-    {
-      title: t('alabama.title'),
-      area: t('alabama.area'),
-      address: t('alabama.address'),
-      phone: t('alabama.phone'),
-      email: t('alabama.email'),
-    },
-    {
-      title: t('texas.title'),
-      area: t('texas.area'),
-      address: t('texas.address'),
-      phone: t('texas.phone'),
-      email: t('texas.email'),
-    },
-  ];
+  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || ''}/api/v1/locations`, { cache: 'no-store' });
+  const json = await res.json().catch(() => ({ data: [] as ApiLocation[] }));
+  const apiLocations: ApiLocation[] = Array.isArray(json?.data) ? json.data : [];
+  const locations = apiLocations.map((l) => ({
+    title: l.name,
+    area: l.area || '',
+    address: [l.address_line1, l.address_line2].filter(Boolean).join('\n'),
+    phone: l.phone || '',
+    email: l.email || '',
+  }));
 
   return (
     <section className="py-20 bg-brand-gray">
