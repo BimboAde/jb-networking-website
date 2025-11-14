@@ -55,7 +55,7 @@ export const ServiceCard = ({
           </li>
         ))}
       </ul>
-      <Button href={href} variant="primary" className="text-brand-green font-semibold hover:text-brand-light-green bg-transparent hover:bg-transparent p-0">
+      <Button href={href} variant="secondary" className="text-brand-green font-semibold hover:text-brand-light-green bg-transparent hover:bg-transparent p-0">
         {tCommon('learnMore')} →
       </Button>
     </MotionDiv>

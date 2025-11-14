@@ -78,7 +78,7 @@ export const images = {
           title: "Retail & E-commerce",
           text: "Inventory management, sales tax compliance, multi-state nexus issues, and marketplace seller requirements.",
           image: {
-            src: "https://res.cloudinary.com/djcigvq8x/image/upload/v1762433381/medium-shot-women-holding-smartphone_qxxtjr.jpg",
+            src: "https://res.cloudinary.com/donqfc3hz/image/upload/v1763117984/expertise_retail_e_commerce_edrnca.png",
             alt: "JB Networking Systems Retail & E-commerce Industry Expertise Image",
           },
         },
@@ -86,7 +86,7 @@ export const images = {
           title: "Manufacturing",
           alt: "JB Networking Systems Manufacturing Industry Expertise Image",
           image: {
-            src: "https://res.cloudinary.com/djcigvq8x/image/upload/v1762433381/medium-shot-women-holding-smartphone_qxxtjr.jpg",
+            src: "https://res.cloudinary.com/donqfc3hz/image/upload/v1763117978/expertise_real_estate_jvfzx8.png",
             alt: "JB Networking Systems Manufacturing Industry Expertise Image",
           },
         },
@@ -94,7 +94,7 @@ export const images = {
           title: "Healthcare",
           alt: "JB Networking Systems Healthcare Industry Expertise Image",
           image: {
-            src: "https://res.cloudinary.com/djcigvq8x/image/upload/v1762433381/medium-shot-women-holding-smartphone_qxxtjr.jpg",
+            src: "https://res.cloudinary.com/donqfc3hz/image/upload/v1763117979/expertise_restaurant_l9qaqa.png",
             alt: "JB Networking Systems Healthcare Industry Expertise Image",
           },
         },
@@ -102,7 +102,7 @@ export const images = {
           title: "Education",
           alt: "JB Networking Systems Education Industry Expertise Image",
           image: {
-            src: "https://res.cloudinary.com/djcigvq8x/image/upload/v1762433381/medium-shot-women-holding-smartphone_qxxtjr.jpg",
+            src: "https://res.cloudinary.com/donqfc3hz/image/upload/v1763117978/expertise_logistics_mbf0fy.png",
             alt: "JB Networking Systems Education Industry Expertise Image",
           },
         },
@@ -110,7 +110,7 @@ export const images = {
           title: "Non-Profit",
           alt: "JB Networking Systems Non-Profit Industry Expertise Image",
           image: {
-            src: "https://res.cloudinary.com/djcigvq8x/image/upload/v1762433381/medium-shot-women-holding-smartphone_qxxtjr.jpg",
+            src: "https://res.cloudinary.com/donqfc3hz/image/upload/v1763118244/expertise_health_zdqnpk.png",
             alt: "JB Networking Systems Non-Profit Industry Expertise Image",
           },
         },
@@ -118,18 +118,11 @@ export const images = {
           title: "Government",
           alt: "JB Networking Systems Government Industry Expertise Image",
           image: {
-            src: "https://res.cloudinary.com/djcigvq8x/image/upload/v1762433381/medium-shot-women-holding-smartphone_qxxtjr.jpg",
+            src: "https://res.cloudinary.com/donqfc3hz/image/upload/v1763118245/expertise_constructin_jzcagi.png",
             alt: "JB Networking Systems Government Industry Expertise Image",
           },
-        },
-        {
-          title: "Other",
-          alt: "JB Networking Systems Other Industry Expertise Image",
-          image: {
-            src: "https://res.cloudinary.com/djcigvq8x/image/upload/v1762433381/medium-shot-women-holding-smartphone_qxxtjr.jpg",
-            alt: "JB Networking Systems Other Industry Expertise Image",
-          },
-        },
+        }
+       
       ],
     },
     corporate: {
@@ -167,5 +160,7 @@ export const jotformUrls = {
   businessCorporateServicesJotformUrl:
     "https://form.jotform.com/253529352024111",
   businessExecutiveServicesJotformUrl:
+    "https://form.jotform.com/253529352024111",
+  generalInquiriesJotformUrl:
     "https://form.jotform.com/253529352024111",
 };

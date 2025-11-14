@@ -4,9 +4,10 @@ import { COMPANY } from '@/data/constants';
 import Link from 'next/link';
 import { FaUserFriends, FaAward, FaHeart } from 'react-icons/fa';
 
-export const AboutPersonalCTA = ({ dict, lang }: { dict: Dict; lang: string }) => {
+export const AboutPersonalCTA = ({ dict, lang, bookLink }: { dict: Dict; lang: string; bookLink?: string }) => {
   const t = getT(dict, 'about_page.cta');
   const withLang = (path: string) => `/${lang}${path.startsWith('/') ? path : '/' + path}`.replace(/\/+$/, '/');
+  const bookHref = bookLink || withLang('/consultation');
   return (
     <section className="py-20 bg-gradient-to-r from-brand-green to-brand-light-green text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -25,7 +26,7 @@ export const AboutPersonalCTA = ({ dict, lang }: { dict: Dict; lang: string }) =
             ))}
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Link href={withLang('/consultation')} className="bg-white text-brand-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">{t('buttons.primary')}</Link>
+            <Link href={bookHref} className="bg-white text-brand-green px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-50 transition-colors">{t('buttons.primary')}</Link>
             <Link href={`tel:${String(COMPANY.contact.phone).replace(/[^\d]/g, '')}`} className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-brand-green transition-colors">{`Call ${COMPANY.contact.phone}`}</Link>
           </div>
           <div className="mt-8 text-center">

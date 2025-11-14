@@ -6,11 +6,14 @@ import { FaCheckCircle, FaStar } from 'react-icons/fa';
 import { images } from '@/data/images';
 import { Button } from '../atoms/Button';
 
-export const CommunityImpact = async ({ dict }: { dict: Dict }) => {
+export const CommunityImpact = async ({ dict, lang, bookLink }: { dict: Dict; lang: string; bookLink?: string }) => {
   const t = getT(dict, 'about_page.community');
   const aboutImg = await getImageByLocation('about', 'about-section');
   const discountImg = await getImageByLocation('about', 'discount-section');
   const programs = [0,1,2,3,4].map((i) => t(`programs.${i}`)).filter((v) => typeof v === 'string') as string[];
+  const withLang = (path: string) => `/${lang}${path.startsWith('/') ? path : '/' + path}`.replace(/\/+$/, '/');
+  const bookHref = bookLink || withLang('/consultation');
+  
   return (
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,11 +50,11 @@ export const CommunityImpact = async ({ dict }: { dict: Dict }) => {
                 ))}
               </div>
             </div>
-            {discountImg?.image_url && (
+            {/* {discountImg?.image_url && (
               <div className="h-48 overflow-hidden rounded-xl relative">
                 <Image src={discountImg.image_url} alt={discountImg.image_alt || images.aboutPageImage2.alt || 'Community'} fill className="object-cover" />
               </div>
-            )}
+            )} */}
            
           </div>
          
@@ -59,7 +62,7 @@ export const CommunityImpact = async ({ dict }: { dict: Dict }) => {
         <div className="bg-brand-navy rounded-xl p-6 text-white text-center flex flex-col items-center justify-center">
               <h4 className="text-lg font-bold mb-3">{t('involved.title')}</h4>
               <p className="text-blue-100 mb-4">{t('involved.text')}</p>
-              <Button variant="secondary" className="bg-white text-brand-green px-6 py-2 rounded-lg font-semibold hover:bg-gray-50 transition-colors" href='/en/consultation'>{t('involved.button')}</Button>
+              <Button variant="secondary" className="bg-white text-brand-green px-6 py-2 rounded-lg font-semibold hover:bg-gray-50 transition-colors" href={bookHref}>{t('involved.button')}</Button>
             </div>
       </div>
     </section>

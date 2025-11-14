@@ -2,10 +2,16 @@ import { type Dict, getT } from "@/lib/i18n-server";
 import { Heading } from "../atoms/Heading";
 import { Button } from "../atoms/Button";
 import { jotformUrls } from "@/data/images";
+import { SearchX, CalendarDays, FileCheck2 } from "lucide-react";
 
 export const GuaranteeDetails = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, "solutions_credit.guarantee");
   const items = ["noResults", "days", "written"] as const;
+  const icons = {
+    noResults: SearchX,
+    days: CalendarDays,
+    written: FileCheck2,
+  } as const;
 
   return (
     <section className="py-20 bg-white">
@@ -37,8 +43,13 @@ export const GuaranteeDetails = ({ dict }: { dict: Dict }) => {
               <div
                 className={`w-16 h-16 ${
                   k === "written" ? "bg-brand-navy" : "bg-brand-green"
-                } rounded-full mx-auto mb-6`}
-              />
+                } rounded-full mx-auto mb-6 flex items-center justify-center`}
+              >
+                {(() => {
+                  const Icon = icons[k];
+                  return <Icon className="w-7 h-7 text-white" aria-hidden="true" />;
+                })()}
+              </div>
               <h3 className="text-xl font-bold text-brand-green mb-4 font-poppins">
                 {t(`${k}.title`)}
               </h3>

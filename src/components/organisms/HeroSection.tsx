@@ -10,10 +10,11 @@ import { COMPANY } from '@/data/constants';
 import { getImageByLocation } from '@/lib/media';
 import { images } from '@/data/images';
 
-export const HeroSection = async ({ dict }: { dict: Dict }) => {
+export const HeroSection = async ({ dict, lang, bookLink }: { dict: Dict; lang: string; bookLink?: string }) => {
   const t = getT(dict, 'hero');
   const tCommon = getT(dict, 'common');
   const homeImg = await getImageByLocation('home', 'hero');
+  const bookHref = bookLink || `/${lang}/consultation`;
 
   return (
     <section className="bg-gradient-to-br from-brand-green to-brand-light-green text-white pt-24 lg:pt-0 min-h-[560px] lg:h-[600px] flex items-center pb-6">
@@ -41,7 +42,7 @@ export const HeroSection = async ({ dict }: { dict: Dict }) => {
                 className="px-8 py-4 text-lg font-semibold"
                 icon={<CalendarCheck className="w-5 h-5" />}
               >
-              <Link href="/en/consultation"> {tCommon('scheduleFreeConsultation')}</Link>
+              <Link href={bookHref}> {tCommon('scheduleFreeConsultation')}</Link>
               </Button>
               <Button
                 variant="outline"

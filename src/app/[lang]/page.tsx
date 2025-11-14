@@ -10,6 +10,7 @@ import { CTASection } from '@/components/organisms/CTASection';
 import { Footer } from '@/components/organisms/Footer';
 import { getDictionary, SupportedLocale } from './dictionaries';
 // import { YouTubeTeaser } from '@/components/organisms/YouTubeTeaser';
+import { getWebsiteInfoServer } from '@/lib/website-info-server';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -27,6 +28,9 @@ export default async function HomePage({ params }: PageParams) {
   const { lang } = await params;
   const { jsonLd } = getPageSEO('home', lang);
   const dict = await getDictionary((lang as SupportedLocale) || 'en');
+  const websiteInfo = await getWebsiteInfoServer();
+  const generalBooking =
+    websiteInfo?.service_booking_links?.find((s) => /general/i.test(s.service))?.url || null;
 
   return (
     <>
@@ -38,14 +42,14 @@ export default async function HomePage({ params }: PageParams) {
       />
       <Header dict={dict} lang={lang} />
       <main>
-        <HeroSection dict={dict} />
+        <HeroSection dict={dict} lang={lang} bookLink={generalBooking || undefined} />
         <VideoSection dict={dict} />
         {/* <YouTubeTeaser dict={dict} /> */}
         <ServicesOverview dict={dict} lang={lang} />
         <WhyChooseUsSection dict={dict} />
-        <LocationsSection dict={dict} consultationHref={`/${lang}/consultation`} />
+        <LocationsSection dict={dict} consultationHref={generalBooking || `/${lang}/consultation`} />
         <TestimonialsSection dict={dict} />
-        <CTASection dict={dict} lang={lang} />
+        <CTASection dict={dict} lang={lang} bookLink={generalBooking || `/${lang}/consultation`} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

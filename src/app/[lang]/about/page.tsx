@@ -10,6 +10,7 @@ import { LeadershipTeam } from '@/components/organisms/LeadershipTeam';
 import { CertificationsPartners } from '@/components/organisms/CertificationsPartners';
 import { CommunityImpact } from '@/components/organisms/CommunityImpact';
 import { AboutPersonalCTA } from '@/components/organisms/AboutPersonalCTA';
+import { getWebsiteInfoServer } from '@/lib/website-info-server';
 
 type PageParams = { params: Promise<{ lang: string }> };
 
@@ -23,20 +24,23 @@ export default async function AboutPage({ params }: PageParams) {
   const { lang } = await params;
   const { jsonLd } = getPageSEO('about', lang);
   const dict = await getDictionary((lang as SupportedLocale) || 'en');
+  const websiteInfo = await getWebsiteInfoServer();
+  const generalBooking =
+    websiteInfo?.service_booking_links?.find((s) => /general/i.test(s.service))?.url || null;
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd.replace(/<script[^>]*>|<\/script>/g, '') }} />
       <Header dict={dict} lang={lang} />
       <main>
-        <AboutHero dict={dict} />
+        <AboutHero dict={dict} lang={lang} bookLink={generalBooking || undefined} />
         <CompanyHistory dict={dict} />
         {/* <AboutTimeline dict={dict} /> */}
         <MissionValues dict={dict} />
         <LeadershipTeam dict={dict} />
         <CertificationsPartners dict={dict} />
-        <CommunityImpact dict={dict} />
-        <AboutPersonalCTA dict={dict} lang={lang} />
+        <CommunityImpact dict={dict} lang={lang} bookLink={generalBooking || undefined} />
+        <AboutPersonalCTA dict={dict} lang={lang} bookLink={generalBooking || undefined} />
       </main>
       <Footer dict={dict} lang={lang} />
     </>

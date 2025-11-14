@@ -22,6 +22,7 @@ async function main() {
     { service: 'Credit & Debt', url: jotformUrls.individualCreditDebtJotformUrl },
     { service: 'Executive Services', url: jotformUrls.businessExecutiveServicesJotformUrl },
     { service: 'Corporate Services', url: jotformUrls.businessCorporateServicesJotformUrl },
+    { service: 'General Inquiries', url: jotformUrls.generalInquiriesJotformUrl },
   ].filter((b) => !!b.url);
 
   const payload = {

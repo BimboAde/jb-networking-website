@@ -14,7 +14,7 @@ export const RealEstateHero = async ({ dict, bookLink }: { dict: Dict; bookLink:
   const hero = await getImageByLocation('real-estate-mortgage', 'hero');
 
   return (
-    <section className="bg-gradient-to-br from-brand-green to-brand-light-green text-white pt-24 lg:pt-16 pb-16 lg:pb-0 lg:h-[500px] flex items-center">
+    <section className="bg-gradient-to-br from-brand-green to-brand-light-green text-white pt-12 lg:pt-8 pb-16 lg:pb-0 lg:h-[500px] flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">

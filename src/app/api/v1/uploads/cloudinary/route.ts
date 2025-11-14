@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 import { NextRequest, NextResponse } from 'next/server';
 import crypto from 'node:crypto';
 
@@ -10,7 +12,7 @@ export async function POST(req: NextRequest) {
     const apiSecret = process.env.CLOUDINARY_API_SECRET;
     const folder = (body?.folder as string) || process.env.CLOUDINARY_UPLOAD_FOLDER || 'jbns';
     if (!cloudName || !apiKey || !apiSecret) {
-      return NextResponse.json({ error: 'Cloudinary env not configured' }, { status: 500 });
+      return NextResponse.json({ error: 'Cloudinary env not configured' }, { status: 500, headers: { 'Cache-Control': 'no-store, max-age=0' } });
     }
 
     // Compose params to sign. Must be sorted alphabetically by key.
@@ -30,15 +32,18 @@ export async function POST(req: NextRequest) {
 
     const signature = crypto.createHash('sha1').update(toSign).digest('hex');
 
-    return NextResponse.json({
-      cloudName,
-      apiKey,
-      timestamp,
-      folder,
-      signature,
-    });
+    return NextResponse.json(
+      {
+        cloudName,
+        apiKey,
+        timestamp,
+        folder,
+        signature,
+      },
+      { headers: { 'Cache-Control': 'no-store, max-age=0' } }
+    );
   } catch (e) {
-    return NextResponse.json({ error: 'Signature error' }, { status: 500 });
+    return NextResponse.json({ error: 'Signature error' }, { status: 500, headers: { 'Cache-Control': 'no-store, max-age=0' } });
   }
 }
 

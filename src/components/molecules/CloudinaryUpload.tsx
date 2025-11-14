@@ -39,8 +39,10 @@ export function CloudinaryUpload({ value, onChange, folder = 'jbns/uploads', lab
       await ensureScript();
       const sigRes = await fetch('/api/v1/uploads/cloudinary', {
         method: 'POST',
-        headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ folder }),
+        headers: { 'content-type': 'application/json', 'cache-control': 'no-store' },
+        // ensure no cache across proxies
+        cache: 'no-store',
+        body: JSON.stringify({ folder, nonce: Date.now() }),
       });
       if (!sigRes.ok) return;
       const { cloudName, apiKey, signature, timestamp } = await sigRes.json();

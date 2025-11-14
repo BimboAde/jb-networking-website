@@ -10,6 +10,10 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const [ready, setReady] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const handleLogout = async () => {
+    await supabaseBrowser.auth.signOut();
+    router.replace('/admin/login');
+  };
 
   useEffect(() => {
     // Allow unauthenticated access to the login page
@@ -66,6 +70,12 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
             <Link className="hover:underline" href="/admin/testimonials">Testimonials</Link>
             <Link className="hover:underline" href="/admin/website">Website Info</Link>
             <Link className="hover:underline" href="/admin/consultations">Consultation Requests</Link>
+            <button
+              onClick={handleLogout}
+              className="mt-4 text-left bg-white/10 hover:bg-white/20 text-white rounded px-3 py-2"
+            >
+              Logout
+            </button>
           </nav>
         </aside>
 
@@ -108,6 +118,15 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
             <Link className="hover:underline" href="/admin/testimonials" onClick={() => setMenuOpen(false)}>Testimonials</Link>
             <Link className="hover:underline" href="/admin/website" onClick={() => setMenuOpen(false)}>Website Info</Link>
             <Link className="hover:underline" href="/admin/consultations" onClick={() => setMenuOpen(false)}>Consultation Requests</Link>
+            <button
+              onClick={async () => {
+                setMenuOpen(false);
+                await handleLogout();
+              }}
+              className="mt-2 text-left bg-white/10 hover:bg-white/20 text-white rounded px-3 py-2"
+            >
+              Logout
+            </button>
           </nav>
         </aside>
       </div>

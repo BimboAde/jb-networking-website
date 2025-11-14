@@ -2,6 +2,8 @@ import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import { ComplianceCard } from '../molecules/ComplianceCard';
 import { FaFileAlt, FaBook, FaSearch } from 'react-icons/fa';
+import Image from 'next/image';
+import { images } from '@/data/images';
 
 export const ComplianceServices = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'solutions_corporate.compliance');
@@ -34,20 +36,17 @@ export const ComplianceServices = ({ dict }: { dict: Dict }) => {
               })}
             </div>
           </div>
-          <div className="bg-white rounded-2xl p-8 shadow-xl">
-            <Heading level={4} className="text-brand-green mb-6">{t('checklist.title')}</Heading>
-            <div className="space-y-4">
-              {[0,1,2,3].map((i) => (
-                <div key={i} className={`flex items-center justify-between p-4 rounded-lg ${i===2 ? 'bg-yellow-50 border border-yellow-200' : 'bg-brand-gray'}`}>
-                  <div className="flex items-center space-x-3">
-                    <span className={`text-xl ${i===2 ? 'text-yellow-600' : 'text-brand-green'}`}>✓</span>
-                    <span className="font-medium text-gray-700">{t(`checklist.rows.${i}.label`)}</span>
-                  </div>
-                  <span className={`text-sm font-medium ${i===2 ? 'text-yellow-600' : 'text-brand-green'}`}>{t(`checklist.rows.${i}.status`)}</span>
-                </div>
-              ))}
+          <div className="bg-white rounded-2xl p-4 sm:p-6 lg:p-8 shadow-xl">
+            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-xl">
+              <Image
+                src={images.solutions.corporate.fullWidthBannerImage.src}
+                alt={images.solutions.corporate.fullWidthBannerImage.alt}
+                fill
+                sizes="(min-width: 1024px) 560px, 100vw"
+                className="object-cover"
+                priority={false}
+              />
             </div>
-            <button className="w-full bg-brand-green text-white py-3 rounded-lg font-semibold mt-6 hover:bg-brand-light-green transition-colors">{t('checklist.cta')}</button>
           </div>
         </div>
 

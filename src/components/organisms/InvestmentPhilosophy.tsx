@@ -2,9 +2,11 @@ import { type Dict, getT } from '@/lib/i18n-server';
 import { Heading } from '../atoms/Heading';
 import Image from 'next/image';
 import { images } from '@/data/images';
+import { Target, Layers, RefreshCw, ShieldCheck } from 'lucide-react';
 
 export const InvestmentPhilosophy = ({ dict }: { dict: Dict }) => {
   const t = getT(dict, 'solutions_financial.philosophy');
+  const IconComponents = [Target, Layers, RefreshCw, ShieldCheck];
 
   return (
     <section className="py-20 bg-white">
@@ -14,15 +16,20 @@ export const InvestmentPhilosophy = ({ dict }: { dict: Dict }) => {
             <Heading level={2} className="mb-6 text-brand-green">{t('title')}</Heading>
             <p className="text-xl text-gray-600 mb-8">{t('description')}</p>
             <div className="space-y-6">
-              {[0,1,2,3].map((i) => (
-                <div key={i} className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-brand-green rounded-lg flex items-center justify-center flex-shrink-0" />
-                  <div>
-                    <h4 className="text-lg font-semibold text-brand-green mb-2">{t(`items.${i}.title`)}</h4>
-                    <p className="text-gray-600">{t(`items.${i}.text`)}</p>
+              {[0,1,2,3].map((i) => {
+                const Icon = IconComponents[i];
+                return (
+                  <div key={i} className="flex items-start space-x-4">
+                    <div className="w-12 h-12 bg-brand-green rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-6 h-6 text-white" aria-hidden="true" />
+                    </div>
+                    <div>
+                      <h4 className="text-lg font-semibold text-brand-green mb-2">{t(`items.${i}.title`)}</h4>
+                      <p className="text-gray-600">{t(`items.${i}.text`)}</p>
+                    </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
           <div className="bg-brand-gray rounded-2xl p-4 sm:p-6 lg:p-8">
