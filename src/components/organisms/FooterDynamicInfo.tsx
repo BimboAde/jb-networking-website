@@ -28,25 +28,25 @@ export function FooterDynamicInfo() {
       <div className="space-y-2">
         {info.main_phone && (
           <div className="flex items-center space-x-3">
-            <Phone className="text-brand-green w-5 h-5" />
+            <Phone className="text-white w-5 h-5" />
             <a className="text-gray-300 hover:text-white" href={`tel:${String(info.main_phone).replace(/[^\d]/g, '')}`}>{info.main_phone}</a>
           </div>
         )}
         {info.fax && (
           <div className="flex items-center space-x-3">
-            <Printer className="text-brand-green w-5 h-5" />
+            <Printer className="text-white w-5 h-5" />
             <span className="text-gray-300">{info.fax}</span>
           </div>
         )}
         {info.main_email && (
           <div className="flex items-center space-x-3">
-            <Mail className="text-brand-green w-5 h-5" />
+            <Mail className="text-white w-5 h-5" />
             <a className="text-gray-300 hover:text-white" href={`mailto:${info.main_email}`}>{info.main_email}</a>
           </div>
         )}
         {(info.weekday_hours || info.weekend_hours) && (
           <div className="flex items-start space-x-3">
-            <Clock className="text-brand-green w-5 h-5 mt-0.5" />
+            <Clock className="text-white w-5 h-5 mt-0.5" />
             <div className="text-gray-300">
               {info.weekday_hours && <div>{info.weekday_hours}</div>}
               {info.weekend_hours && <div>{info.weekend_hours}</div>}
