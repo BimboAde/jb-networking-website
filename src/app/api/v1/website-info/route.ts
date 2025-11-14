@@ -1,24 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { getServerSupabase } from '@/lib/supabase/server';
 import { requireAdmin } from '@/lib/auth/requireAdmin';
 import { revalidateTag } from 'next/cache';
-import { createClient as createSupabaseClient } from '@supabase/supabase-js';
 
 export async function GET() {
-  const supabaseUrl = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!supabaseUrl || !serviceKey) {
-    return NextResponse.json({ error: 'Server misconfiguration: missing Supabase env' }, { status: 500 });
-  }
-  const supabase = createSupabaseClient(supabaseUrl, serviceKey, {
-    auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
-    db: { schema: 'public' },
-  });
-  const { data, error } = await supabase
-    .from('website_info')
-    .select('*')
-    .order('updated_at', { ascending: false })
-    .limit(1)
-    .maybeSingle();
+  const supabase = getServerSupabase();
+  const { data, error } = await supabase.from('website_info').select('*').order('updated_at', { ascending: false }).limit(1).maybeSingle();
   if (error) {
     console.error('website-info GET: error', { message: error.message, code: error.code });
     return NextResponse.json({ error: error.message }, { status: 500 });
@@ -47,15 +34,7 @@ export async function PUT(req: NextRequest) {
     console.info('website-info PUT: fax typeof/value', typeof faxVal, faxVal);
   } catch {}
 
-  const supabaseUrl = process.env.SUPABASE_URL || process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!supabaseUrl || !serviceKey) {
-    return NextResponse.json({ error: 'Server misconfiguration: missing Supabase env' }, { status: 500 });
-  }
-  const supabase = createSupabaseClient(supabaseUrl, serviceKey, {
-    auth: { persistSession: false, autoRefreshToken: false, detectSessionInUrl: false },
-    db: { schema: 'public' },
-  });
+  const supabase = getServerSupabase();
   // Upsert singleton (by first row if exists)
   const { data: existing, error: existingErr } = await supabase.from('website_info').select('id').limit(1).maybeSingle();
   if (existingErr) {
@@ -99,6 +78,18 @@ export async function PUT(req: NextRequest) {
       hint: (error as any)?.hint,
       code: error.code,
     });
+    if (error.code === 'PGRST204') {
+      // Helpful hint to update the exposed api view or refresh PostgREST cache
+      return NextResponse.json(
+        {
+          error: 'Schema out of date for api.website_info – please refresh PostgREST schema or recreate the api view to include the fax column.',
+          hint:
+            "Run in Supabase SQL editor:\nCREATE OR REPLACE VIEW api.website_info AS SELECT * FROM public.website_info;\n-- then refresh PostgREST schema (reload)",
+          code: error.code,
+        },
+        { status: 500 }
+      );
+    }
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
   // Invalidate caches tagged for website-info
