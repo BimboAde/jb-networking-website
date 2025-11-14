@@ -7,7 +7,8 @@ const dictionaries = {
 
 export type SupportedLocale = 'en' | 'es';
 
-export const getDictionary = async (locale: SupportedLocale) =>
-  dictionaries[locale]();
-
+export const getDictionary = async (locale: SupportedLocale | string) => {
+  const safeLocale: SupportedLocale = locale === 'es' ? 'es' : 'en';
+  return dictionaries[safeLocale]();
+};
 
