@@ -24,7 +24,7 @@
       "personalTaxAccounting": "Tax & Client Intake",
       "financialInvestmentPlanning": "Financial & Insurance Planning",
       "creditDebtResolution": "Credit & Debt Resolutions",
-      "personalRealEstateInsurance": "Real Estate & Mortgage Services"
+      "personalRealEstateInsurance": "Real Estate Services"
     },
     "businessServices": {
       "businessTaxAccounting": "Business & Accountant Services",
@@ -110,10 +110,10 @@
       }
     },
     "realEstateMortgage": {
-      "title": "Real Estate & Mortgage Services",
+      "title": "Real Estate Services",
       "description": "In partnership with licensed realtors and lenders for purchases, refinancing, and investment properties.",
       "features": {
-        "0": "Mortgage financing consultation",
+        "0": "Real Estate financing consultation",
         "1": "Investment property guidance",
         "2": "Buy/Sell and leasing support",
         "3": "Property risk & coverage review"
@@ -933,26 +933,26 @@
     "breadcrumb": {
       "home": "Home",
       "individuals": "Solutions for Individuals",
-      "current": "Real Estate & Mortgage"
+      "current": "Real Estate Services"
     },
     "common": {
-      "ctaConsultation": "Schedule Consultation with our Realtor",
-      "ctaCall": "Get Pre-qualified"
+      "ctaConsultation": "Schedule Real Estate Consultation",
+      "ctaCall": "Call Our Agents"
     },
     "hero": {
-      "title": "Personal Real Estate & Mortgage Solutions",
-      "highlight": "Mortgage Solutions",
-      "description": "Comprehensive real estate consulting, property management, and mortgage financing in partnership with our expert realtor team.",
+      "title": "Personal Real Estate & Property Solutions",
+      "highlight": "Property Solutions",
+      "description": "Comprehensive real estate consulting, property management, and investment services in partnership with our expert nationwide realtor team.",
       "tiles": [
         { "title": "Real Estate", "subtitle": "Agent Services" },
-        { "title": "Mortgage", "subtitle": "Financing" },
+        { "title": "Investments", "subtitle": "Portfolio Growth" },
         { "title": "Property Mgmt", "subtitle": "Full-Service" },
         { "title": "Leasing", "subtitle": "Commercial & Residential" }
       ]
     },
     "overview": {
-      "title": "Complete Real Estate & Mortgage Services",
-      "description": "From property investment guidance to securing financing, we protect your assets and help you make informed decisions.",
+      "title": "Complete Real Estate Services",
+      "description": "From property investment guidance to full-service leasing and management, we protect your assets and help you make informed decisions.",
       "realEstate": {
         "title": "Real Estate Services",
         "subtitle": "In partnership with our nationwide partners",
@@ -983,47 +983,47 @@
         ]
       },
       "mortgage": {
-        "title": "Mortgage & Financing",
-        "subtitle": "Financing for your home or investment",
+        "title": "Investment & Analysis",
+        "subtitle": "Strategic portfolio analysis",
         "features": [
           {
-            "title": "Pre-qualification",
-            "subtitle": "Start your journey"
+            "title": "Market Analysis",
+            "subtitle": "Find opportunities"
           },
           {
-            "title": "Purchase Loans",
-            "subtitle": "Home or investment"
+            "title": "ROI Calculation",
+            "subtitle": "Know your returns"
           },
           {
-            "title": "Refinancing",
-            "subtitle": "Lower your rate"
+            "title": "Portfolio Strategy",
+            "subtitle": "Build your portfolio"
           },
           {
             "title": "Document Prep",
-            "subtitle": "For Lenders"
+            "subtitle": "For all transactions"
           }
         ],
         "bullets": [
-          "Mortgage Financing Partnership",
-          "Investment Property Loans",
-          "Refinancing Options",
-          "Document Preparation for Lenders"
+          "Investment Portfolio Strategy",
+          "Cash Flow Analysis",
+          "1031 Exchange Guidance",
+          "Document Preparation"
         ]
       },
       "insurance": {
-        "title": "Mortgage & Financing",
-        "subtitle": "Financing for your home or investment",
+        "title": "Leasing & Management",
+        "subtitle": "Full-service leasing support",
         "bullets": [
-          "Mortgage Financing Partnership",
-          "Investment Property Loans",
-          "Refinancing Options",
-          "Document Preparation for Lenders"
+          "Commercial Leasing",
+          "Residential Leasing",
+          "Tenant Screening",
+          "Maintenance Coordination"
         ]
       }
     },
     "services": {
       "title": "Specialized Service Areas",
-      "description": "Our expertise covers every aspect of real estate and mortgage planning",
+      "description": "Our expertise covers every aspect of real estate and property planning",
       "propertyManagement": {
         "title": "Real Property Management",
         "description": "Professional, full-service management for your real estate assets, ensuring peace of mind and optimal returns.",
@@ -1046,7 +1046,7 @@
       },
       "agentServices": {
         "title": "Real Estate Agent Services",
-        "description": "Featuring dedicated agent services from our Nationwide partners for all your buying and selling needs.",
+        "description": "Featuring dedicated agent services from our Nationwide partners (like Messiah Mason) for all your buying and selling needs.",
         "features": [
           "Buyer Representation",
           "Seller Representation",
@@ -1055,45 +1055,45 @@
         ]
       },
       "mortgageFinancing": {
-        "title": "Mortgage Financing",
-        "description": "In partnership with our realtor team, we provide mortgage financing for primary and investment properties.",
+        "title": "Property Acquisition",
+        "description": "In partnership with our agent team, we guide you through the entire acquisition process from search to close.",
         "features": [
-          "Pre-qualification & Pre-Approval",
-          "Conventional, FHA, VA Loans",
-          "First-Time Homebuyer Programs",
-          "Documentation Support"
+          "Buyer Representation",
+          "Market Analysis & Comps",
+          "Offer Strategy & Negotiation",
+          "Transaction Support"
         ]
       },
       "refinancing": {
-        "title": "Refinancing Solutions",
-        "description": "Explore options to lower your interest rate, reduce your monthly payment, or tap into your home's equity.",
+        "title": "Property Sales Services",
+        "description": "We help you maximize your return when selling your property with expert marketing and negotiation.",
         "features": [
-          "Rate & Term Refinance",
-          "Cash-Out Refinance",
-          "Loan Modification Options",
-          "Portfolio Analysis"
+          "Seller Representation",
+          "Property Valuation (CMA)",
+          "Marketing & Staging Strategy",
+          "Negotiation & Closing"
         ]
       },
       "investmentLoans": {
-        "title": "Investment Property Loans",
-        "description": "Specialized financing solutions designed for real estate investors and property portfolio growth.",
+        "title": "Investment Portfolio Strategy",
+        "description": "Specialized consulting services for new and experienced real estate investors.",
         "features": [
-          "Fix & Flip Loans",
-          "Rental Property Loans (DSCR)",
-          "Portfolio Loans",
-          "Commercial Property Financing"
+          "Fix & Flip Analysis",
+          "Rental Property ROI (DSCR)",
+          "Portfolio Review & Optimization",
+          "Commercial Property Analysis"
         ]
       }
     },
     "process": {
-      "title": "Our Proven Property & Mortgage Process",
-      "description": "From initial consultation to closing, we guide you through every step of your real estate and financing journey.",
+      "title": "Our Proven Real Estate Process",
+      "description": "From initial consultation to closing, we guide you through every step of your real estate and investment journey.",
       "reasonsTitle": "Why Our Process Works",
       "statsTitle": "Success Statistics",
       "steps": {
         "1": {
           "title": "Initial Consultation",
-          "description": "We discuss your goals, assess your current situation, and understand your specific needs for property or financing.",
+          "description": "We discuss your goals, assess your current situation, and understand your specific needs for a property or investment.",
           "bullets": [
             "Goal alignment",
             "Financial assessment",
@@ -1102,16 +1102,16 @@
         },
         "2": {
           "title": "Analysis & Research",
-          "description": "Comprehensive market analysis, property search, and mortgage pre-qualification with our partners.",
+          "description": "Comprehensive market analysis, property search, and investment analysis with our partners.",
           "bullets": [
             "Market research",
             "Property search",
-            "Mortgage pre-qualification"
+            "Financial analysis"
           ]
         },
         "3": {
           "title": "Custom Strategy",
-          "description": "Development of a personalized strategy for buying, selling, or refinancing based on your objectives.",
+          "description": "Development of a personalized strategy for buying, selling, or leasing based on your objectives.",
           "bullets": [
             "Personalized plan",
             "Action roadmap",
@@ -1119,12 +1119,12 @@
           ]
         },
         "4": {
-          "title": "Financing & Closing",
-          "description": "We coordinate with lenders, agents, and title companies to ensure a smooth transaction from offer to closing.",
+          "title": "Closing & Support",
+          "description": "We coordinate with agents, title companies, and all parties to ensure a smooth transaction from offer to close.",
           "bullets": [
-            "Mortgage Coordination",
-            "Lender Document Prep",
-            "Closing & Funding"
+            "Transaction Coordination",
+            "Title & Escrow Oversight",
+            "Closing & Funding Support"
           ]
         }
       },
@@ -1146,81 +1146,104 @@
         "items": [
           { "value": "95%", "label": "Client Satisfaction" },
           { "value": "500+", "label": "Properties Managed" },
-          { "value": "200+", "label": "Loans Closed" },
+          { "value": "200+", "label": "Transactions Closed" },
           { "value": "30", "label": "Days Avg. Closing" }
         ]
       }
     },
     "comparison": {
-      "title": "Mortgage Program Comparison",
-      "description": "Compare different loan options to find the perfect fit for your needs.",
+      "title": "Property Investment Comparison",
+      "description": "Compare different real estate investment strategies.",
       "included": "Included",
       "notIncluded": "Not Included",
       "headers": {
-        "coverage": "Loan Type",
-        "basic": "Conventional",
-        "standard": "FHA Loan",
-        "premium": "VA Loan"
+        "coverage": "Strategy",
+        "basic": "Buy & Hold (Rental)",
+        "standard": "Fix & Flip",
+        "premium": "Commercial/Leasing"
       },
       "rows": [
         {
-          "label": "Typical Down Payment",
-          "values": ["3-20%", "3.5%", "0%"]
+          "label": "Capital Investment",
+          "values": [
+            "Medium (20-25%)",
+            "Low (10-20%)",
+            "High (25%+ Varies)"
+          ]
         },
         {
-          "label": "Minimum Credit Score",
-          "values": ["620+", "580+", "Varies"]
+          "label": "Time Horizon",
+          "values": [
+            "Long-Term (5+ Yrs)",
+            "Short-Term (6-18 Mos)",
+            "Long-Term (7+ Yrs)"
+          ]
         },
         {
-          "label": "Best For",
-          "values": ["Good Credit", "First-Time Buyers", "Veterans & Military"]
+          "label": "Primary Goal",
+          "values": [
+            "Cash Flow",
+            "Quick Profit (Active)",
+            "Cash Flow (Passive)"
+          ]
         },
         {
-          "label": "Mortgage Insurance (PMI)",
-          "values": ["Varies", "Required", "No PMI"]
+          "label": "Complexity",
+          "values": [
+            "Low-Medium",
+            "High (Active Mgmt)",
+            "High (Tenant Mgmt)"
+          ]
         },
         {
-          "label": "Loan Limits",
-          "values": ["High", "Varies by County", "High"]
+          "label": "Risk Profile",
+          "values": [
+            "Low-Medium",
+            "High",
+            "Medium-High"
+          ]
         },
         {
-          "label": "Learn More",
-          "values": ["Select Plan", "Most Popular", "Select Plan"],
+          "label": "Get Analysis",
+          "values": [
+            "Select Plan",
+            "Most Popular",
+            "Select Plan"
+          ],
           "isCta": true
         }
       ]
     },
     "success": {
       "title": "Client Success Stories",
-      "description": "Real results from real clients who trusted us with their real estate and mortgage needs",
+      "description": "Real results from real clients who trusted us with their real estate needs",
       "items": [
         {
           "name": "Sarah Williams",
           "role": "Real Estate Investor",
-          "quote": "JB Networking Systems helped me build a real estate portfolio worth over $2 million in just 3 years. Their market analysis and investment strategies were spot-on, and their mortgage partners helped me finance each property seamlessly.",
+          "quote": "JB Networking Systems helped me build a real estate portfolio worth over $2 million in just 3 years. Their market analysis and investment strategies were spot-on, and their team helped me analyze and close on each property seamlessly.",
           "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg",
           "stats": [
             { "value": "$2.1M", "label": "Portfolio Value" },
             { "value": "18%", "label": "Annual ROI" },
-            { "value": "7", "label": "Properties Financed" }
+            { "value": "7", "label": "Properties Acquired" }
           ]
         },
         {
           "name": "Michael Chen",
           "role": "Homeowner",
-          "quote": "When I needed to purchase my first home, the dedicated nationwide partners team guided me through the entire process. They found me the perfect property below market value and handled the mortgage coordination, making it stress-free.",
+          "quote": "When I needed to purchase my first home, the dedicated nationwide partners team guided me through the entire process. They found me the perfect property below market value and handled the entire transaction, making it stress-free.",
           "avatar": "https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg",
           "stats": [
             { "value": "$45K", "label": "Below Market" },
-            { "value": "25", "label": "Days to Close" },
-            { "value": "3.5%", "label": "Interest Rate" }
+            { "value": "25", "label": "Days to Close" }
           ]
         }
       ]
     },
     "faq": {
       "title": "Frequently Asked Questions",
-      "description": "Get answers to common questions about our real estate and mortgage services",
+      "description": "Get answers to common questions about our real estate services",
       "items": [
         {
           "q": "What types of real estate services do you offer?",
@@ -1228,11 +1251,11 @@
         },
         {
           "q": "Who is your real estate agent?",
-          "a": "We partner with our dedicated Nationwide partner real estate agents, to handle all your buying, selling, and investment needs."
+          "a": "We partner with dedicated nationwide partner real estate agents, like Messiah Mason, to handle all your buying, selling, and investment needs."
         },
         {
-          "q": "Do you provide mortgage financing?",
-          "a": "Yes, we partner with a team of trusted realtors and lenders to provide mortgage financing for primary homes, investment properties, and refinancing."
+          "q": "Do you help with finding investment properties?",
+          "a": "Yes, we specialize in finding and analyzing investment properties, including cash-flow modeling, rent comps, and renovation ROI scenarios."
         },
         {
           "q": "What is Real Property Management?",
@@ -1247,12 +1270,12 @@
           "a": "Yes! We're proud to offer VIP services and exclusive discounts for Active Duty, Retired, & Reservists as a thank you for their service."
         },
         {
-          "q": "Can you help me find an investment property?",
-          "a": "Absolutely. We specialize in finding and analyzing investment properties, including cash-flow modeling, rent comps, and renovation ROI scenarios to inform your decision."
+          "q": "Can you help me analyze a property?",
+          "a": "Absolutely. We provide cash-flow models, rent comps, renovation ROI scenarios, and exit strategy planning to inform your decision."
         },
         {
           "q": "Do you only work in GA, AL, and TX?",
-          "a": "Our physical offices are in those states, but our network for real estate and financing can assist clients in many other areas as well. Contact us for details."
+          "a": "While our 6 physical offices are in those states, our nationwide network of partners allows us to assist clients in all 50 states."
         }
       ]
     }
