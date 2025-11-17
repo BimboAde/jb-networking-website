@@ -1807,6 +1807,13 @@
       }
     }
   },
+  "solutions_business": {
+    "breadcrumb": {
+      "home": "Inicio",
+      "business": "Soluciones para Empresas",
+      "current": "Soluciones empresariales"
+    }
+  },
   "solutions_business_credit": {
     "breadcrumb": {
       "home": "Inicio",
