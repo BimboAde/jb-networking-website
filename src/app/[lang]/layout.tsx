@@ -48,7 +48,7 @@ export default async function LocaleLayout({ children, params }: LayoutParams) {
     <AnimationProvider>
       {children}
       {/* Sticky YouTube teaser for all pages */}
-      <YouTubeTeaserSticky strings={teaserStrings} />
+      {/* <YouTubeTeaserSticky strings={teaserStrings} /> */}
       {/* Global cookie consent banner */}
       <CookieConsent dict={consentDict} policyHref={`/${lang}/cookies`} />
     </AnimationProvider>
