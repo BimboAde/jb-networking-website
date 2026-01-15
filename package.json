@@ -15,16 +15,16 @@
     "seed:testimonials": "tsx scripts/seed-testimonials.ts"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.47.10",
     "framer-motion": "^12.23.24",
+    "jose": "^5.2.4",
     "lucide-react": "^0.548.0",
-    "next": "16.0.0",
-    "next-devtools-mcp": "^0.2.1",
+    "next": "^16.1.2",
+    "next-devtools-mcp": "^0.3.10",
     "react": "19.2.0",
     "react-dom": "19.2.0",
-    "resend": "^3.5.0",
-    "@supabase/supabase-js": "^2.47.10",
-    "jose": "^5.2.4",
-    "react-icons": "^5.2.1"
+    "react-icons": "^5.2.1",
+    "resend": "^3.5.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -32,14 +32,14 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "babel-plugin-react-compiler": "1.0.0",
+    "dotenv": "^16.4.5",
     "eslint": "^9",
     "eslint-config-next": "16.0.0",
     "highcharts": "^11.4.1",
     "highcharts-react-official": "^3.2.1",
     "recharts": "^2.12.7",
     "tailwindcss": "^4",
-    "typescript": "^5",
     "tsx": "^4.19.2",
-    "dotenv": "^16.4.5"
+    "typescript": "^5"
   }
 }
