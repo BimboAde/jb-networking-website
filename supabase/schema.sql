@@ -107,6 +107,8 @@ create table if not exists public.website_info (
   main_phone text,
   fax text,
   main_email text,
+  main_address_line1 text,
+  main_address_line2 text,
   linkedin text,
   x_url text,
   facebook text,
@@ -119,6 +121,10 @@ create table if not exists public.website_info (
   updated_at timestamptz not null default now()
 );
 create index if not exists website_info_updated_idx on public.website_info(updated_at desc);
+
+-- Add address columns if they don't exist (for existing installations)
+alter table public.website_info add column if not exists main_address_line1 text;
+alter table public.website_info add column if not exists main_address_line2 text;
 
 alter table public.website_info enable row level security;
 do $$

@@ -11,6 +11,8 @@ type WebsiteInfo = {
   main_phone?: string;
   fax?: string;
   main_email?: string;
+  main_address_line1?: string;
+  main_address_line2?: string;
   linkedin?: string;
   x_url?: string;
   facebook?: string;
@@ -86,13 +88,18 @@ export default function WebsiteInfoAdminPage() {
           <input className="border rounded p-3" placeholder="Main Phone" value={info.main_phone || ''} onChange={(e) => setInfo({ ...info, main_phone: e.target.value })} />
           <input className="border rounded p-3" placeholder="Fax Number" value={info.fax || ''} onChange={(e) => setInfo({ ...info, fax: e.target.value })} />
           <input className="border rounded p-3" placeholder="Main Email" value={info.main_email || ''} onChange={(e) => setInfo({ ...info, main_email: e.target.value })} />
+          <input className="border rounded p-3 md:col-span-2" placeholder="Main Address Line 1 (e.g., 123 Main Street, Suite 100)" value={info.main_address_line1 || ''} onChange={(e) => setInfo({ ...info, main_address_line1: e.target.value })} />
+          <input className="border rounded p-3 md:col-span-2" placeholder="Main Address Line 2 (e.g., City, State ZIP)" value={info.main_address_line2 || ''} onChange={(e) => setInfo({ ...info, main_address_line2: e.target.value })} />
+          <input className="border rounded p-3" placeholder="Weekday Hours" value={info.weekday_hours || ''} onChange={(e) => setInfo({ ...info, weekday_hours: e.target.value })} />
+          <input className="border rounded p-3" placeholder="Weekend Hours" value={info.weekend_hours || ''} onChange={(e) => setInfo({ ...info, weekend_hours: e.target.value })} />
+        </div>
+        <h3 className="text-lg font-semibold text-brand-green pt-4">Social Media Links</h3>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <input className="border rounded p-3" placeholder="LinkedIn URL" value={info.linkedin || ''} onChange={(e) => setInfo({ ...info, linkedin: e.target.value })} />
           <input className="border rounded p-3" placeholder="X (Twitter) URL" value={info.x_url || ''} onChange={(e) => setInfo({ ...info, x_url: e.target.value })} />
           <input className="border rounded p-3" placeholder="Facebook URL" value={info.facebook || ''} onChange={(e) => setInfo({ ...info, facebook: e.target.value })} />
           <input className="border rounded p-3" placeholder="Instagram URL" value={info.instagram || ''} onChange={(e) => setInfo({ ...info, instagram: e.target.value })} />
           <input className="border rounded p-3" placeholder="Pinterest URL" value={info.pinterest || ''} onChange={(e) => setInfo({ ...info, pinterest: e.target.value })} />
-          <input className="border rounded p-3" placeholder="Weekday Hours" value={info.weekday_hours || ''} onChange={(e) => setInfo({ ...info, weekday_hours: e.target.value })} />
-          <input className="border rounded p-3" placeholder="Weekend Hours" value={info.weekend_hours || ''} onChange={(e) => setInfo({ ...info, weekend_hours: e.target.value })} />
         </div>
       </div>
       <div className="bg-white rounded-xl p-6 shadow space-y-4">

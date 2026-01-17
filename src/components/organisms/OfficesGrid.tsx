@@ -49,24 +49,38 @@ function OfficeCard({
               <p className="text-gray-600">{address[0]}<br />{address[1]}</p>
             </div> */}
           </div>
-          <div className="flex items-start space-x-4">
-            <div className="w-10 h-10 bg-brand-green rounded-lg flex items-center justify-center flex-shrink-0 text-white">
-              📞
+          {phone && (
+            <div className="flex items-start space-x-4">
+              <div className="w-10 h-10 bg-brand-green rounded-lg flex items-center justify-center flex-shrink-0 text-white">
+                📞
+              </div>
+              <div className="min-w-0 flex-1">
+                <h4 className="font-semibold text-brand-green mb-1">Phone</h4>
+                <a
+                  href={`tel:${phone.replace(/[^\d]/g, '')}`}
+                  className="text-gray-600 hover:text-brand-green transition-colors"
+                >
+                  {phone}
+                </a>
+              </div>
             </div>
-            <div>
-              <h4 className="font-semibold text-brand-green mb-1">Phone</h4>
-              <p className="text-gray-600">{phone}</p>
+          )}
+          {email && (
+            <div className="flex items-start space-x-4">
+              <div className="w-10 h-10 bg-brand-green rounded-lg flex items-center justify-center flex-shrink-0 text-white">
+                ✉️
+              </div>
+              <div className="min-w-0 flex-1">
+                <h4 className="font-semibold text-brand-green mb-1">Email</h4>
+                <a
+                  href={`mailto:${email}`}
+                  className="text-gray-600 hover:text-brand-green transition-colors break-all text-sm sm:text-base"
+                >
+                  {email}
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="flex items-start space-x-4">
-            <div className="w-10 h-10 bg-brand-green rounded-lg flex items-center justify-center flex-shrink-0 text-white">
-              ✉️
-            </div>
-            <div>
-              <h4 className="font-semibold text-brand-green mb-1">Email</h4>
-              <p className="text-gray-600">{email}</p>
-            </div>
-          </div>
+          )}
          
           <div className="flex space-x-3">
             {/* <button className="flex-1 bg-brand-green text-white py-3 rounded-lg font-semibold hover:bg-brand-light-green transition-colors">

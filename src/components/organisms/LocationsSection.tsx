@@ -4,9 +4,9 @@ import { MotionDiv } from '../atoms/Motion';
 import { Heading } from '../atoms/Heading';
 import { LocationCard } from '../molecules/LocationCard';
 import { fadeInUp, staggerContainer } from '@/lib/animations';
-import { headers } from 'next/headers';
+import { getServerSupabase } from '@/lib/supabase/server';
 
-type ApiLocation = {
+type DbLocation = {
   id?: string;
   slug: string;
   name: string;
@@ -21,17 +21,22 @@ export const LocationsSection = async ({ dict, consultationHref }: { dict: Dict;
   const t = getT(dict, 'locations');
   const tCommon = getT(dict, 'common');
 
-  const hdrs = await headers();
-  const host = hdrs.get('x-forwarded-host') || hdrs.get('host') || '';
-  const proto = hdrs.get('x-forwarded-proto') || (process.env.NODE_ENV === 'production' ? 'https' : 'http');
-  const envBase =
-    process.env.NEXT_PUBLIC_BASE_URL ||
-    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined);
-  const baseUrl = envBase || (host ? `${proto}://${host}` : '');
-  const res = await fetch(`${baseUrl}/api/v1/locations`, { next: { tags: ['locations'] } });
-  const json = await res.json().catch(() => ({ data: [] as ApiLocation[] }));
-  const apiLocations: ApiLocation[] = Array.isArray(json?.data) ? json.data : [];
-  const locations = apiLocations.map((l) => ({
+  // Fetch directly from Supabase in Server Component (avoids self-fetch issues in production)
+  let dbLocations: DbLocation[] = [];
+  try {
+    const supabase = getServerSupabase();
+    const { data, error } = await supabase
+      .from('locations')
+      .select('*')
+      .order('slug', { ascending: true });
+    if (!error && data) {
+      dbLocations = data;
+    }
+  } catch {
+    // Silently fail - locations will be empty
+  }
+
+  const locations = dbLocations.map((l) => ({
     title: l.name,
     area: l.area || '',
     address: [l.address_line1, l.address_line2].filter(Boolean).join('\n'),

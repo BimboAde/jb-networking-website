@@ -46,6 +46,8 @@ export async function PUT(req: NextRequest) {
     'main_phone',
     'fax',
     'main_email',
+    'main_address_line1',
+    'main_address_line2',
     'linkedin',
     'x_url',
     'facebook',

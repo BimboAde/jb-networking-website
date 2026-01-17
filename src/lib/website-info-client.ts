@@ -4,6 +4,8 @@ export type WebsiteInfo = {
   main_phone?: string;
   fax?: string;
   main_email?: string;
+  main_address_line1?: string;
+  main_address_line2?: string;
   linkedin?: string;
   x_url?: string;
   facebook?: string;
